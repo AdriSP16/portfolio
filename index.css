@@ -1,0 +1,706 @@
+/* 
+ * Reset de estilos globales para asegurar consistencia en diferentes navegadores.
+ * Se eliminan márgenes, rellenos y se establece el modelo de caja.
+ * También se activa un desplazamiento suave y se define la fuente general.
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+/* 
+ * Estilos para la barra de navegación.
+ * Se fija en la parte superior, ocupa el 100% del ancho y tiene un fondo semitransparente.
+ * Se usa un índice z alto para que esté por encima de otros elementos.
+ */
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #222;
+}
+
+/* 
+ * Lista de navegación: sin viñetas, alineación central y separación entre elementos.
+ */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* 
+ * Cada elemento de la lista se muestra en línea.
+ */
+.navbar ul li {
+    display: inline;
+}
+
+/* 
+ * Estilos para los enlaces de navegación: color blanco, sin subrayado y transición en el color.
+ */
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* 
+ * Efecto hover en los enlaces: cambio de color al pasar el cursor.
+ */
+.navbar ul li a:hover {
+    color: #bbb;
+}
+
+/* 
+ * Media query para ocultar la barra de navegación en pantallas menores a 900px.
+ */
+@media screen and (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+}
+
+/* 
+ * Contenedor principal que permite el desplazamiento vertical.
+ * Se oculta la barra de desplazamiento en Webkit (Chrome, Safari).
+ */
+.container {
+    overflow-y: scroll;
+    height: 100vh;
+    scrollbar-width: auto;
+    -ms-overflow-style: auto;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* 
+ * Estilos para cada sección: ancho completo, altura mínima igual al viewport.
+ * Centrado de contenido con flexbox y espaciado superior para evitar que la navbar lo cubra.
+ */
+.section {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 60px;
+}
+
+/* 
+ * Define un ancho máximo para el contenido dentro de una sección.
+ */
+.content {
+    max-width: 80%;
+}
+
+/* 
+ * Diferentes fondos de color para cada sección.
+ */
+.section1 { background: #777; }
+.section2 { background: #666; }
+.section3 { background: #555; }
+.section4 { background: #444; }
+.section5 { background: #333; }
+.section6 { background: #222; }
+.section7 { background: #111; }
+
+/* 
+ * Animación para un emoji dentro de la sección "home", creando un efecto de saludo con rotación.
+ */
+#home .emoji {
+    display: inline-block;
+    transform-origin: bottom;
+    animation: wave 0.6s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 50%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    75% { transform: rotate(-15deg); }
+}
+
+/* 
+ * Estilos específicos para la sección "about".
+ */
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+/* 
+ * Estilos de listas dentro de "about", sin viñetas y con separación entre elementos.
+ */
+#about ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#about ul li {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+/* 
+ * Negrita en los textos dentro de "about".
+ */
+#about strong {
+    font-weight: 600;
+}
+
+/* 
+ * Estilos de los enlaces en "about".
+ */
+#about a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* 
+ * Efecto hover en enlaces de "about".
+ */
+#about a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* 
+ * Ancho máximo del contenido en la sección "about".
+ */
+#about .content {
+    max-width: 50%;
+}
+
+/* 
+ * Animación de rebote para emojis en "about".
+ */
+#about .emoji {
+    display: inline-block;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 50%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    75% { transform: translateY(-5px); }
+}
+
+/* 
+ * Estilos para la sección "skills".
+ */
+#skills {
+    padding: 50px 0;
+}
+
+#skills .content {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#skills h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#skills p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* 
+ * Contenedor de habilidades con distribución flexible y separación entre elementos.
+ */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* 
+ * Cada habilidad tiene un fondo gris, texto centrado, sombra y un efecto de escala al pasar el cursor.
+ */
+.skill {
+    background-color: #f1f1f1;
+    color: #000;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+/* 
+ * Estilos específicos para el título dentro de cada habilidad.
+ */
+.skill h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* 
+ * Listado de habilidades dentro de cada tarjeta.
+ */
+.skill ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* 
+ * Animación de rotación infinita para emojis en "skills".
+ */
+#skills .emoji {
+    display: inline-block;
+    animation: rotateGear 2s linear infinite;
+}
+
+@keyframes rotateGear {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Se necesitan más comentarios a parti de aquí*/
+
+#projects {
+    padding: 50px 0;
+}
+#projects .content {
+    text-align: center;
+    margin: 0 auto;
+}
+#projects h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#projects p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+.project {
+    background-color: #f1f1f1;
+    color: #000;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.project:hover {
+    transform: scale(1.05);
+}
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.project p {
+    font-size: 0.1em;
+}
+.project a {
+    text-decoration: none;
+    color: #fff;
+}
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #111;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+.button:hover .icon {
+    transform: translate(4px);
+}
+.button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+@keyframes shine {
+    0% {
+    left: -100px;
+    }
+
+    60% {
+    left: 100%;
+    }
+
+    to {
+    left: 100%;
+    }
+}
+#projects .emoji {
+    display: inline-block;
+    animation: swing 1s ease-in-out infinite;
+}
+@keyframes swing {
+    0% {
+    transform: rotate(0deg);
+    }
+    25% {
+    transform: rotate(10deg); /* Balanceo a la derecha */
+    }
+    50% {
+    transform: rotate(0deg); /* Regresa al centro */
+    }
+    75% {
+    transform: rotate(-10deg); /* Balanceo a la izquierda */
+    }
+    100% {
+    transform: rotate(0deg); /* Regresa al centro */
+    }
+}
+
+#experience {
+    padding: 50px 0;
+}
+#experience .content {
+    text-align: center;
+    margin: 0 auto;
+}
+#experience h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#experience p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+.exp {
+    background-color: #f1f1f1;
+    color: #000;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+.exp:hover {
+    transform: scale(1.05);
+}
+.exp h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+.main-list {
+    font-size: 1rem;
+    padding-left: 20px;
+}
+.sub-list {
+    font-size: 0.9rem;
+    padding-left: 30px;
+}
+#experience .emoji {
+    display: inline-block;
+    animation: unfold 1.5s ease-in-out infinite;
+}
+@keyframes unfold {
+    0% {
+    transform: scale(1);
+    }
+    25% {
+    transform: scale(1.1); /* Expande ligeramente */
+    }
+    50% {
+    transform: scale(1); /* Vuelve al tamaño original */
+    }
+    75% {
+    transform: scale(1.05); /* Expande ligeramente más */
+    }
+    100% {
+    transform: scale(1); /* Vuelve a la posición original */
+    }
+}
+
+#testimonials {
+    padding: 50px 0;
+}
+#testimonials .content {
+    text-align: center;
+    margin: 0 auto;
+}
+#testimonials h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#testimonials p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+.testimonial {
+    background-color: #ccc;
+    color: #000;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+.testimonial:hover,
+.testimonial img:hover {
+    transform: scale(1.05);
+}
+.testimonial h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+#testimonials .emoji {
+    display: inline-block;
+    animation: speak 1s ease-in-out infinite;
+}
+
+@keyframes speak {
+    0% {
+    transform: rotate(0deg);
+    }
+    25% {
+    transform: rotate(5deg); /* Giro suave a la derecha */
+    }
+    50% {
+    transform: rotate(0deg); /* Vuelve a la posición original */
+    }
+    75% {
+    transform: rotate(-5deg); /* Giro suave a la izquierda */
+    }
+    100% {
+    transform: rotate(0deg); /* Vuelve a la posición original */
+    }
+}
+
+#contact {
+    padding: 50px 0;
+    text-align: center;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+.social-links li {
+    margin: 10px 0;
+}
+.social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f1f1f1;
+    transition: color 0.3s ease-in-out;
+}
+.social-links a:hover {
+    color: #0073b1;
+}
+.social-links i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+#contact .emoji {
+    display: inline-block;
+    animation: bounce 1.2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+    transform: translateY(0);
+    }
+    25% {
+    transform: translateY(-8px); /* Subir un poco */
+    }
+    50% {
+    transform: translateY(0); /* Vuelve al nivel original */
+    }
+    75% {
+    transform: translateY(-4px); /* Subir un poco más */
+    }
+    100% {
+    transform: translateY(0); /* Regresa a la posición original */
+    }
+}
+
+.scroll-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 100;
+}
+.scroll-arrow:hover {
+    font-size: 3.5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.lang-text {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Cosas necesarias.
+
+- Optimizar el codigo y eliminar las partes del codigo sobrantes
+
+*/
