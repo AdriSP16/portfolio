@@ -1,53 +1,273 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Se define el idioma español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adrián Sabino Pérez - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" /> <!-- Definimos la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Hacemos que la página sea responsive -->
+    <title>Portafolio de Adrián Sabino</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="css/index.css" /> <!-- Enlace al archivo CSS -->
+    <link rel="icon" type="image/png" href="resources/favicon.png" /> <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" /> <!-- Fuente personalizada -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> <!-- Iconos de Font Awesome -->
 </head>
 <body>
-    <header>
-        <h1>👋 ¡Hola! Soy Adrián Sabino Pérez</h1>
-        <p>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma | Fullstack Developer | Apasionado por la Ciberseguridad</p>
-    </header>
-
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Soy un desarrollador con pasión por el desarrollo Android 📱 y la seguridad informática 🔐. Me encanta aprender nuevas tecnologías y afrontar desafíos en el mundo del software.</p>
-    </section>
-
-    <section id="skills">
-        <h2>💡 Habilidades</h2>
-        <h3>Tech Skills:</h3>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
         <ul>
-            <li>Frontend: HTML, CSS, JavaScript</li>
-            <li>Backend: PHP, Node.js</li>
-            <li>Bases de Datos: MySQL, MongoDB, Firebase</li>
-            <li>Version Control: Git, GitHub</li>
-            <li>Desarrollo Móvil: Android (Kotlin), Flutter</li>
-            <li>Desarrollo de Juegos: Unity (C#)</li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#contact">Contacto</a></li>
         </ul>
-        <h3>Soft Skills:</h3>
-        <ul>
-            <li>Trabajo en equipo 🤝</li>
-            <li>Pensamiento crítico 🧠</li>
-            <li>Resolución de problemas 🚀</li>
-            <li>Adaptabilidad 🔄</li>
-        </ul>
-    </section>
+        <!-- Switch para cambiar idioma -->
+        <div class="language-switch">
+            <span class="lang-text">ES</span>
+            <label class="switch">
+                <input type="checkbox" id="languageToggle">
+                <span class="slider round"></span>
+            </label>
+            <span class="lang-text">EN</span>
+        </div>
+    </nav>
+    
 
-    <section id="contact">
-        <h2>📩 Contacto</h2>
-        <p>¡Conéctate conmigo!</p>
-        <a href="mailto:adrsabper@gmail.com.com">✉️ Email principal</a> |
-        <a href="mailto:adr16persab@gmail.com.com">✉️ Email secundario</a> |
-        <a href="https://www.linkedin.com/in/adrián-sabino-pérez-2b20a7278" target="_blank">🔗 LinkedIn</a> |
-        <a href="https://github.com/adriSP16" target="_blank">🐙 GitHub</a>
-    </section>
+    <!-- Contenido de la página -->
+    <div class="container">
 
-    <footer>
-        <p>© 2025 Adrián Sabino Pérez | Desarrollado con 💙</p>
-    </footer>
+        <!-- Sección Home -->
+        <section id="home" class="section section1">
+            <div class="content">
+                <h1><span class="emoji">👋</span> ¡Hola Mundo!, Soy Adrián</h1>
+                <p>¡Bienvenido a mi portafolio!</p>
+            </div>
+        </section>
+
+        <!-- Sección Sobre mí -->
+        <section id="about" class="section section2">
+            <div class="content">
+                <h1><span class="emoji">📖</span> Sobre mí</h1>
+                <p>
+                    Soy un desarrollador con pasión por el desarrollo Android y la 
+                    seguridad informática. Me encanta aprender nuevas tecnologías y afrontar desafíos en el mundo del software.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="skills" class="section section3">
+            <div class="content">
+                <h1><span class="emoji">⚙️</span> Habilidades Técnicas</h1>
+                <p>Tengo experiencia en varias habilidades digitales, tales como:</p>
+
+                <!-- Contenedor de habilidades -->
+                <div class="skills-container">
+                    <div class="skill">
+                        <h3>FrontEnd</h3>
+                        <ul>
+                            <li>HTML 5</li>
+                            <li>CSS 3</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill">
+                        <h3>BackEnd</h3>
+                        <ul>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Lenguajes de Programación (De más a menos utilizado)</h3>
+                        <ul>
+                            <li>Kotlin</li>
+                            <li>Dart</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Bases de Datos</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>Firebase</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Frameworks</h3>
+                        <ul>
+                            <li>Flutter</li>
+                            <li>Jetpack Compose</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Control de Versiones</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill">
+                        <h3>IDEs</h3>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Android Studio</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>PyCharm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section id="projects" class="section section4">
+            <div class="content">
+                <h1><span class="emoji">💼</span> Proyectos</h1>
+                <p>Desafortunadamente, no hay proyectos recientes.</p>
+                <!-- Aquí irían los proyectos cuando estén disponibles -->
+            </div>
+        </section>
+
+        <!-- Sección de Experiencia -->
+        <section id="experience" class="section section5">
+            <div class="content">
+                <h1><span class="emoji">📜</span> Experiencia</h1>
+                <p>He trabajado en varias empresas, como:</p>
+                <div class="experience-container">
+                    <div class="exp">
+                        <h3>Desarrollador Junior Flutter</h3>
+                        <ul class="main-list">
+                            <li>Dinan informática</li>
+                            <li>Palmones, Andalucía, España</li>
+                            <li>Marzo 2024 - Junio 2024</li>
+                            <ul class="sub-list">
+                                <li>Desarrollo de aplicaciones en Flutter</li>
+                                <li>Uso de GitHub para control de versiones</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contact" class="section section7">
+            <div class="content">
+                <h1><span class="emoji">📩</span> Contacto</h1>
+                <p>Siéntete libre de contactar por correo electrónico o redes sociales:</p>
+                <div class="contact-container">
+                    <div class="social-links">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/adrián-sabino-pérez-2b20a7278" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/AdriSP16" target="_blank">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:adr16persab@gmail.com">
+                                    <i class="fa-solid fa-envelope"></i> Correo electrónico
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Flecha para hacer scroll hacia abajo -->
+    <a href="#about" class="scroll-arrow" id="scrollArrow"> ⬇️ </a>
+    <script src="js/index.js"></script> <!-- Enlace al archivo JS -->
 </body>
 </html>
+
+
+
+<!-- 
+Cosas a mejorar:
+
+- Que haya un indicador en el nav que indique por cual parte del portfolio vas
+
+- Hay que añadirle más color a la página, además de arreglar la alineación de varios titulos y textos
+
+- Poner un apartado de soft skills
+
+- Añadir una foto mia
+
+- Añadir un enlace para poder descargar el CV en PDF
+
+- Permitir copiar el email y que se vea por texto
+
+- Permitir que se pueda cambiar de idiomas (Entre Español e Inglés)
+
+- Añadir un apartado de certificaciones y otro apartado de formación
+
+- Remarcar que sigo en constante aprendizaje
+
+- Apartado de idiomas (hay que hacer que toda la pagina web cambie de idioma con el switch ya implementado)
+
+- Poner proyectos principales en cuanto los tenga (Y si alguna vez llego a tener proyectos de sobra y se hace 
+muy largo, añadir una sección de ver más, que contenga todos mis proyectos). Especificar las tecnologias (Se puede poner el logo de la tecnologia y al pasar el cursor que ponga cual es en texto), decir 
+para que sirve y un enlace al repo de github. Añadir capturas del proyecto como portada (Responsive)
+
+- El portfolio es un complemento al CV, por lo que tiene que estar muy completo
+
+- Modo Oscuro y modo claro
+
+- Apartado de "Conoceme más" con un preguntas y respuestas
+
+- Añadir un apartado de reseñas y recomendaciones cuando las tenga
+
+- Centrarse en la navegación continua, que haya información siempre y que no llegue a puntos muertos
+
+- Responsive
+
+- Poner un poco de SEO
+
+- Hacer mucho más vistoso el apartado de skills (sobre todo el tech stack o las habilidades tecnológicas)
+
+- Separar el email de Linkedin y Github para poner un apartado unico para que se pueda copiar el email con un boton y enviar mensajes al email con el otro
+
+- ERROR: Cuando se clicka en el nav, navega hacia el destino pero desaparece el nav, hay que arreglarlo para que el nav siempre esté presente
+
+Ideas: https://www.youtube.com/watch?v=zFbTXe1yFGA&t=1473s
+
+-->
+
+<!-- 
+            
+Codigo de ejemplo para cuando hayan proyectos para poner
+
+
+<div class="project">
+    <h3>Ejemplo Poryecto</h3>
+    <p>
+    Ejemplo descripción proyecto
+    </p>
+    <a href="https://github.com/AdriSP16/" target="_blank">
+    <button class="button">
+        View on GitHub
+        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+        <path
+            clip-rule="evenodd"
+            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+            fill-rule="evenodd"
+        ></path>
+        </svg>
+    </button>
+    </a>
+</div>
+
+-->
