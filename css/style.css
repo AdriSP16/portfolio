@@ -1,0 +1,133 @@
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 50vw;
+    margin: auto;
+}
+
+/* Navbar fijo */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    color: #27ae60;
+    font-size: 1.8rem;
+}
+
+/* Sección principal */
+.hero {
+    margin-top: 100px; /* Para no solapar con el navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+/* Contenido de la sección */
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Imagen de perfil en bloque rectangular con bordes suavizados */
+.profile-pic {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Información */
+.info h2 {
+    font-size: 2rem;
+}
+
+.highlight {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Botones */
+.buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #27ae60;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #219150;
+}
+
+/* Redes sociales */
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Iconos de LinkedIn y GitHub */
+.icon img {
+    width: 30px; 
+    height: 30px;
+}
+
+/* Contenedor de email */
+.email-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Botones de enviar y copiar email */
+.email-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.email-btn:hover {
+    background-color: #219150;
+}
+
+/* Iconos dentro de los botones */
+.email-btn .icon {
+    margin-left: 10px;
+}
