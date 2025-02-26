@@ -3,7 +3,7 @@ function downloadCV() {
     const cvPath = 'resources/CV.pdf'; // Ruta del archivo CV
     const link = document.createElement('a');
     link.href = cvPath;
-    link.download = 'Adrian_Sabino_CV.pdf'; // Nombre del archivo al descargar
+    link.download = 'Adrian Sabino CV Actual.pdf'; // Nombre del archivo al descargar
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
