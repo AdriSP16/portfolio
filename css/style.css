@@ -224,7 +224,7 @@ h2 {
 
 /* APARTADO POPUP DE CONTACTOS */
 
-/* Animación para el popup */
+/* Estilo del popup */
 .popup {
     display: none;
     position: fixed;
@@ -240,7 +240,7 @@ h2 {
     transition: opacity 0.3s ease;
 }
 
-/* Mostrar popup */
+/* Mostrar el popup */
 .popup.show {
     opacity: 1;
 }
@@ -252,68 +252,63 @@ h2 {
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.5);
-    text-align: left;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 90%;
-    width: 30rem; /* Ancho máximo */
-    box-sizing: border-box; /* Evita que el padding aumente el tamaño */
+    flex-direction: column; /* Apilar verticalmente */
+    gap: 1rem; /* Espaciado entre elementos */
+    width: 90%;
+    max-width: 500px; /* Ancho máximo */
 }
 
-/* Estilo del encabezado del popup */
+/* Encabezado del popup */
 .popup-header {
-    position: relative;
+    display: flex;
+    justify-content: space-between; /* Título centrado, botón a la derecha */
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
-    font-size: large;
 }
 
 /* Botón de cerrar */
 .close-btn {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
     cursor: pointer;
     font-size: 2rem;
     color: #333;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
 
 .close-btn:hover {
-    transform: translateY(-50%) scale(1.2);
+    transform: scale(1.2);
     color: #ff4d4d;
 }
 
-/* Título del popup */
-.popup-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    align-self: center;
-    color: rgb(0, 0, 0);
-    margin: 0;
-}
-
-/* Contenedor del correo y botones */
+/* Contenedor del correo */
 .email-container {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    align-items: center; /* Centrar verticalmente */
+    gap: 0.5rem; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Permitir ajuste si no cabe */
+}
+
+/* Botones siempre en la misma fila */
+.button-group {
+    display: flex; /* Mantener en fila */
+    gap: 0.5rem; /* Espacio entre botones */
 }
 
 /* Input del correo */
-#emailInput {
+input[type="email"] {
     padding: 0.75rem;
     border: none;
     border-radius: 0.5rem;
     background: #ffffff;
-    color: rgb(0, 0, 0);
+    color: #000000;
     font-size: 1rem;
-    width: 100%; /* Adaptable */
-    text-align: left;
+    flex-grow: 1; /* Permite que el input use el espacio restante */
+    min-width: 0; /* Evitar que el input desborde */
 }
 
-/* Botones de ícono (rectangulares y con fondo verde claro) */
+/* Botones de ícono */
 .btn-icon {
     background: #028802;
     padding: 0.55rem 1.5rem;
@@ -326,83 +321,51 @@ h2 {
     transition: transform 0.2s ease, background 0.3s ease;
 }
 
-/* Efecto hover */
+/* Iconos dentro de los botones */
+.btn-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain; /* Ajuste de imagen */
+}
+
+/* Hover para los botones */
 .btn-icon:hover {
     background: #45c245;
     transform: scale(1.05);
 }
 
-/* Iconos dentro del botón */
-.btn-icon img {
-    width: 1.5rem;
-    height: 1.5rem;
-    object-fit: contain;
-}
+/* RESPONSIVE DESIGN */
 
-/* --- RESPONSIVE DESIGN --- */
-
-/* Para pantallas más pequeñas (móviles) */
-@media (max-width: 768px) {
+/* Adaptar popup en dispositivos pequeños */
+@media (max-width: 480px) {
     .popup-content {
-        padding: 1.5rem; /* Menor padding */
-        width: 90%; /* Ancho completo */
+        padding: 1rem;
+        width: 95%;
     }
 
-    .popup-header {
-        font-size: 1rem; /* Título más pequeño */
+    .popup-header h1 {
+        font-size: 1.2rem;
     }
 
     .close-btn {
-        font-size: 1.5rem; /* Botón de cerrar más pequeño */
+        font-size: 1.5rem;
     }
 
-    #emailInput {
-        font-size: 0.9rem; /* Input más pequeño */
+    input[type="email"] {
+        font-size: 0.9rem;
         padding: 0.5rem;
     }
 
-    .email-container {
-        flex-direction: column; /* Apila los elementos */
-        gap: 1rem;
-    }
-
     .btn-icon {
-        padding: 0.5rem 1rem; /* Ajustar tamaño */
+        padding: 0.4rem 1rem;
     }
 
     .btn-icon img {
-        width: 1.2rem; /* Iconos más pequeños */
+        width: 1.2rem;
         height: 1.2rem;
     }
 }
 
-/* Para pantallas muy pequeñas (menos de 480px) */
-@media (max-width: 480px) {
-    .popup-content {
-        padding: 1rem; /* Menor padding */
-        width: 95%; /* Más ancho en móviles pequeños */
-    }
-
-    .close-btn {
-        font-size: 1.2rem; /* Botón más pequeño */
-    }
-
-    .popup-title {
-        font-size: 1rem; /* Título más pequeño */
-    }
-
-    .email-container {
-        gap: 0.75rem; /* Espaciado más ajustado */
-    }
-
-    .btn-icon {
-        padding: 0.4rem 0.8rem; /* Más pequeño */
-    }
-
-    #emailInput {
-        font-size: 0.8rem; /* Texto más pequeño */
-    }
-}
 
 
 /* APARTADO POPUP DE CONTACTOS */
