@@ -67,6 +67,7 @@ body {
     display: flex;
     align-items: center;
     gap: 3vw; /* Espaciado basado en el ancho de la pantalla */
+    margin-bottom: 4vw;
 }
 
 /* Imagen de perfil */
@@ -222,8 +223,6 @@ h2 {
 
 /* APARTADO POPUP DE CONTACTOS */
 
-/* APARTADO POPUP DE CONTACTOS */
-
 /* Estilo del popup */
 .popup {
     display: none;
@@ -369,3 +368,138 @@ input[type="email"] {
 
 
 /* APARTADO POPUP DE CONTACTOS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO DE PROYECTOS */
+
+/* Estilo general de la sección */
+.projects {
+    background: #e6e6e6; /* Gris claro */
+    padding: 5rem 1rem; /* Espaciado interno */
+    text-align: center; /* Centrar contenido */
+}
+
+/* Título de la sección */
+.projects-title {
+    font-size: 2.5rem; /* Tamaño grande */
+    color: #333; /* Texto oscuro */
+    margin-bottom: 2rem; /* Espaciado inferior */
+}
+
+/* Texto cuando no hay proyectos */
+.no-projects {
+    font-size: 1.5rem; /* Tamaño mediano */
+    color: #555; /* Gris oscuro */
+    opacity: 0.8; /* Ligera transparencia */
+}
+
+/* FIN APARTADO DE PROYECTOS */
+
+
+
+
+
+
+
+
+
+/* APARTADO DE SKILLS */
+
+/* Sección de Skills */
+.skills-section {
+    background: #f9f9f9; /* Fondo suave */
+    padding: 5rem 1rem; /* Espaciado interno */
+    text-align: center; /* Alinear el contenido */
+}
+
+/* Título de la sección */
+.skills-title {
+    font-size: 2.5rem; /* Texto grande */
+    color: #333; /* Color oscuro */
+    margin-bottom: 3rem; /* Espaciado inferior */
+}
+
+/* Descripción del apartado */
+.skills-description {
+    font-size: 1.2rem; /* Tamaño legible */
+    color: #555; /* Color gris oscuro */
+    max-width: 800px; /* Limitar el ancho */
+    margin: 0 auto 3rem; /* Centrar y espacio inferior */
+    line-height: 1.8; /* Mejorar legibilidad */
+}
+
+/* Categorías (Frontend, Backend, etc.) */
+.skill-category {
+    margin-bottom: 3rem; /* Espaciado entre categorías */
+}
+
+/* Título de cada categoría */
+.skill-category h3 {
+    font-size: 2rem; /* Tamaño grande */
+    color: #2E7D32; /* Verde oscuro */
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+    border-bottom: 2px solid #4CAF50; /* Línea decorativa */
+    display: inline-block; /* Ajuste de ancho */
+    padding-bottom: 0.5rem; /* Espaciado bajo el título */
+}
+
+/* Contenedor de habilidades */
+.skill-icons {
+    display: flex; /* Mostrar en fila */
+    flex-wrap: wrap; /* Ajustar en varias filas si es necesario */
+    gap: 1rem; /* Espaciado entre elementos */
+    justify-content: center; /* Centrar contenido */
+}
+
+/* Estilo de cada habilidad */
+.skill-icons span {
+    padding: 0.75rem 1.5rem; /* Ajustar tamaño */
+    background: #ecf0f1; /* Fondo claro */
+    border-radius: 0.8rem; /* Bordes redondeados */
+    font-size: 1.2rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color de texto */
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover: Efecto al pasar el cursor */
+.skill-icons span:hover {
+    background: #4CAF50; /* Verde */
+    color: white; /* Texto blanco */
+    transform: translateY(-5px); /* Levantar ligeramente */
+}
+
+/* Responsividad: Ajuste en dispositivos pequeños */
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 2rem; /* Reducir el tamaño del título */
+    }
+
+    .skills-description {
+        font-size: 1rem; /* Texto más pequeño */
+    }
+
+    .skill-category h3 {
+        font-size: 1.5rem; /* Ajustar tamaño */
+    }
+
+    .skill-icons span {
+        padding: 0.5rem 1rem; /* Reducir tamaño */
+        font-size: 1rem; /* Texto más pequeño */
+    }
+}
+
+/* FIN APARTADO DE SKILLS */
