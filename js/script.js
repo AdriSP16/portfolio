@@ -1,29 +1,44 @@
 // Función para descargar el CV
 function downloadCV() {
-    const cvPath = 'resources/CV.pdf'; // Ruta del archivo CV
+    const cvPath = 'resources/CV.pdf';
     const link = document.createElement('a');
     link.href = cvPath;
-    link.download = 'Adrian Sabino CV Actual.pdf'; // Nombre del archivo al descargar
+    link.download = 'Adrian Sabino CV Actual.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
 
-// Función para enviar email
-function sendEmail() {
-    window.location.href = 'mailto:adrsabper@gmail.com';
+// Abrir el popup
+function openContactPopup() {
+    const popup = document.getElementById('contact-popup');
+    popup.style.display = 'flex';
+    setTimeout(() => popup.classList.add('show'), 10); // Añadimos una pequeña demora para la animación
 }
 
-// Función para copiar el email al portapapeles
-function copyEmail() {
-    navigator.clipboard.writeText('adrsabper@gmail.com')
-        .then(() => alert('¡Email copiado al portapapeles!'))
-        .catch(err => console.error('Error al copiar el email:', err));
+// Cerrar el popup
+function closeContactPopup() {
+    const popup = document.getElementById('contact-popup');
+    popup.classList.remove('show');
+    setTimeout(() => popup.style.display = 'none', 300); // Esperar a que termine la animación
 }
 
-// Event Listeners para los botones
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.btn-download').addEventListener('click', downloadCV);
-    document.querySelector('.btn-send').addEventListener('click', sendEmail);
-    document.querySelector('.btn-copy').addEventListener('click', copyEmail);
+// Cerrar popup al hacer clic fuera
+window.addEventListener('click', (event) => {
+    const popup = document.getElementById('contact-popup');
+    if (event.target === popup) {
+        closeContactPopup();
+    }
 });
+
+// Enviar correo
+function sendEmail() {
+    const email = document.getElementById('emailInput').value;
+    window.location.href = `mailto:${email}`;
+}
+
+// Copiar al portapapeles
+function copyEmail() {
+    const emailInput = document.getElementById('emailInput');
+}
+
