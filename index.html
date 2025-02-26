@@ -1,58 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Adrian Sabino</title>
+    <title>Adrián Sabino - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Barra de navegación fija -->
+    <!-- Encabezado -->
     <nav class="navbar">
         <div class="container">
-            <h1>Adrian Sabino</h1>
+            <h1>AdrisabDev</h1>
         </div>
     </nav>
 
     <!-- Sección principal -->
     <section class="hero">
         <div class="container hero-content">
+
+            <!-- Imagen de perfil -->
             <div class="image-container">
-                <img src="resources/FotoCV.jpg" alt="Foto de Adrian Sabino" class="profile-pic">
+                <img src="resources/FotoCV.jpg" alt="Foto de Kevin Gorrín" class="profile-pic">
             </div>
 
+            <!-- Información personal -->
             <div class="info">
+                <p class="intro-text"><b>Hello World!, my name is</b></p>
+                <h1 class="name">Adrian Sabino.</h1>
                 <h2>I'm a <span class="highlight">Fullstack Developer!</span></h2>
-                <p>My motto is: simple, modern, functional, scalable and fast.</p>
+                <p class="motto">My motto is: simple, modern, functional, scalable and fast.</p>
 
+                <!-- Botones de acción -->
                 <div class="buttons">
-                    <button class="btn" onclick="downloadCV()">Download CV</button>
-                    <button class="btn">Contact</button>
+                    <button class="btn btn-green" onclick="downloadCV()">Download CV</button>
+                    <button class="btn btn-outline" onclick="openContactPopup()">&lt;Contact /&gt;</button>
                 </div>
 
+                <!-- Redes sociales -->
                 <div class="socials">
-                    <a href="https://www.linkedin.com/in/adrián-sabino-pérez-2b20a7278" class="icon" target="_blank">
+                    <a href="https://www.linkedin.com/in/adrián-sabino-pérez-2b20a7278" target="_blank" class="social-icon-container">
                         <img src="resources/linkedin.png" alt="LinkedIn">
                     </a>
-                    <a href="https://github.com/AdriSP16" class="icon" target="_blank">
+                    <a href="https://github.com/AdriSP16" target="_blank" class="social-icon-container">
                         <img src="resources/github.png" alt="GitHub">
                     </a>
-
-                    <div class="email-container">
-                        <span class="email">adrsabper@gmail.com</span>
-                        <button class="btn-email" onclick="sendEmail()">Enviar email 📧</button>
-                        <button class="btn-email" onclick="copyEmail()">Copiar email 📋</button>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Popup de Contacto -->
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+
+            <!-- Título centrado con el botón de cerrar a la derecha -->
+            <div class="popup-header">
+                <h1><b>Emails</b></h1>
+                <span class="close-btn" onclick="closeContactPopup()">✖</span>
+            </div>
+
+            <!-- Contenedor del correo y botones -->
+            <div class="email-container">
+                <input type="email" id="emailInput" value="adrsabper@gmail.com" readonly>
+
+                <!-- Botón de enviar con imagen -->
+                <button class="btn-icon" onclick="sendEmail()">
+                    <img src="resources/enviar.png" alt="Enviar">
+                </button>
+
+                <!-- Botón de copiar con imagen -->
+                <button class="btn-icon" onclick="copyEmail()">
+                    <img src="resources/copiar.png" alt="Copiar">
+                </button>
+            </div>
+
+            <!-- Contenedor del correo y botones -->
+            <div class="email-container">
+                <input type="email" id="emailInput" value="adr16persab@gmail.com" readonly>
+
+                <!-- Botón de enviar con imagen -->
+                <button class="btn-icon" onclick="sendEmail()">
+                    <img src="resources/enviar.png" alt="Enviar">
+                </button>
+
+                <!-- Botón de copiar con imagen -->
+                <button class="btn-icon" onclick="copyEmail()">
+                    <img src="resources/copiar.png" alt="Copiar">
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
 </body>
 
 </html>
-
