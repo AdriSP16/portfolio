@@ -32,13 +32,15 @@ window.addEventListener('click', (event) => {
 });
 
 // Enviar correo
-function sendEmail() {
-    const email = document.getElementById('emailInput').value;
+function sendEmail(emailId) {
+    const email = document.getElementById(emailId).value;
     window.location.href = `mailto:${email}`;
 }
 
 // Copiar al portapapeles
-function copyEmail() {
-    const emailInput = document.getElementById('emailInput');
+function copyEmail(emailId) {
+    const email = document.getElementById(emailId);
+    navigator.clipboard.writeText(email.value).then(() => {
+        alert(`Correo copiado: ${email.value}`);
+    });
 }
-
