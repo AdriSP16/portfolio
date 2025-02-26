@@ -4,15 +4,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
-}
-
-/* Contenedor principal */
-.container {
-    width: 100%;
-    max-width: 50vw;
-    margin: auto;
 }
 
 /* Navbar fijo */
@@ -21,113 +14,351 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
+    background: #f1f1f1;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2); /* Relativo a la fuente */
+    padding: 0.625rem 0; /* 10px -> 0.625rem */
     text-align: center;
     z-index: 1000;
 }
 
 .navbar h1 {
-    color: #27ae60;
-    font-size: 1.8rem;
+    color: #4CAF50;
+    font-size: clamp(1.5rem, 20vw, 2rem); /* Ajustable entre 1.5rem y 2rem */
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%; /* Ocupa el 90% de la pantalla */
+    max-width: 62.5rem; /* 1000px -> 62.5rem */
+    margin: 0 auto; /* Centrado */
 }
 
 /* Sección principal */
 .hero {
-    margin-top: 100px; /* Para no solapar con el navbar */
+    margin-top: 20vh; /* Ajuste basado en altura de la ventana */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh;
 }
 
 /* Contenido de la sección */
 .hero-content {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 3vw; /* Espaciado basado en el ancho de la pantalla */
 }
 
-/* Imagen de perfil en bloque rectangular con bordes suavizados */
+/* Imagen de perfil */
 .profile-pic {
-    width: 250px;
-    height: 300px;
-    border-radius: 20px;
+    width: 30vw; /* Imagen ajustable */
+    max-width: 18.75rem; /* 300px -> 18.75rem */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 1.25rem; /* 20px -> 1.25rem */
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
-/* Información */
-.info h2 {
-    font-size: 2rem;
+/* Información personal */
+.intro-text {
+    font-size: 1rem;
+    color: #555;
 }
 
+.name {
+    color: #2E7D32;
+    font-size: clamp(2rem, 5vw, 2.5rem); /* Se ajusta al ancho de pantalla */
+    margin: 0.625rem 0; /* 10px -> 0.625rem */
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 1.8rem); /* Texto adaptable */
+}
+
+.motto {
+    font-style: italic;
+    color: #777;
+}
+
+/* Destacar texto */
 .highlight {
-    color: #27ae60;
+    color: #4CAF50;
     font-weight: bold;
 }
 
 /* Botones */
 .buttons {
-    margin: 20px 0;
+    margin: 1.25rem 0; /* 20px -> 1.25rem */
 }
 
 .btn {
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 0.625rem 1.25rem; /* 10px x 20px -> 0.625rem x 1.25rem */
+    margin: 0.3125rem; /* 5px -> 0.3125rem */
     border: none;
-    border-radius: 8px;
-    background-color: #27ae60;
-    color: #fff;
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: #219150;
+/* Botón verde (¡Ahora más grande!) */
+.btn-green {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.5rem; /* Más grande: 16px x 32px -> 1rem x 2rem */
+    font-size: 1.25rem; /* Más grande: 20px -> 1.25rem */
+}
+
+.btn-green:hover {
+    background-color: #45A049;
+}
+
+/* Botón con borde (outline) */
+.btn-outline {
+    border: 0.125rem solid #4CAF50; /* 2px -> 0.125rem */
+    color: #4CAF50;
+    background: transparent;
+    padding: 0.75rem 1.5rem; /* Ligeramente más grande */
+    font-size: 1.125rem; /* Aumentado un poco */
+}
+
+.btn-outline:hover {
+    background-color: #4CAF50;
+    color: white;
 }
 
 /* Redes sociales */
 .socials {
+    margin: 1.25rem 0; /* 20px -> 1.25rem */
+    display: flex;
+    gap: 1vw; /* Espaciado relativo al ancho de pantalla */
+}
+
+/* Contenedor de los iconos */
+.social-icon-container {
+    width: 2vw; /* Tamaño adaptable */
+    min-width: 2.5rem; /* No más pequeño de 40px */
+    height: 2vw; /* Tamaño adaptable */
+    min-height: 2.5rem; /* No más pequeño de 40px */
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 20%; /* Borde redondeado */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
-/* Iconos de LinkedIn y GitHub */
-.icon img {
-    width: 30px; 
-    height: 30px;
+/* Efecto hover: el contenedor se vuelve gris claro */
+.social-icon-container:hover {
+    background-color: #f0f0f0;
 }
 
-/* Contenedor de email */
+/* Iconos dentro del contenedor (ajustar tamaño) */
+.social-icon-container img {
+    width: 1.5vw; /* Tamaño adaptable */
+    min-width: 1.5rem; /* No más pequeño de 24px */
+    height: auto; /* Mantiene proporción */
+}
+
+/* Logros */
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem; /* 10px -> 0.625rem */
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
+}
+
+.achievement {
+    background-color: #F5F5F5;
+    padding: 0.625rem 1.25rem; /* 10px x 20px -> 0.625rem x 1.25rem */
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* En columna en pantallas pequeñas */
+    }
+
+    .profile-pic {
+        width: 60vw; /* Más grande en móviles */
+    }
+
+    .social-icon-container {
+        width: 10vw; /* Ajustar tamaño de los iconos */
+        height: 10vw;
+    }
+
+    .social-icon-container img {
+        width: 5vw;
+    }
+}
+
+/* Animación para el popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease; /* Animación suave */
+}
+
+/* Mostrar popup */
+.popup.show {
+    opacity: 1; /* Hace visible el popup */
+}
+
+/* Animación para el popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease; /* Animación suave */
+}
+
+/* Mostrar popup */
+.popup.show {
+    opacity: 1; /* Hace visible el popup */
+}
+
+/* Contenido del popup */
+.popup-content {
+    position: relative; /* Para posicionar el botón de cierre */
+    background: #afafaf;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.5);
+    text-align: left; /* Alinea el contenido a la izquierda */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 1rem; /* Espaciado entre los elementos */
+}
+
+/* Estilo del encabezado del popup */
+.popup-header {
+    position: relative; /* Para posicionar el botón de cerrar */
+    text-align: center; /* Centrar el título */
+    font-size: large;
+    margin-top: -1.5vw;
+}
+
+/* Botón de cerrar */
+.close-btn {
+    position: absolute; /* Permite posicionarlo en relación con .popup-header */
+    right: 0; /* Lo alinea a la derecha */
+    top: 45%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centrar */
+    cursor: pointer;
+    font-size: 2rem; /* Tamaño del icono */
+    color: #333; /* Color del icono */
+    transition: transform 0.2s ease;
+}
+
+/* Hover para el botón de cerrar */
+.close-btn:hover {
+    transform: translateY(-50%) scale(1.2); /* Mantiene el centrado y agrega un efecto de zoom */
+    color: #ff4d4d; /* Cambia a rojo al pasar el ratón */
+}
+
+/* Título del popup */
+.popup-title {
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+    color: rgb(0, 0, 0);
+    margin: 0vw;
+}
+
+/* Contenedor del correo y botones */
 .email-container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+    align-items: center; /* Centra verticalmente */
+    gap: 0.5rem; /* Espaciado entre el correo y los botones */
 }
 
-/* Botones de enviar y copiar email */
-.email-btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #27ae60;
-    color: white;
+/* Input del correo */
+#emailInput {
+    padding: 0.75rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    width: 20rem;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Botones de ícono */
+.btn-icon {
+    background: #000000;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
     cursor: pointer;
+    margin-right: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
     transition: background 0.3s;
 }
 
-.email-btn:hover {
-    background-color: #219150;
+.btn-icon:hover {
+    background: #10b318;
 }
 
-/* Iconos dentro de los botones */
-.email-btn .icon {
-    margin-left: 10px;
+/* Contenedor del correo y botones */
+.email-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 0.5rem; /* Espaciado entre elementos */
+    margin-bottom: 1vw;
+}
+
+/* Botones de ícono (rectangulares y con fondo verde claro) */
+.btn-icon {
+    background: #028802; /* Verde claro */
+    padding: 0.55rem 2.5rem; /* Rectangular: más ancho */
+    border-radius: 0.3rem; /* Bordes ligeramente redondeados */
+    cursor: pointer;
+    margin-right: 0.5rem;
+    border: none; /* Elimina el borde */
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    transition: transform 0.2s ease, background 0.3s ease; /* Animación fluida */
+}
+
+/* Efecto hover: color más oscuro */
+.btn-icon:hover {
+    background: #45c245; /* Verde claro más oscuro */
+    transform: scale(1.05); /* Ligero aumento al pasar el ratón */
+}
+
+/* Contenedor del correo y botones */
+.email-container {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    gap: 0.5rem; /* Espaciado entre elementos */
+}
+
+/* Iconos dentro del botón (ajustados al tamaño del contenedor) */
+.btn-icon img {
+    width: 1.5rem; /* Tamaño máximo del icono */
+    height: 1.5rem; /* Mantener proporción */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
 }
