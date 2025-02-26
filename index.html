@@ -63,35 +63,35 @@
                     <span class="close-btn" onclick="closeContactPopup()">✖</span>
                 </div>
 
-                <!-- Contenedor del correo y botones -->
                 <div class="email-container">
-                    <input type="email" id="emailInput" value="adrsabper@gmail.com" readonly>
-
-                    <!-- Botón de enviar con imagen -->
-                    <button class="btn-icon" onclick="sendEmail()">
-                        <img src="resources/enviar.png" alt="Enviar">
-                    </button>
-
-                    <!-- Botón de copiar con imagen -->
-                    <button class="btn-icon" onclick="copyEmail()">
-                        <img src="resources/copiar.png" alt="Copiar">
-                    </button>
+                    <input type="email" id="emailInput1" value="adrsabper@gmail.com" readonly>
+        
+                    <!-- Botones en fila -->
+                    <div class="button-group">
+                        <button class="btn-icon" onclick="sendEmail('emailInput1')">
+                            <img src="resources/enviar.png" alt="Enviar">
+                        </button>
+                        <button class="btn-icon" onclick="copyEmail('emailInput1')">
+                            <img src="resources/copiar.png" alt="Copiar">
+                        </button>
+                    </div>
                 </div>
-
-                <!-- Contenedor del correo y botones -->
+        
+                <!-- Segundo correo con botones -->
                 <div class="email-container">
-                    <input type="email" id="emailInput" value="adr16persab@gmail.com" readonly>
-
-                    <!-- Botón de enviar con imagen -->
-                    <button class="btn-icon" onclick="sendEmail()">
-                        <img src="resources/enviar.png" alt="Enviar">
-                    </button>
-
-                    <!-- Botón de copiar con imagen -->
-                    <button class="btn-icon" onclick="copyEmail()">
-                        <img src="resources/copiar.png" alt="Copiar">
-                    </button>
+                    <input type="email" id="emailInput2" value="adr16persab@gmail.com" readonly>
+        
+                    <!-- Botones en fila -->
+                    <div class="button-group">
+                        <button class="btn-icon" onclick="sendEmail('emailInput2')">
+                            <img src="resources/enviar.png" alt="Enviar">
+                        </button>
+                        <button class="btn-icon" onclick="copyEmail('emailInput2')">
+                            <img src="resources/copiar.png" alt="Copiar">
+                        </button>
+                    </div>
                 </div>
+        
             </div>
         </div>
     </body>
