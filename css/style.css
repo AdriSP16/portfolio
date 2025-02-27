@@ -96,7 +96,7 @@ h2 {
     font-size: clamp(1.5rem, 4vw, 1.8rem); /* Texto adaptable */
 }
 
-.motto {
+.desc {
     font-style: italic;
     color: #777;
 }
@@ -393,7 +393,7 @@ input[type="email"] {
 
 /* Estilo general de la sección */
 .projects {
-    background: #e6e6e6; /* Gris claro */
+    background: #e2e2e2; /* Gris claro */
     padding: 5rem 1rem; /* Espaciado interno */
     text-align: center; /* Centrar contenido */
 }
@@ -434,7 +434,7 @@ input[type="email"] {
 
 /* APARTADO DE TECH SKILLS */
 .skills-section {
-    background: #f9f9f9; 
+    background: #ffffff; 
     padding: 5rem 1rem; 
     display: flex;
     flex-direction: column; 
@@ -625,7 +625,7 @@ input[type="email"] {
 
 /* Estilo general de la sección */
 .experience {
-    background: #e6e6e6; /* Gris claro */
+    background: #e2e2e2; /* Gris claro */
     padding: 5rem 1rem; /* Espaciado interno */
     text-align: center; /* Centrar contenido */
 }
@@ -660,42 +660,309 @@ input[type="email"] {
 
 
 
+/* APARTADO DE HARDWARE SKILLS */
 
-
-/* APARTADO DE SOFT SKILLS */
-
-/* Ajuste de estilo para etiquetas <span> */
-.skill-icons span {
-    display: inline-flex;
+/* Estilo general del contenedor de hardware */
+.hardware-skills {
+    background: #ffffff; /* Fondo blanco */
+    padding: 5rem 1rem; /* Espaciado similar a otras secciones */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 0.6rem 1.2rem;
-    background: #ecf0f1;
-    border-radius: 0.8rem;
-    font-size: 1.2rem;
+}
+
+/* Título principal */
+.hardware-skills .skills-title {
+    font-size: 2.5rem; 
+    color: #333; 
+    margin: 1.5rem 0; /* Ajuste de margen */
+    text-align: center; 
+}
+
+/* Descripción */
+.hardware-skills .skills-description {
+    font-size: 1.2rem; 
+    color: #666; 
+    max-width: 800px; 
+    margin: 0 auto 2rem; 
+    line-height: 1.8; 
+    text-align: center; 
+}
+
+/* Categoría de hardware */
+.hardware-skills .skill-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+/* Título de cada categoría */
+.hardware-skills .skill-category h3 {
+    font-size: 2rem;
+    color: #2E7D32;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.3rem;
+}
+
+/* Contenedor de habilidades */
+.hardware-skills .skill-icons {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.8rem; /* Espaciado entre elementos */
+}
+
+/* Estilo de cada habilidad (texto) */
+.hardware-skills .skill-icons span {
+    display: inline-flex; /* Para alinear el ícono y el texto */
+    align-items: center; 
+    padding: 0.6rem 1.2rem; 
+    background: #ecf0f1; 
+    border-radius: 0.8rem; 
+    font-size: 1.2rem; 
     font-weight: bold;
-    color: #333;
+    color: #333; 
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
-/* Hover para mejorar la interactividad */
-.skill-icons span:hover {
+/* Imágenes dentro del contenedor (ajustar tamaño y añadir espacio) */
+.hardware-skills .skill-icons img {
+    width: 40px; /* Ajustar el tamaño del ícono */
+    height: auto; /* Mantener proporciones */
+    margin-right: 0.8rem; /* 👉 Espacio entre el ícono y el texto */
+}
+
+/* Hover: Interacción al pasar el cursor */
+.hardware-skills .skill-icons span:hover {
     background: #4CAF50;
     color: white;
     transform: translateY(-5px);
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 
-/* Tablets y pantallas medianas */
+/* Ajustes para tablets */
 @media (max-width: 768px) {
-    .skill-icons span {
-        padding: 0.5rem 1rem; /* Compactar */
-        font-size: 1rem; /* Reducir tamaño del texto */
+    .hardware-skills .skills-title {
+        font-size: 2rem; /* Reducir tamaño del título */
+    }
+
+    .hardware-skills .skills-description {
+        font-size: 1rem; /* Texto más pequeño */
+    }
+
+    .hardware-skills .skill-category {
+        padding: 1.5rem; /* Ajuste de padding */
+    }
+
+    .hardware-skills .skill-icons span {
+        padding: 0.5rem 1rem; /* Compactar habilidades */
+        font-size: 1rem; 
+    }
+
+    .hardware-skills .skill-icons img {
+        width: 40px; /* Reducir tamaño del ícono en tablets */
     }
 }
 
-/* Dispositivos móviles */
+/* Ajustes para móviles */
 @media (max-width: 480px) {
+    .hardware-skills {
+        padding: 3rem 1rem; /* Ajustar espaciado */
+    }
+
+    .hardware-skills .skills-title {
+        font-size: 1.8rem; 
+    }
+
+    .hardware-skills .skills-description {
+        font-size: 0.9rem; 
+    }
+
+    .hardware-skills .skill-category {
+        padding: 1rem; 
+    }
+
+    .hardware-skills .skill-icons {
+        justify-content: center; /* Centrar contenido */
+    }
+
+    .hardware-skills .skill-icons span {
+        padding: 0.4rem 0.8rem; 
+        font-size: 0.9rem; 
+    }
+
+    .hardware-skills .skill-icons img {
+        width: 32px; /* Más pequeño en móviles */
+    }
+}
+
+/* FIN DEL APARTADO DE HARDWARE SKILLS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO DE SOBRE MI */
+
+.about-me-section {
+    background: #e2e2e2;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    margin: 4rem 0;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.ambitions,
+.hobbies,
+.faq {
+    margin-top: 2rem;
+}
+
+.ambitions h3,
+.hobbies h3,
+.faq h3 {
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.ambitions ul,
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ambitions li,
+.hobbies li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.ambitions li::before,
+.hobbies li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+}
+
+/* FAQ (Preguntas Frecuentes) */
+details {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+details summary {
+    font-weight: bold;
+    color: #333;
+}
+
+details p {
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+/* FIN DEL APARTADO DE SOBRE MÍ */
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO DE SOFT SKILLS */
+
+/* Fondo blanco para el apartado */
+.soft-skills {
+    background: #ffffff; /* Fondo blanco */
+    padding: 5rem 1rem; /* Mantener el espaciado */
+    display: flex; /* Asegura el centrado */
+    justify-content: center; /* Centrar el contenido */
+}
+
+/* Contenedor centrado */
+.soft-skills .container {
+    max-width: 800px; /* Limitar el ancho */
+    width: 100%;
+}
+
+/* Ajuste de estilo para las habilidades */
+.skill-icons span {
+    display: inline-flex; /* Alinear ícono y texto */
+    align-items: center; /* Centrar verticalmente */
+    padding: 0.6rem 1.2rem; 
+    background: #ecf0f1; /* Fondo claro para cada habilidad */
+    border-radius: 0.8rem; /* Bordes redondeados */
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: #333; 
+    transition: transform 0.3s ease, background 0.3s ease; 
+}
+
+/* Hover: Interacción al pasar el cursor */
+.skill-icons span:hover {
+    background: #4CAF50; /* Verde */
+    color: white; /* Texto blanco */
+    transform: translateY(-5px); /* Elevar ligeramente */
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    .skill-icons span {
+        padding: 0.5rem 1rem; /* Compactar */
+        font-size: 1rem; /* Texto más pequeño */
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+    .soft-skills {
+        padding: 3rem 1rem; /* Ajustar el espaciado */
+    }
+
     .skill-icons {
         justify-content: center; /* Centrar los elementos */
     }
@@ -707,3 +974,167 @@ input[type="email"] {
 }
 
 /* FIN DEL APARTADO DE SOFT SKILLS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO DE FORMACIÓN */
+.education-section {
+    background: #e2e2e2; 
+    padding: 5rem 1rem; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* Título principal */
+.education-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Categoría de formación */
+.education-category {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+/* Título de categoría */
+.education-category h3 {
+    font-size: 2rem;
+    color: #2E7D32;
+    border-bottom: 2px solid #4CAF50;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Item de formación */
+.education-item {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Título del curso o estudio */
+.education-item h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Entidad y Fecha */
+.education-item .issuer,
+.education-item .date {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Descripción */
+.education-item .description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+/* Iconos de habilidades */
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+/* Iconos individuales */
+.skills-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.skills-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Etiquetas de habilidades */
+.skills-icons span {
+    display: inline-block;
+    background: #ecf0f1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Texto cuando no hay reconocimientos, contribuciones o participaciones */
+.no-participation, .no-contributions, .no-awards {
+    font-size: 1.2rem;
+    color: #555;
+    opacity: 0.8;
+    text-align: center;
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 768px) {
+    .education-title {
+        font-size: 2rem;
+    }
+
+    .education-category h3 {
+        font-size: 1.5rem;
+    }
+
+    .education-item {
+        padding: 1.5rem;
+    }
+
+    .education-item h4 {
+        font-size: 1.6rem;
+    }
+
+    .skills-icons img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-title {
+        font-size: 1.8rem;
+    }
+
+    .education-item {
+        padding: 1rem;
+    }
+
+    .education-item h4 {
+        font-size: 1.4rem;
+    }
+
+    .skills-icons img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* FIN DEL APARTADO DE FORMACIÓN */
