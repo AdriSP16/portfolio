@@ -221,6 +221,9 @@ h2 {
 
 
 
+
+
+
 /* APARTADO POPUP DE CONTACTOS */
 
 /* Estilo del popup */
@@ -383,6 +386,9 @@ input[type="email"] {
 
 
 
+
+
+
 /* APARTADO DE PROYECTOS */
 
 /* Estilo general de la sección */
@@ -416,90 +422,288 @@ input[type="email"] {
 
 
 
-/* APARTADO DE SKILLS */
 
-/* Sección de Skills */
+
+
+
+
+
+
+
+
+
+/* APARTADO DE TECH SKILLS */
 .skills-section {
-    background: #f9f9f9; /* Fondo suave */
-    padding: 5rem 1rem; /* Espaciado interno */
-    text-align: center; /* Alinear el contenido */
+    background: #f9f9f9; 
+    padding: 5rem 1rem; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
 }
 
-/* Título de la sección */
+/* Título principal - Ajuste de espacio */
 .skills-title {
-    font-size: 2.5rem; /* Texto grande */
-    color: #333; /* Color oscuro */
-    margin-bottom: 3rem; /* Espaciado inferior */
+    font-size: 2.5rem; 
+    color: #333; 
+    margin: 1.5rem 0; /* Reducir margen superior e inferior */
+    text-align: center; 
 }
 
-/* Descripción del apartado */
+/* Descripción */
 .skills-description {
-    font-size: 1.2rem; /* Tamaño legible */
-    color: #555; /* Color gris oscuro */
-    max-width: 800px; /* Limitar el ancho */
-    margin: 0 auto 3rem; /* Centrar y espacio inferior */
-    line-height: 1.8; /* Mejorar legibilidad */
+    font-size: 1.2rem; 
+    color: #666; 
+    max-width: 800px; 
+    margin: 0 auto 2rem; /* Menor margen inferior */
+    line-height: 1.8; 
+    text-align: center; 
 }
 
-/* Categorías (Frontend, Backend, etc.) */
+/* Categoría de habilidades */
 .skill-category {
-    margin-bottom: 3rem; /* Espaciado entre categorías */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem; /* Reducimos el margen inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 0 2rem 2rem; /* Eliminamos el padding superior */
+}
+
+/* Eliminar márgenes adicionales en el título */
+.skill-category h3 {
+    margin-top: 1vw; /* Eliminar espacio superior */
+    margin-bottom: 1rem; /* Ajustar espacio inferior */
+}
+
+
+/* Sombra interactiva */
+.skill-category:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Título de cada categoría */
 .skill-category h3 {
-    font-size: 2rem; /* Tamaño grande */
-    color: #2E7D32; /* Verde oscuro */
-    margin-bottom: 1.5rem; /* Espaciado inferior */
-    border-bottom: 2px solid #4CAF50; /* Línea decorativa */
-    display: inline-block; /* Ajuste de ancho */
-    padding-bottom: 0.5rem; /* Espaciado bajo el título */
+    font-size: 2rem;
+    color: #2E7D32;
+    margin-bottom: 1rem; /* Reducido para acercar los íconos */
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.3rem; /* Ajuste fino */
 }
 
-/* Contenedor de habilidades */
+/* Contenedor de íconos */
 .skill-icons {
-    display: flex; /* Mostrar en fila */
-    flex-wrap: wrap; /* Ajustar en varias filas si es necesario */
-    gap: 1rem; /* Espaciado entre elementos */
-    justify-content: center; /* Centrar contenido */
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.8rem; /* Menos espacio entre íconos */
 }
 
-/* Estilo de cada habilidad */
-.skill-icons span {
-    padding: 0.75rem 1.5rem; /* Ajustar tamaño */
-    background: #ecf0f1; /* Fondo claro */
-    border-radius: 0.8rem; /* Bordes redondeados */
-    font-size: 1.2rem; /* Tamaño del texto */
-    font-weight: bold; /* Negrita */
-    color: #333; /* Color de texto */
+/* Cada habilidad (enlace) */
+.skill-icons a {
+    display: flex; 
+    align-items: center; 
+    padding: 0.6rem 1.2rem; /* Ajuste fino */
+    background: #ecf0f1; 
+    border-radius: 0.8rem; 
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #333; 
+    text-decoration: none; 
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
-/* Hover: Efecto al pasar el cursor */
-.skill-icons span:hover {
-    background: #4CAF50; /* Verde */
-    color: white; /* Texto blanco */
-    transform: translateY(-5px); /* Levantar ligeramente */
+/* Ícono dentro del enlace */
+.skill-icons a img {
+    width: 32px; 
+    height: 32px; 
+    margin-right: 0.8rem; 
 }
 
-/* Responsividad: Ajuste en dispositivos pequeños */
+/* Hover (efecto al pasar el mouse) */
+.skill-icons a:hover {
+    background: #4CAF50;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets y pantallas medianas */
 @media (max-width: 768px) {
     .skills-title {
         font-size: 2rem; /* Reducir el tamaño del título */
     }
 
     .skills-description {
-        font-size: 1rem; /* Texto más pequeño */
+        font-size: 1rem; /* Compactar texto */
+    }
+
+    .skill-category {
+        padding: 1.2rem; /* Ajustar padding */
+        margin-bottom: 1.5rem; /* Menos espacio entre categorías */
     }
 
     .skill-category h3 {
-        font-size: 1.5rem; /* Ajustar tamaño */
+        font-size: 1.5rem; /* Título más pequeño */
+        margin-bottom: 0.8rem; /* Reducir margen inferior */
     }
 
-    .skill-icons span {
-        padding: 0.5rem 1rem; /* Reducir tamaño */
-        font-size: 1rem; /* Texto más pequeño */
+    .skill-icons {
+        gap: 0.6rem; /* Ajustar espacio entre íconos */
+    }
+
+    .skill-icons a {
+        padding: 0.5rem 1rem; /* Compactar */
+        font-size: 1rem; /* Reducir tamaño del texto */
+    }
+
+    .skill-icons a img {
+        width: 28px; /* Íconos más pequeños */
+        height: 28px;
+    }
+}
+
+/* Dispositivos móviles */
+@media (max-width: 480px) {
+    .skills-section {
+        padding: 3rem 1rem; /* Menor padding global */
+    }
+
+    .skills-title {
+        font-size: 1.8rem; /* Título más pequeño */
+        margin-bottom: 1.5rem; /* Ajustar espacio */
+    }
+
+    .skills-description {
+        font-size: 0.9rem; /* Compactar */
+        margin-bottom: 1.5rem; /* Ajustar espacio */
+    }
+
+    .skill-category {
+        padding: 1rem; /* Más compacto */
+        margin-bottom: 1rem; /* Ajustar espacio */
+    }
+
+    .skill-category h3 {
+        font-size: 1.3rem; /* Título más compacto */
+        margin-bottom: 0.6rem; /* Menor separación */
+    }
+
+    .skill-icons {
+        gap: 0.5rem; /* Ajustar espacio */
+        justify-content: center; /* Centrar íconos */
+    }
+
+    .skill-icons a {
+        padding: 0.4rem 0.8rem; /* Compactar enlaces */
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
+
+    .skill-icons a img {
+        width: 24px; /* Íconos más pequeños */
+        height: 24px;
     }
 }
 
 /* FIN APARTADO DE SKILLS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO DE EXPERIENCIA */
+
+/* Estilo general de la sección */
+.experience {
+    background: #e6e6e6; /* Gris claro */
+    padding: 5rem 1rem; /* Espaciado interno */
+    text-align: center; /* Centrar contenido */
+}
+
+/* Título de la sección */
+.experience-title {
+    font-size: 2.5rem; /* Tamaño grande */
+    color: #333; /* Texto oscuro */
+    margin-bottom: 2rem; /* Espaciado inferior */
+}
+
+/* Texto cuando no hay experiencia */
+.no-experience {
+    font-size: 1.5rem; /* Tamaño mediano */
+    color: #555; /* Gris oscuro */
+    opacity: 0.8; /* Ligera transparencia */
+}
+
+/* FIN APARTADO DE EXPERIENCIA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO DE SOFT SKILLS */
+
+/* Ajuste de estilo para etiquetas <span> */
+.skill-icons span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1.2rem;
+    background: #ecf0f1;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover para mejorar la interactividad */
+.skill-icons span:hover {
+    background: #4CAF50;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .skill-icons span {
+        padding: 0.5rem 1rem; /* Compactar */
+        font-size: 1rem; /* Reducir tamaño del texto */
+    }
+}
+
+/* Dispositivos móviles */
+@media (max-width: 480px) {
+    .skill-icons {
+        justify-content: center; /* Centrar los elementos */
+    }
+
+    .skill-icons span {
+        padding: 0.4rem 0.8rem; /* Más compacto */
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
+}
+
+/* FIN DEL APARTADO DE SOFT SKILLS */
