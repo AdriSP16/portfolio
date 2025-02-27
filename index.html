@@ -2,9 +2,36 @@
 <html lang="es">
 
     <head>
+        <!-- Configuración básica -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Adrián Sabino - Portfolio</title>
+
+        <!-- SEO: Título y Descripción -->
+        <title>Adrián Sabino - Desarrollador Fullstack | Portafolio Profesional</title>
+        <meta name="description" content="Adrián Sabino es un desarrollador Fullstack especializado en crear soluciones modernas, escalables y funcionales. Descubre sus proyectos y habilidades.">
+        <meta name="keywords" content="Adrián Sabino, Desarrollador Fullstack, Programador, Portafolio, Kotlin, Dart, HTML, CSS, JavaScript, Git, Flutter, Docker">
+        <meta name="author" content="Adrián Sabino">
+
+        <!-- SEO: Indexación y Rastreabilidad -->
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph (Optimización para redes sociales) -->
+        <meta property="og:title" content="Adrián Sabino - Desarrollador Fullstack | Portafolio">
+        <meta property="og:description" content="Explora el portafolio de Adrián Sabino, un desarrollador Fullstack con experiencia en tecnologías modernas como Flutter, Docker y más.">
+        <meta property="og:image" content="resources/CV/FotoCV.jpg">
+        <meta property="og:url" content="https://tudominio.com">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card (Optimización para Twitter) -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Adrián Sabino - Desarrollador Fullstack">
+        <meta name="twitter:description" content="Portafolio profesional de Adrián Sabino, desarrollador Fullstack especializado en soluciones eficientes y escalables.">
+        <meta name="twitter:image" content="resources/CV/FotoCV.jpg">
+
+        <!-- Favicon -->
+        <link rel="icon" href="resources/Software_Icons/favicon.ico" type="image/x-icon">
+
+        <!-- CSS y JS -->
         <link rel="stylesheet" href="css/style.css">
         <script src="js/script.js" defer></script>
     </head>
@@ -18,13 +45,24 @@
             </div>
         </nav>
 
+
+
+
+
+
+
+
+
+
+
+
         <!-- Sección principal -->
         <section class="hero">
             <div class="container hero-content">
 
                 <!-- Imagen de perfil -->
                 <div class="image-container">
-                    <img src="resources/FotoCV.jpg" alt="Foto de Kevin Gorrín" class="profile-pic">
+                    <img src="resources/CV/FotoCV.jpg" alt="Foto de Adrián Sabino" class="profile-pic">
                 </div>
 
                 <!-- Información personal -->
@@ -43,10 +81,10 @@
                     <!-- Redes sociales -->
                     <div class="socials">
                         <a href="https://www.linkedin.com/in/adrián-sabino-pérez-2b20a7278" target="_blank" class="social-icon-container">
-                            <img src="resources/linkedin.png" alt="LinkedIn">
+                            <img src="resources/Software_Icons/linkedin.png" alt="LinkedIn">
                         </a>
                         <a href="https://github.com/AdriSP16" target="_blank" class="social-icon-container">
-                            <img src="resources/github.png" alt="GitHub">
+                            <img src="resources/Software_Icons/github.png" alt="GitHub">
                         </a>
                     </div>
                 </div>
@@ -54,90 +92,15 @@
         </section>
 
 
-        <!-- Sección de Proyectos -->
-        <section class="projects">
-            <div class="container">
-                <h2 class="projects-title">Proyectos</h2>
-                <p class="no-projects">Aún no hay proyectos destacables 😔</p>
-            </div>
-        </section>
 
 
-        <!-- Sección de Tech skills -->
-        <section id="skills" class="skills-section">
-            <h2 class="skills-title">Skills</h2>
-            <p class="skills-description">
-                I've been writing code since 2018, developing various personal projects while I'm self-taught in programming languages and frameworks. I've participated in national and international competitive programming events, winning a gold medal in the 2023 Provincial Contest. All of this has led me to possess the following skill stack:
-            </p>
 
-            <!-- Frontend -->
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <div class="skill-icons">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Javascript</span>
-                </div>
-            </div>
 
-            <!-- Backend -->
-            <div class="skill-category">
-                <h3>Backend</h3>
-                <div class="skill-icons">
-                    <span>PHP</span>
-                </div>
-            </div>
 
-            <!-- Programming Languages -->
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skill-icons">
-                    <span>Kotlin</span>
-                    <span>Dart</span>
-                    <span>Python</span>
-                    <span>Java</span>
-                    <span>C#</span>
-                </div>
-            </div>
 
-            <!-- Databases -->
-            <div class="skill-category">
-                <h3>Databases</h3>
-                <div class="skill-icons">
-                    <span>MongoDB</span>
-                    <span>Firebase</span>
-                    <span>MySQL</span>
-                </div>
-            </div>
 
-            <!-- Version Control -->
-            <div class="skill-category">
-                <h3>Version Control</h3>
-                <div class="skill-icons">
-                    <span>Git</span>
-                    <span>GitHub</span>
-                </div>
-            </div>
 
-            <!-- Frameworks -->
-            <div class="skill-category">
-                <h3>Frameworks</h3>
-                <div class="skill-icons">
-                    <span>Flutter</span>
-                    <span>Jetpack Compose</span>
-                </div>
-            </div>
 
-            <!-- Other tecnologies -->
-            <div class="skill-category">
-                <h3>Other tecnologies</h3>
-                <div class="skill-icons">
-                    <span>Docker</span>
-                </div>
-            </div>
-        </section>
-
-          
 
         <!-- Popup de Contacto -->
         <div id="contact-popup" class="popup">
@@ -155,10 +118,10 @@
                     <!-- Botones en fila -->
                     <div class="button-group">
                         <button class="btn-icon" onclick="sendEmail('emailInput1')">
-                            <img src="resources/enviar.png" alt="Enviar">
+                            <img src="resources/Other_Icons/enviar.png" alt="Enviar">
                         </button>
                         <button class="btn-icon" onclick="copyEmail('emailInput1')">
-                            <img src="resources/copiar.png" alt="Copiar">
+                            <img src="resources/Other_Icons/copiar.png" alt="Copiar">
                         </button>
                     </div>
                 </div>
@@ -179,5 +142,218 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Sección de Proyectos -->
+        <section class="projects">
+            <div class="container">
+                <h2 class="projects-title">Proyectos</h2>
+                <p class="no-projects">Aún no hay proyectos destacables 😔</p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Sección de Tech skills -->
+        <section id="skills" class="skills-section">
+            <h2 class="skills-title">Skills</h2>
+            <p class="skills-description">
+                A lo largo de mi formación como Desarrollador de Software Fullstack, he podido adquirir 
+                ciertas habilidades en desarrollo de Software, así como experiencia en las principales herramientas, 
+                las cuales me han permitido crear aplicaciones móviles y multiplataforma escalables, flexibles, sólidas 
+                y totalmente funcionales. A continuación, se pueden observar las habilidades tecnológicas que me han 
+                permitido llegar hasta donde estoy actualmente:
+            </p>
+
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-icons">
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+                        <img src="resources/Software_Icons/HTML5.png" alt="HTML Logo">HTML 5
+                    </a>
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+                        <img src="resources/Software_Icons/CSS3.png" alt="CSS Logo">CSS 3
+                    </a>
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+                        <img src="resources/Software_Icons/JavaScript.png" alt="JavaScript Logo">JavaScript
+                    </a>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-icons">
+                    <a href="https://www.php.net/" target="_blank">
+                        <img src="resources/Software_Icons/PHP.png" alt="PHP Logo">PHP
+                    </a>
+                </div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-icons">
+                    <a href="https://kotlinlang.org/" target="_blank">
+                        <img src="resources/Software_Icons/Kotlin.png" alt="Kotlin Logo">Kotlin
+                    </a>
+                    <a href="https://dart.dev/" target="_blank">
+                        <img src="resources/Software_Icons/Dart.png" alt="Dart Logo">Dart
+                    </a>
+                    <a href="https://www.python.org/" target="_blank">
+                        <img src="resources/Software_Icons/Python.png" alt="Python Logo">Python
+                    </a>
+                    <a href="https://www.java.com/" target="_blank">
+                        <img src="resources/Software_Icons/Java.png" alt="Java Logo">Java
+                    </a>
+                    <a href="https://learn.microsoft.com/es-es/dotnet/csharp/" target="_blank">
+                        <img src="resources/Software_Icons/CShard.png" alt="C# Logo">C#
+                    </a>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skill-icons">
+                    <a href="https://www.mongodb.com/" target="_blank">
+                        <img src="resources/Software_Icons/MongoDB.png" alt="MongoDB Logo">MongoDB
+                    </a>
+                    <a href="https://firebase.google.com/" target="_blank">
+                        <img src="resources/Software_Icons/Firebase.png" alt="Firebase Logo">Firebase
+                    </a>
+                    <a href="https://www.mysql.com/" target="_blank">
+                        <img src="resources/Software_Icons/MySQL.png" alt="MySQL Logo">MySQL
+                    </a>
+                </div>
+            </div>
+
+            <!-- Version Control -->
+            <div class="skill-category">
+                <h3>Version Control</h3>
+                <div class="skill-icons">
+                    <a href="https://git-scm.com/" target="_blank">
+                        <img src="resources/Software_Icons/Git.png" alt="Git Logo">Git
+                    </a>
+                    <a href="https://github.com/" target="_blank">
+                        <img src="resources/Software_Icons/github.png" alt="GitHub Logo">GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <div class="skill-icons">
+                    <a href="https://flutter.dev/" target="_blank">
+                        <img src="resources/Software_Icons/Flutter.png" alt="Flutter Logo">Flutter
+                    </a>
+                    <a href="https://developer.android.com/jetpack/compose" target="_blank">
+                        <img src="resources/Software_Icons/JetpackCompose.png" alt="Jetpack Compose Logo">Jetpack Compose
+                    </a>
+                </div>
+            </div>
+
+            <!-- Other Technologies -->
+            <div class="skill-category">
+                <h3>Other Technologies</h3>
+                <div class="skill-icons">
+                    <a href="https://www.docker.com/" target="_blank">
+                        <img src="resources/Software_Icons/Docker.png" alt="Docker Logo">Docker
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- Sección de Experiencia Laboral -->
+        <section class="experience">
+            <div class="container">
+                <h2 class="experience-title">Experiencia Laboral</h2>
+                <p class="no-experience">
+                    Todavía no poseo experiencia, pero mientras tanto sigo desarrollando proyectos personales :D
+                </p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Sección de Soft Skills -->
+        <section id="soft-skills" class="skills-section">
+            <h2 class="skills-title">Soft Skills</h2>
+            <p class="skills-description">
+                A lo largo de mi experiencia, he desarrollado diversas habilidades interpersonales, metódicas e intrapersonales que complementan mis conocimientos técnicos. Estas competencias me permiten abordar problemas con eficacia, colaborar en equipo y gestionar proyectos con organización y proactividad.
+            </p>
+
+            <!-- Habilidades Interpersonales -->
+            <div class="skill-category">
+                <h3>Habilidades Interpersonales</h3>
+                <div class="skill-icons">
+                    <span>Trabajo en equipo</span>
+                    <span>Escucha activa</span>
+                </div>
+            </div>
+
+            <!-- Habilidades Metódicas -->
+            <div class="skill-category">
+                <h3>Habilidades Metódicas</h3>
+                <div class="skill-icons">
+                    <span>Organización</span>
+                    <span>Resolución de problemas</span>
+                    <span>Atención al detalle</span>
+                </div>
+            </div>
+
+            <!-- Competencias Intrapersonales -->
+            <div class="skill-category">
+                <h3>Competencias Intrapersonales</h3>
+                <div class="skill-icons">
+                    <span>Adaptabilidad</span>
+                    <span>Autodisciplina</span>
+                    <span>Proactividad</span>
+                    <span>Aprendizaje continuo</span>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
