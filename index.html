@@ -1,95 +1,377 @@
-<!DOCTYPE html>
-<html lang="es">
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
 
-    <head>
-        <!-- Configuración básica -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- SEO: Título y Descripción -->
-        <title>Adrián Sabino - Desarrollador Fullstack | Portafolio Profesional</title>
-        <meta name="description" content="Adrián Sabino es un desarrollador Fullstack especializado en crear soluciones modernas, escalables y funcionales. Descubre sus proyectos y habilidades.">
-        <meta name="keywords" content="Adrián Sabino, Desarrollador Fullstack, Programador, Portafolio, Kotlin, Dart, HTML, CSS, JavaScript, Git, Flutter, Docker">
-        <meta name="author" content="Adrián Sabino">
+/* APARTADO NAVBAR */
 
-        <!-- SEO: Indexación y Rastreabilidad -->
-        <meta name="robots" content="index, follow">
+/* Navbar fijo */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f1f1f1;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2); /* Relativo a la fuente */
+    padding: 0.625rem 0; /* 10px -> 0.625rem */
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    color: #4CAF50;
+    font-size: clamp(1.5rem, 20vw, 2rem); /* Ajustable entre 1.5rem y 2rem */
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%; /* Ocupa el 90% de la pantalla */
+    max-width: 62.5rem; /* 1000px -> 62.5rem */
+    margin: 0 auto; /* Centrado */
+}
+
+
+/* FIN APARTADO NAVBAR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO INTRODUCCIÓN */
+
+/* Sección principal */
+.hero {
+    margin-top: 20vh; /* Ajuste basado en altura de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenido de la sección */
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3vw; /* Espaciado basado en el ancho de la pantalla */
+    margin-bottom: 4vw;
+}
+
+/* Imagen de perfil */
+.profile-pic {
+    width: 30vw; /* Imagen ajustable */
+    max-width: 18.75rem; /* 300px -> 18.75rem */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 1.25rem; /* 20px -> 1.25rem */
+    object-fit: cover;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* Información personal */
+.intro-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.name {
+    color: #2E7D32;
+    font-size: clamp(2rem, 5vw, 2.5rem); /* Se ajusta al ancho de pantalla */
+    margin: 0.625rem 0; /* 10px -> 0.625rem */
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 1.8rem); /* Texto adaptable */
+}
+
+.desc {
+    font-style: italic;
+    color: #777;
+}
+
+/* Destacar texto */
+.highlight {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Botones */
+.buttons {
+    margin: 1.25rem 0; /* 20px -> 1.25rem */
+}
+
+.btn {
+    padding: 0.625rem 1.25rem; /* 10px x 20px -> 0.625rem x 1.25rem */
+    margin: 0.3125rem; /* 5px -> 0.3125rem */
+    border: none;
+    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-        <!-- Open Graph (Optimización para redes sociales) -->
-        <meta property="og:title" content="Adrián Sabino - Desarrollador Fullstack | Portafolio">
-        <meta property="og:description" content="Explora el portafolio de Adrián Sabino, un desarrollador Fullstack con experiencia en tecnologías modernas como Flutter, Docker y más.">
-        <meta property="og:image" content="resources/CV/FotoCV.jpg">
-        <meta property="og:url" content="https://tudominio.com">
-        <meta property="og:type" content="website">
+/* Botón verde (¡Ahora más grande!) */
+.btn-green {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.5rem; /* Más grande: 16px x 32px -> 1rem x 2rem */
+    font-size: 1.25rem; /* Más grande: 20px -> 1.25rem */
+}
 
-        <!-- Twitter Card (Optimización para Twitter) -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Adrián Sabino - Desarrollador Fullstack">
-        <meta name="twitter:description" content="Portafolio profesional de Adrián Sabino, desarrollador Fullstack especializado en soluciones eficientes y escalables.">
-        <meta name="twitter:image" content="resources/CV/FotoCV.jpg">
+.btn-green:hover {
+    background-color: #45A049;
+}
 
-        <!-- Favicon -->
-        <link rel="icon" href="resources/Software_Icons/favicon.ico" type="image/x-icon">
+/* Botón con borde (outline) */
+.btn-outline {
+    border: 0.125rem solid #4CAF50; /* 2px -> 0.125rem */
+    color: #4CAF50;
+    background: transparent;
+    padding: 0.75rem 1.5rem; /* Ligeramente más grande */
+    font-size: 1.125rem; /* Aumentado un poco */
+}
 
-        <!-- CSS y JS -->
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js" defer></script>
-    </head>
+.btn-outline:hover {
+    background-color: #4CAF50;
+    color: white;
+}
 
-    <body>
+/* Redes sociales */
+.socials {
+    margin: 1.25rem 0; /* 20px -> 1.25rem */
+    display: flex;
+    gap: 1vw; /* Espaciado relativo al ancho de pantalla */
+}
 
-        <!-- Encabezado -->
-        <nav class="navbar">
-            <div class="container">
-                <h1>AdrisabDev</h1>
-            </div>
-        </nav>
+/* Contenedor de los iconos */
+.social-icon-container {
+    width: 2vw; /* Tamaño adaptable */
+    min-width: 2.5rem; /* No más pequeño de 40px */
+    height: 2vw; /* Tamaño adaptable */
+    min-height: 2.5rem; /* No más pequeño de 40px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 20%; /* Borde redondeado */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover: el contenedor se vuelve gris claro */
+.social-icon-container:hover {
+    background-color: #f0f0f0;
+}
+
+/* Iconos dentro del contenedor (ajustar tamaño) */
+.social-icon-container img {
+    width: 1.5vw; /* Tamaño adaptable */
+    min-width: 1.5rem; /* No más pequeño de 24px */
+    height: auto; /* Mantiene proporción */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* En columna en pantallas pequeñas */
+    }
+
+    .profile-pic {
+        width: 60vw; /* Más grande en móviles */
+    }
+
+    .social-icon-container {
+        width: 10vw; /* Ajustar tamaño de los iconos */
+        height: 10vw;
+    }
+
+    .social-icon-container img {
+        width: 5vw;
+    }
+}
+
+
+/* FIN APARTADO INTRODUCCIÓN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO POPUP DE CONTACTOS */
+
+/* Estilo del popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar el popup */
+.popup.show {
+    opacity: 1;
+}
+
+/* Contenido del popup */
+.popup-content {
+    position: relative;
+    background: #afafaf;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column; /* Apilar verticalmente */
+    gap: 1rem; /* Espaciado entre elementos */
+    width: 90%;
+    max-width: 500px; /* Ancho máximo */
+}
+
+/* Encabezado del popup */
+.popup-header {
+    display: flex;
+    justify-content: space-between; /* Título centrado, botón a la derecha */
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Botón de cerrar */
+.close-btn {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+    color: #ff4d4d;
+}
+
+/* Contenedor del correo */
+.email-container {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    gap: 0.5rem; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Permitir ajuste si no cabe */
+}
 
+/* Botones siempre en la misma fila */
+.button-group {
+    display: flex; /* Mantener en fila */
+    gap: 0.5rem; /* Espacio entre botones */
+}
 
+/* Input del correo */
+input[type="email"] {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    color: #000000;
+    font-size: 1rem;
+    flex-grow: 1; /* Permite que el input use el espacio restante */
+    min-width: 0; /* Evitar que el input desborde */
+}
 
+/* Botones de ícono */
+.btn-icon {
+    background: #028802;
+    padding: 0.55rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
 
+/* Iconos dentro de los botones */
+.btn-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain; /* Ajuste de imagen */
+}
 
+/* Hover para los botones */
+.btn-icon:hover {
+    background: #45c245;
+    transform: scale(1.05);
+}
 
+/* RESPONSIVE DESIGN */
 
+/* Adaptar popup en dispositivos pequeños */
+@media (max-width: 480px) {
+    .popup-content {
+        padding: 1rem;
+        width: 95%;
+    }
 
+    .popup-header h1 {
+        font-size: 1.2rem;
+    }
 
+    .close-btn {
+        font-size: 1.5rem;
+    }
 
+    input[type="email"] {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
 
+    .btn-icon {
+        padding: 0.4rem 1rem;
+    }
 
-        <!-- Sección principal -->
-        <section class="hero">
-            <div class="container hero-content">
+    .btn-icon img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
 
-                <!-- Imagen de perfil -->
-                <div class="image-container">
-                    <img src="resources/CV/FotoCV.jpg" alt="Foto de Adrián Sabino" class="profile-pic">
-                </div>
 
-                <!-- Información personal -->
-                <div class="info">
-                    <p class="intro-text"><b>Hello World!, my name is</b></p>
-                    <h1 class="name">Adrian Sabino.</h1>
-                    <h2>I'm a <span class="highlight">Fullstack Developer!</span></h2>
-                    <p class="desc">Fullstack & mobile developer by day, cybersecurity analyst by night.</p>
 
-                    <!-- Botones de acción -->
-                    <div class="buttons">
-                        <button class="btn btn-green" onclick="downloadCV()">Download CV</button>
-                        <button class="btn btn-outline" onclick="openContactPopup()">&lt; Contacts /&gt;</button>
-                    </div>
+/* APARTADO POPUP DE CONTACTOS */
 
-                    <!-- Redes sociales -->
-                    <div class="socials">
-                        <a href="https://www.linkedin.com/in/adrián-sabino-pérez-2b20a7278" target="_blank" class="social-icon-container">
-                            <img src="resources/Software_Icons/linkedin.png" alt="LinkedIn">
-                        </a>
-                        <a href="https://github.com/AdriSP16" target="_blank" class="social-icon-container">
-                            <img src="resources/Software_Icons/github.png" alt="GitHub">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
 
 
@@ -102,192 +384,45 @@
 
 
 
-        <!-- Popup de Contacto -->
-        <div id="contact-popup" class="popup">
-            <div class="popup-content">
 
-                <!-- Título centrado con el botón de cerrar a la derecha -->
-                <div class="popup-header">
-                    <h1><b>Emails</b></h1>
-                    <span class="close-btn" onclick="closeContactPopup()">✖</span>
-                </div>
 
-                <div class="email-container">
-                    <input type="email" id="emailInput1" value="adrsabper@gmail.com" readonly>
-        
-                    <!-- Botones en fila -->
-                    <div class="button-group">
-                        <button class="btn-icon" onclick="sendEmail('emailInput1')">
-                            <img src="resources/Other_Icons/enviar.png" alt="Enviar">
-                        </button>
-                        <button class="btn-icon" onclick="copyEmail('emailInput1')">
-                            <img src="resources/Other_Icons/copiar.png" alt="Copiar">
-                        </button>
-                    </div>
-                </div>
-        
-                <!-- Segundo correo con botones -->
-                <div class="email-container">
-                    <input type="email" id="emailInput2" value="adr16persab@gmail.com" readonly>
-        
-                    <!-- Botones en fila -->
-                    <div class="button-group">
-                        <button class="btn-icon" onclick="sendEmail('emailInput2')">
-                            <img src="resources/Other_Icons/enviar.png" alt="Enviar">
-                        </button>
-                        <button class="btn-icon" onclick="copyEmail('emailInput2')">
-                            <img src="resources/Other_Icons/copiar.png" alt="Copiar">
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 
+/* APARTADO DE PROYECTOS */
 
+/* Estilo general de la sección */
+.projects {
+    background: #e2e2e2; /* Gris claro */
+    padding: 5rem 1rem; /* Espaciado interno */
+    text-align: center; /* Centrar contenido */
+}
 
+/* Título de la sección */
+.projects-title {
+    font-size: 2.5rem; /* Tamaño grande */
+    color: #333; /* Texto oscuro */
+    margin-bottom: 2rem; /* Espaciado inferior */
+}
 
+/* Texto cuando no hay proyectos */
+.no-projects {
+    font-size: 1.5rem; /* Tamaño mediano */
+    color: #555; /* Gris oscuro */
+    opacity: 0.8; /* Ligera transparencia */
+}
 
+/* FIN APARTADO DE PROYECTOS */
 
 
-
 
 
 
-
-
-        <!-- Sección de Proyectos -->
-        <section class="projects">
-            <div class="container">
-                <h2 class="projects-title">Proyectos</h2>
-                <p class="no-projects">Aún no hay proyectos destacables 😔</p>
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Sección de Tech skills -->
-        <section id="skills" class="skills-section">
-            <h2 class="skills-title">Tech Skills</h2>
-            <p class="skills-description">
-                A lo largo de mi formación como Desarrollador de Software Fullstack, he podido adquirir 
-                ciertas habilidades en desarrollo de Software, así como experiencia en las principales herramientas, 
-                las cuales me han permitido crear aplicaciones móviles y multiplataforma escalables, flexibles, sólidas 
-                y totalmente funcionales. A continuación, se pueden observar las habilidades tecnológicas que me han 
-                permitido llegar hasta donde estoy actualmente:
-            </p>
-
-            <!-- Frontend -->
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <div class="skill-icons">
-                    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
-                        <img src="resources/Software_Icons/HTML5.png" alt="HTML Logo">HTML 5
-                    </a>
-                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-                        <img src="resources/Software_Icons/CSS3.png" alt="CSS Logo">CSS 3
-                    </a>
-                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
-                        <img src="resources/Software_Icons/JavaScript.png" alt="JavaScript Logo">JavaScript
-                    </a>
-                </div>
-            </div>
-
-            <!-- Backend -->
-            <div class="skill-category">
-                <h3>Backend</h3>
-                <div class="skill-icons">
-                    <a href="https://www.php.net/" target="_blank">
-                        <img src="resources/Software_Icons/PHP.png" alt="PHP Logo">PHP
-                    </a>
-                </div>
-            </div>
 
-            <!-- Programming Languages -->
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skill-icons">
-                    <a href="https://kotlinlang.org/" target="_blank">
-                        <img src="resources/Software_Icons/Kotlin.png" alt="Kotlin Logo">Kotlin
-                    </a>
-                    <a href="https://dart.dev/" target="_blank">
-                        <img src="resources/Software_Icons/Dart.png" alt="Dart Logo">Dart
-                    </a>
-                    <a href="https://www.python.org/" target="_blank">
-                        <img src="resources/Software_Icons/Python.png" alt="Python Logo">Python
-                    </a>
-                    <a href="https://www.java.com/" target="_blank">
-                        <img src="resources/Software_Icons/Java.png" alt="Java Logo">Java
-                    </a>
-                    <a href="https://learn.microsoft.com/es-es/dotnet/csharp/" target="_blank">
-                        <img src="resources/Software_Icons/CShard.png" alt="C# Logo">C#
-                    </a>
-                </div>
-            </div>
 
-            <!-- Databases -->
-            <div class="skill-category">
-                <h3>Databases</h3>
-                <div class="skill-icons">
-                    <a href="https://www.mongodb.com/" target="_blank">
-                        <img src="resources/Software_Icons/MongoDB.png" alt="MongoDB Logo">MongoDB
-                    </a>
-                    <a href="https://firebase.google.com/" target="_blank">
-                        <img src="resources/Software_Icons/Firebase.png" alt="Firebase Logo">Firebase
-                    </a>
-                    <a href="https://www.mysql.com/" target="_blank">
-                        <img src="resources/Software_Icons/MySQL.png" alt="MySQL Logo">MySQL
-                    </a>
-                </div>
-            </div>
 
-            <!-- Version Control -->
-            <div class="skill-category">
-                <h3>Version Control</h3>
-                <div class="skill-icons">
-                    <a href="https://git-scm.com/" target="_blank">
-                        <img src="resources/Software_Icons/Git.png" alt="Git Logo">Git
-                    </a>
-                    <a href="https://github.com/" target="_blank">
-                        <img src="resources/Software_Icons/github.png" alt="GitHub Logo">GitHub
-                    </a>
-                </div>
-            </div>
 
-            <!-- Frameworks -->
-            <div class="skill-category">
-                <h3>Frameworks</h3>
-                <div class="skill-icons">
-                    <a href="https://flutter.dev/" target="_blank">
-                        <img src="resources/Software_Icons/Flutter.png" alt="Flutter Logo">Flutter
-                    </a>
-                    <a href="https://developer.android.com/jetpack/compose" target="_blank">
-                        <img src="resources/Software_Icons/JetpackCompose.png" alt="Jetpack Compose Logo">Jetpack Compose
-                    </a>
-                </div>
-            </div>
 
-            <!-- Other Technologies -->
-            <div class="skill-category">
-                <h3>Other Technologies</h3>
-                <div class="skill-icons">
-                    <a href="https://www.docker.com/" target="_blank">
-                        <img src="resources/Software_Icons/Docker.png" alt="Docker Logo">Docker
-                    </a>
-                </div>
-            </div>
-        </section>
 
 
 
@@ -297,124 +432,185 @@
 
 
 
+/* APARTADO DE TECH SKILLS */
+.skills-section {
+    background: #ffffff; 
+    padding: 5rem 1rem; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
 
-        <!-- Sección de Experiencia Laboral -->
-        <section class="experience">
-            <div class="container">
-                <h2 class="experience-title">Experiencia Laboral</h2>
-                <p class="no-experience">
-                    Todavía no poseo experiencia, pero mientras tanto sigo desarrollando proyectos personales :D
-                </p>
-            </div>
-        </section>
+/* Título principal - Ajuste de espacio */
+.skills-title {
+    font-size: 2.5rem; 
+    color: #333; 
+    margin: 1.5rem 0; /* Reducir margen superior e inferior */
+    text-align: center; 
+}
 
+/* Descripción */
+.skills-description {
+    font-size: 1.2rem; 
+    color: #666; 
+    max-width: 800px; 
+    margin: 0 auto 2rem; /* Menor margen inferior */
+    line-height: 1.8; 
+    text-align: center; 
+}
 
+/* Categoría de habilidades */
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem; /* Reducimos el margen inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 0 2rem 2rem; /* Eliminamos el padding superior */
+}
 
+/* Eliminar márgenes adicionales en el título */
+.skill-category h3 {
+    margin-top: 1vw; /* Eliminar espacio superior */
+    margin-bottom: 1rem; /* Ajustar espacio inferior */
+}
 
 
+/* Sombra interactiva */
+.skill-category:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
+/* Título de cada categoría */
+.skill-category h3 {
+    font-size: 2rem;
+    color: #2E7D32;
+    margin-bottom: 1rem; /* Reducido para acercar los íconos */
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.3rem; /* Ajuste fino */
+}
 
+/* Contenedor de íconos */
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.8rem; /* Menos espacio entre íconos */
+}
 
+/* Cada habilidad (enlace) */
+.skill-icons a {
+    display: flex; 
+    align-items: center; 
+    padding: 0.6rem 1.2rem; /* Ajuste fino */
+    background: #ecf0f1; 
+    border-radius: 0.8rem; 
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #333; 
+    text-decoration: none; 
+    transition: transform 0.3s ease, background 0.3s ease;
+}
 
+/* Ícono dentro del enlace */
+.skill-icons a img {
+    width: 32px; 
+    height: 32px; 
+    margin-right: 0.8rem; 
+}
 
-        <!-- Sección de Hardware Skills -->
-        <section id="hardware-skills" class="hardware-skills">
-            <div class="container">
-                <h2 class="skills-title">Hardware Skills</h2>
-                <p class="skills-description">
-                    Además de mi experiencia en desarrollo de software y ciberseguridad, cuento con conocimientos en hardware, montaje de equipos, diagnóstico de fallos y dispositivos embebidos como Raspberry Pi y Arduino.
-                </p>
+/* Hover (efecto al pasar el mouse) */
+.skill-icons a:hover {
+    background: #4CAF50;
+    color: white;
+    transform: translateY(-5px);
+}
 
-                <!-- Conocimientos de Hardware -->
-                <div class="skill-category">
-                    <h3>Mantenimiento y Diagnóstico</h3>
-                    <div class="skill-icons">
-                        <span>Montaje de PCs</span>
-                        <span>Diagnóstico de Fallos</span>
-                        <span>Optimización de Hardware</span>
-                    </div>
-                </div>
+/* RESPONSIVE DESIGN */
 
-                <!-- Dispositivos Embebidos -->
-                <div class="skill-category">
-                    <h3>Dispositivos Embebidos</h3>
-                    <div class="skill-icons">
-                        <span>
-                            <img src="resources/Hardware_Icons/arduino.png" alt="Arduino" title="Arduino"> Arduino
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 2rem; /* Reducir el tamaño del título */
+    }
 
+    .skills-description {
+        font-size: 1rem; /* Compactar texto */
+    }
 
+    .skill-category {
+        padding: 1.2rem; /* Ajustar padding */
+        margin-bottom: 1.5rem; /* Menos espacio entre categorías */
+    }
 
+    .skill-category h3 {
+        font-size: 1.5rem; /* Título más pequeño */
+        margin-bottom: 0.8rem; /* Reducir margen inferior */
+    }
 
+    .skill-icons {
+        gap: 0.6rem; /* Ajustar espacio entre íconos */
+    }
 
+    .skill-icons a {
+        padding: 0.5rem 1rem; /* Compactar */
+        font-size: 1rem; /* Reducir tamaño del texto */
+    }
 
+    .skill-icons a img {
+        width: 28px; /* Íconos más pequeños */
+        height: 28px;
+    }
+}
 
+/* Dispositivos móviles */
+@media (max-width: 480px) {
+    .skills-section {
+        padding: 3rem 1rem; /* Menor padding global */
+    }
 
+    .skills-title {
+        font-size: 1.8rem; /* Título más pequeño */
+        margin-bottom: 1.5rem; /* Ajustar espacio */
+    }
 
+    .skills-description {
+        font-size: 0.9rem; /* Compactar */
+        margin-bottom: 1.5rem; /* Ajustar espacio */
+    }
 
+    .skill-category {
+        padding: 1rem; /* Más compacto */
+        margin-bottom: 1rem; /* Ajustar espacio */
+    }
 
+    .skill-category h3 {
+        font-size: 1.3rem; /* Título más compacto */
+        margin-bottom: 0.6rem; /* Menor separación */
+    }
 
-        <!-- Sección Sobre Mí -->
-        <section id="about-me" class="about-me-section">
-            <div class="container">
-                <h2 class="about-title">Sobre Mí</h2>
+    .skill-icons {
+        gap: 0.5rem; /* Ajustar espacio */
+        justify-content: center; /* Centrar íconos */
+    }
 
-                <!-- Introducción Personal -->
-                <div class="about-content">
-                    <p>
-                        ¡Hola! Soy <strong>Adrián Sabino</strong>, un apasionado <strong>Desarrollador Fullstack & Móvil</strong> con un enfoque en la creación de aplicaciones modernas, escalables y funcionales. Además, me desempeño como <strong>Analista Junior en Ciberseguridad</strong>, donde me especializo en la protección de sistemas y la seguridad de la información.
-                    </p>
-                    <p>
-                        Mi trayectoria combina la creatividad del desarrollo de software con la rigurosidad del análisis de ciberseguridad. Me encanta enfrentar nuevos retos, aprender constantemente y explorar nuevas tecnologías para mejorar mis habilidades.
-                    </p>
-                </div>
+    .skill-icons a {
+        padding: 0.4rem 0.8rem; /* Compactar enlaces */
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
 
-                <!-- Ambiciones y Objetivos -->
-                <div class="ambitions">
-                    <h3>🎯 Mis Ambiciones</h3>
-                    <ul>
-                        <li>Convertirme en un <strong>referente en desarrollo fullstack</strong> y en <strong>ciberseguridad ofensiva</strong>.</li>
-                        <li>Contribuir a proyectos open-source que mejoren la seguridad y accesibilidad digital.</li>
-                        <li>Seguir ampliando mis conocimientos en áreas como <strong>DevSecOps</strong> y <strong>Cloud Security</strong>.</li>
-                    </ul>
-                </div>
+    .skill-icons a img {
+        width: 24px; /* Íconos más pequeños */
+        height: 24px;
+    }
+}
 
-                <!-- Aficiones e Intereses -->
-                <div class="hobbies">
-                    <h3>🎨 Más Allá del Código</h3>
-                    <p>Cuando no estoy programando o explorando vulnerabilidades, disfruto de:</p>
-                    <ul>
-                        <li>🔍 Resolver retos de <strong>CTF (Capture The Flag)</strong> en ciberseguridad.</li>
-                        <li>📚 Aprender sobre tecnologías emergentes y desarrollo seguro.</li>
-                        <li>🎮 Jugar videojuegos estratégicos y de simulación.</li>
-                        <li>🚴‍♂️ Practicar deporte al aire libre para despejar la mente.</li>
-                    </ul>
-                </div>
+/* FIN APARTADO DE SKILLS */
 
-                <!-- Bloque de Preguntas Frecuentes -->
-                <div class="faq">
-                    <h3>❔ Preguntas Frecuentes</h3>
-                    <details>
-                        <summary><strong>¿Qué tecnologías dominas actualmente?</strong></summary>
-                        <p>HTML5, CSS3, JavaScript, PHP, Kotlin, Dart, Python, Java, C#, MongoDB, Firebase, MySQL, Docker, Git, Flutter y más.</p>
-                    </details>
 
-                    <details>
-                        <summary><strong>¿Cuál es tu filosofía de trabajo?</strong></summary>
-                        <p>Mi enfoque es simple: escribir código limpio, seguro y eficiente. Busco siempre soluciones escalables y me aseguro de priorizar la experiencia del usuario y la seguridad de la información.</p>
-                    </details>
 
-                    <details>
-                        <summary><strong>¿Cómo puedo contactarte?</strong></summary>
-                        <p>Puedes contactarme a través de mis redes sociales o enviarme un correo. ¡Siempre estoy abierto a nuevas oportunidades y colaboraciones!</p>
-                    </details>
-                </div>
-            </div>
-        </section>
 
 
 
@@ -425,49 +621,32 @@
 
 
 
+/* APARTADO DE EXPERIENCIA */
 
+/* Estilo general de la sección */
+.experience {
+    background: #e2e2e2; /* Gris claro */
+    padding: 5rem 1rem; /* Espaciado interno */
+    text-align: center; /* Centrar contenido */
+}
 
+/* Título de la sección */
+.experience-title {
+    font-size: 2.5rem; /* Tamaño grande */
+    color: #333; /* Texto oscuro */
+    margin-bottom: 2rem; /* Espaciado inferior */
+}
 
-        <!-- Sección de Soft Skills -->
-        <section id="soft-skills" class="soft-skills">
-            <div class="container">
-                <h2 class="skills-title">Soft Skills</h2>
-                <p class="skills-description">
-                    A lo largo de mi experiencia, he desarrollado diversas habilidades interpersonales, metódicas e intrapersonales que complementan mis conocimientos técnicos. Estas competencias me permiten abordar problemas con eficacia, colaborar en equipo y gestionar proyectos con organización y proactividad.
-                </p>
+/* Texto cuando no hay experiencia */
+.no-experience {
+    font-size: 1.5rem; /* Tamaño mediano */
+    color: #555; /* Gris oscuro */
+    opacity: 0.8; /* Ligera transparencia */
+}
 
-                <!-- Habilidades Interpersonales -->
-                <div class="skill-category">
-                    <h3>Habilidades Interpersonales</h3>
-                    <div class="skill-icons">
-                        <span>Trabajo en equipo</span>
-                        <span>Escucha activa</span>
-                    </div>
-                </div>
+/* FIN APARTADO DE EXPERIENCIA */
 
-                <!-- Habilidades Metódicas -->
-                <div class="skill-category">
-                    <h3>Habilidades Metódicas</h3>
-                    <div class="skill-icons">
-                        <span>Organización</span>
-                        <span>Resolución de problemas</span>
-                        <span>Atención al detalle</span>
-                    </div>
-                </div>
 
-                <!-- Competencias Intrapersonales -->
-                <div class="skill-category">
-                    <h3>Competencias Intrapersonales</h3>
-                    <div class="skill-icons">
-                        <span>Adaptabilidad</span>
-                        <span>Autodisciplina</span>
-                        <span>Proactividad</span>
-                        <span>Aprendizaje continuo</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
 
 
 
@@ -481,89 +660,481 @@
 
 
 
+/* APARTADO DE HARDWARE SKILLS */
 
+/* Estilo general del contenedor de hardware */
+.hardware-skills {
+    background: #ffffff; /* Fondo blanco */
+    padding: 5rem 1rem; /* Espaciado similar a otras secciones */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        <!-- Sección de Formación -->
-        <section id="education" class="education-section">
-            <div class="container">
-                <h2 class="education-title">Mi Formación</h2>
+/* Título principal */
+.hardware-skills .skills-title {
+    font-size: 2.5rem; 
+    color: #333; 
+    margin: 1.5rem 0; /* Ajuste de margen */
+    text-align: center; 
+}
 
-                <!-- Estudios Reglados -->
-                <div class="education-category">
-                    <h3>📚 Estudios Reglados</h3>
+/* Descripción */
+.hardware-skills .skills-description {
+    font-size: 1.2rem; 
+    color: #666; 
+    max-width: 800px; 
+    margin: 0 auto 2rem; 
+    line-height: 1.8; 
+    text-align: center; 
+}
 
-                    <!-- Bachillerato en Ciencias de la Salud -->
-                    <div class="education-item">
-                        <h4>Bachillerato en Ciencias de la Salud</h4>
-                        <p class="issuer"><b>Centro:</b> IES El Getares</p>
-                        <p class="date"><b>Fecha:</b> Septiembre 2018 - Junio 2020</p>
-                        <p class="description">
-                            <b>Descripción</b> En esta etapa adquirí una sólida formación en ciencias básicas como biología, química y matemáticas. Además, desarrollé habilidades analíticas y una gran capacidad de resolución de problemas.
-                        </p>
-                        <div class="skills-icons">
-                            <p><b>Conocimientos Adquiridos: </b></p>
-                            <span>Biología</span>
-                            <span>Química</span>
-                            <span>Matemáticas</span>
-                        </div>
-                    </div>
+/* Categoría de hardware */
+.hardware-skills .skill-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+}
 
-                    <!-- FP Superior en Desarrollo de Aplicaciones Multiplataforma (DAM) -->
-                    <div class="education-item">
-                        <h4>FPGS en Desarrollo de Aplicaciones Multiplataforma (DAM)</h4>
-                        <p class="issuer"><b>Centro:</b> Centro de Formación Tecnológica ABC</p>
-                        <p class="date"><b>Fecha:</b> Septiembre 2021 - Junio 2023</p>
-                        <p class="description">
-                            <b>Descripción</b> Formación enfocada en el diseño, desarrollo y mantenimiento de aplicaciones multiplataforma. Aprendí a programar en diversos lenguajes y frameworks, destacando en el desarrollo móvil con Kotlin y Flutter.
-                        </p>
-                        <div class="skills-icons">
-                            <p><b>Conocimientos Adquiridos: </b></p>
-                            <img src="resources/Software_Icons/Kotlin.png" alt="Kotlin" title="Kotlin">
-                            <img src="resources/Software_Icons/Python.png" alt="Python" title="Python">
-                            <img src="resources/Software_Icons/CShard.png" alt="C#" title="C#">
-                            <img src="resources/Software_Icons/Flutter.png" alt="Flutter" title="Flutter">
-                            <img src="resources/Software_Icons/MySQL.png" alt="MySQL" title="MySQL">
-                        </div>
-                    </div>
-                </div>
+/* Título de cada categoría */
+.hardware-skills .skill-category h3 {
+    font-size: 2rem;
+    color: #2E7D32;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.3rem;
+}
 
-                <!-- Certificaciones -->
-                <div class="education-category">
-                    <h3>📜 Certificaciones</h3>
+/* Contenedor de habilidades */
+.hardware-skills .skill-icons {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.8rem; /* Espaciado entre elementos */
+}
 
-                    <!-- Certificación de Cisco: Introduction to Cybersecurity -->
-                    <div class="education-item">
-                        <h4>Introduction to Cybersecurity</h4>
-                        <p class="issuer"><b>Centro:</b> Cisco Networking Academy</p>
-                        <p class="date"><b>Fecha:</b> Mayo 2023</p>
-                        <p class="description">
-                            <b>Descripción</b> Certificación en fundamentos de ciberseguridad, explorando las amenazas más comunes, cómo proteger sistemas y comprender la importancia de la seguridad en la infraestructura digital.
-                        </p>
-                        <div class="skills-icons">
-                            <img src="resources/Software_Icons/Cybersecurity.png" alt="Cybersecurity" title="Cybersecurity">
-                            <img src="resources/Software_Icons/Networking.png" alt="Networking" title="Networking">
-                        </div>
-                    </div>
-                </div>
+/* Estilo de cada habilidad (texto) */
+.hardware-skills .skill-icons span {
+    display: inline-flex; /* Para alinear el ícono y el texto */
+    align-items: center; 
+    padding: 0.6rem 1.2rem; 
+    background: #ecf0f1; 
+    border-radius: 0.8rem; 
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #333; 
+    transition: transform 0.3s ease, background 0.3s ease;
+}
 
-                <!-- Reconocimientos -->
-                <div class="education-category">
-                    <h3>🏆 Reconocimientos</h3>
-                    <p class="no-awards">Aún no poseo reconocimientos, ¡pero sigo trabajando para conseguirlos! 📱</p>
-                </div>
+/* Imágenes dentro del contenedor (ajustar tamaño y añadir espacio) */
+.hardware-skills .skill-icons img {
+    width: 40px; /* Ajustar el tamaño del ícono */
+    height: auto; /* Mantener proporciones */
+    margin-right: 0.8rem; /* 👉 Espacio entre el ícono y el texto */
+}
 
-                <!-- Contribuciones -->
-                <div class="education-category">
-                    <h3>🤝 Contribuciones</h3>
-                    <p class="no-contributions">Aún no he realizado contribuciones, ¡pero planeo aportar a la comunidad en el futuro! 💻</p>
-                </div>
+/* Hover: Interacción al pasar el cursor */
+.hardware-skills .skill-icons span:hover {
+    background: #4CAF50;
+    color: white;
+    transform: translateY(-5px);
+}
 
-                <!-- Participación en Eventos -->
-                <div class="education-category">
-                    <h3>📅 Participación en Eventos</h3>
-                    <p class="no-participation">Todavía no he participado en eventos, ¡pero estaré encantado de hacerlo pronto! 🎤</p>
-                </div>
-            </div>
-        </section>
-    </body>
-</html>
+/* RESPONSIVE DESIGN */
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    .hardware-skills .skills-title {
+        font-size: 2rem; /* Reducir tamaño del título */
+    }
+
+    .hardware-skills .skills-description {
+        font-size: 1rem; /* Texto más pequeño */
+    }
+
+    .hardware-skills .skill-category {
+        padding: 1.5rem; /* Ajuste de padding */
+    }
+
+    .hardware-skills .skill-icons span {
+        padding: 0.5rem 1rem; /* Compactar habilidades */
+        font-size: 1rem; 
+    }
+
+    .hardware-skills .skill-icons img {
+        width: 40px; /* Reducir tamaño del ícono en tablets */
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+    .hardware-skills {
+        padding: 3rem 1rem; /* Ajustar espaciado */
+    }
+
+    .hardware-skills .skills-title {
+        font-size: 1.8rem; 
+    }
+
+    .hardware-skills .skills-description {
+        font-size: 0.9rem; 
+    }
+
+    .hardware-skills .skill-category {
+        padding: 1rem; 
+    }
+
+    .hardware-skills .skill-icons {
+        justify-content: center; /* Centrar contenido */
+    }
+
+    .hardware-skills .skill-icons span {
+        padding: 0.4rem 0.8rem; 
+        font-size: 0.9rem; 
+    }
+
+    .hardware-skills .skill-icons img {
+        width: 32px; /* Más pequeño en móviles */
+    }
+}
+
+/* FIN DEL APARTADO DE HARDWARE SKILLS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO DE SOBRE MI */
+
+.about-me-section {
+    background: #e2e2e2;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    margin: 4rem 0;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.ambitions,
+.hobbies,
+.faq {
+    margin-top: 2rem;
+}
+
+.ambitions h3,
+.hobbies h3,
+.faq h3 {
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.ambitions ul,
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ambitions li,
+.hobbies li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.ambitions li::before,
+.hobbies li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+}
+
+/* FAQ (Preguntas Frecuentes) */
+details {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+details summary {
+    font-weight: bold;
+    color: #333;
+}
+
+details p {
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+/* FIN DEL APARTADO DE SOBRE MÍ */
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO DE SOFT SKILLS */
+
+/* Fondo blanco para el apartado */
+.soft-skills {
+    background: #ffffff; /* Fondo blanco */
+    padding: 5rem 1rem; /* Mantener el espaciado */
+    display: flex; /* Asegura el centrado */
+    justify-content: center; /* Centrar el contenido */
+}
+
+/* Contenedor centrado */
+.soft-skills .container {
+    max-width: 800px; /* Limitar el ancho */
+    width: 100%;
+}
+
+/* Ajuste de estilo para las habilidades */
+.skill-icons span {
+    display: inline-flex; /* Alinear ícono y texto */
+    align-items: center; /* Centrar verticalmente */
+    padding: 0.6rem 1.2rem; 
+    background: #ecf0f1; /* Fondo claro para cada habilidad */
+    border-radius: 0.8rem; /* Bordes redondeados */
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: #333; 
+    transition: transform 0.3s ease, background 0.3s ease; 
+}
+
+/* Hover: Interacción al pasar el cursor */
+.skill-icons span:hover {
+    background: #4CAF50; /* Verde */
+    color: white; /* Texto blanco */
+    transform: translateY(-5px); /* Elevar ligeramente */
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    .skill-icons span {
+        padding: 0.5rem 1rem; /* Compactar */
+        font-size: 1rem; /* Texto más pequeño */
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+    .soft-skills {
+        padding: 3rem 1rem; /* Ajustar el espaciado */
+    }
+
+    .skill-icons {
+        justify-content: center; /* Centrar los elementos */
+    }
+
+    .skill-icons span {
+        padding: 0.4rem 0.8rem; /* Más compacto */
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
+}
+
+/* FIN DEL APARTADO DE SOFT SKILLS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* APARTADO DE FORMACIÓN */
+.education-section {
+    background: #e2e2e2; 
+    padding: 5rem 1rem; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* Título principal */
+.education-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Categoría de formación */
+.education-category {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+/* Título de categoría */
+.education-category h3 {
+    font-size: 2rem;
+    color: #2E7D32;
+    border-bottom: 2px solid #4CAF50;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Item de formación */
+.education-item {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Título del curso o estudio */
+.education-item h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Entidad y Fecha */
+.education-item .issuer,
+.education-item .date {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* Descripción */
+.education-item .description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+/* Iconos de habilidades */
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+/* Iconos individuales */
+.skills-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.skills-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Etiquetas de habilidades */
+.skills-icons span {
+    display: inline-block;
+    background: #ecf0f1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Texto cuando no hay reconocimientos, contribuciones o participaciones */
+.no-participation, .no-contributions, .no-awards {
+    font-size: 1.2rem;
+    color: #555;
+    opacity: 0.8;
+    text-align: center;
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 768px) {
+    .education-title {
+        font-size: 2rem;
+    }
+
+    .education-category h3 {
+        font-size: 1.5rem;
+    }
+
+    .education-item {
+        padding: 1.5rem;
+    }
+
+    .education-item h4 {
+        font-size: 1.6rem;
+    }
+
+    .skills-icons img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-title {
+        font-size: 1.8rem;
+    }
+
+    .education-item {
+        padding: 1rem;
+    }
+
+    .education-item h4 {
+        font-size: 1.4rem;
+    }
+
+    .skills-icons img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* FIN DEL APARTADO DE FORMACIÓN */
