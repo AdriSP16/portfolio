@@ -943,54 +943,61 @@ details p {
 /* APARTADO DE SOFT SKILLS */
 
 
-/* Fondo blanco para el apartado */
+/* Contenedor principal */
 .soft-skills {
     background: #ffffff; /* Fondo blanco */
-    padding: 5rem 1rem; /* Espaciado uniforme */
+    padding: 5rem 1rem; /* Ajustar el espaciado */
     display: flex;
     justify-content: center;
-    box-sizing: border-box; /* ✅ Incluir padding en el ancho */
-    max-width: 100%; /* ✅ Evitar desbordamiento */
-    overflow: hidden; /* ✅ Ocultar cualquier desbordamiento */
-}
-
-/* Contenedor principal centrado */
-.soft-skills .container {
-    max-width: 800px; /* Limitar ancho máximo */
-    width: 100%; /* Ajustar al 100% del contenedor */
-    box-sizing: border-box; /* Asegurar ancho correcto */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+    max-width: 100%; /* Limitar el ancho total */
     overflow: hidden; /* Evitar desbordamiento lateral */
-    padding: 0 1rem; /* ✅ Añadir margen interno */
 }
 
-/* Ajuste de estilo para las habilidades */
+/* Contenedor interno centrado */
+.soft-skills .container {
+    max-width: 800px; /* Ancho máximo */
+    width: 100%; /* Ajustar al 100% */
+    box-sizing: border-box; /* Asegurar ancho correcto */
+    overflow: hidden; /* Ocultar cualquier desbordamiento */
+    padding: 0 1rem; /* Margen interno para evitar el desbordamiento */
+}
+
+/* Categorías de habilidades */
+.soft-skills .skill-category {
+    width: 100%; /* ✅ Ocupar todo el ancho disponible */
+    box-sizing: border-box; /* Incluir padding */
+}
+
+/* Contenedor de habilidades */
 .soft-skills .skill-icons {
     display: flex;
     flex-wrap: wrap; /* ✅ Permitir múltiples líneas */
-    gap: 0.8rem; /* Espacio entre habilidades */
-    justify-content: center; /* ✅ Centrar habilidades */
-    box-sizing: border-box; /* Asegurar ancho correcto */
+    gap: 0.8rem; /* Espaciado entre habilidades */
+    justify-content: flex-start; /* Ajuste de alineación */
+    box-sizing: border-box; /* ✅ Asegurar que respete el ancho */
 }
 
-/* Estilo de cada habilidad (etiquetas <span>) */
+/* Estilo de cada habilidad */
 .soft-skills .skill-icons span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.6rem 1.2rem; /* Ajuste de tamaño */
-    background: #ecf0f1;
+    display: inline-flex; /* Permitir flexbox */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    padding: 0.6rem 1.2rem; /* Ajustar tamaño */
+    background: #ecf0f1; /* Fondo claro */
     border-radius: 0.8rem; /* Bordes redondeados */
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
     transition: transform 0.3s ease, background 0.3s ease;
+    box-sizing: border-box; /* Respetar el ancho */
 }
 
 /* Hover: Interacción al pasar el cursor */
 .soft-skills .skill-icons span:hover {
-    background: #4CAF50;
-    color: white;
-    transform: translateY(-5px); /* Efecto flotante */
+    background: #4CAF50; /* Verde */
+    color: white; /* Texto blanco */
+    transform: translateY(-5px); /* Elevar */
 }
 
 /* ✅ RESPONSIVE DESIGN */
@@ -998,27 +1005,27 @@ details p {
 /* Ajustes para tablets */
 @media (max-width: 768px) {
     .soft-skills {
-        padding: 3rem 1rem; /* Reducir padding */
+        padding: 3rem 1rem; /* Ajustar espaciado */
     }
 
     .soft-skills .container {
-        max-width: calc(100% - 1rem); /* Ajustar ancho con margen */
+        max-width: calc(100% - 1rem); /* Limitar ancho */
     }
 
     .soft-skills .skill-icons span {
-        padding: 0.5rem 1rem; /* Más compacto */
-        font-size: 1rem; /* Reducir texto */
+        padding: 0.5rem 1rem; /* Compactar habilidades */
+        font-size: 1rem; /* Texto más pequeño */
     }
 }
 
 /* ✅ Ajustes para móviles */
 @media (max-width: 480px) {
     .soft-skills {
-        padding: 3rem 1rem; /* Ajustar padding */
+        padding: 2rem 0.5rem; /* Ajustar padding */
     }
 
     .soft-skills .container {
-        max-width: calc(100% - 1.5rem); /* ✅ Ajustar con margen derecho */
+        max-width: calc(100% - 1.5rem); /* ✅ Limitar ancho y añadir margen derecho */
     }
 
     .soft-skills .skill-icons {
@@ -1027,10 +1034,11 @@ details p {
     }
 
     .soft-skills .skill-icons span {
-        padding: 0.4rem 0.8rem; /* Compactar habilidades */
+        padding: 0.4rem 0.8rem; /* Más compacto */
         font-size: 0.9rem; /* Texto más pequeño */
     }
 }
+
 
 /* FIN DEL APARTADO DE SOFT SKILLS */
 
