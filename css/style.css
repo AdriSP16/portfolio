@@ -823,57 +823,52 @@ input[type="email"] {
 
 
 
-/* APARTADO DE SOBRE MI */
-
+/* APARTADO DE SOBRE MÍ */
 .about-me-section {
-    background: #e2e2e2;
-    padding: 4rem 2rem;
-    border-radius: 12px;
+    background: #e2e2e2; 
+    padding: 4rem 2rem; 
+    border-radius: 12px; 
     margin: 4rem 0;
 }
 
 .about-title {
-    font-size: 2.5rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 2rem;
+    font-size: 2.5rem; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 2rem; 
 }
 
 .about-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #444;
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: #444; 
 }
 
-.ambitions,
-.hobbies,
-.faq {
+/* Estilo para subapartados */
+.ambitions, .hobbies, .curiosities, .faq {
     margin-top: 2rem;
 }
 
-.ambitions h3,
-.hobbies h3,
-.faq h3 {
+.ambitions h3, .hobbies h3, .curiosities h3, .faq h3 {
     font-size: 1.8rem;
     color: #222;
 }
 
-.ambitions ul,
-.hobbies ul {
-    list-style: none;
-    padding: 0;
+/* Lista personalizada */
+.ambitions ul, .hobbies ul, .curiosities ul {
+    list-style: none; 
+    padding: 0; 
 }
 
-.ambitions li,
-.hobbies li {
+.ambitions li, .hobbies li, .curiosities li {
     font-size: 1.1rem;
-    margin: 0.5rem 0;
-    padding-left: 1.5rem;
-    position: relative;
+    margin: 0.5rem 0; 
+    padding-left: 1.5rem; 
+    position: relative; 
 }
 
-.ambitions li::before,
-.hobbies li::before {
+/* Icono para las listas */
+.ambitions li::before, .hobbies li::before, .curiosities li::before {
     content: '✔️';
     position: absolute;
     left: 0;
@@ -883,7 +878,7 @@ input[type="email"] {
 details {
     margin-bottom: 1rem;
     cursor: pointer;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 8px;
     padding: 1rem;
     transition: all 0.3s ease;
@@ -891,15 +886,40 @@ details {
 
 details summary {
     font-weight: bold;
-    color: #333;
+    color: #000000;
 }
 
 details p {
-    margin-top: 0.5rem;
-    color: #555;
+    margin-top: 1rem;
+    color: #000000;
 }
 
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .ambitions li, .hobbies li, .curiosities li {
+        font-size: 1rem;
+    }
+
+    details {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
 /* FIN DEL APARTADO DE SOBRE MÍ */
+
 
 
 
@@ -1075,15 +1095,25 @@ details p {
     transform: scale(1.2);
 }
 
+/* Hover: Cambiar a verde al pasar el cursor */
+.skills-icons span:hover {
+    background: #4CAF50;      /* Fondo verde */
+    color: white;             /* Texto blanco */
+    transform: translateY(-5px); /* Elevar ligeramente */
+}
+
 /* Etiquetas de habilidades */
 .skills-icons span {
-    display: inline-block;
-    background: #ecf0f1;
-    padding: 0.5rem 1rem;
-    border-radius: 0.8rem;
-    font-size: 1rem;
-    color: #333;
-    font-weight: bold;
+    display: inline-flex;      /* Flex para poder alinear contenido */
+    justify-content: center;   /* Centrar horizontalmente */
+    align-items: center;       /* Centrar verticalmente */
+    background: #ecf0f1;       /* Fondo claro */
+    padding: 0.5rem 1rem;      /* Espaciado interno */
+    border-radius: 0.8rem;     /* Bordes redondeados */
+    font-size: 1rem;           /* Tamaño de fuente */
+    color: #333;               /* Color del texto */
+    font-weight: bold;         /* Texto en negrita */
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease; /* Transición suave */
 }
 
 /* Texto cuando no hay reconocimientos, contribuciones o participaciones */
