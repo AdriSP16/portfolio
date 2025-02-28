@@ -93,30 +93,37 @@ body {
 
 
 
+
+
+
+
 /* APARTADO INTRODUCCIÓN */
 
 /* Sección principal */
 .hero {
-    margin-top: 20vh; /* Ajuste basado en altura de la ventana */
+    margin-top: 20vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Centra en pantallas grandes */
 }
 
 /* Contenido de la sección */
 .hero-content {
     display: flex;
     align-items: center;
-    gap: 3vw; /* Espaciado basado en el ancho de la pantalla */
+    gap: 3vw;
     margin-bottom: 4vw;
+    max-width: 1200px;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 /* Imagen de perfil */
 .profile-pic {
-    width: 30vw; /* Imagen ajustable */
-    max-width: 18.75rem; /* 300px -> 18.75rem */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 1.25rem; /* 20px -> 1.25rem */
+    width: 30vw;
+    max-width: 18.75rem;
+    height: auto;
+    border-radius: 1.25rem;
     object-fit: cover;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
@@ -125,18 +132,22 @@ body {
 .intro-text {
     font-size: 1rem;
     color: #555;
+    flex: 1;
 }
 
+/* Nombre destacado */
 .name {
     color: #2E7D32;
-    font-size: clamp(2rem, 5vw, 2.5rem); /* Se ajusta al ancho de pantalla */
-    margin: 0.625rem 0; /* 10px -> 0.625rem */
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin: 0.625rem 0;
 }
 
+/* Subtítulo */
 h2 {
-    font-size: clamp(1.5rem, 4vw, 1.8rem); /* Texto adaptable */
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
 }
 
+/* Descripción */
 .desc {
     font-style: italic;
     color: #777;
@@ -150,38 +161,39 @@ h2 {
 
 /* Botones */
 .buttons {
-    margin: 1.25rem 0; /* 20px -> 1.25rem */
+    margin: 1.25rem 0;
 }
 
+/* Botón base */
 .btn {
-    padding: 0.625rem 1.25rem; /* 10px x 20px -> 0.625rem x 1.25rem */
-    margin: 0.3125rem; /* 5px -> 0.3125rem */
+    padding: 0.625rem 1.25rem;
+    margin: 0.3125rem;
     border: none;
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    border-radius: 0.5rem;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
-/* Botón verde (¡Ahora más grande!) */
+/* Botón verde principal */
 .btn-green {
     background-color: #4CAF50;
     color: white;
-    padding: 0.75rem 1.5rem; /* Más grande: 16px x 32px -> 1rem x 2rem */
-    font-size: 1.25rem; /* Más grande: 20px -> 1.25rem */
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
 }
 
 .btn-green:hover {
     background-color: #45A049;
 }
 
-/* Botón con borde (outline) */
+/* Botón de contorno */
 .btn-outline {
-    border: 0.125rem solid #4CAF50; /* 2px -> 0.125rem */
+    border: 0.125rem solid #4CAF50;
     color: #4CAF50;
     background: transparent;
-    padding: 0.75rem 1.5rem; /* Ligeramente más grande */
-    font-size: 1.125rem; /* Aumentado un poco */
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
 }
 
 .btn-outline:hover {
@@ -189,62 +201,82 @@ h2 {
     color: white;
 }
 
-/* Redes sociales */
+/* Redes sociales: alineación izquierda por defecto */
 .socials {
-    margin: 1.25rem 0; /* 20px -> 1.25rem */
     display: flex;
-    gap: 1vw; /* Espaciado relativo al ancho de pantalla */
+    gap: 1vw; /* Espaciado entre iconos */
+    justify-content: flex-start; /* Alinea a la izquierda por defecto */
 }
 
-/* Contenedor de los iconos */
+/* Contenedor de iconos */
 .social-icon-container {
-    width: 2vw; /* Tamaño adaptable */
-    min-width: 2.5rem; /* No más pequeño de 40px */
-    height: 2vw; /* Tamaño adaptable */
-    min-height: 2.5rem; /* No más pequeño de 40px */
+    width: 2vw;
+    min-width: 2.5rem;
+    height: 2vw;
+    min-height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff; /* Fondo blanco */
-    border-radius: 20%; /* Borde redondeado */
+    background-color: #fff;
+    border-radius: 20%;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
-/* Efecto hover: el contenedor se vuelve gris claro */
 .social-icon-container:hover {
     background-color: #f0f0f0;
 }
 
-/* Iconos dentro del contenedor (ajustar tamaño) */
+/* Iconos dentro del contenedor */
 .social-icon-container img {
-    width: 1.5vw; /* Tamaño adaptable */
-    min-width: 1.5rem; /* No más pequeño de 24px */
-    height: auto; /* Mantiene proporción */
+    width: 1.5vw;
+    min-width: 1.5rem;
+    height: auto;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
+/* RESPONSIVIDAD */
+
+/* ✅ SOLO EN MÓVILES (CENTRADO) */
+@media (max-width: 900px) {
     .hero-content {
-        flex-direction: column; /* En columna en pantallas pequeñas */
+        flex-direction: column;
+        text-align: center;
+        padding: 0 5vw;
     }
 
     .profile-pic {
-        width: 60vw; /* Más grande en móviles */
+        width: 50vw;
+        margin-bottom: 2rem;
     }
 
     .social-icon-container {
-        width: 10vw; /* Ajustar tamaño de los iconos */
-        height: 10vw;
+        width: 8vw;
+        height: 8vw;
     }
 
     .social-icon-container img {
-        width: 5vw;
+        width: 4vw;
+    }
+
+    .socials {
+        justify-content: center; /* Centrar los iconos en móviles */
+    }
+
+    .social-icon-container {
+        width: 8.5vw; /* Iconos más grandes */
+        height: 8.5vw;
+    }
+
+    .social-icon-container img {
+        width: 6vw;
     }
 }
 
-
 /* FIN APARTADO INTRODUCCIÓN */
+
+
+
+
 
 
 
