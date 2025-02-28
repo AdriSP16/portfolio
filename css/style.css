@@ -226,7 +226,7 @@ input:checked + .slider::before {
 
 /* Sección principal */
 .hero {
-    margin-top: 20vh;
+    margin-top: 10vh;
     display: flex;
     align-items: center;
     justify-content: center; /* Centra en pantallas grandes */
