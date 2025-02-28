@@ -48,18 +48,17 @@
                 <!-- Selector de idioma con los idiomas en inglés (orden alfabético) -->
 
                 <select id="language-switcher" class="language-switcher" onchange="changeLanguage(this.value)">
-                <!-- NOT IMPLEMENTED YET <option value="bg">Bulgarian</option> -->
                     <option value="ca">Catalá</option>
                 <!-- NOT IMPLEMENTED YET <option value="zh">Chinese</option> -->
                 <!-- NOT IMPLEMENTED YET <option value="hr">Croatian</option> -->
-                <!-- NOT IMPLEMENTED YET <option value="da">Danish</option> -->
+                    <option value="cs">Czech</option>
+                    <option value="da">Danish</option>
                 <!-- NOT IMPLEMENTED YET <option value="sk">Slovak</option> -->
                     <option value="es">Spanish</option>
                     <option value="eu">Basque</option>
                     <option value="fr">French</option>
                     <option value="el">Greek</option>
-                <!-- NOT IMPLEMENTED YET <option value="he">Hebrew</option> -->
-                <!-- NOT IMPLEMENTED YET <option value="hu">Hungarian</option> -->
+                    <option value="he">Hebrew</option>
                     <option value="en" selected>English</option>
                     <option value="it">Italian</option>
                     <option value="ja">Japanese</option>
@@ -67,10 +66,8 @@
                     <option value="pl">Polish</option>
                     <option value="pt">Portuguese</option>
                 <!-- NOT IMPLEMENTED YET <option value="ru">Russian</option> -->
-                <!-- NOT IMPLEMENTED YET <option value="sr">Serbian</option> -->
                 <!-- NOT IMPLEMENTED YET <option value="sv">Swedish</option> -->
                 <!-- NOT IMPLEMENTED YET <option value="th">Thai</option> -->
-                <!-- NOT IMPLEMENTED YET <option value="tr">Turkish</option> -->
                     <option value="de">German</option>
                     <option value="no">Norwegian</option>
                 </select>
@@ -115,7 +112,7 @@
                         <button id="contact-btn" class="btn btn-outline" onclick="openContactPopup()">&lt; Contactos /&gt;</button>
                     </div>
 
-                    <!-- Redes sociales -->
+                    <!-- Redes sociales (No se mueve en pantallas grandes) -->
                     <div class="socials">
                         <a href="https://www.linkedin.com/in/adrián-sabino-pérez-2b20a7278" target="_blank" class="social-icon-container">
                             <img src="resources/Software_Icons/linkedin.png" alt="LinkedIn">
@@ -124,9 +121,14 @@
                             <img src="resources/Software_Icons/github.png" alt="GitHub">
                         </a>
                     </div>
+
                 </div>
+
             </div>
         </section>
+
+
+
 
 
 
@@ -659,12 +661,16 @@
                             las amenazas más comunes, cómo proteger sistemas y comprender la importancia de 
                             la seguridad en la infraestructura digital.
                         </p>
-                        <div class="skills-icons">
+
+                        <!-- ✅ Se agregó el ID que faltaba -->
+                        <div id="cybersec-skills" class="skills-icons">
                             <p id="cybersec-skills-title"><b>Habilidades Adquiridas:</b></p>
-                            <span>Thread Detection</span>
+                            <span>Threat Detection</span>
                         </div>
+
                     </div>
                 </div>
+
 
                 <!-- Reconocimientos -->
                 <div class="education-category">
