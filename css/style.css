@@ -633,7 +633,7 @@ input[type="email"] {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 0 2rem 2rem; 
-    background: #ecf0f1; /* Color claro por defecto */
+    background: #ffffff; /* Color claro por defecto */
     transition: background 0.3s ease; /* Transición al cambiar de tema */
 }
 
@@ -925,6 +925,13 @@ input[type="email"] {
     margin-bottom: 1rem;
     border-bottom: 2px solid #4CAF50; 
     padding-bottom: 0.3rem; 
+}
+
+/* Hover: Elevar la categoría al pasar el cursor */
+.hardware-skills .skill-category:hover {
+    transform: translateY(-5px); /* Elevar el contenedor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Mayor sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suavizar animación */
 }
 
 /* Contenedor de habilidades */
