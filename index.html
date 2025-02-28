@@ -39,40 +39,50 @@
 
     <body>
 
-        <!-- Encabezado -->
+        <!-- Navbar -->
         <nav class="navbar">
             <div class="navbar-container">
-                <!-- Título del Navbar -->
-                <h1 id="navbar-title">AdriDevSP</h1>
-        
-                <!-- Selector de idioma con los idiomas en inglés (orden alfabético) -->
 
+                <!-- 🔥 Switch de Tema (a la izquierda) -->
+                <div class="theme-toggle">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-switch">
+                        <span class="slider"></span>
+                    </label>
+                    <span id="theme-label">🌞 Claro</span>
+                </div>
+
+                <!-- 🌟 Título principal (Centrado) -->
+                <h1 id="navbar-title">AdriDevSP</h1>
+
+                <!-- 🌐 Selector de idioma (a la derecha) -->
                 <select id="language-switcher" class="language-switcher" onchange="changeLanguage(this.value)">
                     <option value="ca">Catalá</option>
-                <!-- NOT IMPLEMENTED YET <option value="zh">Chinese</option> -->
-                <!-- NOT IMPLEMENTED YET <option value="hr">Croatian</option> -->
-                    <option value="cs">Czech</option>
-                    <option value="da">Danish</option>
-                <!-- NOT IMPLEMENTED YET <option value="sk">Slovak</option> -->
-                    <option value="es">Spanish</option>
-                    <option value="eu">Basque</option>
-                    <option value="fr">French</option>
-                    <option value="el">Greek</option>
-                    <option value="he">Hebrew</option>
-                    <option value="en" selected>English</option>
-                    <option value="it">Italian</option>
-                    <option value="ja">Japanese</option>
-                <!-- NOT IMPLEMENTED YET <option value="ko">Korean</option> -->
-                    <option value="pl">Polish</option>
-                    <option value="pt">Portuguese</option>
-                <!-- NOT IMPLEMENTED YET <option value="ru">Russian</option> -->
-                <!-- NOT IMPLEMENTED YET <option value="sv">Swedish</option> -->
-                <!-- NOT IMPLEMENTED YET <option value="th">Thai</option> -->
-                    <option value="de">German</option>
-                    <option value="no">Norwegian</option>
+                        <!-- NOT IMPLEMENTED YET <option value="zh">Chinese</option> -->
+                        <!-- NOT IMPLEMENTED YET <option value="hr">Croatian</option> -->
+                            <option value="cs">Czech</option>
+                            <option value="da">Danish</option>
+                        <!-- NOT IMPLEMENTED YET <option value="sk">Slovak</option> -->
+                            <option value="es">Spanish</option>
+                            <option value="eu">Basque</option>
+                            <option value="fr">French</option>
+                            <option value="el">Greek</option>
+                            <option value="he">Hebrew</option>
+                            <option value="en" selected>English</option>
+                            <option value="it">Italian</option>
+                            <option value="ja">Japanese</option>
+                        <!-- NOT IMPLEMENTED YET <option value="ko">Korean</option> -->
+                            <option value="pl">Polish</option>
+                            <option value="pt">Portuguese</option>
+                        <!-- NOT IMPLEMENTED YET <option value="ru">Russian</option> -->
+                        <!-- NOT IMPLEMENTED YET <option value="sv">Swedish</option> -->
+                        <!-- NOT IMPLEMENTED YET <option value="th">Thai</option> -->
+                            <option value="de">German</option>
+                            <option value="no">Norwegian</option>
                 </select>
             </div>
         </nav>
+
 
         
         
