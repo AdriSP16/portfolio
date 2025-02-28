@@ -44,10 +44,11 @@ body {
 /* Contenedor Flex para alinear elementos */
 .navbar-container {
     display: flex;
-    justify-content: center;    /* Centra el título horizontalmente */
-    align-items: center;        /* Centra verticalmente */
-    position: relative;         /* Permite posicionar elementos hijos */
-    padding: 0.625rem 0;        /* Añade relleno arriba y abajo */
+    justify-content: center; /* Centra el título horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: relative; /* Permite posicionar elementos hijos */
+    padding: 0.625rem 0; /* Añade relleno arriba y abajo */
+    gap: 1rem; /* 🆕 Espaciado mínimo entre elementos */
 }
 
 /* Título centrado */
@@ -137,28 +138,72 @@ input:checked + .slider::before {
     font-size: 1rem;
 }
 
-/* Ajustes en pantallas pequeñas */
+/* 🔥 RESPONSIVE DESIGN */
+
+/* Ajustes en pantallas medianas (tablets y móviles grandes) */
 @media (max-width: 768px) {
-    .language-switcher {
-        right: 1rem; /* Reduce el espacio derecho */
-        padding: 0.3rem 0.8rem;
-        font-size: 0.9rem;
+    .navbar-container {
+        justify-content: space-between; /* ✅ Distribuye los elementos */
+        gap: 1rem; /* 🆕 Espaciado entre elementos */
+        padding: 0.5rem 1rem; /* Ajustar relleno */
+    }
+
+    .navbar h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
     }
 
     .theme-toggle {
         left: 1rem; /* Ajusta el switch más a la izquierda */
     }
 
+    .language-switcher {
+        right: 1rem; /* Reduce el espacio derecho */
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajustes en pantallas pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
     .navbar-container {
-        justify-content: flex-start; /* Alinea a la izquierda el contenido */
+        gap: 0.8rem; /* 🆕 Espaciado más pequeño */
     }
 
     .navbar h1 {
-        font-size: 1.5rem; /* Ajusta el tamaño del título */
+        font-size: 1.3rem; /* Título más pequeño */
+    }
+
+    .language-switcher {
+        right: 0.8rem; /* Más cerca del borde */
+        padding: 0.3rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .theme-toggle {
+        left: 0.8rem; /* Más cerca del borde */
+    }
+
+    #theme-label {
+        font-size: 0.85rem; /* Texto más pequeño */
+    }
+
+    .switch {
+        width: 40px; /* Reducir el tamaño del switch */
+        height: 22px;
+    }
+
+    .slider::before {
+        height: 18px;
+        width: 18px;
+    }
+
+    input:checked + .slider::before {
+        transform: translateX(18px); /* Ajustar el movimiento */
     }
 }
 
 /* FIN APARTADO NAVBAR */
+
 
 
 
@@ -1021,7 +1066,7 @@ input[type="email"] {
     }
 
     .hardware-skills .skill-icons {
-        justify-content: center; 
+        justify-content: left; 
     }
 
     .hardware-skills .skill-icons span {
