@@ -1,3 +1,4 @@
+// © 2025 Adrián Sabino Pérez. Todos los derechos reservados. Prohibida la reproducción o imitación total o parcial del código sin autorización.
 // Función para descargar el CV
 function downloadCV() {
     const cvPath = 'resources/CV/CV.pdf';
@@ -4310,7 +4311,8 @@ function changeLanguage(lang) {
 
 // Detectar el idioma guardado o usar inglés por defecto
 document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("lang") || "en";
-    document.getElementById("language-switcher").value = savedLang;
-    changeLanguage(savedLang);
+    // const savedLang = localStorage.getItem("lang") || "es"; Para que se quede el idioma guardado
+    document.getElementById("language-switcher").value = "en";
+    changeLanguage("en");
 });
+// © 2025 Adrián Sabino Pérez. Todos los derechos reservados. Prohibida la reproducción o imitación total o parcial del código sin autorización.
