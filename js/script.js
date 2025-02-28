@@ -78,10 +78,8 @@ function toggleTheme() {
 
     if (isDarkMode) {
         document.body.removeAttribute("data-theme"); // Cambiar a modo claro
-        themeLabel.textContent = "🌞 Claro";
     } else {
         document.body.setAttribute("data-theme", "dark"); // Activar modo oscuro
-        themeLabel.textContent = "🌙 Oscuro";
     }
 
     // Guardar preferencia en localStorage
@@ -96,10 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
         document.body.setAttribute("data-theme", "dark");
-        themeSwitch.checked = true;
-        themeLabel.textContent = "🌙 Oscuro";
-    } else {
-        themeLabel.textContent = "🌞 Claro";
+        themeSwitch.checked = true; 
     }
 });
 
