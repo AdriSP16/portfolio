@@ -10,12 +10,19 @@ function downloadCV() {
     document.body.removeChild(link);
 }
 
+
+
+
+
 // Abrir el popup
 function openContactPopup() {
     const popup = document.getElementById('contact-popup');
     popup.style.display = 'flex';
     setTimeout(() => popup.classList.add('show'), 10); 
 }
+
+
+
 
 // Cerrar el popup
 function closeContactPopup() {
@@ -24,17 +31,29 @@ function closeContactPopup() {
     setTimeout(() => popup.style.display = 'none', 300); 
 }
 
+
+
+
+
 // Cerrar popup al hacer clic fuera
 window.addEventListener('click', (event) => {
     const popup = document.getElementById('contact-popup');
     if (event.target === popup) closeContactPopup();
 });
 
+
+
+
+
 // Enviar correo
 function sendEmail(emailId) {
     const email = document.getElementById(emailId).value;
     window.location.href = `mailto:${email}`;
 }
+
+
+
+
 
 // Copiar al portapapeles
 function copyEmail(emailId) {
@@ -44,6 +63,45 @@ function copyEmail(emailId) {
     });
 }
 
+
+
+
+
+
+// Detectar el interruptor y la etiqueta
+const themeSwitch = document.getElementById("theme-switch");
+const themeLabel = document.getElementById("theme-label");
+
+// ✅ Función para cambiar el tema (claro/oscuro)
+function toggleTheme() {
+    const isDarkMode = document.body.getAttribute("data-theme") === "dark";
+
+    if (isDarkMode) {
+        document.body.removeAttribute("data-theme"); // Cambiar a modo claro
+        themeLabel.textContent = "🌞 Claro";
+    } else {
+        document.body.setAttribute("data-theme", "dark"); // Activar modo oscuro
+        themeLabel.textContent = "🌙 Oscuro";
+    }
+
+    // Guardar preferencia en localStorage
+    localStorage.setItem("theme", isDarkMode ? "light" : "dark");
+}
+
+// Detectar el cambio en el switch
+themeSwitch.addEventListener("change", toggleTheme);
+
+// ✅ Mantener el tema seleccionado al recargar la página
+document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.setAttribute("data-theme", "dark");
+        themeSwitch.checked = true;
+        themeLabel.textContent = "🌙 Oscuro";
+    } else {
+        themeLabel.textContent = "🌞 Claro";
+    }
+});
 
 
 
