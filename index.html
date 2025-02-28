@@ -41,10 +41,44 @@
 
         <!-- Encabezado -->
         <nav class="navbar">
-            <div class="container">
-                <h1>AdriDevSP</h1>
+            <div class="navbar-container">
+                <!-- Título del Navbar -->
+                <h1 id="navbar-title">AdriDevSP</h1>
+        
+                <!-- Selector de idioma con los idiomas en inglés (orden alfabético) -->
+                <select id="language-switcher" class="language-switcher" onchange="changeLanguage(this.value)">
+                <!-- NOT IMPLEMENTED YET <option value="bg">Bulgarian</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="ca">Catalá</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="zh">Chinese</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="hr">Croatian</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="da">Danish</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="sk">Slovak</option> -->
+                    <option value="es">Spanish</option>
+                 <!-- NOT IMPLEMENTED YET <option value="eu">Basque</option> -->
+                    <option value="fr">French</option>
+                <!-- NOT IMPLEMENTED YET <option value="el">Greek</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="he">Hebrew</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="hu">Hungarian</option> -->
+                    <option value="en" selected>English</option>
+                <!-- NOT IMPLEMENTED YET <option value="it">Italian</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="ja">Japanese</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="ko">Korean</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="pl">Polish</option> -->
+                    <option value="pt">Portuguese</option> 
+                <!-- NOT IMPLEMENTED YET <option value="ru">Russian</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="sr">Serbian</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="sv">Swedish</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="th">Thai</option> -->
+                <!-- NOT IMPLEMENTED YET <option value="tr">Turkish</option> -->
+                    <option value="de">German</option>
+                <!-- NOT IMPLEMENTED YET <option value="no">Norwegian</option> -->
+                </select>
             </div>
         </nav>
+        
+        
+
+
 
 
 
@@ -68,15 +102,15 @@
 
                 <!-- Información personal -->
                 <div class="info">
-                    <p class="intro-text"><b>Hello World!, my name is</b></p>
-                    <h1 class="name">Adrian Sabino.</h1>
-                    <h2>I'm a <span class="highlight">Fullstack Developer!</span></h2>
-                    <p class="desc">Fullstack & mobile developer by day, cybersecurity analyst by night.</p>
+                    <p id="intro-text"><b>¡Hola Mundo!, me llamo</b></p>
+                    <h1 class="name">Adrián Sabino.</h1>
+                    <h2 id="job-title">Soy un <span class="highlight">Desarrollador Fullstack!</span></h2>
+                    <p id="motto">Desarrollador fullstack & móvil de día, analista de ciberseguridad de noche.</p>
 
                     <!-- Botones de acción -->
                     <div class="buttons">
-                        <button class="btn btn-green" onclick="downloadCV()">Download CV</button>
-                        <button class="btn btn-outline" onclick="openContactPopup()">&lt; Contacts /&gt;</button>
+                        <button id="download-btn" class="btn btn-green" onclick="downloadCV()">Descargar CV</button>
+                        <button id="contact-btn" class="btn btn-outline" onclick="openContactPopup()">&lt; Contactos /&gt;</button>
                     </div>
 
                     <!-- Redes sociales -->
@@ -103,20 +137,20 @@
 
 
 
+
         <!-- Popup de Contacto -->
         <div id="contact-popup" class="popup">
             <div class="popup-content">
 
-                <!-- Título centrado con el botón de cerrar a la derecha -->
+                <!-- Título del popup -->
                 <div class="popup-header">
-                    <h1><b>Emails</b></h1>
+                    <h1 id="popup-title"><b>Emails</b></h1>
                     <span class="close-btn" onclick="closeContactPopup()">✖</span>
                 </div>
 
+                <!-- Primer correo -->
                 <div class="email-container">
                     <input type="email" id="emailInput1" value="adrsabper@gmail.com" readonly>
-        
-                    <!-- Botones en fila -->
                     <div class="button-group">
                         <button class="btn-icon" onclick="sendEmail('emailInput1')">
                             <img src="resources/Other_Icons/enviar.png" alt="Enviar">
@@ -126,12 +160,10 @@
                         </button>
                     </div>
                 </div>
-        
-                <!-- Segundo correo con botones -->
+
+                <!-- Segundo correo -->
                 <div class="email-container">
                     <input type="email" id="emailInput2" value="adr16persab@gmail.com" readonly>
-        
-                    <!-- Botones en fila -->
                     <div class="button-group">
                         <button class="btn-icon" onclick="sendEmail('emailInput2')">
                             <img src="resources/Other_Icons/enviar.png" alt="Enviar">
@@ -158,11 +190,12 @@
 
 
 
+
         <!-- Sección de Proyectos -->
         <section class="projects">
             <div class="container">
-                <h2 class="projects-title">Proyectos</h2>
-                <p class="no-projects">Aún no hay proyectos destacables 😔</p>
+                <h2 id="projects-title" class="projects-title">Proyectos</h2>
+                <p id="no-projects" class="no-projects">Aún no hay proyectos destacables 😔</p>
             </div>
         </section>
 
@@ -401,120 +434,90 @@
         <!-- Sección Sobre Mí -->
         <section id="about-me" class="about-me-section">
             <div class="container">
-                <h2 class="about-title">Sobre Mí</h2>
+                <!-- Título -->
+                <h2 id="about-title" class="about-title">Sobre Mí</h2>
 
                 <!-- Introducción Personal -->
                 <div class="about-content">
-                    <p>
-                        ¡Hola! Soy <strong>Adrián Sabino</strong>, un apasionado <strong>Desarrollador Fullstack & Móvil</strong> con un enfoque en la creación de aplicaciones modernas, escalables y funcionales. Además, actualmente estoy formandome para desempeñar el cargo de <strong>Analista Junior en Ciberseguridad</strong>.
+                    <p id="about-intro1">
+                        ¡Hola! Soy <strong>Adrián Sabino</strong>, un apasionado <strong>Desarrollador Fullstack & Móvil</strong> con un enfoque en la creación de aplicaciones modernas, escalables y funcionales. Además, actualmente estoy formándome para desempeñar el cargo de <strong>Analista Junior en Ciberseguridad</strong>.
                     </p>
-                    <p>
+                    <p id="about-intro2">
                         Mi trayectoria combina la creatividad del desarrollo de software con la rigurosidad del análisis de ciberseguridad. Me encanta enfrentar nuevos retos, aprender constantemente y explorar nuevas tecnologías para mejorar mis habilidades.
                     </p>
                 </div>
 
                 <!-- Ambiciones y Objetivos -->
                 <div class="ambitions">
-                    <h3>🎯 Mis Ambiciones Vitales</h3>
-                    <ul>
+                    <h3 id="ambitions-title">🎯 Mis Ambiciones Vitales</h3>
+                    <ul id="ambitions-list">
                         <li>🛡️ Convertirme en un <strong>experto en ciberseguridad</strong>.</li>
                         <li>🔒 Trabajar en multinacionales referentes en el ámbito de la ciberseguridad (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, etc.)</li>
                         <li>🖱️ Ampliar al máximo mis conocimientos en Desarrollo de Software Multiplataforma y Fullstack.</li>
-                        <li>🏡 Vivir en paises del norte de Europa (Dinamarca, Noruega, Alemania, Irlanda), en países de América del norte (EEUU o Canadá) o en paises asiáticos como Japón o Corea del Sur</li>
+                        <li>🏡 Vivir en países del norte de Europa (Dinamarca, Noruega, Alemania, Irlanda), en países de América del norte (EEUU o Canadá) o en países asiáticos como Japón o Corea del Sur</li>
                     </ul>
                 </div>
 
                 <!-- Aficiones e Intereses -->
                 <div class="hobbies">
-                    <h3>🎨 Más Allá del Código</h3>
-                    <p>Cuando no estoy programando, formandome sobre ciberseguridad o aprendiendo sobre nuevas tecnologías, disfruto de:</p>
-                    <ul>
-                        <li>🎮 Jugar videojuegos (Mis generos de videojuegos favoritos son: Estrategia, Shooters, Terror, Survival, Históricos y Souls)</li>
-                        <li>♟️ Jugar juegos de mesa (Sobre todo los que tengan un alto contenido de estrategia como el Ajedrez, el Risk, Seven Wonders Duels o Carcassonne)</li>
-                        <li>📖 Aprender sobre historia del mundo (me gusta mucho la historia, sobre todo la de España), así como aprender y analizar las situaciones geopolíticas mundiales</li>
-                        <li>📺 Ver Películas, Series y Anime </li>
-                        <li>🎵 Escuchar música (Mis grupos/cantantes favoritos son Estopa, Fito y Fitipaldis, Mägo de Oz, El canto del loco, Dani Martín y Melendi) </li>
+                    <h3 id="hobbies-title">🎨 Más Allá del Código</h3>
+                    <p id="hobbies-intro">Cuando no estoy programando, formándome sobre ciberseguridad o aprendiendo sobre nuevas tecnologías, disfruto de:</p>
+                    <ul id="hobbies-list">
+                        <li>🎮 Jugar videojuegos (Mis géneros favoritos son: Estrategia, Shooters, Terror, Survival, Históricos y Souls)</li>
+                        <li>♟️ Jugar juegos de mesa (Como el Ajedrez, Risk, Seven Wonders Duels o Carcassonne)</li>
+                        <li>📖 Aprender sobre historia mundial, especialmente de España y analizar situaciones geopolíticas.</li>
+                        <li>📺 Ver Películas, Series y Anime.</li>
+                        <li>🎵 Escuchar música (Estopa, Fito y Fitipaldis, Mägo de Oz, El canto del loco, Dani Martín y Melendi).</li>
                     </ul>
                 </div>
 
                 <!-- Curiosidades Sobre Mí -->
                 <div class="curiosities">
-                    <h3>🤔 Curiosidades Sobre Mí</h3>
-                    <ul>
-                        <li>👨‍💻 Escribí mi primer programa en Python cuando tenía 16 años</li>
-                        <li>🏅 He ganado varios premios y medallas en torneos comarcales de ajedrez (En el Campo de Gibraltar) </li>
+                    <h3 id="curiosities-title">🤔 Curiosidades Sobre Mí</h3>
+                    <ul id="curiosities-list">
+                        <li>👨‍💻 Escribí mi primer programa en Python cuando tenía 16 años.</li>
+                        <li>🏅 He ganado varios premios en torneos de ajedrez en el Campo de Gibraltar.</li>
                         <li>🌐 Me apasiona la historia y la geopolítica, así como su influencia en la tecnología global.</li>
-                        <li>🧠 Me encanta todo lo que tenga que ver con la estrategia, es una gran forma de desarrollar el cerebro</li>
-                        <li>🥊 Me interesan los deportes de contacto (Boxeo, Kickboxing, Jiu-Jitsu), pero nunca he podido practicarlos</li>
-                        <li>⚽ Me encanta prácticar diversos deportes de equipo e individuales (Fútbol, Tenis, Padel, etc.)</li>
-                        <li>🎶 Me gusta cantar y me gustaría formar una pequeña banda de música en el futuro</li>
+                        <li>🧠 Me encanta todo lo relacionado con la estrategia, es una gran forma de desarrollar el cerebro.</li>
+                        <li>🥊 Me interesan los deportes de contacto (Boxeo, Kickboxing, Jiu-Jitsu), aunque no he podido practicarlos.</li>
+                        <li>⚽ Disfruto practicando deportes de equipo e individuales (Fútbol, Tenis, Padel, etc.).</li>
+                        <li>🎶 Me gusta cantar y me gustaría formar una banda de música en el futuro.</li>
                     </ul>
                 </div>
 
-                <!-- Bloque de Preguntas Frecuentes -->
+                <!-- Preguntas Frecuentes (FAQ) -->
                 <div class="faq">
-                    <h3>❔ Preguntas Frecuentes</h3>
-                    <details>
-                        <summary><strong>¿Cuál es tu lenguaje de programación preferido?</strong></summary>
-                        <p>
-                            Actualmente, me está gustando mucho usar Dart con 
-                            el Framework Flutter para crear aplicaciones 
-                            multiplataforma.
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary><strong>¿En cual red social estás más activo?</strong></summary>
-                        <p>
-                            Suelo usar muchas redes sociales en mi día a día, pero sobre todo estoy muy activo en Instagram
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary><strong>¿Tienes algún permiso de conducir?</strong></summary>
-                        <p>
-                            Si, tengo el permiso o carnét B de conducir (Curiosidad: En el examen teórico lo aprobé a la primera 
-                            y tuve 0 fallos, en el examen práctico tambien lo aprobé a la primera y tuve 1 fallo leve).
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary><strong>¿Que nivel de inglés tienes?</strong></summary>
-                        <p>
-                            Considero que tengo un nivel intermédio de inglés (B1), pero no poseo una certificación oficial
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary><strong>¿Android o IOs?</strong></summary>
-                        <p>
-                            Siempre he tenido Android y lo considero superior a IOs por la libertad que ofrece al usuario, y 
-                            como desarrollador, noto mucho más esa libertad a la hora de programar aplicaciones para 
-                            Android. También pienso que Apple se excede en muchos casos con sus dispositivos IOs, 
-                            llegando en ciertas ocasiones a abusar del consumidor, lo que lo considero injusto. Sin embargo,
-                            esta opinión no influye en absoluto a la hora de programar aplicaciones móviles, yo programo tanto para
-                            Android como para IOs por igual.
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary><strong>¿Windows, MAC o alguna distribución Linux o Debian?</strong></summary>
-                        <p>
-                            Desde pequeño he estado acostumbrado a la comodidad de Windows y actualmente no lo cambiaría por nada de 
-                            mundo. Si que es verdad que, como informático, he estado aprendiendo muchísimo sobre Linux, 
-                            incluso llegué a tenerlo como SO principal en mi PC durante una temporada, pero no llegué a 
-                            acostumbrarme del todo y volví a Windows. Actualmente uso Windows y lo considero el mejor SO
-                            para mi, y ocasionalmente puedo llegar a usar alguna distro de Linux o Debian para propósitos profesionales, 
-                            como Kali Linux para mi formación en ciberseguridad. Y en cuanto a MAC, como he dicho en la anterior respuesta, 
-                            no soy afín al entorno Apple,por lo que actualmente no me planteo usar MAC para ningún propósito.
-                        </p>
-                    </details>
-
-
-                    <details>
-                        <summary><strong>¿Cómo puedo contactarte?</strong></summary>
-                        <p>Puedes contactarme a través de mis redes sociales o enviarme un correo. ¡Siempre estoy abierto a nuevas oportunidades y colaboraciones!</p>
-                    </details>
+                    <h3 id="faq-title">❔ Preguntas Frecuentes</h3>
+                    <div id="faq-list">
+                        <details>
+                            <summary><strong>¿Cuál es tu lenguaje de programación preferido?</strong></summary>
+                            <p>Actualmente, me está gustando mucho usar Dart con el Framework Flutter para crear aplicaciones multiplataforma.</p>
+                        </details>
+                        <details>
+                            <summary><strong>¿En cuál red social estás más activo?</strong></summary>
+                            <p>Suelo usar muchas redes sociales, pero sobre todo estoy muy activo en Instagram.</p>
+                        </details>
+                        <details>
+                            <summary><strong>¿Tienes algún permiso de conducir?</strong></summary>
+                            <p>Sí, tengo el permiso B de conducir. Lo aprobé a la primera tanto en el examen teórico (0 fallos) como en el práctico (1 fallo leve).</p>
+                        </details>
+                        <details>
+                            <summary><strong>¿Qué nivel de inglés tienes?</strong></summary>
+                            <p>Considero que tengo un nivel intermedio de inglés (B1), aunque no poseo una certificación oficial.</p>
+                        </details>
+                        <details>
+                            <summary><strong>¿Android o iOS?</strong></summary>
+                            <p>Siempre he tenido Android y lo considero superior a iOS por la libertad que ofrece al usuario. Programo tanto para Android como para iOS sin distinción.</p>
+                        </details>
+                        <details>
+                            <summary><strong>¿Windows, Mac o Linux?</strong></summary>
+                            <p>Prefiero Windows por su comodidad, pero también uso Linux (como Kali Linux) para propósitos profesionales. No utilizo Mac debido a mi preferencia por sistemas abiertos.</p>
+                        </details>
+                        <details>
+                            <summary><strong>¿Cómo puedo contactarte?</strong></summary>
+                            <p>Puedes contactarme a través de mis redes sociales o enviarme un correo. ¡Siempre estoy abierto a nuevas oportunidades y colaboraciones!</p>
+                        </details>
+                    </div>
                 </div>
             </div>
         </section>
@@ -534,19 +537,15 @@
         <!-- Sección de Soft Skills -->
         <section id="soft-skills" class="soft-skills">
             <div class="container">
-                <h2 class="skills-title">Soft Skills</h2>
-                <p class="skills-description">
-                    A lo largo de mi experiencia, he desarrollado diversas habilidades 
-                    interpersonales, metódicas e intrapersonales que complementan mis 
-                    conocimientos técnicos. Estas competencias me permiten abordar problemas 
-                    con eficacia, colaborar en equipo y gestionar proyectos con organización 
-                    y proactividad.
+                <h2 id="soft-skills-title" class="skills-title">Soft Skills</h2>
+                <p id="soft-skills-description" class="skills-description">
+                    He desarrollado diversas habilidades interpersonales, metódicas e intrapersonales que complementan mis conocimientos técnicos.
                 </p>
 
                 <!-- Habilidades Interpersonales -->
                 <div class="skill-category">
-                    <h3>Habilidades Interpersonales</h3>
-                    <div class="skill-icons">
+                    <h3 id="interpersonal-skills">Habilidades Interpersonales</h3>
+                    <div id="interpersonal-list" class="skill-icons">
                         <span>Trabajo en equipo</span>
                         <span>Escucha activa</span>
                     </div>
@@ -554,8 +553,8 @@
 
                 <!-- Habilidades Metódicas -->
                 <div class="skill-category">
-                    <h3>Habilidades Metódicas</h3>
-                    <div class="skill-icons">
+                    <h3 id="methodical-skills">Habilidades Metódicas</h3>
+                    <div id="methodical-list" class="skill-icons">
                         <span>Organización</span>
                         <span>Resolución de problemas</span>
                         <span>Atención al detalle</span>
@@ -564,8 +563,8 @@
 
                 <!-- Competencias Intrapersonales -->
                 <div class="skill-category">
-                    <h3>Competencias Intrapersonales</h3>
-                    <div class="skill-icons">
+                    <h3 id="intrapersonal-skills">Competencias Intrapersonales</h3>
+                    <div id="intrapersonal-list" class="skill-icons">
                         <span>Adaptabilidad</span>
                         <span>Autodisciplina</span>
                         <span>Proactividad</span>
@@ -574,7 +573,6 @@
                 </div>
             </div>
         </section>
-        
 
 
 
@@ -593,27 +591,27 @@
         <!-- Sección de Formación -->
         <section id="education" class="education-section">
             <div class="container">
-                <h2 class="education-title">Mi Formación</h2>
+                <h2 id="education-title" class="education-title">Mi Formación</h2>
 
                 <!-- Estudios Reglados -->
                 <div class="education-category">
-                    <h3>📚 Estudios Reglados</h3>
+                    <h3 id="formal-studies">📚 Estudios Reglados</h3>
 
                     <!-- Bachillerato en Ciencias de la Salud -->
                     <div class="education-item">
-                        <h4>Bachillerato en Ciencias de la Salud</h4>
-                        <p class="issuer"><b>Centro:</b> IES El Getares (Algeciras)</p>
-                        <p class="date"><b>Fecha:</b> Septiembre 2020 - Junio 2022</p>
-                        <p class="description">
-                            <b>Descripción</b> En esta etapa adquirí una sólida formación 
+                        <h4 id="highschool-title">Bachillerato en Ciencias de la Salud</h4>
+                        <p id="highschool-center" class="issuer"><b>Centro:</b> IES El Getares (Algeciras)</p>
+                        <p id="highschool-date" class="date"><b>Fecha:</b> Septiembre 2020 - Junio 2022</p>
+                        <p id="highschool-description" class="description">
+                            <b>Descripción:</b> En esta etapa adquirí una sólida formación 
                             en ciencias básicas como biología, química y matemáticas. También, 
                             desarrollé habilidades analíticas y una gran capacidad de resolución 
-                            de problemas. Y por último, durante mi formación en esta étapa, conocí 
+                            de problemas. Y por último, durante mi formación en esta etapa, conocí 
                             el mundo del desarrollo y la programación, lo que me animó a escoger
                             este campo a nivel profesional. 
                         </p>
-                        <div class="skills-icons">
-                            <p><b>Habilidades Adquiridas:</b></p>
+                        <div id="highschool-skills" class="skills-icons">
+                            <p id="highschool-skills-title"><b>Habilidades Adquiridas:</b></p>
                             <span>Adaptabilidad</span>
                             <span>Resolución de problemas</span>
                             <span>Inglés (B1)</span>
@@ -624,16 +622,16 @@
 
                     <!-- FP Superior en Desarrollo de Aplicaciones Multiplataforma (DAM) -->
                     <div class="education-item">
-                        <h4>FPGS en Desarrollo de Aplicaciones Multiplataforma (DAM)</h4>
-                        <p class="issuer"><b>Centro:</b> IES Rafael Alberti (Cádiz)</p>
-                        <p class="date"><b>Fecha:</b> Septiembre 2022 - Junio 2024</p>
-                        <p class="description">
-                            <b>Descripción</b> Formación enfocada en el diseño, desarrollo y mantenimiento de 
+                        <h4 id="dam-title">FPGS en Desarrollo de Aplicaciones Multiplataforma (DAM)</h4>
+                        <p id="dam-center" class="issuer"><b>Centro:</b> IES Rafael Alberti (Cádiz)</p>
+                        <p id="dam-date" class="date"><b>Fecha:</b> Septiembre 2022 - Junio 2024</p>
+                        <p id="dam-description" class="description">
+                            <b>Descripción:</b> Formación enfocada en el diseño, desarrollo y mantenimiento de 
                             aplicaciones multiplataforma. Aprendí a programar en diversos lenguajes y frameworks, 
                             destacando en el desarrollo móvil con Kotlin y Flutter.
                         </p>
                         <div class="skills-icons">
-                            <p><b>Habilidades Adquiridas:</b></p>
+                            <p id="dam-skills-title"><b>Habilidades Adquiridas:</b></p>
                             <img src="resources/Software_Icons/Kotlin.png" alt="Kotlin" title="Kotlin">
                             <img src="resources/Software_Icons/JetpackCompose.png" alt="JetpackCompose" title="JetpackCompose">
                             <img src="resources/Software_Icons/Dart.png" alt="Dart" title="Dart">
@@ -648,20 +646,19 @@
 
                 <!-- Certificaciones -->
                 <div class="education-category">
-                    <h3>📜 Certificaciones</h3>
+                    <h3 id="certifications">📜 Certificaciones</h3>
 
-                    <!-- Certificación de Cisco: Introduction to Cybersecurity -->
                     <div class="education-item">
-                        <h4>Introduction to Cybersecurity</h4>
-                        <p class="issuer"><b>Centro:</b> Cisco Networking Academy</p>
-                        <p class="date"><b>Fecha:</b> Enero 2025</p>
-                        <p class="description">
+                        <h4 id="cybersec-title">Introduction to Cybersecurity</h4>
+                        <p id="cybersec-center" class="issuer"><b>Centro:</b> Cisco Networking Academy</p>
+                        <p id="cybersec-date" class="date"><b>Fecha:</b> Enero 2025</p>
+                        <p id="cybersec-description" class="description">
                             <b>Descripción:</b> Certificación en fundamentos de ciberseguridad, explorando 
                             las amenazas más comunes, cómo proteger sistemas y comprender la importancia de 
                             la seguridad en la infraestructura digital.
                         </p>
                         <div class="skills-icons">
-                            <p><b>Habilidades Adquiridas:</b></p>
+                            <p id="cybersec-skills-title"><b>Habilidades Adquiridas:</b></p>
                             <span>Thread Detection</span>
                         </div>
                     </div>
@@ -669,23 +666,24 @@
 
                 <!-- Reconocimientos -->
                 <div class="education-category">
-                    <h3>🏆 Reconocimientos</h3>
-                    <p class="no-awards">Aún no poseo reconocimientos, ¡pero sigo trabajando para conseguirlos! 📱</p>
+                    <h3 id="awards">🏆 Reconocimientos</h3>
+                    <p id="no-awards" class="no-awards">Aún no poseo reconocimientos, ¡pero sigo trabajando para conseguirlos! 📱</p>
                 </div>
 
                 <!-- Contribuciones -->
                 <div class="education-category">
-                    <h3>🤝 Contribuciones</h3>
-                    <p class="no-contributions">Aún no he realizado contribuciones, ¡pero planeo aportar a la comunidad en el futuro! 💻</p>
+                    <h3 id="contributions">🤝 Contribuciones</h3>
+                    <p id="no-contributions" class="no-contributions">Aún no he realizado contribuciones, ¡pero planeo aportar a la comunidad en el futuro! 💻</p>
                 </div>
 
                 <!-- Participación en Eventos -->
                 <div class="education-category">
-                    <h3>📅 Participación en Eventos</h3>
-                    <p class="no-participation">Todavía no he participado en eventos, ¡pero estaré encantado de hacerlo pronto! 🎤</p>
+                    <h3 id="events">📅 Participación en Eventos</h3>
+                    <p id="no-participation" class="no-participation">Todavía no he participado en eventos, ¡pero estaré encantado de hacerlo pronto! 🎤</p>
                 </div>
             </div>
         </section>
+
     </body>
 </html>
 <!-- © 2025 Adrián Sabino Pérez. Todos los derechos reservados. Prohibida la reproducción o imitación total o parcial del código sin autorización. -->
