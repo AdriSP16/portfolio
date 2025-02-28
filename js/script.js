@@ -101,7 +101,7 @@ const translations = {
 
         /* HARDWARE SKILL SECTION */
 
-        hardwareSkillsTitle: "Habiliades de Hardware",
+        hardwareSkillsTitle: "Habilidades de Hardware",
         hardwareSkillsDescription: "Además de mi experiencia en desarrollo de software y ciberseguridad, cuento con conocimientos en hardware, montaje de equipos y mucho más.",
         hardwareMaintenance: "Mantenimiento y Diagnóstico",
         hardwareRepair: "Reparación de hardware",
@@ -3220,7 +3220,818 @@ const translations = {
 
 
 
-    /* IDIOMA  */
+    /* IDIOMA HEBREO */
+
+    he: {
+        navbarTitle: "AdriDevSP",
+        introText: "!שלום עולם, קוראים לי",
+        jobTitle: "אני <span class='highlight'>מפתח פולסטאק!</span>",
+        motto: "מפתח פולסטאק ומובייל ביום, אנליסט סייבר בלילה.",
+        downloadBtn: "הורד קורות חיים",
+        contactBtn: "&lt; יצירת קשר /&gt;",
+        popupTitle: "אימיילים",
+        projectsTitle: "פרויקטים",
+        noProjects: "עדיין אין פרויקטים בולטים 😔",
+
+        /* קטע כישורים טכנולוגיים */
+
+        techSkillsTitle: "כישורים טכנולוגיים",
+        techSkillsDescription: "במהלך הכשרתי כמפתח תוכנה פולסטאק, רכשתי מיומנויות בפיתוח תוכנה וניסיון עם הכלים המרכזיים, מה שאפשר לי ליצור אפליקציות מובייל ורב-פלטפורמה שהן גמישות, חזקות ומתפקדות במלואן. להלן הכישורים הטכנולוגיים שאפשרו לי להגיע לרמה הנוכחית:",
+        frontend: "חזית (Frontend)",
+        backend: "שרת (Backend)",
+        programmingLanguages: "שפות תכנות",
+        databases: "מסדי נתונים",
+        versionControl: "ניהול גרסאות",
+        frameworks: "פריימוורקים",
+        otherTechnologies: "טכנולוגיות נוספות",
+
+        /* סוף קטע כישורים טכנולוגיים */
+
+
+        /* קטע ניסיון */
+
+        experienceTitle: "ניסיון תעסוקתי",
+        noExperience: "עדיין אין לי ניסיון תעסוקתי, אבל בינתיים אני ממשיך לפתח פרויקטים אישיים :D",
+
+        /* סוף קטע ניסיון */
+
+
+        /* קטע כישורי חומרה */
+
+        hardwareSkillsTitle: "כישורי חומרה",
+        hardwareSkillsDescription: "בנוסף לניסיון שלי בפיתוח תוכנה ואבטחת סייבר, יש לי ידע בחומרה, הרכבת מערכות ועוד.",
+        hardwareMaintenance: "תחזוקה ואבחון",
+        hardwareRepair: "תיקון חומרה",
+        virtualization: "התקנה וניהול סביבות וירטואליות במכשירים פיזיים",
+        serverMaintenance: "תחזוקה ואבחון של שרתים",
+        embeddedDevices: "מכשירים משובצים",
+
+        hardwareSpans: {
+            maintenance: [
+                "הרכבת מחשבים שולחניים",
+                "התקנה והגדרה של מערכות הפעלה שונות",
+                "איתור תקלות חומרה"
+            ],
+            repair: [
+                "תיקון בסיסי של מחשבים ניידים (Windows או Linux)",
+                "תיקון בסיסי של מכשירים ניידים (Android)",
+                "תיקון בסיסי של טאבלטים",
+                "תיקון בינוני של מחשבים שולחניים",
+                "אופטימיזציה בסיסית של ביצועי מערכת"
+            ],
+            virtualization: [
+                "התקנת סביבות וירטואליות (VMware ו-VirtualBox)",
+                "יצירה וניהול של מכונות וירטואליות (VMs)",
+                "הגדרת חומרה וירטואלית (מעבד, זיכרון, אחסון)"
+            ],
+            serverMaintenance: [
+                "התקנת מערכות הפעלה לשרתים (Windows Server, Ubuntu Server וכו')",
+                "הרכבה והתקנה בסיסית של שרתים פיזיים",
+                "אופטימיזציה בסיסית של חומרה בשרתים"
+            ],
+            embeddedDevices: "Arduino"
+        },
+
+        /* סוף קטע כישורי חומרה */
+
+
+        /* קטע עליי */
+
+        aboutMeTitle: "עליי",
+        aboutMeIntro1: "!שלום! אני <strong>אדריאן סבינו</strong>, מפתח <strong>פולסטאק ומובייל</strong> עם מיקוד ביצירת אפליקציות מודרניות, גמישות ומתפקדות. בנוסף, אני כרגע מתמחה בתפקיד <strong>אנליסט סייבר ג'וניור</strong>.",
+        aboutMeIntro2: "המסלול שלי משלב יצירתיות בפיתוח תוכנה עם הדיוק הנדרש בניתוח אבטחת סייבר. אני אוהב להתמודד עם אתגרים חדשים, ללמוד כל הזמן ולחקור טכנולוגיות חדשות כדי לשפר את הכישורים שלי.",
+
+        // שאיפות
+        ambitionsTitle: "🎯 השאיפות שלי",
+        ambitionsList: [
+            "🛡️ להפוך למומחה <strong>באבטחת סייבר</strong>.",
+            "🔒 לעבוד בחברות בינלאומיות מובילות בתחום אבטחת הסייבר (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle וכו').",
+            "🖱️ להרחיב את הידע שלי בפיתוח תוכנה רב-פלטפורמית ופולסטאק.",
+            "🏡 לגור במדינות בצפון אירופה (דנמרק, נורווגיה, גרמניה, אירלנד), בצפון אמריקה (ארה\"ב או קנדה) או באסיה (יפן או דרום קוריאה)."
+        ],
+
+        // תחביבים
+        hobbiesTitle: "🎨 מעבר לקוד",
+        hobbiesIntro: "כשאני לא מתכנת או לומד על אבטחת סייבר, אני נהנה מ:",
+        hobbiesList: [
+            "🎮 לשחק במשחקי וידאו (הז'אנרים האהובים עליי: אסטרטגיה, יריות, אימה, הישרדות, היסטוריה וסגנון Souls).",
+            "♟️ לשחק במשחקי לוח (כמו שחמט, Risk, Seven Wonders Duels ו-Carcassonne).",
+            "📖 ללמוד על היסטוריה עולמית, במיוחד ספרד, ולנתח מצבים גיאופוליטיים.",
+            "📺 לצפות בסרטים, סדרות ואנימה.",
+            "🎵 להאזין למוזיקה (Estopa, Fito y Fitipaldis, Mägo de Oz, El Canto del Loco, Dani Martín, Melendi)."
+        ],
+
+        /* סוף קטע עליי */
+
+        /* קטע סקרנות (Curiosities) */
+
+        curiositiesTitle: "🤔 עובדות מעניינות עליי",
+        curiositiesList: [
+            "👨‍💻 כתבתי את התוכנית הראשונה שלי ב-Python כשהייתי בן 16.",
+            "🏅 זכיתי במספר פרסים בטורנירי שחמט באזור קמפו דה גיברלטר.",
+            "🌐 אני מתעניין מאוד בהיסטוריה ובגיאופוליטיקה והשפעתן על הטכנולוגיה הגלובלית.",
+            "🧠 אני אוהב כל מה שקשור לאסטרטגיה – זו דרך מצוינת לפתח חשיבה לוגית.",
+            "🥊 אני מתעניין באומנויות לחימה (אגרוף, קיקבוקסינג, ג'יו-ג'יטסו), למרות שלא יצא לי לתרגל אותן עדיין.",
+            "⚽ אני נהנה לעסוק בספורט קבוצתי ובספורט יחידני (כדורגל, טניס, פדל ועוד).",
+            "🎶 אני אוהב לשיר וביום מן הימים הייתי רוצה להקים להקת מוזיקה."
+        ],
+
+        /* סוף קטע סקרנות */
+
+
+        /* קטע שאלות נפוצות (FAQ) */
+
+        faqTitle: "❔ שאלות נפוצות",
+        faq: [
+            {
+                question: "מהי שפת התכנות המועדפת עליך?",
+                answer: "כרגע אני מאוד נהנה להשתמש ב-Dart יחד עם Flutter לפיתוח אפליקציות מרובות פלטפורמות."
+            },
+            {
+                question: "באיזו רשת חברתית אתה הכי פעיל?",
+                answer: "אני משתמש בהרבה רשתות חברתיות, אבל אני הכי פעיל באינסטגרם."
+            },
+            {
+                question: "האם יש לך רישיון נהיגה?",
+                answer: "כן, יש לי רישיון נהיגה מסוג B. עברתי את המבחן התיאורטי (0 טעויות) ואת המבחן המעשי (טעות קלה אחת) בניסיון הראשון."
+            },
+            {
+                question: "מהי רמת האנגלית שלך?",
+                answer: "אני מעריך שיש לי רמה בינונית באנגלית (B1), למרות שאין לי תעודה רשמית לכך."
+            },
+            {
+                question: "Android או iOS?",
+                answer: "תמיד השתמשתי ב-Android ואני רואה בו מערכת טובה יותר מ-iOS בזכות החופש שהוא מעניק למשתמש. אני מפתח אפליקציות לשתי הפלטפורמות ללא הבחנה."
+            },
+            {
+                question: "Windows, Mac או Linux?",
+                answer: "אני מעדיף את Windows בזכות הנוחות שלו, אבל אני גם משתמש ב-Linux (למשל Kali Linux) לצרכים מקצועיים. אני לא משתמש ב-Mac בגלל ההעדפה שלי למערכות פתוחות."
+            },
+            {
+                question: "איך אפשר ליצור איתך קשר?",
+                answer: "אתה יכול ליצור איתי קשר דרך הרשתות החברתיות שלי או לשלוח לי מייל. אני תמיד פתוח להזדמנויות ושיתופי פעולה חדשים!"
+            }
+        ],
+
+        /* סוף קטע שאלות נפוצות */
+
+
+        /* קטע מיומנויות רכות (Soft Skills) */
+
+        softSkillsTitle: "מיומנויות רכות",
+        softSkillsDescription: "פיתחתי מגוון מיומנויות בין-אישיות, שיטתיות ותוך-אישיות המשלימות את הידע הטכני שלי.",
+
+        // מיומנויות בין-אישיות
+        interpersonalSkills: "מיומנויות בין-אישיות",
+        interpersonalList: [
+            "עבודת צוות",
+            "הקשבה פעילה"
+        ],
+
+        // מיומנויות שיטתיות
+        methodicalSkills: "מיומנויות שיטתיות",
+        methodicalList: [
+            "ארגון",
+            "פתרון בעיות",
+            "תשומת לב לפרטים"
+        ],
+
+        // מיומנויות תוך-אישיות
+        intrapersonalSkills: "מיומנויות תוך-אישיות",
+        intrapersonalList: [
+            "יכולת הסתגלות",
+            "משמעת עצמית",
+            "יוזמה",
+            "למידה מתמשכת"
+        ],
+
+        /* סוף קטע מיומנויות רכות */
+
+
+        /* קטע חינוך (Education) */
+
+        educationTitle: "ההשכלה שלי",
+
+        // לימודים פורמליים
+        formalStudies: "📚 לימודים פורמליים",
+
+        // תיכון למדעי הבריאות
+        highSchoolTitle: "תיכון למדעי הבריאות",
+        highSchoolCenter: "<b>מוסד לימודים:</b> IES El Getares (אלחסיראס)",
+        highSchoolDate: "<b>תאריך:</b> ספטמבר 2020 - יוני 2022",
+        highSchoolDescription: "<b>תיאור:</b> במהלך תקופה זו רכשתי ידע מוצק במדעים בסיסיים כגון ביולוגיה, כימיה ומתמטיקה. בנוסף, פיתחתי יכולות אנליטיות ויכולת גבוהה לפתרון בעיות. בתקופה זו גיליתי את עולם הפיתוח והתכנות, מה שהניע אותי לבחור בתחום זה באופן מקצועי.",
+        skillsAcquiredText: "מיומנויות שנרכשו:",
+        highSchoolSkills: [
+            "יכולת הסתגלות",
+            "פתרון בעיות",
+            "אנגלית (B1)",
+            "צרפתית (A2)"
+        ],
+        highSchoolIcons: [
+            { src: "resources/Software_Icons/Python.png", alt: "Python", title: "Python" }
+        ],
+
+        // תואר בטכנולוגיות מידע (DAM)
+        damTitle: "תואר בפיתוח יישומים מרובי פלטפורמות (DAM)",
+        damCenter: "<b>מוסד לימודים:</b> IES Rafael Alberti (קדיס)",
+        damDate: "<b>תאריך:</b> ספטמבר 2022 - יוני 2024",
+        damDescription: "<b>תיאור:</b> הכשרה מתמחה בעיצוב, פיתוח ותחזוקה של יישומים מרובי פלטפורמות. למדתי לתכנת בשפות ובמסגרות שונות, והצטיינתי בפיתוח מובייל באמצעות Kotlin ו-Flutter.",
+        damIcons: [
+            { src: "resources/Software_Icons/Kotlin.png", alt: "Kotlin", title: "Kotlin" },
+            { src: "resources/Software_Icons/JetpackCompose.png", alt: "JetpackCompose", title: "JetpackCompose" },
+            { src: "resources/Software_Icons/Dart.png", alt: "Dart", title: "Dart" },
+            { src: "resources/Software_Icons/Flutter.png", alt: "Flutter", title: "Flutter" },
+            { src: "resources/Software_Icons/CShard.png", alt: "C#", title: "C#" },
+            { src: "resources/Software_Icons/MySQL.png", alt: "MySQL", title: "MySQL" },
+            { src: "resources/Software_Icons/MongoDB.png", alt: "MongoDB", title: "MongoDB" },
+            { src: "resources/Software_Icons/Firebase.png", alt: "Firebase", title: "Firebase" }
+        ],
+
+        // תעודות
+        certifications: "📜 תעודות",
+
+        // תעודת סיסקו: מבוא לאבטחת סייבר
+        cybersecTitle: "מבוא לאבטחת סייבר",
+        cybersecCenter: "<b>מוסד לימודים:</b> Cisco Networking Academy",
+        cybersecDate: "<b>תאריך:</b> ינואר 2025",
+        cybersecDescription: "<b>תיאור:</b> הסמכה ביסודות אבטחת סייבר, בחינת האיומים הנפוצים ביותר, דרכים להגן על מערכות והבנת חשיבות האבטחה בתשתית הדיגיטלית.",
+        cybersecSkills: [
+            "זיהוי איומים"
+        ],
+
+        /* סוף קטע חינוך */
+
+        /* קטע פרסים, תרומות והשתתפות באירועים */
+
+        // פרסים (Awards)
+        awards: "🏆 פרסים",
+        noAwards: "עדיין לא זכיתי בפרסים, אבל אני ממשיך לעבוד קשה כדי להשיג אותם! 📱",
+
+        // תרומות (Contributions)
+        contributions: "🤝 תרומות",
+        noContributions: "עדיין לא תרמתי לפרויקטים ציבוריים, אבל אני מתכנן לתרום לקהילה בעתיד! 💻",
+
+        // השתתפות באירועים (Events)
+        events: "📅 השתתפות באירועים",
+        noEvents: "עדיין לא השתתפתי באירועים, אבל אני מצפה להשתתף בקרוב! 🎤",
+
+        /* סוף קטע פרסים, תרומות והשתתפות באירועים */
+
+    },
+
+    /* FIN IDIOMA HEBREO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* IDIOMA DANES */
+
+    da: {
+        navbarTitle: "AdriDevSP",
+        introText: "Hej Verden!, mit navn er",
+        jobTitle: "Jeg er en <span class='highlight'>Fullstack-udvikler!</span>",
+        motto: "Fullstack- og mobiludvikler om dagen, cybersikkerhedsanalytiker om natten.",
+        downloadBtn: "Download CV",
+        contactBtn: "&lt; Kontakt /&gt;",
+        popupTitle: "Emails",
+        projectsTitle: "Projekter",
+        noProjects: "Der er endnu ingen bemærkelsesværdige projekter 😔",
+
+        /* TEKNOLOGISKE FÆRDIGHEDER */
+
+        techSkillsTitle: "Teknologiske færdigheder",
+        techSkillsDescription: "I løbet af min uddannelse som Fullstack-softwareudvikler har jeg erhvervet færdigheder i softwareudvikling samt erfaring med centrale værktøjer, der har gjort det muligt for mig at skabe skalerbare, fleksible og fuldt funktionelle mobil- og multiplatform-applikationer. Nedenfor kan du se de teknologiske færdigheder, der har hjulpet mig med at nå mit nuværende niveau:",
+        frontend: "Frontend",
+        backend: "Backend",
+        programmingLanguages: "Programmeringssprog",
+        databases: "Databaser",
+        versionControl: "Versionskontrol",
+        frameworks: "Frameworks",
+        otherTechnologies: "Andre teknologier",
+
+        /* SLUT PÅ TEKNOLOGISKE FÆRDIGHEDER */
+
+
+        /* ARBEJDSERFARING */
+
+        experienceTitle: "Erhvervserfaring",
+        noExperience: "Jeg har endnu ingen erhvervserfaring, men i mellemtiden fortsætter jeg med at udvikle personlige projekter :D",
+
+        /* SLUT PÅ ARBEJDSERFARING */
+
+
+        /* HARDWAREFÆRDIGHEDER */
+
+        hardwareSkillsTitle: "Hardwarefærdigheder",
+        hardwareSkillsDescription: "Ud over min erfaring med softwareudvikling og cybersikkerhed har jeg også viden om hardware, samling af systemer og meget mere.",
+        hardwareMaintenance: "Vedligeholdelse og diagnose",
+        hardwareRepair: "Reparation af hardware",
+        virtualization: "Installation og administration af virtuelle miljøer på fysiske enheder",
+        serverMaintenance: "Vedligeholdelse og diagnose af servere",
+        embeddedDevices: "Indlejrede enheder",
+
+        hardwareSpans: {
+            maintenance: [
+                "Samling af stationære computere",
+                "Installation og opsætning af forskellige operativsystemer",
+                "Fejlfinding af hardwareproblemer"
+            ],
+            repair: [
+                "Grundlæggende reparation af bærbare computere (Windows eller Linux-miljø)",
+                "Grundlæggende reparation af mobile enheder (Android)",
+                "Grundlæggende reparation af tablets",
+                "Mellemniveau reparation af stationære computere",
+                "Grundlæggende optimering af systemets ydeevne"
+            ],
+            virtualization: [
+                "Installation af virtuelle miljøer (VMware og VirtualBox)",
+                "Oprettelse og administration af virtuelle maskiner (VM'er)",
+                "Konfiguration af virtuel hardware (CPU, RAM, lagerplads)"
+            ],
+            serverMaintenance: [
+                "Installation af server-operativsystemer (Windows Server, Ubuntu Server osv.)",
+                "Grundlæggende montering og installation af fysiske servere",
+                "Grundlæggende optimering af hardware på servere"
+            ],
+            embeddedDevices: "Arduino"
+        },
+
+        /* SLUT PÅ HARDWAREFÆRDIGHEDER */
+
+
+        /* OM MIG-SEKTION */
+
+        aboutMeTitle: "Om Mig",
+        aboutMeIntro1: "Hej! Jeg er <strong>Adrián Sabino</strong>, en passioneret <strong>Fullstack- og Mobiludvikler</strong> med fokus på at skabe moderne, skalerbare og funktionelle applikationer. Desuden uddanner jeg mig i øjeblikket til at blive <strong>Junior Cybersikkerhedsanalytiker</strong>.",
+        aboutMeIntro2: "Min rejse kombinerer kreativitet i softwareudvikling med præcisionen fra cybersikkerhedsanalyse. Jeg elsker at tage nye udfordringer op, lære konstant og udforske nye teknologier for at forbedre mine færdigheder.",
+
+        // Ambitioner
+        ambitionsTitle: "🎯 Mine Livsambitioner",
+        ambitionsList: [
+            "🛡️ At blive en <strong>ekspert i cybersikkerhed</strong>.",
+            "🔒 At arbejde hos førende multinationale virksomheder inden for cybersikkerhed (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle osv.).",
+            "🖱️ At udvide min viden om multiplatform- og fullstack-softwareudvikling mest muligt.",
+            "🏡 At bo i Nordeuropa (Danmark, Norge, Tyskland, Irland), Nordamerika (USA eller Canada) eller Asien (Japan eller Sydkorea)."
+        ],
+
+        // Hobbyer
+        hobbiesTitle: "🎨 Udover Kode",
+        hobbiesIntro: "Når jeg ikke programmerer, lærer om cybersikkerhed eller udforsker nye teknologier, nyder jeg at:",
+        hobbiesList: [
+            "🎮 Spille videospil (Mine yndlingsgenrer er: Strategi, Skydespil, Horror, Overlevelse, Historiske spil og Souls-spil).",
+            "♟️ Spille brætspil (som skak, Risk, Seven Wonders Duels eller Carcassonne).",
+            "📖 Lære om verdenshistorie, især Spaniens, og analysere geopolitiske situationer.",
+            "📺 Se film, serier og anime.",
+            "🎵 Lytte til musik (Estopa, Fito y Fitipaldis, Mägo de Oz, El Canto del Loco, Dani Martín og Melendi)."
+        ],
+
+        /* SLUT PÅ OM MIG-SEKTION */
+
+
+        /* CURIOSITETSSEKTION */
+
+        curiositiesTitle: "🤔 Sjove Fakta om Mig",
+        curiositiesList: [
+            "👨‍💻 Jeg skrev mit første Python-program, da jeg var 16 år gammel.",
+            "🏅 Jeg har vundet flere priser i skakturneringer i Campo de Gibraltar-området.",
+            "🌐 Jeg er fascineret af historie og geopolitik samt deres indflydelse på global teknologi.",
+            "🧠 Jeg elsker alt, der handler om strategi – det er en fantastisk måde at træne hjernen på.",
+            "🥊 Jeg er interesseret i kampsport (boksning, kickboksning, jiu-jitsu), selvom jeg endnu ikke har haft mulighed for at træne dem.",
+            "⚽ Jeg nyder at dyrke både holdsport og individuelle sportsgrene (fodbold, tennis, padel osv.).",
+            "🎶 Jeg elsker at synge, og en dag vil jeg gerne danne et band."
+        ],
+
+        /* SLUT PÅ CURIOSITETSSEKTION */
+
+
+        /* FAQ-SEKTION */
+
+        faqTitle: "❔ Ofte Stillede Spørgsmål",
+        faq: [
+            {
+                question: "Hvad er dit foretrukne programmeringssprog?",
+                answer: "Lige nu nyder jeg virkelig at bruge Dart med Flutter Framework til at skabe multiplatform-applikationer."
+            },
+            {
+                question: "Hvilket socialt netværk er du mest aktiv på?",
+                answer: "Jeg bruger mange sociale netværk, men jeg er mest aktiv på Instagram."
+            },
+            {
+                question: "Har du kørekort?",
+                answer: "Ja, jeg har et kategori B kørekort. Jeg bestod både den teoretiske prøve (0 fejl) og den praktiske prøve (1 mindre fejl) ved første forsøg."
+            },
+            {
+                question: "Hvilket niveau har du i engelsk?",
+                answer: "Jeg vurderer, at jeg har et mellemniveau i engelsk (B1), selvom jeg ikke har en officiel certificering."
+            },
+            {
+                question: "Android eller iOS?",
+                answer: "Jeg har altid brugt Android og betragter det som bedre end iOS på grund af den frihed, det giver brugeren. Jeg udvikler til både Android og iOS uden forskel."
+            },
+            {
+                question: "Windows, Mac eller Linux?",
+                answer: "Jeg foretrækker Windows for dets bekvemmelighed, men jeg bruger også Linux (som Kali Linux) til professionelle formål. Jeg bruger ikke Mac på grund af min præference for åbne systemer."
+            }
+        ],
+
+        /* BLØDE FÆRDIGHEDER-SEKTION */
+
+        softSkillsTitle: "Bløde Færdigheder",
+        softSkillsDescription: "Jeg har udviklet forskellige interpersonelle, metodiske og intrapersonelle færdigheder, der komplementerer mine tekniske kompetencer.",
+
+        // Interpersonelle Færdigheder (Interpersonal Skills)
+        interpersonalSkills: "Interpersonelle Færdigheder",
+        interpersonalList: [
+            "Samarbejde",
+            "Aktiv lytning"
+        ],
+
+        // Metodiske Færdigheder (Methodical Skills)
+        methodicalSkills: "Metodiske Færdigheder",
+        methodicalList: [
+            "Organisering",
+            "Problemløsning",
+            "Opmærksomhed på detaljer"
+        ],
+
+        // Intrapersonelle Kompetencer (Intrapersonal Skills)
+        intrapersonalSkills: "Intrapersonelle Kompetencer",
+        intrapersonalList: [
+            "Tilpasningsevne",
+            "Selvdisciplin",
+            "Initiativ",
+            "Kontinuerlig læring"
+        ],
+
+        /* SLUT PÅ BLØDE FÆRDIGHEDER-SEKTION */
+
+
+        /* SLUT PÅ FAQ-SEKTION */
+
+        educationTitle: "Min Uddannelse",
+
+        // Formelle Studier (Formal Studies)
+        formalStudies: "📚 Formelle Studier",
+    
+        // Gymnasiet (High School)
+        highSchoolTitle: "Gymnasiet i Sundhedsvidenskab",
+        highSchoolCenter: "<b>Skole:</b> IES El Getares (Algeciras)",
+        highSchoolDate: "<b>Dato:</b> September 2020 - Juni 2022",
+        highSchoolDescription: "<b>Beskrivelse:</b> I denne periode opnåede jeg en solid baggrund i grundlæggende videnskaber som biologi, kemi og matematik. Jeg udviklede også analytiske færdigheder og evnen til at løse problemer. Det var i denne periode, at jeg opdagede softwareudviklingens verden, hvilket inspirerede mig til at vælge dette felt professionelt.",
+        skillsAcquiredText: "Tilegnede Færdigheder:",
+        highSchoolSkills: [
+            "Tilpasningsevne",
+            "Problemløsning",
+            "Engelsk (B1)",
+            "Fransk (A2)"
+        ],
+        highSchoolIcons: [
+            { src: "resources/Software_Icons/Python.png", alt: "Python", title: "Python" }
+        ],
+    
+        // FPGS i Multiplatform Applikationsudvikling (DAM)
+        damTitle: "FPGS i Multiplatform Applikationsudvikling (DAM)",
+        damCenter: "<b>Skole:</b> IES Rafael Alberti (Cádiz)",
+        damDate: "<b>Dato:</b> September 2022 - Juni 2024",
+        damDescription: "<b>Beskrivelse:</b> Specialiseret uddannelse i design, udvikling og vedligeholdelse af multiplatform-applikationer. Jeg har lært at programmere i forskellige sprog og frameworks med særlig ekspertise inden for mobiludvikling med Kotlin og Flutter.",
+        damIcons: [
+            { src: "resources/Software_Icons/Kotlin.png", alt: "Kotlin", title: "Kotlin" },
+            { src: "resources/Software_Icons/JetpackCompose.png", alt: "JetpackCompose", title: "JetpackCompose" },
+            { src: "resources/Software_Icons/Dart.png", alt: "Dart", title: "Dart" },
+            { src: "resources/Software_Icons/Flutter.png", alt: "Flutter", title: "Flutter" },
+            { src: "resources/Software_Icons/CShard.png", alt: "C#", title: "C#" },
+            { src: "resources/Software_Icons/MySQL.png", alt: "MySQL", title: "MySQL" },
+            { src: "resources/Software_Icons/MongoDB.png", alt: "MongoDB", title: "MongoDB" },
+            { src: "resources/Software_Icons/Firebase.png", alt: "Firebase", title: "Firebase" }
+        ],
+    
+        // Certificeringer (Certifications)
+        certifications: "📜 Certificeringer",
+    
+        // Cisco-certificering: Introduktion til Cybersikkerhed
+        cybersecTitle: "Introduktion til Cybersikkerhed",
+        cybersecCenter: "<b>Center:</b> Cisco Networking Academy",
+        cybersecDate: "<b>Dato:</b> Januar 2025",
+        cybersecDescription: "<b>Beskrivelse:</b> Certificering i cybersikkerhedsgrundlag, der udforsker de mest almindelige trusler, hvordan man beskytter systemer, og vigtigheden af sikkerhed i digital infrastruktur.",
+        cybersecSkills: [
+            "Trusselsdetektion"
+        ],
+    
+        /* SLUT PÅ UDDANNELSESSEKTION */
+
+        /* PRISER, BIDRAG OG BEGIVENHEDER-SEKTION */
+
+        // Priser (Awards)
+        awards: "🏆 Priser",
+        noAwards: "Jeg har endnu ikke modtaget nogen priser, men jeg arbejder hårdt på at opnå dem! 📱",
+
+        // Bidrag (Contributions)
+        contributions: "🤝 Bidrag",
+        noContributions: "Jeg har endnu ikke bidraget til fællesskabet, men jeg planlægger at gøre det i fremtiden! 💻",
+
+        // Deltagelse i Begivenheder (Events)
+        events: "📅 Deltagelse i Begivenheder",
+        noEvents: "Jeg har endnu ikke deltaget i nogen begivenheder, men jeg ser frem til at gøre det snart! 🎤",
+
+        /* SLUT PÅ PRISER, BIDRAG OG BEGIVENHEDER-SEKTION */
+
+    },
+
+    /* FIN IDIOMA DANÉS */
+
+
+
+
+
+
+
+
+
+
+
+    /* IDIOMA CHECO */
+
+    cs: {
+        navbarTitle: "AdriDevSP",
+        introText: "Ahoj světe!, jmenuji se",
+        jobTitle: "Jsem <span class='highlight'>Fullstack vývojář!</span>",
+        motto: "Fullstack a mobilní vývojář ve dne, analytik kybernetické bezpečnosti v noci.",
+        downloadBtn: "Stáhnout CV",
+        contactBtn: "&lt; Kontakty /&gt;",
+        popupTitle: "E-maily",
+        projectsTitle: "Projekty",
+        noProjects: "Zatím žádné významné projekty 😔",
+
+        /* TECHNOLOGICKÉ DOVEDNOSTI */
+
+        techSkillsTitle: "Technologické dovednosti",
+        techSkillsDescription: "Během mého vzdělávání jako Fullstack vývojáře jsem získal dovednosti v oblasti vývoje softwaru a zkušenosti s klíčovými nástroji, které mi umožnily vytvářet škálovatelné, flexibilní a plně funkční mobilní a multiplatformní aplikace. Níže jsou uvedeny technologické dovednosti, které mi pomohly dosáhnout mé současné úrovně:",
+        frontend: "Frontend",
+        backend: "Backend",
+        programmingLanguages: "Programovací jazyky",
+        databases: "Databáze",
+        versionControl: "Správa verzí",
+        frameworks: "Frameworky",
+        otherTechnologies: "Další technologie",
+
+        /* KONEC TECHNOLOGICKÝCH DOVEDNOSTÍ */
+
+
+        /* PRACOVNÍ ZKUŠENOSTI */
+
+        experienceTitle: "Pracovní zkušenosti",
+        noExperience: "Zatím nemám žádné pracovní zkušenosti, ale mezitím se věnuji osobním projektům :D",
+
+        /* KONEC PRACOVNÍCH ZKUŠENOSTÍ */
+
+
+        /* HARDWARE DOVEDNOSTI */
+
+        hardwareSkillsTitle: "Hardwarové dovednosti",
+        hardwareSkillsDescription: "Kromě mých zkušeností s vývojem softwaru a kybernetickou bezpečností mám také znalosti v oblasti hardwaru, montáže počítačů a mnoho dalšího.",
+        hardwareMaintenance: "Údržba a diagnostika",
+        hardwareRepair: "Oprava hardwaru",
+        virtualization: "Instalace a správa virtuálních prostředí na fyzických zařízeních",
+        serverMaintenance: "Údržba a diagnostika serverů",
+        embeddedDevices: "Vestavěná zařízení",
+
+        hardwareSpans: {
+            maintenance: [
+                "Sestavování stolních počítačů",
+                "Instalace a konfigurace různých operačních systémů",
+                "Detekce hardwarových chyb"
+            ],
+            repair: [
+                "Základní opravy notebooků (prostředí Windows nebo Linux)",
+                "Základní opravy mobilních zařízení (Android)",
+                "Základní opravy tabletů",
+                "Středně pokročilé opravy stolních počítačů",
+                "Základní optimalizace výkonu systému"
+            ],
+            virtualization: [
+                "Instalace virtuálních prostředí (VMware a VirtualBox)",
+                "Vytváření a správa virtuálních strojů (VMs)",
+                "Konfigurace virtuálního hardwaru (CPU, RAM, úložiště)"
+            ],
+            serverMaintenance: [
+                "Instalace serverových operačních systémů (Windows Server, Ubuntu Server apod.)",
+                "Základní montáž a instalace fyzických serverů",
+                "Základní optimalizace hardwaru na serverech"
+            ],
+            embeddedDevices: "Arduino"
+        },
+
+        /* KONEC HARDWAROVÝCH DOVEDNOSTÍ */
+
+
+        /* SEKCE O MNĚ */
+
+        aboutMeTitle: "O Mně",
+        aboutMeIntro1: "Ahoj! Jsem <strong>Adrián Sabino</strong>, nadšený <strong>Fullstack a mobilní vývojář</strong> se zaměřením na vytváření moderních, škálovatelných a funkčních aplikací. Kromě toho se v současné době vzdělávám na pozici <strong>Junior analytika kybernetické bezpečnosti</strong>.",
+        aboutMeIntro2: "Moje cesta spojuje kreativitu vývoje softwaru s precizností analýzy kybernetické bezpečnosti. Baví mě čelit novým výzvám, neustále se učit a objevovat nové technologie pro zlepšení svých dovedností.",
+
+        // Ambice
+        ambitionsTitle: "🎯 Mé Životní Ambice",
+        ambitionsList: [
+            "🛡️ Stát se <strong>odborníkem na kybernetickou bezpečnost</strong>.",
+            "🔒 Pracovat ve špičkových nadnárodních společnostech v oblasti kybernetické bezpečnosti (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle atd.).",
+            "🖱️ Rozšířit své znalosti v oblasti multiplatformního a Fullstack vývoje softwaru na maximum.",
+            "🏡 Žít v severní Evropě (Dánsko, Norsko, Německo, Irsko), Severní Americe (USA nebo Kanada) nebo Asii (Japonsko nebo Jižní Korea)."
+        ],
+
+        // Koníčky
+        hobbiesTitle: "🎨 Mimo Kódování",
+        hobbiesIntro: "Když neprogramuji, neučím se o kybernetické bezpečnosti nebo nezkoumám nové technologie, rád:",
+        hobbiesList: [
+            "🎮 Hraji videohry (Moje oblíbené žánry: strategie, střílečky, horor, přežití, historické hry a Souls hry).",
+            "♟️ Hraji deskové hry (Jako šachy, Risk, Seven Wonders Duels nebo Carcassonne).",
+            "📖 Studuji světovou historii, zejména španělskou, a analyzuji geopolitické situace.",
+            "📺 Sleduji filmy, seriály a anime.",
+            "🎵 Poslouchám hudbu (Estopa, Fito y Fitipaldis, Mägo de Oz, El Canto del Loco, Dani Martín a Melendi)."
+        ],
+
+        /* KONEC SEKCE O MNĚ */
+
+
+        /* CURIOSITY SECTIONS */
+
+        curiositiesTitle: "🤔 Zajímavosti o Mně",
+        curiositiesList: [
+            "👨‍💻 Svůj první program v Pythonu jsem napsal, když mi bylo 16 let.",
+            "🏅 Vyhrál jsem několik cen na šachových turnajích v oblasti Campo de Gibraltar.",
+            "🌐 Fascinuje mě historie a geopolitika a jejich vliv na globální technologie.",
+            "🧠 Miluji strategii – je to skvělý způsob, jak rozvíjet mozek.",
+            "🥊 Zajímám se o bojové sporty (box, kickbox, jiu-jitsu), i když jsem je zatím nezkoušel.",
+            "⚽ Rád hraji týmové i individuální sporty (fotbal, tenis, padel atd.).",
+            "🎶 Miluji zpěv a jednoho dne bych chtěl založit hudební skupinu."
+        ],
+
+        /* KONEC CURIOSITY SECTIONS */
+
+        /* SEKCE FAQ */
+
+        faqTitle: "❔ Často kladené otázky",
+        faq: [
+            {
+                question: "Jaký je váš oblíbený programovací jazyk?",
+                answer: "Momentálně mě baví používat Dart s frameworkem Flutter k vytváření multiplatformních aplikací."
+            },
+            {
+                question: "Na které sociální síti jste nejaktivnější?",
+                answer: "Používám mnoho sociálních sítí, ale nejaktivnější jsem na Instagramu."
+            },
+            {
+                question: "Máte řidičský průkaz?",
+                answer: "Ano, mám řidičský průkaz skupiny B. Uspěšně jsem složil jak teoretickou (0 chyb), tak praktickou zkoušku (1 drobná chyba) na první pokus."
+            },
+            {
+                question: "Jaká je vaše úroveň angličtiny?",
+                answer: "Považuji se za člověka s pokročilou střední úrovní angličtiny (B1), i když nemám oficiální certifikaci."
+            },
+            {
+                question: "Android nebo iOS?",
+                answer: "Vždy jsem používal Android a považuji ho za lepší než iOS kvůli svobodě, kterou poskytuje uživatelům. Vyvíjím aplikace pro Android i iOS bez rozdílu."
+            },
+            {
+                question: "Windows, Mac nebo Linux?",
+                answer: "Dávám přednost Windows kvůli jeho uživatelské přívětivosti, ale také používám Linux (například Kali Linux) pro profesionální účely. Mac nepoužívám kvůli své preferenci otevřených systémů."
+            },
+            {
+                question: "Jak vás mohu kontaktovat?",
+                answer: "Můžete mě kontaktovat prostřednictvím mých sociálních sítí nebo mi poslat e-mail. Vždy jsem otevřený novým příležitostem a spolupracím!"
+            }
+        ],
+
+        /* KONEC SEKCE FAQ */
+
+        /* SEKCE MĚKKÝCH DOVEDNOSTÍ */
+
+        softSkillsTitle: "Měkké Dovednosti",
+        softSkillsDescription: "Rozvinul jsem různé interpersonální, metodické a intrapersonální dovednosti, které doplňují mé technické znalosti.",
+
+        // Interpersonální Dovednosti (Interpersonal Skills)
+        interpersonalSkills: "Interpersonální Dovednosti",
+        interpersonalList: [
+            "Týmová práce",
+            "Aktivní naslouchání"
+        ],
+
+        // Metodické Dovednosti (Methodical Skills)
+        methodicalSkills: "Metodické Dovednosti",
+        methodicalList: [
+            "Organizace",
+            "Řešení problémů",
+            "Pozornost k detailům"
+        ],
+
+        // Intrapersonální Dovednosti (Intrapersonal Skills)
+        intrapersonalSkills: "Intrapersonální Dovednosti",
+        intrapersonalList: [
+            "Přizpůsobivost",
+            "Sebe-disciplína",
+            "Proaktivita",
+            "Nepřetržité učení"
+        ],
+
+        /* KONEC SEKCE MĚKKÝCH DOVEDNOSTÍ */
+
+
+        /* SEKCE VZDĚLÁNÍ */
+
+        educationTitle: "Moje Vzdělání",
+
+        // Formální Studia (Formal Studies)
+        formalStudies: "📚 Formální Studia",
+
+        // Střední Škola (High School)
+        highSchoolTitle: "Střední Škola se Zaměřením na Zdravotnictví",
+        highSchoolCenter: "<b>Škola:</b> IES El Getares (Algeciras)",
+        highSchoolDate: "<b>Datum:</b> Září 2020 – Červen 2022",
+        highSchoolDescription: "<b>Popis:</b> V tomto období jsem získal pevný základ v přírodních vědách, jako je biologie, chemie a matematika. Také jsem si rozvinul analytické schopnosti a dovednosti při řešení problémů. Během tohoto období jsem objevil svět vývoje softwaru, což mě inspirovalo k tomu, abych si jej zvolil jako svou profesní dráhu.",
+        skillsAcquiredText: "Získané Dovednosti:",
+        highSchoolSkills: [
+            "Přizpůsobivost",
+            "Řešení problémů",
+            "Angličtina (B1)",
+            "Francouzština (A2)"
+        ],
+        highSchoolIcons: [
+            { src: "resources/Software_Icons/Python.png", alt: "Python", title: "Python" }
+        ],
+
+        // FPGS v Multiplatformním Vývoji Aplikací (DAM)
+        damTitle: "FPGS v Multiplatformním Vývoji Aplikací (DAM)",
+        damCenter: "<b>Škola:</b> IES Rafael Alberti (Cádiz)",
+        damDate: "<b>Datum:</b> Září 2022 – Červen 2024",
+        damDescription: "<b>Popis:</b> Specializované vzdělání zaměřené na návrh, vývoj a údržbu multiplatformních aplikací. Naučil jsem se programovat v různých jazycích a frameworcích, s důrazem na mobilní vývoj pomocí Kotlin a Flutter.",
+        damIcons: [
+            { src: "resources/Software_Icons/Kotlin.png", alt: "Kotlin", title: "Kotlin" },
+            { src: "resources/Software_Icons/JetpackCompose.png", alt: "JetpackCompose", title: "JetpackCompose" },
+            { src: "resources/Software_Icons/Dart.png", alt: "Dart", title: "Dart" },
+            { src: "resources/Software_Icons/Flutter.png", alt: "Flutter", title: "Flutter" },
+            { src: "resources/Software_Icons/CShard.png", alt: "C#", title: "C#" },
+            { src: "resources/Software_Icons/MySQL.png", alt: "MySQL", title: "MySQL" },
+            { src: "resources/Software_Icons/MongoDB.png", alt: "MongoDB", title: "MongoDB" },
+            { src: "resources/Software_Icons/Firebase.png", alt: "Firebase", title: "Firebase" }
+        ],
+
+        // Certifikace (Certifications)
+        certifications: "📜 Certifikace",
+
+        // Cisco Certifikace: Úvod do Kybernetické Bezpečnosti
+        cybersecTitle: "Úvod do Kybernetické Bezpečnosti",
+        cybersecCenter: "<b>Centrum:</b> Cisco Networking Academy",
+        cybersecDate: "<b>Datum:</b> Leden 2025",
+        cybersecDescription: "<b>Popis:</b> Certifikace v základech kybernetické bezpečnosti, která se zabývá nejčastějšími hrozbami, ochranou systémů a důležitostí bezpečnosti v digitální infrastruktuře.",
+        cybersecSkills: [
+            "Detekce hrozeb"
+        ],
+
+        /* KONEC SEKCE VZDĚLÁNÍ */
+
+        /* SEKCE OCENĚNÍ, PŘÍSPĚVKY A UDÁLOSTI */
+
+        // Ocenění (Awards)
+        awards: "🏆 Ocenění",
+        noAwards: "Zatím jsem neobdržel žádné ocenění, ale pilně pracuji na tom, abych jich dosáhl! 📱",
+
+        // Příspěvky (Contributions)
+        contributions: "🤝 Příspěvky",
+        noContributions: "Zatím jsem nepřispěl do žádné komunity, ale v budoucnu to plánuji! 💻",
+
+        // Účast na Událostech (Events)
+        events: "📅 Účast na Událostech",
+        noEvents: "Zatím jsem se nezúčastnil žádných událostí, ale těším se, že se brzy zapojím! 🎤",
+
+        /* KONEC SEKCE OCENĚNÍ, PŘÍSPĚVKY A UDÁLOSTI */
+
+    },
+
+    /* FIN IDIOMA CHECO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* IDIOMA SUECO */
 
 };
 
@@ -3469,12 +4280,20 @@ function changeLanguage(lang) {
 
     document.getElementById("certifications").textContent = translations[lang].certifications;
 
-    // 🛡️ Introduccion a la Ciberseguridad
+    // 🛡️ Introducción a la Ciberseguridad
     document.getElementById("cybersec-title").textContent = translations[lang].cybersecTitle;
     document.getElementById("cybersec-center").innerHTML = translations[lang].cybersecCenter;
     document.getElementById("cybersec-date").innerHTML = translations[lang].cybersecDate;
     document.getElementById("cybersec-description").innerHTML = translations[lang].cybersecDescription;
     document.getElementById("cybersec-skills-title").innerHTML = `<b>${translations[lang].skillsAcquiredText}</b>`;
+
+    // ✅ Aquí se actualizan los spans de las habilidades de ciberseguridad
+    const cybersecSkillsSpans = document.querySelectorAll("#cybersec-skills span");
+    translations[lang].cybersecSkills.forEach((text, index) => {
+        if (cybersecSkillsSpans[index]) {
+            cybersecSkillsSpans[index].textContent = text;
+        }
+    });
 
     // Reconocimientos, Contribuciones, Eventos
     document.getElementById("awards").textContent = translations[lang].awards;
@@ -3489,7 +4308,7 @@ function changeLanguage(lang) {
 }
 
 
-// Detectar el idioma guardado o usar español por defecto
+// Detectar el idioma guardado o usar inglés por defecto
 document.addEventListener("DOMContentLoaded", () => {
     const savedLang = localStorage.getItem("lang") || "en";
     document.getElementById("language-switcher").value = savedLang;
