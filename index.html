@@ -32,6 +32,12 @@
         <!-- Favicon -->
         <link rel="icon" href="resources/Favicon.webp" type="image/x-icon">
 
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
         <!-- CSS y JS -->
         <link rel="stylesheet" href="css/style.css">
         <script src="js/script.js" defer></script>
@@ -469,7 +475,7 @@
                         <li>🛡️ Convertirme en un <strong>experto en ciberseguridad</strong>.</li>
                         <li>🔒 Trabajar en multinacionales referentes en el ámbito de la ciberseguridad (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, etc.)</li>
                         <li>🖱️ Ampliar al máximo mis conocimientos en Desarrollo de Software Multiplataforma y Fullstack.</li>
-                        <li>🏡 Vivir en países del norte de Europa (Dinamarca, Noruega, Alemania, Irlanda), en países de América del norte (EEUU o Canadá) o en países asiáticos como Japón o Corea del Sur</li>
+                        <li>🏡 Vivir en una casa de campo, en autocaravana, en grandes ciudades y en capitales mundiales para comparar los estilos de vida y decidirme por uno de esos estilos de vida</li> <!-- Nuevo cambio -->
                     </ul>
                 </div>
 
@@ -536,6 +542,425 @@
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Sección Lugares Preferidos -->
+        <section id="preferred-places" class="preferred-places-section">
+            <div class="container">
+                <h2 id="preferred-title" class="preferred-title">Lugares Preferidos</h2>
+                <p id="preferred-description">
+                    Lista de países, ciudades o regiones en los que me interesaría 
+                    mudarme, desplazarme, trabajar o estudiar. Están ordenados de mayor 
+                    a menor preferencia, de izquierda a derecha y de arriba a abajo.  
+                    Por motivos personales, no estoy dispuesto a mudarme ni a trabajar 
+                    en ningún país que no aparezca en esta lista.
+                </p>                
+
+                <div class="countries-grid">
+                    <!-- Alemania -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Germany.png" alt="Alemania">
+                        <span class="country-name">Germany</span>
+                        <ul class="city-list">
+                            <li>Berlín</li>
+                            <li>Múnich</li>
+                            <li>Hamburgo</li>
+                        </ul>
+                    </div>
+
+                    <!-- Dinamarca -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Denmark.png" alt="Alemania">
+                        <span class="country-name">Denmark</span>
+                        <ul class="city-list">
+                            <li>Berlín</li>
+                            <li>Múnich</li>
+                            <li>Hamburgo</li>
+                        </ul>
+                    </div>
+
+                    <!-- Gibraltar -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Gibraltar.png" alt="Canadá">
+                        <span class="country-name">Gibraltar</span>
+                        <ul class="city-list">
+                            <li>Toronto</li>
+                            <li>Vancouver</li>
+                            <li>Montreal</li>
+                        </ul>
+                    </div>
+
+                    <!-- Paises bajos -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Netherlands.png" alt="Corea del Sur">
+                        <span class="country-name">Netherlands</span>
+                        <ul class="city-list">
+                            <li>Seúl</li>
+                            <li>Busan</li>
+                            <li>Incheon</li>
+                        </ul>
+                    </div>
+
+                    <!-- Portugal -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Portugal.png" alt="Estados Unidos">
+                        <span class="country-name">Portugal</span>
+                        <ul class="city-list">
+                            <li>San Francisco</li>
+                            <li>Seattle</li>
+                            <li>Boston</li>
+                        </ul>
+                    </div>
+
+                    <!-- Polonia -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Poland.png" alt="Noruega">
+                        <span class="country-name">Poland</span>
+                        <ul class="city-list">
+                            <li>Oslo</li>
+                            <li>Bergen</li>
+                            <li>Trondheim</li>
+                        </ul>
+                    </div>
+
+                    <!-- España -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Spain.png" alt="Alemania">
+                        <span class="country-name">Spain</span>
+                        <ul class="city-list">
+                            <li>Berlín</li>
+                            <li>Múnich</li>
+                            <li>Hamburgo</li>
+                        </ul>
+                    </div>
+
+                    <!-- Republica Checa -->
+                    <div class="country-card">
+                        <img src="resources/Flags/CzechRepublic.png" alt="Corea del Sur">
+                        <span class="country-name">Czech Republic</span>
+                        <ul class="city-list">
+                            <li>Seúl</li>
+                            <li>Busan</li>
+                            <li>Incheon</li>
+                        </ul>
+                    </div>
+
+                    <!-- Austria -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Austria.png" alt="Noruega">
+                        <span class="country-name">Austria</span>
+                        <ul class="city-list">
+                            <li>Oslo</li>
+                            <li>Bergen</li>
+                            <li>Trondheim</li>
+                        </ul>
+                    </div>
+
+                    <!-- Irlanda -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Ireland.png" alt="Irlanda">
+                        <span class="country-name">Ireland</span>
+                        <ul class="city-list">
+                            <li>Dublín</li>
+                            <li>Cork</li>
+                            <li>Galway</li>
+                        </ul>
+                    </div>
+
+                    <!-- Suiza -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Switzerland.png" alt="Canadá">
+                        <span class="country-name">Switzerland</span>
+                        <ul class="city-list">
+                            <li>Toronto</li>
+                            <li>Vancouver</li>
+                            <li>Montreal</li>
+                        </ul>
+                    </div>
+
+                    <!-- EE.UU. -->
+                    <div class="country-card">
+                        <img src="resources/Flags/UnitedStates.png" alt="Estados Unidos">
+                        <span class="country-name">United States</span>
+                        <ul class="city-list">
+                            <li>San Francisco</li>
+                            <li>Seattle</li>
+                            <li>Boston</li>
+                        </ul>
+                    </div>
+
+                    <!-- Canadá -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Canada.png" alt="Canadá">
+                        <span class="country-name">Canada</span>
+                        <ul class="city-list">
+                            <li>Toronto</li>
+                            <li>Vancouver</li>
+                            <li>Montreal</li>
+                        </ul>
+                    </div>
+
+                    <!-- Nueva Zelanda -->
+                    <div class="country-card">
+                        <img src="resources/Flags/NewZealand.png" alt="Alemania">
+                        <span class="country-name">New Zealand</span>
+                        <ul class="city-list">
+                            <li>Berlín</li>
+                            <li>Múnich</li>
+                            <li>Hamburgo</li>
+                        </ul>
+                    </div>                                        
+
+                    <!-- Australia -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Australia.png" alt="Alemania">
+                        <span class="country-name">Australia</span>
+                        <ul class="city-list">
+                            <li>Berlín</li>
+                            <li>Múnich</li>
+                            <li>Hamburgo</li>
+                        </ul>
+                    </div>
+
+                    <!-- Japón -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Japan.png" alt="Japón">
+                        <span class="country-name">Japan</span>
+                        <ul class="city-list">
+                            <li>Tokio</li>
+                            <li>Osaka</li>
+                            <li>Kioto</li>
+                        </ul>
+                    </div>
+
+                    <!-- Italia -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Italy.png" alt="Alemania">
+                        <span class="country-name">Italy</span>
+                        <ul class="city-list">
+                            <li>Berlín</li>
+                            <li>Múnich</li>
+                            <li>Hamburgo</li>
+                        </ul>
+                    </div>
+
+                    <!-- Noruega -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Norway.png" alt="Noruega">
+                        <span class="country-name">Norway</span>
+                        <ul class="city-list">
+                            <li>Oslo</li>
+                            <li>Bergen</li>
+                            <li>Trondheim</li>
+                        </ul>
+                    </div>
+
+                    <!-- Francia -->
+                    <div class="country-card">
+                        <img src="resources/Flags/France.png" alt="Estados Unidos">
+                        <span class="country-name">France</span>
+                        <ul class="city-list">
+                            <li>San Francisco</li>
+                            <li>Seattle</li>
+                            <li>Boston</li>
+                        </ul>
+                    </div>
+
+                    <!-- UK -->
+                    <div class="country-card">
+                        <img src="resources/Flags/UnitedKingdom.png" alt="Irlanda">
+                        <span class="country-name">United Kingdom</span>
+                        <ul class="city-list">
+                            <li>Dublín</li>
+                            <li>Cork</li>
+                            <li>Galway</li>
+                        </ul>
+                    </div>
+
+                    <!-- Estonia -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Estonia.png" alt="Irlanda">
+                        <span class="country-name">Estonia</span>
+                        <ul class="city-list">
+                            <li>Dublín</li>
+                            <li>Cork</li>
+                            <li>Galway</li>
+                        </ul>
+                    </div>
+
+                    <!-- Belgica -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Belgium.png" alt="Irlanda">
+                        <span class="country-name">Belgium</span>
+                        <ul class="city-list">
+                            <li>Dublín</li>
+                            <li>Cork</li>
+                            <li>Galway</li>
+                        </ul>
+                    </div>
+
+                    <!-- Uruguay -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Uruguay.png" alt="Estados Unidos">
+                        <span class="country-name">Uruguay</span>
+                        <ul class="city-list">
+                            <li>San Francisco</li>
+                            <li>Seattle</li>
+                            <li>Boston</li>
+                        </ul>
+                    </div>
+
+                    <!-- Argentina -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Argentina.png" alt="Japón">
+                        <span class="country-name">Argentina</span>
+                        <ul class="city-list">
+                            <li>Tokio</li>
+                            <li>Osaka</li>
+                            <li>Kioto</li>
+                        </ul>
+                    </div>
+
+                    <!-- Chile -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Chile.png" alt="Canadá">
+                        <span class="country-name">Chile</span>
+                        <ul class="city-list">
+                            <li>Toronto</li>
+                            <li>Vancouver</li>
+                            <li>Montreal</li>
+                        </ul>
+                    </div>
+
+                    <!-- El Salvador -->
+                    <div class="country-card">
+                        <img src="resources/Flags/ElSalvador.svg.png" alt="Noruega">
+                        <span class="country-name">El Salvador</span>
+                        <ul class="city-list">
+                            <li>Oslo</li>
+                            <li>Bergen</li>
+                            <li>Trondheim</li>
+                        </ul>
+                    </div>
+
+                    <!-- Croacia -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Croatia.png" alt="Japón">
+                        <span class="country-name">Croatia</span>
+                        <ul class="city-list">
+                            <li>Tokio</li>
+                            <li>Osaka</li>
+                            <li>Kioto</li>
+                        </ul>
+                    </div>
+
+                    <!-- Puerto Rico -->
+                    <div class="country-card">
+                        <img src="resources/Flags/PuertoRico.png" alt="Canadá">
+                        <span class="country-name">Puerto Rico</span>
+                        <ul class="city-list">
+                            <li>Toronto</li>
+                            <li>Vancouver</li>
+                            <li>Montreal</li>
+                        </ul>
+                    </div>
+
+                    <!-- Israel -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Israel.png" alt="Corea del Sur">
+                        <span class="country-name">Israel</span>
+                        <ul class="city-list">
+                            <li>Seúl</li>
+                            <li>Busan</li>
+                            <li>Incheon</li>
+                        </ul>
+                    </div>
+
+                    <!-- Corea del Sur -->
+                    <div class="country-card">
+                        <img src="resources/Flags/SouthKorea.png" alt="Corea del Sur">
+                        <span class="country-name">South Korea</span>
+                        <ul class="city-list">
+                            <li>Seúl</li>
+                            <li>Busan</li>
+                            <li>Incheon</li>
+                        </ul>
+                    </div>
+
+                    <!-- Islandia -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Iceland.png" alt="Corea del Sur">
+                        <span class="country-name">Iceland</span>
+                        <ul class="city-list">
+                            <li>Seúl</li>
+                            <li>Busan</li>
+                            <li>Incheon</li>
+                        </ul>
+                    </div>
+
+                    <!-- Mexico -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Mexico.png" alt="Canadá">
+                        <span class="country-name">Mexico</span>
+                        <ul class="city-list">
+                            <li>Toronto</li>
+                            <li>Vancouver</li>
+                            <li>Montreal</li>
+                        </ul>
+                    </div>
+
+                    <!-- Suecia -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Sweden.png" alt="Noruega">
+                        <span class="country-name">Sweden</span>
+                        <ul class="city-list">
+                            <li>Oslo</li>
+                            <li>Bergen</li>
+                            <li>Trondheim</li>
+                        </ul>
+                    </div>
+
+                    <!-- Brasil -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Brazil.png" alt="Canadá">
+                        <span class="country-name">Brazil</span>
+                        <ul class="city-list">
+                            <li>Toronto</li>
+                            <li>Vancouver</li>
+                            <li>Montreal</li>
+                        </ul>
+                    </div>
+
+                    <!-- Turquía -->
+                    <div class="country-card">
+                        <img src="resources/Flags/Turkey.png" alt="Canadá">
+                        <span class="country-name">Turkey</span>
+                        <ul class="city-list">
+                            <li>Toronto</li>
+                            <li>Vancouver</li>
+                            <li>Montreal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
 
 
 
@@ -703,6 +1128,26 @@
             </div>
         </section>
 
+
+
+
+
+
+
+
+
+
+
+        <!-- Popup de las banderas con mapa -->
+        <div id="mapPopup" class="map-popup">
+            <div class="popup-content">
+                <h1 id="popup-title">Ciudades y regiones preferidas</h1>
+                <div id="mapContainer"></div>
+            </div>
+        </div>
     </body>
 </html>
+
+<!-- Falta la traducción de la nueva sección, la traduccion de la nueva frase en el about me y poner el modo oscuro en el popup de las banderas-->
+
 <!-- © 2025 Adrián Sabino Pérez. Todos los derechos reservados. Prohibida la reproducción o imitación total o parcial del código sin autorización. -->
