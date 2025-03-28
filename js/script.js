@@ -34,7 +34,7 @@ function downloadCV() {
 document.addEventListener("DOMContentLoaded", async () => {
     const countryCards = document.querySelectorAll(".country-card");
     const popup = document.getElementById("mapPopup");
-    const popupTitle = document.getElementById("popup-title");
+    const popupTitle = document.getElementById("flag-popup-title");
     const mapContainer = document.getElementById("mapContainer");
 
     // Función para obtener la URL de la bandera por código ISO
@@ -653,7 +653,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             popup.style.display = "flex";
 
             // Establecer el título del popup con el botón de cierre
-            popupTitle.innerHTML = `Ciudades y regiones preferidas en ${countryName}`;
+            //popupTitle.innerHTML = `Ciudades y regiones preferidas en ${countryName}`;
 
             // Cerrar popup al hacer clic fuera de él
             popup.addEventListener("click", (event) => {
@@ -675,11 +675,19 @@ document.addEventListener("DOMContentLoaded", async () => {
             // **Dibujar los países**
             worldLayer = L.geoJSON(worldGeoJSON, {
                 style: feature => {
+                    // Verifica si el documento está en modo oscuro
+                    const isDarkMode = document.documentElement.getAttribute("data-theme") === "dark";
+
                     return {
-                        fillColor: feature.properties.name === countryName ? "#ffffff" : "#cccccc", // Solo el país seleccionado en normal
-                        fillOpacity: feature.properties.name === countryName ? 1 : 0.3, // El resto es tenue
-                        color: feature.properties.name === countryName ? "#000000" : "#bbbbbb", // Bordes solo en el país seleccionado
-                        weight: feature.properties.name === countryName ? 1.5 : 0.5
+                        fillColor: feature.properties.name === countryName ? "#ffffff" : "#cccccc", // País normal, resto tenue
+                        fillOpacity: feature.properties.name === countryName ? 1 : 0.3, 
+
+                        // Bordes más visibles en modo oscuro
+                        color: feature.properties.name === countryName 
+                            ? (isDarkMode ? "#ffffff" : "#000000")  // Blanco en modo oscuro, negro en modo claro
+                            : (isDarkMode ? "#888888" : "#bbbbbb"), // Gris más visible en modo oscuro
+
+                        weight: feature.properties.name === countryName ? (isDarkMode ? 2 : 1.5) : (isDarkMode ? 1 : 0.5) // Líneas más gruesas en modo oscuro
                     };
                 }
             }).addTo(map);
@@ -714,17 +722,21 @@ document.addEventListener("DOMContentLoaded", async () => {
                 map.invalidateSize();
             }, 500);
         });
-        
-        // Función para cerrar el popup
-        function closePopup() {
-            popup.style.display = "none";
-        }
     });
 });
 
+// Cerrar popup al hacer clic fuera
+window.addEventListener('click', (event) => {
+    const popup = document.getElementById('mapPopup');
+    if (event.target === popup) closeFlagPopup();
+});
 
-
-
+// Cerrar el popup
+function closeFlagPopup() {
+    const popup = document.getElementById('mapPopup');
+    popup.classList.remove('show');
+    setTimeout(() => popup.style.display = 'none', 300); 
+}
 
 
 
@@ -749,8 +761,6 @@ function closeContactPopup() {
     popup.classList.remove('show');
     setTimeout(() => popup.style.display = 'none', 300); 
 }
-
-
 
 
 
@@ -780,6 +790,24 @@ function copyEmail(emailId) {
     navigator.clipboard.writeText(email.value).then(() => {
         alert(`Correo copiado: ${email.value}`);
     });
+}
+
+
+function toggleView() {
+    const countriesGrid = document.querySelector('.countries-grid');
+    const showMoreBtn = document.getElementById('show-more-btn');
+    const showLessBtn = document.getElementById('show-less-btn');
+
+    // Cambiar la visibilidad de los países y los botones
+    countriesGrid.classList.toggle('show-more');
+
+    if (countriesGrid.classList.contains('show-more')) {
+        showMoreBtn.style.display = 'none'; // Ocultar "Ver más"
+        showLessBtn.style.display = 'inline-block'; // Mostrar "Ver menos"
+    } else {
+        showMoreBtn.style.display = 'inline-block'; // Mostrar "Ver más"
+        showLessBtn.style.display = 'none'; // Ocultar "Ver menos"
+    }
 }
 
 
@@ -835,7 +863,7 @@ const translations = {
         motto: "Desarrollador fullstack & móvil de día, analista de ciberseguridad de noche.",
         downloadBtn: "Descargar CV",
         contactBtn: "&lt; Contactos /&gt;",
-        popupTitle: "Emails",
+        contactpopuptitle: "Emails",
         projectsTitle: "Proyectos",
         noProjects: "Aún no hay proyectos destacables 😔",
         navbarTitle: "AdriDevSP",
@@ -988,6 +1016,17 @@ const translations = {
         /* END ABOUT ME SECTION*/
 
 
+        /* PREFERED PLACES SECTION */
+
+        preferredtitle: "Idiomas Preferidos",
+        preferreddescription: "Lista de países, ciudades o regiones en los que me interesaría mudarme, desplazarme, trabajar o estudiar. Están ordenados de mayor a menor preferencia, de izquierda a derecha y de arriba a abajo. Por motivos personales, no estoy dispuesto a mudarme ni a trabajar en ningún país que no aparezca en esta lista.",
+        flagpopuptitle: "Ciudades preferidas",
+        showmoreBtn: "Ver mas",
+        showLessBtn: "Ver menos",
+
+
+        /* END PREFERED PLACES SECTION */
+
 
         /* SOFT SKILLS SECTION*/
 
@@ -1085,8 +1124,6 @@ const translations = {
         // Participación en Eventos
         events: "📅 Participación en Eventos",
         noEvents: "Todavía no he participado en eventos, ¡pero estaré encantado de hacerlo pronto! 🎤",
-
-        /* END EDUCATION SECTION*/
 
     },
 
@@ -1256,6 +1293,15 @@ const translations = {
         /* END ABOUT ME SECTION*/
 
 
+        /* PREFERED PLACES SECTION */
+
+        preferredtitle: "Preferred Languages",
+        preferreddescription: "List of countries, cities, or regions where I would be interested in moving, relocating, working, or studying. They are ordered from highest to lowest preference, from left to right and top to bottom. For personal reasons, I am not willing to move or work in any country that does not appear on this list.",
+        flagpopuptitle: "Preferred cities",
+        showmoreBtn: "View more",
+        showLessBtn: "View less",
+
+        /* END PREFERED PLACES SECTION */
 
 
         /* SOFT SKILLS SECTION*/
@@ -4821,7 +4867,7 @@ function changeLanguage(lang) {
 
 
 
-
+    
 
     // Actualizar contenido de la página
     document.getElementById("navbar-title").textContent = translations[lang].navbarTitle;
@@ -4830,7 +4876,7 @@ function changeLanguage(lang) {
     document.getElementById("motto").textContent = translations[lang].motto;
     document.getElementById("download-btn").textContent = translations[lang].downloadBtn;
     document.getElementById("contact-btn").innerHTML = translations[lang].contactBtn;
-    document.getElementById("popup-title").textContent = translations[lang].popupTitle;
+    document.getElementById("contact-popup-title").textContent = translations[lang].popupTitle;
     document.getElementById("projects-title").textContent = translations[lang].projectsTitle;
     document.getElementById("no-projects").textContent = translations[lang].noProjects;
 
@@ -4976,6 +5022,23 @@ function changeLanguage(lang) {
             faqItems[index].querySelector("p").textContent = item.answer;
         }
     });
+
+
+
+
+
+
+
+
+
+    // Prefered Places
+    document.getElementById("preferred-title").textContent = translations[lang].preferredtitle;
+    document.getElementById("preferred-description").textContent = translations[lang].preferreddescription;
+    document.getElementById("flag-popup-title").textContent = translations[lang].flagpopuptitle;
+    document.getElementById("show-more-btn").textContent = translations[lang].showmoreBtn;
+    document.getElementById("show-less-btn").textContent = translations[lang].showLessBtn;
+
+
 
 
 
