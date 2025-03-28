@@ -161,11 +161,11 @@
 
         <!-- Popup de Contacto -->
         <div id="contact-popup" class="popup">
-            <div class="popup-content">
+            <div class="contact-popup-content">
 
                 <!-- Título del popup -->
-                <div class="popup-header">
-                    <h1 id="popup-title"><b>Emails</b></h1>
+                <div class="contact-popup-header">
+                    <h1 id="contact-popup-title"><b>Emails</b></h1>
                     <span class="close-btn" onclick="closeContactPopup()">✖</span>
                 </div>
 
@@ -561,10 +561,8 @@
             <div class="container">
                 <h2 id="preferred-title" class="preferred-title">Lugares Preferidos</h2>
                 <p id="preferred-description">
-                    Lista de países, ciudades o regiones en los que me interesaría 
-                    mudarme, desplazarme, trabajar o estudiar. Están ordenados de mayor 
-                    a menor preferencia, de izquierda a derecha y de arriba a abajo.  
-                    Por motivos personales, no estoy dispuesto a mudarme ni a trabajar 
+                    Lista de países, ciudades o regiones en los que me interesaría mudarme, desplazarme, trabajar o estudiar. Están ordenados de mayor 
+                    a menor preferencia, de izquierda a derecha y de arriba a abajo. Por motivos personales, no estoy dispuesto a mudarme ni a trabajar 
                     en ningún país que no aparezca en esta lista.
                 </p>                
 
@@ -954,9 +952,27 @@
                         </ul>
                     </div>
                 </div>
+
+                <div class="button-container">
+                    <!-- Botón "Ver más" -->
+                    <button id="show-more-btn" onclick="toggleView()">Ver más</button>
+                    <!-- Botón "Ver menos" que navega a la sección de lugares preferidos -->
+                    <a href="#preferred-places" id="show-less-btn" onclick="toggleView()" style="display: none;">
+                        <button>Ver menos</button>
+                    </a>
+                </div>
+
             </div>
         </section>
 
+        <!-- Popup de las banderas con mapa -->
+        <div id="mapPopup" class="map-popup">
+            <div class="popup-content">
+                <h1 id="flag-popup-title">Ciudades preferidas</h1>
+                <div id="mapContainer"></div>
+                <span class="flags-close-btn" onclick="closeFlagPopup()">✖</span>
+            </div>
+        </div>
 
 
 
@@ -1127,24 +1143,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Popup de las banderas con mapa -->
-        <div id="mapPopup" class="map-popup">
-            <div class="popup-content">
-                <h1 id="popup-title">Ciudades y regiones preferidas</h1>
-                <div id="mapContainer"></div>
-            </div>
-        </div>
     </body>
 </html>
 
