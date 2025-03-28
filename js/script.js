@@ -1018,7 +1018,7 @@ const translations = {
 
         /* PREFERED PLACES SECTION */
 
-        preferredtitle: "Idiomas Preferidos",
+        preferredtitle: "Lugares Preferidos",
         preferreddescription: "Lista de países, ciudades o regiones en los que me interesaría mudarme, desplazarme, trabajar o estudiar. Están ordenados de mayor a menor preferencia, de izquierda a derecha y de arriba a abajo. Por motivos personales, no estoy dispuesto a mudarme ni a trabajar en ningún país que no aparezca en esta lista.",
         flagpopuptitle: "Ciudades preferidas",
         showmoreBtn: "Ver mas",
@@ -1295,7 +1295,7 @@ const translations = {
 
         /* PREFERED PLACES SECTION */
 
-        preferredtitle: "Preferred Languages",
+        preferredtitle: "Preferred Places",
         preferreddescription: "List of countries, cities, or regions where I would be interested in moving, relocating, working, or studying. They are ordered from highest to lowest preference, from left to right and top to bottom. For personal reasons, I am not willing to move or work in any country that does not appear on this list.",
         flagpopuptitle: "Preferred cities",
         showmoreBtn: "View more",
