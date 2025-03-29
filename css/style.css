@@ -1499,22 +1499,6 @@ details p {
     display: block;
 }
 
-/* LISTA DE CIUDADES (Oculta por defecto) */
-.city-list {
-    display: none;
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    list-style: none;
-    font-size: 14px;
-    min-width: 150px;
-}
-
 /* 🌙 MODO OSCURO: Color de la lista de ciudades */
 [data-theme="dark"] .city-list {
     background: rgba(255, 255, 255, 0.1);
@@ -1556,10 +1540,31 @@ details p {
     #preferred-description {
         font-size: 1rem;
     }
+
+    /* Ocultar elementos adicionales de la grid */
+    .countries-grid .country-card:nth-child(n+7) {
+        display: none;
+    }
+
+    /* Mostrar los elementos adicionales */
+    .show-more .country-card:nth-child(n+7) {
+        display: block;
+    }
 }
 
 /* 📱 Ajustes para móviles */
 @media (max-width: 480px) {
+
+    /* Ocultar elementos adicionales de la grid */
+    .countries-grid .country-card:nth-child(n+7) {
+        display: none;
+    }
+
+    /* Mostrar los elementos adicionales */
+    .show-more .country-card:nth-child(n+7) {
+        display: block;
+    }
+
     .preferred-title {
         font-size: 1.8rem;
     }
@@ -2045,3 +2050,4 @@ details p {
 }
 
 /* FIN DEL APARTADO DE FORMACIÓN */
+
