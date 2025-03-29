@@ -1,4 +1,5 @@
 // © 2025 Adrián Sabino Pérez. Todos los derechos reservados. Prohibida la reproducción o imitación total o parcial del código sin autorización.
+
 // Función para descargar el CV
 function downloadCV() {
     // Obtener el idioma actual de localStorage (o inglés por defecto)
@@ -24,12 +25,130 @@ function downloadCV() {
 }
 
 
+// Cerrar mapPopup al hacer clic fuera
+window.addEventListener('click', (event) => {
+    const popup = document.getElementById('mapPopup');
+    if (event.target === popup) closeFlagPopup();
+});
+
+
+
+
+// Cerrar el mapPopup al tocar el icono de cerrar
+function closeFlagPopup() {
+    const popup = document.getElementById('mapPopup');
+    popup.classList.remove('show');
+    setTimeout(() => popup.style.display = 'none', 300); 
+}
+
+
+
+
+// Abrir el contact dialog
+function openContactPopup() {
+    const popup = document.getElementById('contact-popup');
+    popup.style.display = 'flex';
+    setTimeout(() => popup.classList.add('show'), 10); 
+}
+
+
+
+
+// Cerrar el contact dialog
+function closeContactPopup() {
+    const popup = document.getElementById('contact-popup');
+    popup.classList.remove('show');
+    setTimeout(() => popup.style.display = 'none', 300); 
+}
 
 
 
 
 
-// Popup de mapas para las banderas en "Lugares preferidos"
+// Cerrar contact popup al hacer clic fuera
+window.addEventListener('click', (event) => {
+    const popup = document.getElementById('contact-popup');
+    if (event.target === popup) closeContactPopup();
+});
+
+
+
+
+// Enviar correo en el contact Dialog
+function sendEmail(emailId) {
+    const email = document.getElementById(emailId).value;
+    window.location.href = `mailto:${email}`;
+}
+
+
+
+
+// Copiar al portapapeles en el contact Dialog
+function copyEmail(emailId) {
+    const email = document.getElementById(emailId);
+    navigator.clipboard.writeText(email.value).then(() => {
+        alert(`Correo copiado: ${email.value}`);
+    });
+}
+
+
+
+
+// Boton ver mas y ver menos en el apartado de lugares preferidos
+function toggleView() {
+    const countriesGrid = document.querySelector('.countries-grid');
+    const showMoreBtn = document.getElementById('show-more-btn');
+    const showLessBtn = document.getElementById('show-less-btn');
+
+    // Cambiar la visibilidad de los países y los botones
+    countriesGrid.classList.toggle('show-more');
+
+    if (countriesGrid.classList.contains('show-more')) {
+        showMoreBtn.style.display = 'none'; // Ocultar "Ver más"
+        showLessBtn.style.display = 'inline-block'; // Mostrar "Ver menos"
+    } else {
+        showMoreBtn.style.display = 'inline-block'; // Mostrar "Ver más"
+        showLessBtn.style.display = 'none'; // Ocultar "Ver menos"
+    }
+}
+
+
+
+
+// Detectar el interruptor y la etiqueta
+const themeSwitch = document.getElementById("theme-switch");
+const themeLabel = document.getElementById("theme-label");
+
+// Función para cambiar el tema (claro/oscuro)
+function toggleTheme() {
+    const isDarkMode = document.body.getAttribute("data-theme") === "dark";
+
+    if (isDarkMode) {
+        document.body.removeAttribute("data-theme"); // Cambiar a modo claro
+    } else {
+        document.body.setAttribute("data-theme", "dark"); // Activar modo oscuro
+    }
+
+    // Guardar preferencia en localStorage
+    localStorage.setItem("theme", isDarkMode ? "light" : "dark");
+}
+
+// Detectar el cambio en el switch
+themeSwitch.addEventListener("change", toggleTheme);
+
+// Mantener el tema seleccionado al recargar la página
+document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.setAttribute("data-theme", "dark");
+        themeSwitch.checked = true; 
+    }
+});
+
+
+
+
+// Muestra los de mapas para cada bandera en el apartado de "Lugares preferidos", usando la libreria Leaflet CSS y JS.
 
 document.addEventListener("DOMContentLoaded", async () => {
     const countryCards = document.querySelectorAll(".country-card");
@@ -412,7 +531,10 @@ document.addEventListener("DOMContentLoaded", async () => {
                 { name: "Leicester", coords: [52.6369, -1.1398] }, // Fuerte en innovación digital, especialmente en tecnología de datos y software
                 { name: "Cardiff", coords: [51.4816, -3.1791] }, // Ciudad en crecimiento en el sector de TI, software y tecnología verde
                 { name: "Nottingham", coords: [52.9548, -1.1581] }, // Emergente en tecnología digital, con un enfoque en startups tecnológicas
-                { name: "Reading", coords: [51.4543, -0.9784] } // Destino para empresas tecnológicas y de telecomunicaciones
+                { name: "Reading", coords: [51.4543, -0.9784] }, // Destino para empresas tecnológicas y de telecomunicaciones
+                { name: "Aberdeen", coords: [57.1497, -2.0943] }, // Importante en tecnología energética, especialmente en energía renovable y tecnología marítima.
+                { name: "Dundee", coords: [56.4620, -2.9707] }, // Ciudad conocida por su innovación en tecnología de videojuegos, software y la creciente industria digital.
+                { name: "Belfast", coords: [54.5973, -5.9301] } // Capital de Irlanda del Norte, conocida por su sector tecnológico emergente y su enfoque en la ingeniería y la innovación.
             ]
         },
         "Estonia": {
@@ -451,6 +573,23 @@ document.addEventListener("DOMContentLoaded", async () => {
                 { name: "Maldonado", coords: [-34.9000, -54.9500] } // Ciudad en el sur del país, conocida por su creciente infraestructura para el sector tecnológico y las startups
             ]
         },
+        "Greece": {
+            isoCode: "GR",
+            center: [37.9838, 23.7275], // Coordenadas aproximadas del centro de Grecia
+            cities: [
+                { name: "Athens", coords: [37.9838, 23.7275] }, // Centro tecnológico y de startups, con empresas de software y ciberseguridad en crecimiento
+                { name: "Thessaloniki", coords: [40.6401, 22.9444] }, // Ecosistema de startups en crecimiento, fuerte en tecnología e innovación
+                { name: "Patras", coords: [38.2466, 21.7346] }, // Importante en investigación tecnológica y desarrollo de software
+                { name: "Heraklion", coords: [35.3387, 25.1442] }, // Fuerte en TI, con instituciones de investigación en ciberseguridad
+                { name: "Chania", coords: [35.5138, 24.0180] }, // Crecimiento en innovación tecnológica y startups de software
+                { name: "Larissa", coords: [39.6390, 22.4200] }, // Ciudad en desarrollo con iniciativas tecnológicas emergentes
+                { name: "Ioannina", coords: [39.6650, 20.8509] }, // Importante en educación tecnológica y sector de TI en crecimiento
+                { name: "Volos", coords: [39.3620, 22.9426] }, // Desarrollo en TI y presencia de startups digitales
+                { name: "Rhodes", coords: [36.4349, 28.2176] }, // Enfoque en innovación digital y soluciones tecnológicas
+                { name: "Kavala", coords: [40.9371, 24.4120] } // Creciente en tecnología e innovación en el sector digital
+            ]
+        },
+
         "Argentina": {
             isoCode: "AR",
             center: [-38.4161, -63.6167],
@@ -630,6 +769,239 @@ document.addEventListener("DOMContentLoaded", async () => {
                 { name: "Ankara", coords: [39.9334, 32.8597] }, // La capital de Turquía, con un enfoque creciente en tecnología y soluciones digitales en el sector público
             ]
         },
+
+        "Latvia": {
+            isoCode: "LV",
+            center: [56.8796, 24.6032],
+            cities: [
+                { name: "Riga", coords: [56.9496, 24.1052] }, // Capital y centro tecnológico de Letonia, con un ecosistema de startups y empresas de TI en crecimiento
+                { name: "Daugavpils", coords: [55.8740, 26.5362] }, // Segunda ciudad más grande, con desarrollo en tecnología y educación en TI
+                { name: "Liepāja", coords: [56.5047, 21.0108] }, // Ciudad con inversiones en innovación digital y empresas tecnológicas en expansión
+                { name: "Jelgava", coords: [56.6511, 23.7214] }, // Importante centro educativo y con iniciativas de desarrollo en software y tecnología
+                { name: "Ventspils", coords: [57.3948, 21.5606] } // Ciudad con enfoque en tecnologías de la información y proyectos de infraestructura digital
+            ]
+        },
+
+        "Hungary": {
+            isoCode: "HU",
+            center: [47.1625, 19.5033],
+            cities: [
+                { name: "Budapest", coords: [47.4979, 19.0402] }, // Capital y centro tecnológico más importante del país, con un ecosistema de startups en crecimiento
+                { name: "Debrecen", coords: [47.5316, 21.6273] }, // Importante hub tecnológico y educativo con iniciativas en TI y ciberseguridad
+                { name: "Szeged", coords: [46.2530, 20.1482] }, // Ciudad universitaria con fuerte presencia en investigación tecnológica
+                { name: "Miskolc", coords: [48.1035, 20.7784] }, // Centro de desarrollo de software y manufactura inteligente
+                { name: "Pécs", coords: [46.0727, 18.2323] }, // Ciudad con iniciativas en innovación digital y tecnología verde
+            ]
+        },
+
+        "Slovakia": {
+            isoCode: "SK",
+            center: [48.6690, 19.6990],
+            cities: [
+                { name: "Bratislava", coords: [48.1486, 17.1077] }, // Capital con fuerte presencia de startups y empresas de TI
+                { name: "Košice", coords: [48.7164, 21.2611] }, // Segundo hub tecnológico más grande del país, con enfoque en ciberseguridad
+                { name: "Prešov", coords: [48.9984, 21.2339] }, // Creciente en el sector de la innovación digital
+                { name: "Žilina", coords: [49.2231, 18.7394] }, // Importante en el sector de la ingeniería de software y la automatización
+                { name: "Nitra", coords: [48.3064, 18.0764] }, // Con iniciativas de desarrollo en tecnología agrícola y digitalización
+            ]
+        },
+
+        "Slovenia": {
+            isoCode: "SI",
+            center: [46.1512, 14.9955],
+            cities: [
+                { name: "Ljubljana", coords: [46.0569, 14.5058] }, // Capital y principal hub tecnológico del país
+                { name: "Maribor", coords: [46.5547, 15.6459] }, // Centro tecnológico en crecimiento con universidades enfocadas en TI
+                { name: "Celje", coords: [46.2381, 15.2675] }, // Innovación en tecnología de la construcción y digitalización de infraestructuras
+                { name: "Kranj", coords: [46.2389, 14.3556] }, // Creciente sector tecnológico con enfoque en software y electrónica
+                { name: "Velenje", coords: [46.3592, 15.1106] }, // Enfocado en innovación industrial y desarrollo de software
+            ]
+        },
+
+        "Finland": {
+            isoCode: "FI",
+            center: [61.9241, 25.7482],
+            cities: [
+                { name: "Helsinki", coords: [60.1695, 24.9354] }, // Capital y epicentro tecnológico con un próspero ecosistema de startups
+                { name: "Espoo", coords: [60.2055, 24.6559] }, // Sede de Nokia y otros gigantes tecnológicos
+                { name: "Tampere", coords: [61.4991, 23.7871] }, // Fuerte en desarrollo de software y tecnología industrial
+                { name: "Vantaa", coords: [60.2934, 25.0378] }, // Crecimiento en logística y tecnologías de automatización
+                { name: "Oulu", coords: [65.0121, 25.4651] }, // Importante hub tecnológico en telecomunicaciones y electrónica
+            ]
+        },
+
+        "Russia": {
+            isoCode: "RU",
+            center: [55.7558, 37.6173],
+            cities: [
+                { name: "Moscú", coords: [55.7558, 37.6173] }, // Capital y centro tecnológico más grande de Rusia, con un fuerte ecosistema de startups y ciberseguridad
+                { name: "San Petersburgo", coords: [59.9343, 30.3351] }, // Segunda ciudad más grande, con un enfoque en fintech y desarrollo de software
+                { name: "Novosibirsk", coords: [55.0084, 82.9357] }, // Importante en inteligencia artificial y big data
+                { name: "Vladivostok", coords: [43.1155, 131.8855] } // Conexión con Asia y desarrollo en comercio electrónico y tecnología marítima
+            ]
+        },
+
+        "Dominican Republic": {
+            isoCode: "DO",
+            center: [18.7357, -70.1627],
+            cities: [
+                { name: "Santo Domingo", coords: [18.4861, -69.9312] }, // Capital con ecosistema de startups en crecimiento y sector TI en expansión
+                { name: "Santiago de los Caballeros", coords: [19.4500, -70.7000] }, // Segunda ciudad más importante con desarrollo en tecnología educativa y empresarial
+                { name: "La Vega", coords: [19.2208, -70.5294] }, // Crecimiento en tecnología aplicada a la agroindustria
+                { name: "San Pedro de Macorís", coords: [18.4500, -69.3000] }, // Innovación en telecomunicaciones y comercio digital
+                { name: "Higüey", coords: [18.6167, -68.7000] }, // Enfoque en soluciones digitales para el sector turístico
+            ]
+        },
+
+        "Paraguay": {
+            isoCode: "PY",
+            center: [-23.4425, -58.4438],
+            cities: [
+                { name: "Asunción", coords: [-25.2637, -57.5759] }, // Capital con un ecosistema tecnológico en crecimiento
+                { name: "Ciudad del Este", coords: [-25.5167, -54.6167] }, // Hub tecnológico en la triple frontera con Brasil y Argentina
+                { name: "San Lorenzo", coords: [-25.3408, -57.5089] }, // Innovación en educación y desarrollo de software
+                { name: "Luque", coords: [-25.2667, -57.5167] }, // Creciente en tecnología aplicada al comercio y manufactura
+                { name: "Encarnación", coords: [-27.3306, -55.8667] }, // Foco en tecnología turística y digitalización de servicios
+            ]
+        },
+
+        "Panama": {
+            isoCode: "PA",
+            center: [8.5379, -80.7821],
+            cities: [
+                { name: "Ciudad de Panamá", coords: [8.9833, -79.5167] }, // Capital y principal centro tecnológico con fuerte presencia en fintech y ciberseguridad
+                { name: "David", coords: [8.4333, -82.4333] }, // Desarrollo en tecnología agrícola y soluciones empresariales digitales
+                { name: "Colón", coords: [9.3333, -79.9000] }, // Crecimiento en logística y tecnología aplicada al comercio
+                { name: "La Chorrera", coords: [8.8803, -79.7833] }, // Innovación en infraestructura digital y telecomunicaciones
+                { name: "Santiago de Veraguas", coords: [8.1000, -80.9833] }, // Expansión de empresas tecnológicas locales
+            ]
+        },
+
+        "United Arab Emirates": {
+        isoCode: "AE",
+        center: [23.4241, 53.8478],
+        cities: [
+                { name: "Dubái", coords: [25.276987, 55.296249] }, // Principal centro tecnológico y de innovación en la región, con numerosas startups y empresas internacionales.
+                { name: "Abu Dabi", coords: [24.453884, 54.3773438] }, // Capital del país con creciente inversión en tecnología y proyectos de smart city.
+            ]
+        },
+
+        "Monaco": {
+            isoCode: "MC",
+            center: [43.7384, 7.4246],
+            cities: [
+                { name: "Mónaco", coords: [43.7384, 7.4246] } // Ciudad-estado con enfoque en innovación financiera y tecnológica, especialmente en fintech.
+            ]
+        },
+
+        "Luxembourg": {
+            isoCode: "LU",
+            center: [49.8153, 6.1296],
+            cities: [
+                { name: "Luxemburgo", coords: [49.6117, 6.1319] }, // Capital con fuerte sector financiero y creciente industria tecnológica.
+                { name: "Esch-sur-Alzette", coords: [49.4958, 5.9806] }, // Importante centro universitario y de investigación tecnológica.
+                { name: "Differdange", coords: [49.5242, 5.8919] }, // Desarrollo en sectores tecnológicos y de innovación.
+                { name: "Dudelange", coords: [49.4806, 6.0875] }, // Creciente inversión en infraestructura tecnológica y startups.
+                { name: "Ettelbruck", coords: [49.8475, 6.1042] }, // Centro regional con iniciativas en tecnología y educación.
+                { name: "Diekirch", coords: [49.8678, 6.1561] }, // Desarrollo en sectores de TI y pequeñas empresas tecnológicas.
+                { name: "Wiltz", coords: [49.9686, 5.9344] }, // Iniciativas en infraestructura digital y proyectos tecnológicos emergentes.
+                { name: "Clervaux", coords: [50.0547, 6.0281] } // Iniciativas en infraestructura digital y proyectos tecnológicos emergentes.
+            ]
+        },
+
+        "Malta": {
+            isoCode: "MT",
+            center: [35.9375, 14.3754],
+            cities: [
+                { name: "La Valeta", coords: [35.8997, 14.5146] }, // Capital con creciente sector tecnológico y de innovación.
+                { name: "Birkirkara", coords: [35.8978, 14.4611] }, // Importante centro comercial con desarrollo en TI.
+                { name: "Mosta", coords: [35.9142, 14.4225] }, // Desarrollo en sectores tecnológicos y de innovación.
+                { name: "Qormi", coords: [35.8761, 14.4725] }, // Creciente inversión en infraestructura tecnológica y startups.
+                { name: "Sliema", coords: [35.9122, 14.5042] }, // Conocida por su ambiente empresarial y tecnológico.
+                { name: "San Ġwann", coords: [35.9125, 14.4756] }, // Desarrollo en sectores de TI y pequeñas empresas tecnológicas.
+                { name: "Żabbar", coords: [35.8764, 14.535] }, // Iniciativas en infraestructura digital y proyectos tecnológicos emergentes.
+                { name: "Mellieħa", coords: [35.9561, 14.3625] }, // Creciente interés en tecnología y zonas económicas especiales para innovación.
+                { name: "Paola", coords: [35.8772, 14.5053] }, // Desarrollo en sectores de TI y pequeñas empresas tecnológicas.
+                { name: "Fgura", coords: [35.8769, 14.5153] } // Iniciativas en infraestructura digital y proyectos tecnológicos emergentes.
+            ]
+        },
+        
+        "Cyprus": {
+            isoCode: "CY",
+            center: [35.1264, 33.4299],
+            cities: [
+                { name: "Nicosia", coords: [35.1856, 33.3823] }, // Capital y principal centro económico con creciente sector tecnológico.
+                { name: "Limassol", coords: [34.7071, 33.0226] }, // Importante puerto y centro de negocios con desarrollo en TI.
+                { name: "Lárnaca", coords: [34.9229, 33.6233] }, // Desarrollo en sectores tecnológicos y de innovación.
+                { name: "Pafos", coords: [34.772, 32.4297] }, // Creciente inversión en infraestructura tecnológica
+            ]
+        },
+
+        "Andorra": {
+            isoCode: "AD",
+            center: [42.5078, 1.5211],
+            cities: [
+                { name: "Andorra la Vella", coords: [42.5078, 1.5211] } // Capital y principal centro económico de Andorra, con creciente interés en tecnologías de la información y comunicación.
+            ]
+        },
+
+        "Liechtenstein": {
+            isoCode: "LI",
+            center: [47.1660, 9.5554],
+            cities: [
+                { name: "Vaduz", coords: [47.1416, 9.5215] }, // Capital y centro financiero de Liechtenstein, con oportunidades en el sector tecnológico y financiero.
+                { name: "Schaan", coords: [47.1640, 9.5086] } // Ciudad más grande del país, sede de varias empresas internacionales y con un sector tecnológico en desarrollo.
+            ]
+        },
+
+        "Taiwan": {
+            isoCode: "TW",
+            center: [23.6978, 120.9605],
+            cities: [
+                { name: "Taipéi", coords: [25.0330, 121.5654] }, // Capital y principal centro tecnológico de Taiwán, conocida por su industria de semiconductores y empresas de TI.
+                { name: "Hsinchu", coords: [24.8138, 120.9675] }, // Conocida como la "Silicon Valley" de Taiwán, alberga el Parque Científico Industrial de Hsinchu.
+                { name: "Taichung", coords: [24.1477, 120.6736] }, // Importante centro industrial y tecnológico con creciente número de empresas de software y hardware.
+                { name: "Kaohsiung", coords: [22.6273, 120.3014] }, // Gran ciudad portuaria con desarrollo en sectores tecnológicos y de innovación.
+                { name: "Tainan", coords: [22.9999, 120.2270] }, // Ciudad histórica con parques tecnológicos y universidades enfocadas en investigación y desarrollo.
+            ]
+        },
+
+        "Dominican Republic": {
+            isoCode: "DO",
+            center: [18.7357, -70.1627],
+            cities: [
+                { name: "Santo Domingo", coords: [18.4861, -69.9312] }, // Capital y principal centro económico y tecnológico del país, con creciente ecosistema de startups y empresas de TI.
+                { name: "Santiago de los Caballeros", coords: [19.4500, -70.7000] }, // Segunda ciudad más grande, con desarrollo en sectores tecnológicos y educativos.
+                { name: "La Romana", coords: [18.4273, -68.9728] }, // Importante centro turístico con oportunidades en tecnologías aplicadas al turismo.
+                { name: "San Pedro de Macorís", coords: [18.4500, -69.3000] }, // Ciudad con industrias emergentes y desarrollo en educación tecnológica.
+                { name: "Punta Cana", coords: [18.5600, -68.3725] }, // Destino turístico con creciente interés en soluciones tecnológicas para el sector hotelero y de servicios.
+                { name: "Puerto Plata", coords: [19.7900, -70.6900] }, // Ciudad portuaria con desarrollo en turismo y tecnologías relacionadas.
+            ]
+        },
+
+        "Bulgaria": {
+            isoCode: "BG",
+            center: [42.7339, 25.4858],
+            cities: [
+                { name: "Sofía", coords: [42.6977, 23.3219] }, // Capital y principal centro tecnológico de Bulgaria, con un ecosistema de startups y empresas de TI en crecimiento.
+                { name: "Plovdiv", coords: [42.1354, 24.7453] }, // Segunda ciudad más grande, con desarrollo en software y tecnologías de la información.
+                { name: "Varna", coords: [43.2141, 27.9147] }, // Importante ciudad portuaria con creciente sector tecnológico y de innovación.
+                { name: "Burgas", coords: [42.5048, 27.4626] }, // Ciudad costera con desarrollo en tecnologías de la información y comunicación.
+                { name: "Ruse", coords: [43.8356, 25.9657] }, // Importante centro industrial y tecnológico en el norte del país.
+            ]
+        },
+        
+        "Thailand": {
+            isoCode: "TH",
+            center: [15.8700, 100.9925],
+            cities: [
+                { name: "Bangkok", coords: [13.7563, 100.5018] }, // Capital y principal centro tecnológico de Tailandia, con un ecosistema vibrante de startups y fintech.
+                { name: "Chiang Mai", coords: [18.7883, 98.9853] }, // Conocida por su escena de startups tecnológicas y comunidad de nómadas digitales.
+                { name: "Pattaya", coords: [12.9236, 100.8825] }, // Ciudad con creciente desarrollo en tecnología aplicada al turismo y comercio electrónico.
+                { name: "Phuket", coords: [7.8804, 98.3923] }, // Centro turístico con oportunidades en tecnología aplicada a la hospitalidad y el entretenimiento.
+                { name: "Khon Kaen", coords: [16.4322, 102.8236] }, // En crecimiento como hub tecnológico del noreste, con apoyo del gobierno en TI y educación.
+            ]
+        },
     };
 
     let map; // Variable del mapa
@@ -725,18 +1097,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 });
 
-// Cerrar popup al hacer clic fuera
-window.addEventListener('click', (event) => {
-    const popup = document.getElementById('mapPopup');
-    if (event.target === popup) closeFlagPopup();
-});
-
-// Cerrar el popup
-function closeFlagPopup() {
-    const popup = document.getElementById('mapPopup');
-    popup.classList.remove('show');
-    setTimeout(() => popup.style.display = 'none', 300); 
-}
 
 
 
@@ -745,105 +1105,12 @@ function closeFlagPopup() {
 
 
 
-// Abrir el dialog
-function openContactPopup() {
-    const popup = document.getElementById('contact-popup');
-    popup.style.display = 'flex';
-    setTimeout(() => popup.classList.add('show'), 10); 
-}
-
-
-
-
-// Cerrar el dialog
-function closeContactPopup() {
-    const popup = document.getElementById('contact-popup');
-    popup.classList.remove('show');
-    setTimeout(() => popup.style.display = 'none', 300); 
-}
-
-
-
-// Cerrar popup al hacer clic fuera
-window.addEventListener('click', (event) => {
-    const popup = document.getElementById('contact-popup');
-    if (event.target === popup) closeContactPopup();
-});
-
-
-
-
-
-// Enviar correo
-function sendEmail(emailId) {
-    const email = document.getElementById(emailId).value;
-    window.location.href = `mailto:${email}`;
-}
-
-
-
-
-
-// Copiar al portapapeles
-function copyEmail(emailId) {
-    const email = document.getElementById(emailId);
-    navigator.clipboard.writeText(email.value).then(() => {
-        alert(`Correo copiado: ${email.value}`);
-    });
-}
-
-
-function toggleView() {
-    const countriesGrid = document.querySelector('.countries-grid');
-    const showMoreBtn = document.getElementById('show-more-btn');
-    const showLessBtn = document.getElementById('show-less-btn');
-
-    // Cambiar la visibilidad de los países y los botones
-    countriesGrid.classList.toggle('show-more');
-
-    if (countriesGrid.classList.contains('show-more')) {
-        showMoreBtn.style.display = 'none'; // Ocultar "Ver más"
-        showLessBtn.style.display = 'inline-block'; // Mostrar "Ver menos"
-    } else {
-        showMoreBtn.style.display = 'inline-block'; // Mostrar "Ver más"
-        showLessBtn.style.display = 'none'; // Ocultar "Ver menos"
-    }
-}
 
 
 
 
 
 
-// Detectar el interruptor y la etiqueta
-const themeSwitch = document.getElementById("theme-switch");
-const themeLabel = document.getElementById("theme-label");
-
-// ✅ Función para cambiar el tema (claro/oscuro)
-function toggleTheme() {
-    const isDarkMode = document.body.getAttribute("data-theme") === "dark";
-
-    if (isDarkMode) {
-        document.body.removeAttribute("data-theme"); // Cambiar a modo claro
-    } else {
-        document.body.setAttribute("data-theme", "dark"); // Activar modo oscuro
-    }
-
-    // Guardar preferencia en localStorage
-    localStorage.setItem("theme", isDarkMode ? "light" : "dark");
-}
-
-// Detectar el cambio en el switch
-themeSwitch.addEventListener("change", toggleTheme);
-
-// ✅ Mantener el tema seleccionado al recargar la página
-document.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-        document.body.setAttribute("data-theme", "dark");
-        themeSwitch.checked = true; 
-    }
-});
 
 
 
@@ -1551,6 +1818,15 @@ const translations = {
             }
         ],
 
+        /* SECTION LIEUX PRÉFÉRÉS */
+
+        preferredtitle: "Lieux Préférés",
+        preferreddescription: "Liste des pays, villes ou régions dans lesquels je souhaiterais déménager, voyager, travailler ou étudier. Ils sont classés par ordre de préférence, de gauche à droite et de haut en bas. Pour des raisons personnelles, je ne suis pas disposé à déménager ou à travailler dans un pays qui ne figure pas sur cette liste.",
+        flagpopuptitle: "Villes préférées",
+        showmoreBtn: "Voir plus",
+        showLessBtn: "Voir moins",
+
+
         /* SECTION COMPÉTENCES DOUCES (Soft Skills) */
 
         softSkillsTitle: "Compétences Douces",
@@ -1799,6 +2075,14 @@ const translations = {
                 answer: "Sie können mich über meine sozialen Netzwerke oder per E-Mail kontaktieren. Ich bin immer offen für neue Möglichkeiten und Kooperationen!"
             }
         ],
+
+        /* BEVORZUGTE ORTE SECTION */
+
+        preferredtitle: "Bevorzugte Orte",
+        preferreddescription: "Liste von Ländern, Städten oder Regionen, in die ich gerne umziehen, reisen, arbeiten oder studieren würde. Sie sind nach absteigender Präferenz von links nach rechts und von oben nach unten geordnet. Aus persönlichen Gründen bin ich nicht bereit, in ein Land zu ziehen oder dort zu arbeiten, das nicht auf dieser Liste erscheint.",
+        flagpopuptitle: "Bevorzugte Städte",
+        showmoreBtn: "Mehr anzeigen",
+        showLessBtn: "Weniger anzeigen",
 
         /* BEREICH SOFT SKILLS */
 
@@ -2067,6 +2351,14 @@ const translations = {
 
         /* FI SECCIÓ SOBRE MI */
 
+
+        /* SECCIÓ LLOCS PREFERITS */
+        preferredtitle: "Llocs Preferits",
+        preferreddescription: "Llista de països, ciutats o regions on m'interessaria traslladar-me, desplaçar-me, treballar o estudiar. Estan ordenats de més a menys preferència, d'esquerra a dreta i de dalt a baix. Per motius personals, no estic disposat a traslladar-me ni a treballar a cap país que no aparegui en aquesta llista.",
+        flagpopuptitle: "Ciutats preferides",
+        showmoreBtn: "Veure més",
+        showLessBtn: "Veure menys",
+
         /* SECCIÓ DE SOFT SKILLS */
 
         softSkillsTitle: "Habilitats Toves",
@@ -2321,6 +2613,13 @@ const translations = {
                 answer: "Nire sare sozialen bidez edo email bat bidaliz harremanetan jarri zaitezke. Beti nago prest aukera eta lankidetza berrietarako!"
             }
         ],
+
+        /* LEKUAK PREFERITUAK ATALA */
+        preferredtitle: "Leku Preferituak",
+        preferreddescription: "Mugitu, bidaiatu, lan egin edo ikasi nahi nituzkeen herrialde, hiribildu edo eskualdeen zerrenda. Lehentasun handienetik txikienera, ezkerretik eskuinera eta goitik behera antolatuta daude. Arrazoi pertsonalengatik, ez nintzateke prest lekualdatzeko edo lan egiteko herrialde batean, ez badago zerrenda honetan.",
+        flagpopuptitle: "Hiri Preferituak",
+        showmoreBtn: "Ikusi gehiago",
+        showLessBtn: "Ikusi gutxiago",
 
         /* GAITASUN BIGUNEN ATALA (SOFT SKILLS) */
 
@@ -2586,6 +2885,13 @@ const translations = {
             }
         ],
 
+        /* SEZIONE LUOGHI PREFERITI */
+        preferredtitle: "Luoghi Preferiti",
+        preferreddescription: "Elenco di paesi, città o regioni in cui mi piacerebbe trasferirmi, viaggiare, lavorare o studiare. Sono ordinati dalla maggiore alla minore preferenza, da sinistra a destra e dall'alto verso il basso. Per motivi personali, non sono disposto a trasferirmi o lavorare in un paese che non appare in questa lista.",
+        flagpopuptitle: "Città preferite",
+        showmoreBtn: "Vedi di più",
+        showLessBtn: "Vedi meno",
+
         /* SEZIONE COMPETENZE TRASVERSALI (SOFT SKILLS) */
 
         softSkillsTitle: "Competenze Trasversali",
@@ -2816,6 +3122,13 @@ const translations = {
         ],
     
         /* FIM SEÇÃO SOBRE MIM */
+
+        /* SEÇÃO DE LUGARES PREFERIDOS */
+        preferredtitle: "Lugares Preferidos",
+        preferreddescription: "Lista de países, cidades ou regiões em que eu estaria interessado em me mudar, viajar, trabalhar ou estudar. Eles estão organizados da maior para a menor preferência, da esquerda para a direita e de cima para baixo. Por motivos pessoais, não estou disposto a me mudar ou trabalhar em qualquer país que não apareça nesta lista.",
+        flagpopuptitle: "Cidades preferidas",
+        showmoreBtn: "Ver mais",
+        showLessBtn: "Ver menos",
 
         /* SEÇÃO FAQ (PERGUNTAS FREQUENTES) */
 
@@ -3113,6 +3426,13 @@ const translations = {
                 answer: "Du kan kontakte meg via mine sosiale medier eller sende meg en e-post. Jeg er alltid åpen for nye muligheter og samarbeid!"
             }
         ],
+
+        /* FORETRUKNE STEDER SECTION */
+        preferredtitle: "Foretrukne steder",
+        preferreddescription: "Liste over land, byer eller regioner jeg ville vurdere å flytte til, reise til, jobbe i eller studere i. De er sortert fra høyeste til laveste preferanse, fra venstre til høyre og fra topp til bunn. Av personlige grunner er jeg ikke villig til å flytte til eller jobbe i et land som ikke er på denne listen.",
+        flagpopuptitle: "Foretrukne byer",
+        showmoreBtn: "Se mer",
+        showLessBtn: "Se mindre",
     
         /* MYKE FERDIGHETER-SEKSJON (SOFT SKILLS) */
     
@@ -3379,6 +3699,13 @@ const translations = {
                 answer: "Μπορείς να επικοινωνήσεις μαζί μου μέσω των κοινωνικών δικτύων μου ή στέλνοντάς μου ένα email. Είμαι πάντα ανοιχτός σε νέες ευκαιρίες και συνεργασίες!"
             }
         ],
+
+        /* ΕΝΟΤΗΤΑ ΠΡΟΤΙΜΩΜΕΝΩΝ ΤΟΠΩΝ */
+        preferredtitle: "Προτιμώμενοι Τόποι",
+        preferreddescription: "Λίστα χωρών, πόλεων ή περιοχών στις οποίες θα ήθελα να μετακομίσω, να ταξιδέψω, να εργαστώ ή να σπουδάσω. Είναι ταξινομημένα από την υψηλότερη στην χαμηλότερη προτίμηση, από αριστερά προς τα δεξιά και από πάνω προς τα κάτω. Για προσωπικούς λόγους, δεν είμαι διατεθειμένος να μετακομίσω ή να εργαστώ σε χώρα που δεν εμφανίζεται σε αυτήν τη λίστα.",
+        flagpopuptitle: "Προτιμώμενες Πόλεις",
+        showmoreBtn: "Δείτε περισσότερα",
+        showLessBtn: "Δείτε λιγότερα",
 
         /* ΕΝΟΤΗΤΑ ΗΠΙΕΣ ΔΕΞΙΟΤΗΤΕΣ (SOFT SKILLS) */
 
@@ -3655,6 +3982,13 @@ const translations = {
             }
         ],
 
+        /* お気に入りの場所セクション */
+        preferredtitle: "お気に入りの場所",
+        preferreddescription: "引っ越し、旅行、仕事、または勉強したい国、都市、または地域のリストです。優先度の高い順に左から右、上から下に並べられています。個人的な理由で、このリストに載っていない国に引っ越したり働いたりすることはありません。",
+        flagpopuptitle: "お気に入りの都市",
+        showmoreBtn: "もっと見る",
+        showLessBtn: "少なく見る",
+
         /* ソフトスキルセクション (対人スキル) */
 
         softSkillsTitle: "ソフトスキル",
@@ -3923,6 +4257,13 @@ const translations = {
                 answer: "Możesz skontaktować się ze mną poprzez moje media społecznościowe lub wysłać mi e-mail. Zawsze jestem otwarty na nowe możliwości i współpracę!"
             }
         ],
+
+        /* SEKCJA ULUBIONE MIEJSCA */
+        preferredtitle: "Ulubione miejsca",
+        preferreddescription: "Lista krajów, miast lub regionów, do których chciałbym się przeprowadzić, podróżować, pracować lub studiować. Są one uporządkowane od najwyższego do najniższego priorytetu, od lewej do prawej i od góry do dołu. Z powodów osobistych nie jestem gotów przeprowadzić się ani pracować w kraju, który nie znajduje się na tej liście.",
+        flagpopuptitle: "Ulubione miasta",
+        showmoreBtn: "Pokaż więcej",
+        showLessBtn: "Pokaż mniej",
 
         /* SEKCJA UMIEJĘTNOŚCI MIĘKKICH (SOFT SKILLS) */
 
@@ -4194,6 +4535,13 @@ const translations = {
 
         /* סוף קטע שאלות נפוצות */
 
+        /* סקשן מקומות מועדפים */
+        preferredtitle: "מקומות מועדפים",
+        preferreddescription: "רשימה של מדינות, ערים או אזורים שבהם הייתי מעוניין לעבור אליהם, לטייל בהם, לעבוד בהם או ללמוד בהם. הם מסודרים לפי סדר העדפה מהגדול לקטן, משמאל לימין ומלמעלה למטה. מסיבות אישיות, אינני מוכן לעבור או לעבוד במדינה שאינה מופיעה ברשימה זו.",
+        flagpopuptitle: "ערים מועדפות",
+        showmoreBtn: "הצג יותר",
+        showLessBtn: "הצג פחות",
+
 
         /* קטע מיומנויות רכות (Soft Skills) */
 
@@ -4462,6 +4810,13 @@ const translations = {
                 answer: "Jeg foretrækker Windows for dets bekvemmelighed, men jeg bruger også Linux (som Kali Linux) til professionelle formål. Jeg bruger ikke Mac på grund af min præference for åbne systemer."
             }
         ],
+
+        /* FORETRUKNE STEDER SEKTION */
+        preferredtitle: "Foretrukne steder",
+        preferreddescription: "Liste over lande, byer eller regioner, hvor jeg kunne tænke mig at flytte, rejse, arbejde eller studere. De er ordnet fra højeste til laveste præference, fra venstre mod højre og oppefra og ned. Af personlige grunde er jeg ikke villig til at flytte eller arbejde i et land, der ikke er på denne liste.",
+        flagpopuptitle: "Foretrukne byer",
+        showmoreBtn: "Se mere",
+        showLessBtn: "Se mindre",
 
         /* BLØDE FÆRDIGHEDER-SEKTION */
 
@@ -4732,6 +5087,14 @@ const translations = {
         ],
 
         /* KONEC SEKCE FAQ */
+
+
+        /* SEKCE PREFEROVANÁ MÍSTA */
+        preferredtitle: "Preferovaná místa",
+        preferreddescription: "Seznam zemí, měst nebo regionů, do kterých bych se rád přestěhoval, cestoval, pracoval nebo studoval. Jsou seřazeny od nejvyšší po nejnižší preferenci, zleva doprava a shora dolů. Z osobních důvodů nejsem ochoten se přestěhovat nebo pracovat v zemi, která není na tomto seznamu.",
+        flagpopuptitle: "Preferovaná města",
+        showmoreBtn: "Zobrazit více",
+        showLessBtn: "Zobrazit méně",
 
         /* SEKCE MĚKKÝCH DOVEDNOSTÍ */
 
