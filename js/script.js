@@ -1221,7 +1221,9 @@ const translations = {
             "🛡️ Convertirme en un <strong>experto en ciberseguridad</strong>.",
             "🔒 Trabajar en multinacionales referentes en el ámbito de la ciberseguridad (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, etc.).",
             "🖱️ Ampliar al máximo mis conocimientos en Desarrollo de Software Multiplataforma y Fullstack.",
-            "🏡 Vivir en países del norte de Europa (Dinamarca, Noruega, Alemania, Irlanda), en América del Norte (EEUU o Canadá) o en Asia (Japón o Corea del Sur)."
+            "🏡 Visitar y vivir en muchos paises a lo largo de mi vida para conocer diferentes culturas y conocer el mundo en el que vivo.",
+            "🎯 Vivir el maximo de experiencias posibles para crecer como persona.",
+            "👥 Crear una gran red de contactos y amistades de diferentes culturas, tanto nacionales como internacionales.",
         ],
 
         // Aficiones
@@ -1239,6 +1241,7 @@ const translations = {
         curiositiesTitle: "🤔 Curiosidades Sobre Mí",
         curiositiesList: [
             "👨‍💻 Escribí mi primer programa en Python cuando tenía 16 años.",
+            "📌 Soy español, concretamente de Cádiz (Andalucía).",
             "🏅 He ganado varios premios en torneos de ajedrez en el Campo de Gibraltar.",
             "🌐 Me apasiona la historia y la geopolítica, así como su influencia en la tecnología global.",
             "🧠 Me encanta todo lo relacionado con la estrategia, es una gran forma de desarrollar el cerebro.",
@@ -1290,7 +1293,7 @@ const translations = {
         flagpopuptitle: "Ciudades preferidas",
         showmoreBtn: "Ver mas",
         showLessBtn: "Ver menos",
-
+        tooltip: "Más información",
 
         /* END PREFERED PLACES SECTION */
 
@@ -1499,7 +1502,9 @@ const translations = {
             "🛡️ Become an <strong>expert in cybersecurity</strong>.",
             "🔒 Work at leading cybersecurity multinationals (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, etc.).",
             "🖱️ Expand my knowledge in Fullstack and Cross-Platform Software Development.",
-            "🏡 Live in countries such as Denmark, Norway, Germany, Ireland, the USA, Canada, Japan, or South Korea."
+            "🏡 Visit and live in many countries throughout my life to learn about different cultures and understand the world I live in.",
+            "🎯 Live as many experiences as possible to grow as a person.",
+            "👥 Create a large network of contacts and friendships from different cultures, both national and international.",
         ],
 
         // Hobbies
@@ -1517,6 +1522,7 @@ const translations = {
         curiositiesTitle: "🤔 Curiosities About Me",
         curiositiesList: [
             "👨‍💻 I wrote my first Python program when I was 16 years old.",
+            "📌 I am Spanish, specifically from Cádiz (Andalusia).",
             "🏅 I've won several chess tournament awards in the Campo de Gibraltar.",
             "🌐 I'm passionate about history and geopolitics, and their influence on global technology.",
             "🧠 I love everything related to strategy; it's a great way to develop the brain.",
@@ -1567,6 +1573,7 @@ const translations = {
         flagpopuptitle: "Preferred cities",
         showmoreBtn: "View more",
         showLessBtn: "View less",
+        tooltip: "More information",
 
         /* END PREFERED PLACES SECTION */
 
@@ -1760,7 +1767,9 @@ const translations = {
             "🛡️ Devenir un <strong>expert en cybersécurité</strong>.",
             "🔒 Travailler dans des multinationales leaders en cybersécurité (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, etc.).",
             "🖱️ Élargir mes connaissances en Développement de Logiciels Fullstack et Multiplateformes.",
-            "🏡 Vivre dans des pays comme le Danemark, la Norvège, l'Allemagne, l'Irlande, les États-Unis, le Canada, le Japon ou la Corée du Sud."
+            "🏡 Visiter et vivre dans de nombreux pays tout au long de ma vie pour découvrir différentes cultures et connaître le monde dans lequel je vis.",
+            "🎯 Vivre un maximum d'expériences possibles pour grandir en tant que personne.",
+            "👥 Créer un grand réseau de contacts et d'amitiés de différentes cultures, tant nationales qu'internationales.",
         ],
     
         // Hobbies
@@ -1778,6 +1787,7 @@ const translations = {
         curiositiesTitle: "🤔 Curiosités sur Moi",
         curiositiesList: [
             "👨‍💻 J'ai écrit mon premier programme en Python à l'âge de 16 ans.",
+            "📌 Je suis espagnol, précisément de Cadix (Andalousie).",
             "🏅 J'ai remporté plusieurs prix dans des tournois d'échecs dans la région du Campo de Gibraltar.",
             "🌐 Je suis passionné par l'histoire et la géopolitique, et par leur influence sur la technologie mondiale.",
             "🧠 J'adore tout ce qui est lié à la stratégie ; c'est un excellent moyen de développer l'esprit.",
@@ -1825,6 +1835,7 @@ const translations = {
         flagpopuptitle: "Villes préférées",
         showmoreBtn: "Voir plus",
         showLessBtn: "Voir moins",
+        tooltip: "Plus d'informations",
 
 
         /* SECTION COMPÉTENCES DOUCES (Soft Skills) */
@@ -2018,7 +2029,9 @@ const translations = {
             "🛡️ Ein <strong>Experte für Cybersicherheit</strong> werden.",
             "🔒 In führenden multinationalen Unternehmen im Bereich Cybersicherheit arbeiten (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle usw.).",
             "🖱️ Mein Wissen in Fullstack- und plattformübergreifender Softwareentwicklung erweitern.",
-            "🏡 In Ländern wie Dänemark, Norwegen, Deutschland, Irland, den USA, Kanada, Japan oder Südkorea leben."
+            "🏡 Viele Länder besuchen und in vielen Ländern leben, um verschiedene Kulturen kennenzulernen und die Welt zu verstehen, in der ich lebe.",
+            "🎯 So viele Erfahrungen wie möglich machen, um als Mensch zu wachsen.",
+            "👥 Ein großes Netzwerk aus Kontakten und Freundschaften aus verschiedenen Kulturen schaffen, sowohl national als auch international.",
         ],
     
         // Hobbys
@@ -2036,6 +2049,7 @@ const translations = {
         curiositiesTitle: "🤔 Kuriositäten über mich",
         curiositiesList: [
             "👨‍💻 Ich habe mein erstes Python-Programm mit 16 Jahren geschrieben.",
+            "📌 Ich bin Spanier, genauer gesagt aus Cádiz (Andalusien).",
             "🏅 Ich habe mehrere Preise bei Schachturnieren in der Region Campo de Gibraltar gewonnen.",
             "🌐 Ich bin fasziniert von Geschichte und Geopolitik und deren Einfluss auf die globale Technologie.",
             "🧠 Ich liebe alles, was mit Strategie zu tun hat; es ist eine großartige Möglichkeit, den Geist zu fördern.",
@@ -2083,6 +2097,7 @@ const translations = {
         flagpopuptitle: "Bevorzugte Städte",
         showmoreBtn: "Mehr anzeigen",
         showLessBtn: "Weniger anzeigen",
+        tooltip: "Mehr Informationen",
 
         /* BEREICH SOFT SKILLS */
 
@@ -2292,7 +2307,10 @@ const translations = {
             "🛡️ Convertir-me en un <strong>expert en ciberseguretat</strong>.",
             "🔒 Treballar en multinacionals líders en l'àmbit de la ciberseguretat (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, etc.).",
             "🖱️ Ampliar al màxim els meus coneixements en Desenvolupament de Programari Multiplataforma i Fullstack.",
-            "🏡 Viure en països del nord d'Europa (Dinamarca, Noruega, Alemanya, Irlanda), a Amèrica del Nord (EUA o Canadà) o a Àsia (Japó o Corea del Sud)."
+            "🏡 Visitar i viure en molts països al llarg de la meva vida per conèixer diferents cultures i conèixer el món en què visc.",
+            "🎯 Viure el màxim d'experiències possibles per créixer com a persona.",
+            "👥 Crear una gran xarxa de contactes i amistats de diferents cultures, tant nacionals com internacionals.",
+
         ],
 
         // Aficions
@@ -2309,6 +2327,7 @@ const translations = {
         curiositiesTitle: "🤔 Curiositats Sobre Mi",
         curiositiesList: [
             "👨‍💻 Vaig escriure el meu primer programa en Python quan tenia 16 anys.",
+            "📌 Sóc espanyol, concretament de Cadis (Andalusia).",
             "🏅 He guanyat diversos premis en tornejos d'escacs al Camp de Gibraltar.",
             "🌐 Em fascina la història i la geopolítica, i la seva influència en la tecnologia global.",
             "🧠 M'encanta tot el relacionat amb l'estratègia; és una gran manera de desenvolupar la ment.",
@@ -2358,6 +2377,7 @@ const translations = {
         flagpopuptitle: "Ciutats preferides",
         showmoreBtn: "Veure més",
         showLessBtn: "Veure menys",
+        tooltip: "Més informació",
 
         /* SECCIÓ DE SOFT SKILLS */
 
@@ -2554,7 +2574,9 @@ const translations = {
             "🛡️ <strong>Zibersegurtasunean aditua</strong> bihurtzea.",
             "🔒 Zibersegurtasunean lider diren multinazionaletan lan egitea (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, etab.).",
             "🖱️ Plataforma anitzeko eta fullstack software-garapenean nire ezagutzak gehienez zabaltzea.",
-            "🏡 Ipar Europako (Danimarka, Norvegia, Alemania, Irlanda), Ipar Amerikako (AEB edo Kanada) edo Asiako (Japonia edo Hego Korea) herrialdeetan bizitzea."
+            "🏡 Bisitatu eta bizitzen egon naiz bizitza osoan zehar, munduaren kulturen eta bizitzen ezagutzeko.",
+            "🎯 Esperientzia gehienetan bizitzen laguntzeko pertsonalki hazteko.",
+            "👥 Kultur anitzetan kontaktu eta adiskidetasun sare handia sortzea, baita nazional eta nazioartekoak ere.",
         ],
     
         hobbiesTitle: "🎨 Kodeaz Harago",
@@ -2570,6 +2592,7 @@ const translations = {
         curiositiesTitle: "🤔 Niri Buruzko Bitxikeriak",
         curiositiesList: [
             "👨‍💻 Nire lehen Python programa 16 urte nituenean idatzi nuen.",
+            "📌 Espainiarra naiz, zehazki Cadizetik (Andaluziatik).",
             "🏅 Xake txapelketetan hainbat sari irabazi ditut Gibraltar inguruan.",
             "🌐 Historia eta geopolitika liluratzen naute, baita teknologiaren eraginean ere.",
             "🧠 Estrategiarekin lotutako guztia gustatzen zait; garuna garatzeko modu bikaina da.",
@@ -2620,6 +2643,7 @@ const translations = {
         flagpopuptitle: "Hiri Preferituak",
         showmoreBtn: "Ikusi gehiago",
         showLessBtn: "Ikusi gutxiago",
+        tooltip: "Informazio gehiago",
 
         /* GAITASUN BIGUNEN ATALA (SOFT SKILLS) */
 
@@ -2825,7 +2849,9 @@ const translations = {
             "🛡️ Diventare un <strong>esperto di sicurezza informatica</strong>.",
             "🔒 Lavorare in multinazionali leader nel campo della sicurezza informatica (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, ecc.).",
             "🖱️ Ampliare al massimo le mie conoscenze nello sviluppo software multipiattaforma e fullstack.",
-            "🏡 Vivere nei paesi del nord Europa (Danimarca, Norvegia, Germania, Irlanda), in Nord America (USA o Canada) o in Asia (Giappone o Corea del Sud)."
+            "🏡 Visitare e vivere in molti paesi nel corso della mia vita per conoscere diverse culture e conoscere il mondo in cui vivo.",
+            "🎯 Vivere il massimo delle esperienze possibili per crescere come persona.",
+            "👥 Creare una grande rete di contatti e amicizie di diverse culture, sia nazionali che internazionali.",
         ],
 
         hobbiesTitle: "🎨 Oltre il Codice",
@@ -2841,6 +2867,7 @@ const translations = {
         curiositiesTitle: "🤔 Curiosità su di Me",
         curiositiesList: [
             "👨‍💻 Ho scritto il mio primo programma in Python a 16 anni.",
+            "📌 Sono spagnolo, precisamente di Cadice (Andalusia).",
             "🏅 Ho vinto diversi premi in tornei di scacchi nel Campo de Gibraltar.",
             "🌐 Sono appassionato di storia e geopolitica e della loro influenza sulla tecnologia globale.",
             "🧠 Amo tutto ciò che riguarda la strategia, è un ottimo modo per sviluppare la mente.",
@@ -2891,6 +2918,7 @@ const translations = {
         flagpopuptitle: "Città preferite",
         showmoreBtn: "Vedi di più",
         showLessBtn: "Vedi meno",
+        tooltip: "Maggiori informazioni",
 
         /* SEZIONE COMPETENZE TRASVERSALI (SOFT SKILLS) */
 
@@ -3095,7 +3123,9 @@ const translations = {
             "🛡️ Tornar-me um <strong>especialista em segurança cibernética</strong>.",
             "🔒 Trabalhar em multinacionais de destaque no setor de segurança cibernética (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, etc.).",
             "🖱️ Ampliar ao máximo meus conhecimentos em Desenvolvimento de Software Fullstack e Multiplataforma.",
-            "🏡 Viver em países do norte da Europa (Dinamarca, Noruega, Alemanha, Irlanda), na América do Norte (EUA ou Canadá) ou na Ásia (Japão ou Coreia do Sul)."
+            "🏡 Visitar e viver em muitos países ao longo da minha vida para conhecer diferentes culturas e entender o mundo em que vivo.",
+            "🎯 Viver o máximo de experiências possíveis para crescer como pessoa.",
+            "👥 Criar uma grande rede de contatos e amizades de diferentes culturas, tanto nacionais quanto internacionais.",
         ],
     
         // Hobbies
@@ -3113,6 +3143,7 @@ const translations = {
         curiositiesTitle: "🤔 Curiosidades Sobre Mim",
         curiositiesList: [
             "👨‍💻 Escrevi meu primeiro programa em Python quando tinha 16 anos.",
+            "📌 Sou espanhol, concretamente de Cádiz (Andaluzia).",
             "🏅 Ganhei vários prêmios em torneios de xadrez no Campo de Gibraltar.",
             "🌐 Tenho paixão por história e geopolítica e sua influência na tecnologia global.",
             "🧠 Amo tudo relacionado a estratégia; é uma excelente forma de desenvolver a mente.",
@@ -3129,6 +3160,7 @@ const translations = {
         flagpopuptitle: "Cidades preferidas",
         showmoreBtn: "Ver mais",
         showLessBtn: "Ver menos",
+        tooltip: "Mais informações",
 
         /* SEÇÃO FAQ (PERGUNTAS FREQUENTES) */
 
@@ -3366,7 +3398,9 @@ const translations = {
             "🛡️ Bli en <strong>ekspert innen cybersikkerhet</strong>.",
             "🔒 Jobbe i ledende multinasjonale selskaper innen cybersikkerhet (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, etc.).",
             "🖱️ Utvide min kunnskap innen tverrplattform- og fullstack-utvikling til det maksimale.",
-            "🏡 Bo i landene i Nord-Europa (Danmark, Norge, Tyskland, Irland), Nord-Amerika (USA eller Canada) eller Asia (Japan eller Sør-Korea)."
+            "🏡 Besøke og bo i mange land gjennom livet mitt for å lære om forskjellige kulturer og forstå verden jeg lever i.",
+            "🎯 Leve så mange erfaringer som mulig for å vokse som person.",
+            "👥 Skape et stort nettverk av kontakter og vennskap fra forskjellige kulturer, både nasjonale og internasjonale.",
         ],
 
         // Hobbyer
@@ -3384,6 +3418,7 @@ const translations = {
         curiositiesTitle: "🤔 Kuriositeter om Meg",
         curiositiesList: [
             "👨‍💻 Jeg skrev mitt første Python-program da jeg var 16 år gammel.",
+            "📌 Jeg er spansk, nærmere bestemt fra Cádiz (Andalusien).",
             "🏅 Jeg har vunnet flere priser i sjakkturneringer i Campo de Gibraltar.",
             "🌐 Jeg er fascinert av historie og geopolitikk, og hvordan det påvirker global teknologi.",
             "🧠 Jeg elsker alt som har med strategi å gjøre; det er en utmerket måte å trene hjernen på.",
@@ -3433,6 +3468,7 @@ const translations = {
         flagpopuptitle: "Foretrukne byer",
         showmoreBtn: "Se mer",
         showLessBtn: "Se mindre",
+        tooltip: "Mer informasjon",
     
         /* MYKE FERDIGHETER-SEKSJON (SOFT SKILLS) */
     
@@ -3634,7 +3670,10 @@ const translations = {
             "🛡️ Να γίνω <strong>ειδικός στην κυβερνοασφάλεια</strong>.",
             "🔒 Να εργαστώ σε κορυφαίες πολυεθνικές εταιρείες στον τομέα της κυβερνοασφάλειας (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle, κ.λπ.).",
             "🖱️ Να διευρύνω τις γνώσεις μου στην ανάπτυξη λογισμικού Fullstack και πολλαπλών πλατφορμών.",
-            "🏡 Να ζήσω σε χώρες της Βόρειας Ευρώπης (Δανία, Νορβηγία, Γερμανία, Ιρλανδία), της Βόρειας Αμερικής (ΗΠΑ ή Καναδάς) ή της Ασίας (Ιαπωνία ή Νότια Κορέα)."
+            "🏡 Επισκέπτομαι και ζω σε πολλές χώρες κατά τη διάρκεια της ζωής μου για να γνωρίσω διαφορετικές κουλτούρες και να κατανοήσω τον κόσμο στον οποίο ζω.",
+            "🎯 Ζω όσο το δυνατόν περισσότερες εμπειρίες για να εξελιχθώ ως άνθρωπος.",
+            "👥 Δημιουργώ ένα μεγάλο δίκτυο επαφών και φιλιών από διαφορετικές κουλτούρες, τόσο εθνικές όσο και διεθνείς.",
+
         ],
 
         // Χόμπι
@@ -3655,6 +3694,7 @@ const translations = {
         curiositiesTitle: "🤔 Περίεργα Γεγονότα για Εμένα",
         curiositiesList: [
             "👨‍💻 Έγραψα το πρώτο μου πρόγραμμα σε Python όταν ήμουν 16 ετών.",
+            "📌 Είμαι Ισπανός, συγκεκριμένα από την Κάντιθ (Ανδαλουσία).",
             "🏅 Έχω κερδίσει πολλά βραβεία σε τουρνουά σκακιού στην περιοχή του Κάμπο ντε Γιβραλτάρ.",
             "🌐 Με συναρπάζει η ιστορία και η γεωπολιτική, καθώς και η επίδρασή τους στην παγκόσμια τεχνολογία.",
             "🧠 Λατρεύω οτιδήποτε σχετίζεται με τη στρατηγική· είναι ένας εξαιρετικός τρόπος να ακονίσω το μυαλό μου.",
@@ -3706,6 +3746,7 @@ const translations = {
         flagpopuptitle: "Προτιμώμενες Πόλεις",
         showmoreBtn: "Δείτε περισσότερα",
         showLessBtn: "Δείτε λιγότερα",
+        tooltip: "Περισσότερες πληροφορίες",
 
         /* ΕΝΟΤΗΤΑ ΗΠΙΕΣ ΔΕΞΙΟΤΗΤΕΣ (SOFT SKILLS) */
 
@@ -3917,7 +3958,9 @@ const translations = {
             "🛡️ <strong>サイバーセキュリティの専門家</strong>になること。",
             "🔒 サイバーセキュリティ分野でリーダー的存在の多国籍企業で働くこと（Telefónica、Google、Deloitte、Microsoft、IBM、Cisco、Oracleなど）。",
             "🖱️ クロスプラットフォームとフルスタックソフトウェア開発に関する知識を最大限に拡張すること。",
-            "🏡 ヨーロッパ北部（デンマーク、ノルウェー、ドイツ、アイルランド）、北アメリカ（アメリカまたはカナダ）、またはアジア（日本または韓国）で生活すること。"
+            "🏡 人生を通して多くの国を訪れ、さまざまな文化を知り、自分が住んでいる世界を理解する。",
+            "🎯 人間として成長するためにできるだけ多くの経験を生きる。",
+            "👥 国内外のさまざまな文化からの多くの連絡先と友達のネットワークを作る。",
         ],
 
         // 趣味
@@ -3938,6 +3981,7 @@ const translations = {
         curiositiesTitle: "🤔 私についての豆知識",
         curiositiesList: [
             "👨‍💻 16歳のときに初めてPythonでプログラムを書きました。",
+            "📌 私はスペイン人で、特にカディス（アンダルシア）出身です。",
             "🏅 ジブラルタル地方のチェス大会で複数の賞を受賞しました。",
             "🌐 歴史と地政学、そしてそれがグローバルテクノロジーに与える影響に興味があります。",
             "🧠 戦略に関することが大好きで、論理的思考を鍛える素晴らしい方法だと考えています。",
@@ -3988,6 +4032,7 @@ const translations = {
         flagpopuptitle: "お気に入りの都市",
         showmoreBtn: "もっと見る",
         showLessBtn: "少なく見る",
+        tooltip: "もっと詳しく",
 
         /* ソフトスキルセクション (対人スキル) */
 
@@ -4193,7 +4238,9 @@ const translations = {
             "🛡️ Zostać <strong>ekspertem ds. cyberbezpieczeństwa</strong>.",
             "🔒 Pracować w wiodących międzynarodowych firmach zajmujących się cyberbezpieczeństwem (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle itp.).",
             "🖱️ Maksymalnie poszerzyć moją wiedzę z zakresu Fullstack i wieloplatformowego tworzenia oprogramowania.",
-            "🏡 Zamieszkać w krajach Europy Północnej (Dania, Norwegia, Niemcy, Irlandia), Ameryki Północnej (USA lub Kanada) lub Azji (Japonia lub Korea Południowa)."
+            "🏡 Odwiedzać i żyć w wielu krajach przez całe moje życie, aby poznać różne kultury i zrozumieć świat, w którym żyję.",
+            "🎯 Przeżywać jak najwięcej doświadczeń, aby rozwijać się jako osoba.",
+            "👥 Tworzyć dużą sieć kontaktów i przyjaźni z różnych kultur, zarówno krajowych, jak i międzynarodowych.",
         ],
 
         // Zainteresowania
@@ -4214,6 +4261,7 @@ const translations = {
         curiositiesTitle: "🤔 Ciekawostki o Mnie",
         curiositiesList: [
             "👨‍💻 Napisałem swój pierwszy program w Pythonie, gdy miałem 16 lat.",
+            "📌 Jestem Hiszpanem, konkretnie z Kadyksu (Andaluzja).",
             "🏅 Wygrałem kilka nagród w turniejach szachowych w regionie Campo de Gibraltar.",
             "🌐 Pasjonuję się historią i geopolityką oraz ich wpływem na globalną technologię.",
             "🧠 Uwielbiam wszystko, co związane ze strategią – to doskonały sposób na rozwijanie umiejętności analitycznego myślenia.",
@@ -4264,6 +4312,7 @@ const translations = {
         flagpopuptitle: "Ulubione miasta",
         showmoreBtn: "Pokaż więcej",
         showLessBtn: "Pokaż mniej",
+        tooltip: "Więcej informacji",
 
         /* SEKCJA UMIEJĘTNOŚCI MIĘKKICH (SOFT SKILLS) */
 
@@ -4488,6 +4537,7 @@ const translations = {
         curiositiesTitle: "🤔 עובדות מעניינות עליי",
         curiositiesList: [
             "👨‍💻 כתבתי את התוכנית הראשונה שלי ב-Python כשהייתי בן 16.",
+            "📌 אני ספרדי, במיוחד מקדיז (אנדלוסיה).",
             "🏅 זכיתי במספר פרסים בטורנירי שחמט באזור קמפו דה גיברלטר.",
             "🌐 אני מתעניין מאוד בהיסטוריה ובגיאופוליטיקה והשפעתן על הטכנולוגיה הגלובלית.",
             "🧠 אני אוהב כל מה שקשור לאסטרטגיה – זו דרך מצוינת לפתח חשיבה לוגית.",
@@ -4541,6 +4591,7 @@ const translations = {
         flagpopuptitle: "ערים מועדפות",
         showmoreBtn: "הצג יותר",
         showLessBtn: "הצג פחות",
+        tooltip: "מידע נוסף",
 
 
         /* קטע מיומנויות רכות (Soft Skills) */
@@ -4748,7 +4799,9 @@ const translations = {
             "🛡️ At blive en <strong>ekspert i cybersikkerhed</strong>.",
             "🔒 At arbejde hos førende multinationale virksomheder inden for cybersikkerhed (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle osv.).",
             "🖱️ At udvide min viden om multiplatform- og fullstack-softwareudvikling mest muligt.",
-            "🏡 At bo i Nordeuropa (Danmark, Norge, Tyskland, Irland), Nordamerika (USA eller Canada) eller Asien (Japan eller Sydkorea)."
+            "🏡 Besøge og bo i mange lande i mit liv for at lære forskellige kulturer at kende og forstå den verden, jeg lever i.",
+            "🎯 Leve så mange oplevelser som muligt for at vokse som person.",
+            "👥 Skabe et stort netværk af kontakter og venskaber fra forskellige kulturer, både nationale og internationale.",
         ],
 
         // Hobbyer
@@ -4770,6 +4823,7 @@ const translations = {
         curiositiesTitle: "🤔 Sjove Fakta om Mig",
         curiositiesList: [
             "👨‍💻 Jeg skrev mit første Python-program, da jeg var 16 år gammel.",
+            "📌 Jeg er spansk, nærmere bestemt fra Cádiz (Andalusien).",
             "🏅 Jeg har vundet flere priser i skakturneringer i Campo de Gibraltar-området.",
             "🌐 Jeg er fascineret af historie og geopolitik samt deres indflydelse på global teknologi.",
             "🧠 Jeg elsker alt, der handler om strategi – det er en fantastisk måde at træne hjernen på.",
@@ -4817,6 +4871,7 @@ const translations = {
         flagpopuptitle: "Foretrukne byer",
         showmoreBtn: "Se mere",
         showLessBtn: "Se mindre",
+        tooltip: "Mere information",
 
         /* BLØDE FÆRDIGHEDER-SEKTION */
 
@@ -5020,7 +5075,9 @@ const translations = {
             "🛡️ Stát se <strong>odborníkem na kybernetickou bezpečnost</strong>.",
             "🔒 Pracovat ve špičkových nadnárodních společnostech v oblasti kybernetické bezpečnosti (Telefónica, Google, Deloitte, Microsoft, IBM, Cisco, Oracle atd.).",
             "🖱️ Rozšířit své znalosti v oblasti multiplatformního a Fullstack vývoje softwaru na maximum.",
-            "🏡 Žít v severní Evropě (Dánsko, Norsko, Německo, Irsko), Severní Americe (USA nebo Kanada) nebo Asii (Japonsko nebo Jižní Korea)."
+            "🏡 Navštívit a žít v mnoha zemích během svého života, abych poznal různé kultury a svět, ve kterém žiji.",
+            "🎯 Žít co nejvíce zážitků, abych rostl jako osoba.",
+            "👥 Vytvořit velkou síť kontaktů a přátel z různých kultur, jak národních, tak mezinárodních.",
         ],
 
         // Koníčky
@@ -5042,6 +5099,7 @@ const translations = {
         curiositiesTitle: "🤔 Zajímavosti o Mně",
         curiositiesList: [
             "👨‍💻 Svůj první program v Pythonu jsem napsal, když mi bylo 16 let.",
+            "📌 Jsem Španěl, konkrétně z Cádizu (Andalusie).",
             "🏅 Vyhrál jsem několik cen na šachových turnajích v oblasti Campo de Gibraltar.",
             "🌐 Fascinuje mě historie a geopolitika a jejich vliv na globální technologie.",
             "🧠 Miluji strategii – je to skvělý způsob, jak rozvíjet mozek.",
@@ -5095,6 +5153,7 @@ const translations = {
         flagpopuptitle: "Preferovaná města",
         showmoreBtn: "Zobrazit více",
         showLessBtn: "Zobrazit méně",
+        tooltip: "Více informací",
 
         /* SEKCE MĚKKÝCH DOVEDNOSTÍ */
 
@@ -5400,6 +5459,10 @@ function changeLanguage(lang) {
     document.getElementById("flag-popup-title").textContent = translations[lang].flagpopuptitle;
     document.getElementById("show-more-btn").textContent = translations[lang].showmoreBtn;
     document.getElementById("show-less-btn").textContent = translations[lang].showLessBtn;
+    document.querySelectorAll(".tooltip").forEach(function (tooltip) {
+        tooltip.textContent = translations[lang].tooltip;
+    });
+    
 
 
 
