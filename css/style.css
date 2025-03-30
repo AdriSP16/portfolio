@@ -1424,12 +1424,12 @@ details p {
 }
 
 /* Ocultar elementos adicionales de la grid */
-.countries-grid .country-card:nth-child(n+11) {
+.countries-grid .country-card:nth-child(n+16) {
     display: none;
 }
 
 /* Mostrar los elementos adicionales */
-.show-more .country-card:nth-child(n+11) {
+.show-more .country-card:nth-child(n+16) {
     display: block;
 }
 
@@ -1495,7 +1495,7 @@ details p {
 }
 
 /* 🌐 Mostrar el resto del grid al hacer clic en el botón */
-.show-more .country-card:nth-child(n+11) {
+.show-more .country-card:nth-child(n+16) {
     display: block;
 }
 
@@ -2050,4 +2050,3 @@ details p {
 }
 
 /* FIN DEL APARTADO DE FORMACIÓN */
-
