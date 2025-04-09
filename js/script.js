@@ -1002,6 +1002,37 @@ document.addEventListener("DOMContentLoaded", async () => {
                 { name: "Khon Kaen", coords: [16.4322, 102.8236] }, // En crecimiento como hub tecnológico del noreste, con apoyo del gobierno en TI y educación.
             ]
         },
+
+        "Lithuania": {
+            isoCode: "LT",
+            center: [55.1694, 23.8813],
+            cities: [
+                { name: "Vilnius", coords: [54.6872, 25.2797] }, // Capital y centro tecnológico de Lituania, conocida por su ecosistema de startups y empresas fintech.
+                { name: "Kaunas", coords: [54.8985, 23.9036] }, // Ciudad universitaria con un creciente sector TI y de innovación.
+                { name: "Klaipėda", coords: [55.7033, 21.1443] }, // Puerto principal del país, con desarrollo en tecnología marítima y logística digital.
+                { name: "Šiauliai", coords: [55.9333, 23.3167] }, // Centro regional con iniciativas en educación tecnológica e industrias creativas.
+                { name: "Panevėžys", coords: [55.7333, 24.3500] }, // Enfocada en manufactura avanzada y automatización industrial.
+            ]
+        },
+        "Georgia": {
+            isoCode: "GE",
+            center: [42.3154, 43.3569],
+            cities: [
+                { name: "Tbilisi", coords: [41.7151, 44.8271] }, // Capital y núcleo del ecosistema tecnológico de Georgia, con apoyo a startups y empresas TIC.
+                { name: "Batumi", coords: [41.6413, 41.6356] }, // Ciudad costera en crecimiento, con proyectos en turismo inteligente y tecnología urbana.
+                { name: "Kutaisi", coords: [42.2670, 42.7180] }, // Alberga zonas económicas y proyectos de desarrollo en tecnología y educación.
+                { name: "Rustavi", coords: [41.5495, 45.0360] }, // Foco industrial con iniciativas en digitalización y tecnología de manufactura.
+                { name: "Zugdidi", coords: [42.5088, 41.8709] }, // En crecimiento como nodo regional para innovación agrícola y tecnología rural.
+            ]
+        },
+        "Singapore": {
+            isoCode: "SG",
+            center: [1.3521, 103.8198],
+            cities: [
+                { name: "Singapore", coords: [1.3521, 103.8198] }, // Ciudad-estado altamente desarrollada, líder en tecnología, innovación, fintech y smart cities.
+            ]
+        }
+
     };
 
     let map; // Variable del mapa
@@ -5576,4 +5607,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("language-switcher").value = "en";
     changeLanguage("en");
 });
+
 // © 2025 Adrián Sabino Pérez. Todos los derechos reservados. Prohibida la reproducción o imitación total o parcial del código sin autorización.
