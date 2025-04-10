@@ -1414,6 +1414,21 @@ const translations = {
             "Detección de Amenazas"
         ],
 
+        // Certificación de Cisco: Introduction to Cybersecurity
+        networkingbasicsTitle: "Conseptos Básicos de Redes",
+        networkingbasicsCenter: "<b>Centro:</b> Cisco Networking Academy",
+        networkingbasicsDate: "<b>Fecha:</b> Abril 2025",
+        networkingbasicsDescription: "<b>Descripción:</b> Certificación en fundamentos de redes, centrada en los principios básicos de conectividad, tipos de redes, modelos OSI y TCP/IP, direccionamiento IP, subredes, y el funcionamiento de dispositivos como switches y routers. Introducción a las buenas prácticas en seguridad de redes y resolución de problemas comunes.",
+        networkingbasicsSkills: [
+            "Conceptos fundamentales de redes y conectividad",
+            "Modelo OSI y modelo TCP/IP",
+            "Direccionamiento IP y subredes",
+            "Funcionamiento de switches y routers",
+            "Funcionamiento de switches y routers",
+            "Identificación y resolución básica de incidencias",
+            "Principios básicos de seguridad en redes",
+        ],
+
         // Reconocimientos
         awards: "🏆 Reconocimientos",
         noAwards: "Aún no poseo reconocimientos, ¡pero sigo trabajando para conseguirlos! 📱",
@@ -1691,6 +1706,20 @@ const translations = {
         cybersecDescription: "<b>Description:</b> Certification in cybersecurity fundamentals, exploring common threats, how to protect systems, and understanding the importance of digital infrastructure security.",
         cybersecSkills: [
             "Threat Detection"
+        ],
+
+        // Cisco Certification: Networking Basics
+        networkingbasicsTitle: "Networking Basics",
+        networkingbasicsCenter: "<b>Institution:</b> Cisco Networking Academy",
+        networkingbasicsDate: "<b>Date:</b> April 2025",
+        networkingbasicsDescription: "<b>Description:</b> Certification in networking fundamentals, focused on core principles of connectivity, network types, OSI and TCP/IP models, IP addressing, subnetting, and the operation of devices such as switches and routers. Includes an introduction to network security best practices and basic troubleshooting.",
+        networkingbasicsSkills: [
+            "Core networking and connectivity concepts",
+            "OSI and TCP/IP models",
+            "IP addressing and subnetting",
+            "Operation of switches and routers",
+            "Basic troubleshooting and diagnostics",
+            "Fundamental principles of network security",
         ],
 
         // Awards
@@ -5585,6 +5614,21 @@ function changeLanguage(lang) {
     translations[lang].cybersecSkills.forEach((text, index) => {
         if (cybersecSkillsSpans[index]) {
             cybersecSkillsSpans[index].textContent = text;
+        }
+    });
+
+    // Conceptos básicos de redes
+    document.getElementById("networkingbasics-title").textContent = translations[lang].networkingbasicsTitle;
+    document.getElementById("networkingbasics-center").innerHTML = translations[lang].networkingbasicsCenter;
+    document.getElementById("networkingbasics-date").innerHTML = translations[lang].networkingbasicsDate;
+    document.getElementById("networkingbasics-description").innerHTML = translations[lang].networkingbasicsDescription;
+    document.getElementById("networkingbasics-skills-title").innerHTML = `<b>${translations[lang].skillsAcquiredText}</b>`;
+
+    // ✅ Aquí se actualizan los spans de las habilidades de redes
+    const networkingbasicsSkillsSpans = document.querySelectorAll("#networkingbasics-skills span");
+    translations[lang].networkingbasicsSkills.forEach((text, index) => {
+        if (networkingbasicsSkillsSpans[index]) {
+            networkingbasicsSkillsSpans[index].textContent = text;
         }
     });
 
