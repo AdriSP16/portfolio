@@ -1,3 +1,7 @@
+/* IDIOMA PORTUGUES */
+
+
+
 const pt = {
     
     navbarTitle: "AdriDevSP",
@@ -238,6 +242,21 @@ const pt = {
     cybersecDescription: "<b>Descrição:</b> Certificação nos fundamentos da segurança cibernética, abordando as ameaças mais comuns, como proteger sistemas e a importância da segurança na infraestrutura digital.",
     cybersecSkills: [
         "Detecção de Ameaças"
+    ],
+
+    // Certificação Cisco: Fundamentos de Redes
+    networkingbasicsTitle: "Conceitos Básicos de Redes",
+    networkingbasicsCenter: "<b>Centro:</b> Cisco Networking Academy",
+    networkingbasicsDate: "<b>Data:</b> Abril de 2025",
+    networkingbasicsDescription: "<b>Descrição:</b> Certificação em fundamentos de redes, com foco nos princípios básicos de conectividade, tipos de redes, modelos OSI e TCP/IP, endereçamento IP, sub-redes e funcionamento de dispositivos como switches e roteadores. Introdução às melhores práticas de segurança de redes e resolução de problemas comuns.",
+    networkingbasicsSkills: [
+        "Conceitos fundamentais de redes e conectividade",
+        "Modelos OSI e TCP/IP",
+        "Endereçamento IP e sub-redes",
+        "Funcionamento de switches e roteadores",
+        "Funcionamento de switches e roteadores",
+        "Identificação e resolução básica de problemas",
+        "Princípios básicos de segurança em redes",
     ],
 
     // Reconhecimentos

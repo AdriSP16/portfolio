@@ -1,3 +1,7 @@
+/* IDIOMA ALEMAN */
+
+
+
 const de = {
     
     navbarTitle: "AdriDevSP",
@@ -220,6 +224,21 @@ const de = {
     cybersecDescription: "<b>Beschreibung:</b> Zertifizierung in den Grundlagen der Cybersicherheit mit Schwerpunkt auf häufigen Bedrohungen, Systemschutz und dem Verständnis der Bedeutung von Sicherheit in digitalen Infrastrukturen.",
     cybersecSkills: [
         "Bedrohungserkennung"
+    ],
+
+    // Cisco-Zertifizierung: Netzwerkgrundlagen
+    networkingbasicsTitle: "Grundlagen der Netzwerke",
+    networkingbasicsCenter: "<b>Zentrum:</b> Cisco Networking Academy",
+    networkingbasicsDate: "<b>Datum:</b> April 2025",
+    networkingbasicsDescription: "<b>Beschreibung:</b> Zertifizierung in Netzwerkgrundlagen mit Fokus auf die grundlegenden Prinzipien der Konnektivität, Netzwerktypen, OSI- und TCP/IP-Modelle, IP-Adressierung, Subnetting sowie die Funktionsweise von Geräten wie Switches und Routern. Einführung in bewährte Sicherheitspraktiken im Netzwerkbereich und in die Lösung häufiger Probleme.",
+    networkingbasicsSkills: [
+        "Grundlegende Konzepte von Netzwerken und Konnektivität",
+        "OSI- und TCP/IP-Modelle",
+        "IP-Adressierung und Subnetting",
+        "Funktionsweise von Switches und Routern",
+        "Funktionsweise von Switches und Routern",
+        "Grundlegende Fehlererkennung und -behebung",
+        "Grundlagen der Netzwerksicherheit",
     ],
 
     // Auszeichnungen

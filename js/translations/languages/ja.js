@@ -1,3 +1,7 @@
+/* IDIOMA JAPONES */
+
+
+
 const ja = {
 
     navbarTitle: "AdriDevSP",
@@ -241,6 +245,21 @@ const ja = {
     cybersecDescription: "<b>説明:</b> サイバーセキュリティの基礎を学ぶ認定資格。最も一般的な脅威、システム保護の方法、デジタルインフラにおけるセキュリティの重要性を探求します。",
     cybersecSkills: [
         "脅威の検出"
+    ],
+
+    // シスコ認定：ネットワーキング基礎
+    networkingbasicsTitle: "ネットワークの基本概念",
+    networkingbasicsCenter: "<b>センター：</b> Cisco Networking Academy",
+    networkingbasicsDate: "<b>日付：</b> 2025年4月",
+    networkingbasicsDescription: "<b>説明：</b> 接続の基本原則、ネットワークの種類、OSIモデルおよびTCP/IPモデル、IPアドレッシング、サブネット、スイッチやルーターなどの機器の動作に焦点を当てたネットワーク基礎に関する認定。ネットワークセキュリティのベストプラクティスと一般的なトラブルシューティングの入門も含まれます。",
+    networkingbasicsSkills: [
+        "ネットワークと接続性の基本概念",
+        "OSIモデルおよびTCP/IPモデル",
+        "IPアドレッシングとサブネット",
+        "スイッチとルーターの動作",
+        "スイッチとルーターの動作",
+        "基本的なトラブルの特定と解決",
+        "ネットワークセキュリティの基本原則",
     ],
 
     // 受賞歴

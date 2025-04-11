@@ -1,3 +1,6 @@
+/* IDIOMA ESPAÑOL */
+
+
 const es = {
 
     navbarTitle: "AdriDevSP",
@@ -259,7 +262,7 @@ const es = {
         "Detección de Amenazas"
     ],
 
-    // Certificación de Cisco: Introduction to Cybersecurity
+    // Certificación de Cisco: Networking Basics
     networkingbasicsTitle: "Conseptos Básicos de Redes",
     networkingbasicsCenter: "<b>Centro:</b> Cisco Networking Academy",
     networkingbasicsDate: "<b>Fecha:</b> Abril 2025",

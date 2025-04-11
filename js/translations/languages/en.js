@@ -1,3 +1,7 @@
+/* IDIOMA INGLÉS */
+
+
+
 const en = {
 
     navbarTitle: "AdriDevSP",

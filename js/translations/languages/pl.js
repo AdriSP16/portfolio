@@ -1,3 +1,7 @@
+/* IDIOMA POLACO */
+
+
+
 const pl = {
 
     navbarTitle: "AdriDevSP",
@@ -241,6 +245,21 @@ const pl = {
     cybersecDescription: "<b>Opis:</b> Certyfikat z zakresu podstaw cyberbezpieczeństwa, obejmujący najczęstsze zagrożenia, sposoby ochrony systemów oraz znaczenie bezpieczeństwa w infrastrukturze cyfrowej.",
     cybersecSkills: [
         "Wykrywanie Zagrożeń"
+    ],
+
+    // Certyfikacja Cisco: Podstawy Sieci
+    networkingbasicsTitle: "Podstawowe Pojęcia Sieciowe",
+    networkingbasicsCenter: "<b>Centrum:</b> Cisco Networking Academy",
+    networkingbasicsDate: "<b>Data:</b> Kwiecień 2025",
+    networkingbasicsDescription: "<b>Opis:</b> Certyfikacja z podstaw sieci, skupiająca się na zasadach łączności, typach sieci, modelach OSI i TCP/IP, adresowaniu IP, podsieciach oraz działaniu urządzeń takich jak switche i routery. Wprowadzenie do najlepszych praktyk w zakresie bezpieczeństwa sieci i rozwiązywania typowych problemów.",
+    networkingbasicsSkills: [
+        "Podstawowe pojęcia sieci i łączności",
+        "Modele OSI i TCP/IP",
+        "Adresowanie IP i podsieci",
+        "Działanie switchy i routerów",
+        "Działanie switchy i routerów",
+        "Podstawowa identyfikacja i rozwiązywanie problemów",
+        "Podstawy bezpieczeństwa sieci",
     ],
 
     // Nagrody i Wyróżnienia

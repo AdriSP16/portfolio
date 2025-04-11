@@ -1,3 +1,7 @@
+/* IDIOMA NORUEGO */
+
+
+
 const no = {
     
     navbarTitle: "AdriDevSP",
@@ -237,6 +241,21 @@ const no = {
     cybersecDescription: "<b>Beskrivelse:</b> En sertifisering som dekker grunnleggende prinsipper for cybersikkerhet, inkludert de vanligste truslene, hvordan beskytte systemer, og forstå betydningen av sikkerhet i digital infrastruktur.",
     cybersecSkills: [
         "Trusseloppdagelse"
+    ],
+
+    // Cisco Sertifisering: Grunnleggende Nettverk
+    networkingbasicsTitle: "Grunnleggende Nettverksbegreper",
+    networkingbasicsCenter: "<b>Senter:</b> Cisco Networking Academy",
+    networkingbasicsDate: "<b>Dato:</b> April 2025",
+    networkingbasicsDescription: "<b>Beskrivelse:</b> Sertifisering i grunnleggende nettverk med fokus på de grunnleggende prinsippene for tilkobling, nettverkstyper, OSI- og TCP/IP-modeller, IP-adressering, subnetting og funksjon av enheter som svitsjer og rutere. Introduksjon til beste praksis for nettverkssikkerhet og løsning av vanlige problemer.",
+    networkingbasicsSkills: [
+        "Grunnleggende nettverks- og tilkoblingsbegreper",
+        "OSI- og TCP/IP-modeller",
+        "IP-adressering og subnetting",
+        "Funksjon av svitsjer og rutere",
+        "Funksjon av svitsjer og rutere",
+        "Grunnleggende feilsøking og problemløsning",
+        "Grunnleggende prinsipper for nettverkssikkerhet",
     ],
 
     // Utmerkelser

@@ -1,3 +1,6 @@
+/* IDIOMA EUSKERA */
+
+
 const eu = {
     
     navbarTitle: "AdriDevSP",
@@ -235,6 +238,21 @@ const eu = {
     cybersecDescription: "<b>Deskribapena:</b> Zibersegurtasunaren oinarrizko kontzeptuetan ziurtagiria, mehatxu arruntenak aztertuz, sistemak babesten ikasiz eta azpiegitura digitalaren segurtasunaren garrantzia ulertuz.",
     cybersecSkills: [
         "Mehatxuen detekzioa"
+    ],
+
+    // Cisco Ziurtagiria: Sareen Oinarriak
+    networkingbasicsTitle: "Sareen Oinarrizko Kontzeptuak",
+    networkingbasicsCenter: "<b>Zentroa:</b> Cisco Networking Academy",
+    networkingbasicsDate: "<b>Data:</b> 2025eko Apirila",
+    networkingbasicsDescription: "<b>Deskribapena:</b> Sareen oinarrizko ziurtagiria, konektibitatearen oinarrizko printzipioetan, sare motetan, OSI eta TCP/IP eredutan, IP helbideratzean, azpisareetan eta switch eta router bezalako gailuen funtzionamenduan oinarritua. Sare-segurtasuneko praktika egokien eta arazo arrunten konponbidearen sarrerarekin osatua.",
+    networkingbasicsSkills: [
+        "Sareen eta konektibitatearen oinarrizko kontzeptuak",
+        "OSI eta TCP/IP ereduak",
+        "IP helbideratzea eta azpisareak",
+        "Switch eta router-en funtzionamendua",
+        "Switch eta router-en funtzionamendua",
+        "Oinarrizko arazoak identifikatu eta konpontzea",
+        "Sare-segurtasunaren oinarrizko printzipioak",
     ],
 
     // Aintzatespenak

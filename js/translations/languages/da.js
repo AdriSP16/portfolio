@@ -1,3 +1,7 @@
+/* IDIOMA DANÉS */
+
+
+
 const da = {
     
     navbarTitle: "AdriDevSP",
@@ -147,7 +151,11 @@ const da = {
         {
             question: "Windows, Mac eller Linux?",
             answer: "Jeg foretrækker Windows for dets bekvemmelighed, men jeg bruger også Linux (som Kali Linux) til professionelle formål. Jeg bruger ikke Mac på grund af min præference for åbne systemer."
-        }
+        },
+        {
+            question: "Hvordan kan jeg kontakte dig?",
+            answer: "Du kan kontakte mig via mine sociale medier eller sende mig en e-mail. Jeg er altid åben for nye muligheder og samarbejder!"
+        },
     ],
 
     /* FORETRUKNE STEDER SEKTION */
@@ -239,6 +247,21 @@ const da = {
     cybersecDescription: "<b>Beskrivelse:</b> Certificering i cybersikkerhedsgrundlag, der udforsker de mest almindelige trusler, hvordan man beskytter systemer, og vigtigheden af sikkerhed i digital infrastruktur.",
     cybersecSkills: [
         "Trusselsdetektion"
+    ],
+
+    // Cisco Certificering: Netværksgrundlæggende
+    networkingbasicsTitle: "Grundlæggende Netværksbegreber",
+    networkingbasicsCenter: "<b>Center:</b> Cisco Networking Academy",
+    networkingbasicsDate: "<b>Dato:</b> April 2025",
+    networkingbasicsDescription: "<b>Beskrivelse:</b> Certificering i netværksgrundlæggende med fokus på de grundlæggende principper for konnektivitet, netværkstyper, OSI- og TCP/IP-modeller, IP-adressering, subnets og funktionalitet af enheder som switches og routers. Introduktion til bedste praksis inden for netværkssikkerhed og løsning af almindelige problemer.",
+    networkingbasicsSkills: [
+        "Grundlæggende netværks- og konnektivitetsbegreber",
+        "OSI- og TCP/IP-modeller",
+        "IP-adressering og subnets",
+        "Funktionalitet af switches og routers",
+        "Funktionalitet af switches og routers",
+        "Grundlæggende fejlfinding og problemløsning",
+        "Grundlæggende principper for netværkssikkerhed",
     ],
 
     /* SLUT PÅ UDDANNELSESSEKTION */

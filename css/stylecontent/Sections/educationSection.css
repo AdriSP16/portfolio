@@ -21,6 +21,14 @@
     margin-bottom: 3rem;
 }
 
+.formal-studies-title {
+    margin-top: 0rem;
+}
+
+.certification-title {
+    margin-top: 0rem;
+}
+
 /* 🌙 MODO OSCURO: Texto blanco */
 [data-theme="dark"] .education-title {
     color: #fff !important; /* Prioridad máxima */

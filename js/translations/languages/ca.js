@@ -1,3 +1,5 @@
+/* DIALECTO CATALÁN */
+
 const ca = {
     
     navbarTitle: "AdriDevSP",
@@ -230,6 +232,21 @@ const ca = {
     cybersecDescription: "<b>Descripció:</b> Certificació en fonaments de ciberseguretat, explorant les amenaces més comunes, com protegir sistemes i comprendre la importància de la seguretat en la infraestructura digital.",
     cybersecSkills: [
         "Detecció d'Amenaces"
+    ],
+
+    // Certificació Cisco: Fonaments de Xarxes
+    networkingbasicsTitle: "Conceptes Bàsics de Xarxes",
+    networkingbasicsCenter: "<b>Centre:</b> Cisco Networking Academy",
+    networkingbasicsDate: "<b>Data:</b> Abril de 2025",
+    networkingbasicsDescription: "<b>Descripció:</b> Certificació en fonaments de xarxes centrada en els principis bàsics de la connectivitat, els tipus de xarxes, els models OSI i TCP/IP, l’adreçament IP, les subxarxes i el funcionament de dispositius com switches i routers. Introducció a les bones pràctiques en seguretat de xarxes i a la resolució de problemes comuns.",
+    networkingbasicsSkills: [
+        "Conceptes fonamentals de xarxes i connectivitat",
+        "Models OSI i TCP/IP",
+        "Adreçament IP i subxarxes",
+        "Funcionament de switches i routers",
+        "Funcionament de switches i routers",
+        "Identificació i resolució bàsica d'incidències",
+        "Principis bàsics de seguretat en xarxes",
     ],
 
     // Reconeixements

@@ -1,3 +1,6 @@
+/* IDIOMA CHECO */
+
+
 const cs = {
     
     navbarTitle: "AdriDevSP",
@@ -245,6 +248,21 @@ const cs = {
     cybersecDescription: "<b>Popis:</b> Certifikace v základech kybernetické bezpečnosti, která se zabývá nejčastějšími hrozbami, ochranou systémů a důležitostí bezpečnosti v digitální infrastruktuře.",
     cybersecSkills: [
         "Detekce hrozeb"
+    ],
+
+    // Certifikace Cisco: Základy sítí
+    networkingbasicsTitle: "Základní Pojmy v Sítích",
+    networkingbasicsCenter: "<b>Centrum:</b> Cisco Networking Academy",
+    networkingbasicsDate: "<b>Datum:</b> Duben 2025",
+    networkingbasicsDescription: "<b>Popis:</b> Certifikace v oblasti základů sítí se zaměřením na principy konektivity, typy sítí, modely OSI a TCP/IP, IP adresaci, podsítě a fungování zařízení jako jsou přepínače a směrovače. Úvod do osvědčených postupů v oblasti zabezpečení sítí a řešení běžných problémů.",
+    networkingbasicsSkills: [
+        "Základní pojmy sítí a konektivity",
+        "Modely OSI a TCP/IP",
+        "IP adresace a podsíťování",
+        "Fungování přepínačů a směrovačů",
+        "Fungování přepínačů a směrovačů",
+        "Základní identifikace a řešení problémů",
+        "Základy zabezpečení sítí",
     ],
 
     /* KONEC SEKCE VZDĚLÁNÍ */

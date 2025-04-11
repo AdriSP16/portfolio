@@ -1,3 +1,7 @@
+/* IDIOMA FRANCÉS */
+
+
+
 const fr = {
 
     navbarTitle: "AdriDevSP",
@@ -222,6 +226,21 @@ const fr = {
     cybersecDescription: "<b>Description :</b> Certification en fondamentaux de la cybersécurité, explorant les menaces courantes, la protection des systèmes et la compréhension de l'importance de la sécurité dans les infrastructures numériques.",
     cybersecSkills: [
         "Détection de Menaces"
+    ],
+
+    // Certification Cisco : Bases du Réseautage
+    networkingbasicsTitle: "Concepts de Base des Réseaux",
+    networkingbasicsCenter: "<b>Centre :</b> Cisco Networking Academy",
+    networkingbasicsDate: "<b>Date :</b> Avril 2025",
+    networkingbasicsDescription: "<b>Description :</b> Certification en bases du réseautage, axée sur les principes fondamentaux de la connectivité, les types de réseaux, les modèles OSI et TCP/IP, l’adressage IP, la création de sous-réseaux, ainsi que le fonctionnement des dispositifs tels que les commutateurs et les routeurs. Introduction aux bonnes pratiques en matière de sécurité des réseaux et de résolution des problèmes courants.",
+    networkingbasicsSkills: [
+        "Principes fondamentaux des réseaux et de la connectivité",
+        "Modèles OSI et TCP/IP",
+        "Adressage IP et sous-réseaux",
+        "Fonctionnement des commutateurs et des routeurs",
+        "Fonctionnement des commutateurs et des routeurs",
+        "Identification et résolution de problèmes de base",
+        "Principes de base de la sécurité des réseaux",
     ],
 
     // Prix et Récompenses
