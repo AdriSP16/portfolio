@@ -1,0 +1,256 @@
+/* APARTADO LUGARES PREFERIDOS */
+
+.preferred-places-section {
+    padding: 50px 50px;
+    margin-top: -70px;
+    text-align: center;
+    background-color: #f8f8f8;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 🌙 MODO OSCURO */
+[data-theme="dark"] .preferred-places-section {
+    background-color: #272727; /* Fondo oscuro */
+}
+
+/* TÍTULO */
+.preferred-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* 🌙 MODO OSCURO: Color del título */
+[data-theme="dark"] .preferred-title {
+    color: #ffffff;
+}
+
+/* DESCRIPCIÓN */
+#preferred-description {
+    text-align: justify;
+    text-align-last: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #444;
+    padding-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+/* 🌙 MODO OSCURO: Color del texto */
+[data-theme="dark"] #preferred-description {
+    color: #cccccc;
+}
+
+/* CONTENEDOR DE LOS BOTONES */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* BOTÓN "VER MENOS" */
+#show-less-btn {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Elimina el subrayado en el botón "Ver menos" */
+}
+
+#show-less-btn:hover {
+    background-color: #e53935;
+}
+
+/* 🌐 GRID de países */
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ocultar elementos adicionales de la grid */
+.countries-grid .country-card:nth-child(n+16) {
+    display: none;
+}
+
+/* Mostrar los elementos adicionales */
+.show-more .country-card:nth-child(n+16) {
+    display: block;
+}
+
+/* BOTÓN "VER MÁS" */
+#show-more-btn {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#show-more-btn:hover {
+    background-color: #45a049;
+}
+
+
+/* TARJETAS DE LOS PAÍSES */
+.country-card {
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, background 0.3s ease;
+    overflow: hidden;
+}
+
+/* 🌙 MODO OSCURO: Fondo de la tarjeta */
+[data-theme="dark"] .country-card {
+    background-color: #3a3a3a;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* IMAGENES */
+.country-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+
+/* NOMBRES DE LOS PAÍSES */
+.country-name {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    background: #e9e9e9;
+    border-radius: 0 0 8px 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 🌙 MODO OSCURO: Color del nombre */
+[data-theme="dark"] .country-name {
+    background: #2b2b2b;
+    color: #ffffff;
+}
+
+/* 🌐 Mostrar el resto del grid al hacer clic en el botón */
+.show-more .country-card:nth-child(n+16) {
+    display: block;
+}
+
+/* 🌙 MODO OSCURO: Color de la lista de ciudades */
+[data-theme="dark"] .city-list {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* 📱 Ajustes para tablets */
+@media (max-width: 768px) {
+    .preferred-title {
+        font-size: 2rem;
+    }
+
+    .countries-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .country-card img {
+        height: 100px;
+    }
+
+    .country-name {
+        font-size: 14px;
+    }
+
+    #preferred-description {
+        font-size: 1rem;
+    }
+
+    /* Ocultar elementos adicionales de la grid */
+    .countries-grid .country-card:nth-child(n+7) {
+        display: none;
+    }
+
+    /* Mostrar los elementos adicionales */
+    .show-more .country-card:nth-child(n+7) {
+        display: block;
+    }
+}
+
+/* 📱 Ajustes para móviles */
+@media (max-width: 480px) {
+
+    /* Ocultar elementos adicionales de la grid */
+    .countries-grid .country-card:nth-child(n+7) {
+        display: none;
+    }
+
+    /* Mostrar los elementos adicionales */
+    .show-more .country-card:nth-child(n+7) {
+        display: block;
+    }
+
+    .preferred-title {
+        font-size: 1.8rem;
+    }
+
+    .countries-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 10px;
+    }
+
+    .country-card {
+        border-radius: 5px;
+    }
+
+    .country-card img {
+        height: 90px;
+    }
+
+    .country-name {
+        font-size: 13px;
+        padding: 8px 0;
+    }
+
+    #preferred-description {
+        font-size: 0.95rem;
+    }
+}
+
+/* FIN DEL APARTADO LUGARES PREFERIDOS */

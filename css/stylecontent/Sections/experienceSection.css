@@ -1,0 +1,35 @@
+/* APARTADO DE EXPERIENCIA */
+
+/* Estilo general de la sección */
+.experience {
+    background: #e2e2e2; /* Gris claro (modo claro) */
+    padding: 2rem 1rem; 
+    text-align: center; 
+    transition: background 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Título de la sección */
+.experience-title {
+    font-size: 2.5rem; 
+    color: #333; /* Texto oscuro */
+    margin-bottom: 2rem; 
+}
+
+/* Texto cuando no hay experiencia */
+.no-experience {
+    font-size: 1.5rem; 
+    color: #555; /* Gris oscuro */
+    opacity: 0.8; 
+}
+
+/* 🌙 MODO OSCURO */
+[data-theme="dark"] .experience {
+    background: #2a2a2a; /* Mismo fondo que el apartado de proyectos */
+}
+
+[data-theme="dark"] .experience-title,
+[data-theme="dark"] .no-experience {
+    color: #f5f5f5; /* Texto blanco para mejor legibilidad */
+}
+
+/* FIN APARTADO DE EXPERIENCIA */

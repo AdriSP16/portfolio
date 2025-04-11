@@ -1,0 +1,160 @@
+/* APARTADO DE SOBRE MÍ */
+
+.about-me-section {
+    background: #e2e2e2; /* Modo claro: Gris claro */
+    padding: 2em 2rem; 
+    border-radius: 12px; 
+    margin: 4rem 0;
+    text-align: center; /* CENTRAR TODO EL CONTENIDO */
+    transition: background 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* 🌙 MODO OSCURO: Fondo igual que el apartado de Experience */
+[data-theme="dark"] .about-me-section {
+    background: #2b2b2b; /* Gris oscuro */
+}
+
+/* Asegurar el centrado de los subapartados */
+.about-content, .ambitions, .hobbies, .curiosities, .faq {
+    max-width: 800px;      /* Limitar el ancho para centrar */
+    margin: 0 auto;        /* Centrar horizontalmente */
+    text-align: left;      /* Alinear texto a la izquierda */
+}
+
+/* Título centrado */
+.about-title {
+    font-size: 2.5rem; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 2rem; 
+}
+
+/* 🌙 MODO OSCURO: Color del título */
+[data-theme="dark"] .about-title {
+    color: #ffffff; 
+}
+
+/* Estilos del contenido de "Sobre Mí" */
+.about-content p {
+    font-size: 1.1rem; 
+    line-height: 1.8; 
+    color: #444; 
+}
+
+/* 🌙 MODO OSCURO: Color del texto */
+[data-theme="dark"] .about-content p {
+    color: #cccccc; 
+}
+
+/* Estilo para subapartados */
+.ambitions, .hobbies, .curiosities, .faq {
+    margin-top: 2rem;
+}
+
+/* Títulos de los subapartados */
+.ambitions h3, .hobbies h3, .curiosities h3, .faq h3 {
+    font-size: 1.8rem;
+    color: #222; 
+}
+
+/* 🌙 MODO OSCURO: Color de los subtítulos */
+[data-theme="dark"] .ambitions h3,
+[data-theme="dark"] .hobbies h3,
+[data-theme="dark"] .curiosities h3,
+[data-theme="dark"] .faq h3 {
+    color: #ffffff; 
+}
+
+/* Lista personalizada */
+.ambitions ul, .hobbies ul, .curiosities ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.ambitions li, .hobbies li, .curiosities li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0; 
+    padding-left: 1.5rem; 
+    position: relative; 
+}
+
+/* 🌙 MODO OSCURO: Color de los elementos de lista */
+[data-theme="dark"] .ambitions li,
+[data-theme="dark"] .hobbies li,
+[data-theme="dark"] .curiosities li {
+    color: #cccccc; 
+}
+
+/* Icono para las listas */
+.ambitions li::before, .hobbies li::before, .curiosities li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+}
+
+/* FAQ (Preguntas Frecuentes) */
+details {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* 🌙 MODO OSCURO: Bordes más claros */
+[data-theme="dark"] details {
+    border: 1px solid #ffffff; 
+}
+
+/* Título del FAQ */
+details summary {
+    font-weight: bold;
+    color: #000000;
+}
+
+/* 🌙 MODO OSCURO: Color del FAQ */
+[data-theme="dark"] details summary {
+    color: #ffffff; 
+}
+
+/* Respuesta dentro del FAQ */
+details p {
+    margin-top: 1rem;
+    color: #000000;
+}
+
+/* 🌙 MODO OSCURO: Color del texto de la respuesta */
+[data-theme="dark"] details p {
+    color: #cccccc; 
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .ambitions li, .hobbies li, .curiosities li {
+        font-size: 1rem;
+    }
+
+    details {
+        padding: 0.8rem;
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+/* FIN DEL APARTADO DE SOBRE MÍ */

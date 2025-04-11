@@ -1,0 +1,13 @@
+/* Variables de colores (modo claro por defecto) */
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+    --primary-color: #4CAF50;
+}
+
+/* 🌙 Modo oscuro */
+[data-theme="dark"] {
+    --bg-color: #1f1f1f;
+    --text-color: #fff;
+    --primary-color: #81C784;
+}

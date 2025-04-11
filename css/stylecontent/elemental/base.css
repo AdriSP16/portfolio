@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth; /* Habilitar desplazamiento suave */
+}
+
+
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}

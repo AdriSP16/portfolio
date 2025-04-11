@@ -1,0 +1,195 @@
+/* APARTADO DE TECH SKILLS */
+.skills-section {
+    background: #ffffff; /* Mantiene el fondo blanco en modo claro */
+    padding: 2rem 1rem; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    transition: background 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Título principal - Ajuste de espacio */
+.skills-title {
+    font-size: 2.5rem; 
+    color: #333; 
+    margin: 1.5rem 0; 
+    text-align: center; 
+}
+
+/* Descripción */
+.skills-description {
+    font-size: 1.2rem; 
+    color: #666; 
+    max-width: 800px; 
+    margin: 0 auto 2rem; 
+    line-height: 1.8; 
+    text-align: center; 
+}
+
+/* Categoría de habilidades */
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 0 2rem 2rem; 
+    background: #ffffff; /* Color claro por defecto */
+    transition: background 0.3s ease; /* Transición al cambiar de tema */
+}
+
+/* Sombra interactiva */
+.skill-category:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de cada categoría */
+.skill-category h3 {
+    font-size: 2rem;
+    color: #2E7D32;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.3rem; 
+}
+
+/* Contenedor de íconos */
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.8rem; 
+}
+
+/* Cada habilidad (enlace) */
+.skill-icons a {
+    display: flex; 
+    align-items: center; 
+    padding: 0.6rem 1.2rem; 
+    background: #dfe6e9; /* Color más oscuro solo en este bloque */
+    border-radius: 0.8rem; 
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #333; 
+    text-decoration: none; 
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Ícono dentro del enlace */
+.skill-icons a img {
+    width: 32px; 
+    height: 32px; 
+    margin-right: 0.8rem; 
+}
+
+/* Hover (efecto al pasar el mouse) */
+.skill-icons a:hover {
+    background: #4CAF50; 
+    color: white; 
+    transform: translateY(-5px); 
+}
+
+/* 🌙 MODO OSCURO */
+[data-theme="dark"] .skills-section {
+    background: #1f1f1f; /* Fondo más oscuro solo en modo oscuro */
+}
+
+[data-theme="dark"] .skill-category {
+    background: #252525; /* Tarjetas más oscuras */
+}
+
+[data-theme="dark"] .skills-title,
+[data-theme="dark"] .skills-description {
+    color: #f5f5f5; /* Texto claro para modo oscuro */
+}
+
+[data-theme="dark"] .skill-icons a {
+    background: #3A3A3A; /* Fondo oscuro para los enlaces */
+    color: #ffffff;
+}
+
+[data-theme="dark"] .skill-icons a:hover {
+    background: #7ACC8D; /* Hover en modo oscuro */
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 2rem; 
+    }
+
+    .skills-description {
+        font-size: 1rem; 
+    }
+
+    .skill-category {
+        padding: 1.2rem; 
+        margin-bottom: 1.5rem; 
+    }
+
+    .skill-category h3 {
+        font-size: 1.5rem; 
+        margin-bottom: 0.8rem; 
+    }
+
+    .skill-icons {
+        gap: 0.6rem; 
+    }
+
+    .skill-icons a {
+        padding: 0.5rem 1rem; 
+        font-size: 1rem; 
+    }
+
+    .skill-icons a img {
+        width: 28px; 
+        height: 28px; 
+    }
+}
+
+/* Dispositivos móviles */
+@media (max-width: 480px) {
+    .skills-section {
+        padding: 3rem 1rem; 
+    }
+
+    .skills-title {
+        font-size: 1.8rem; 
+        margin-bottom: 1.5rem; 
+    }
+
+    .skills-description {
+        font-size: 0.9rem; 
+        margin-bottom: 1.5rem; 
+    }
+
+    .skill-category {
+        padding: 1rem; 
+        margin-bottom: 1rem; 
+    }
+
+    .skill-category h3 {
+        font-size: 1.3rem; 
+        margin-bottom: 0.6rem; 
+    }
+
+    .skill-icons {
+        gap: 0.5rem; 
+        justify-content: center; 
+    }
+
+    .skill-icons a {
+        padding: 0.4rem 0.8rem; 
+        font-size: 0.9rem; 
+    }
+
+    .skill-icons a img {
+        width: 24px; 
+        height: 24px; 
+    }
+}
+
+/* FIN APARTADO DE TECH SKILLS */

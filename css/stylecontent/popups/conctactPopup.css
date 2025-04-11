@@ -1,0 +1,200 @@
+/* APARTADO POPUP DE CONTACTOS */
+
+/* Estilo del popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar el popup */
+.popup.show {
+    opacity: 1;
+}
+
+/* Contenido del popup */
+.contact-popup-content {
+    position: relative;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column; /* Apilar verticalmente */
+    gap: 1rem; /* Espaciado entre elementos */
+    width: 90%;
+    max-width: 500px; /* Ancho máximo */
+}
+
+/* Encabezado del popup con título centrado */
+.contact-popup-header {
+    display: flex;
+    justify-content: center; /* Centra el título */
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: -1.75rem;
+    position: relative; /* Necesario para posicionar el botón */
+    text-align: center;
+}
+
+/* Estilo para el título */
+.contact-popup-header h1 {
+    flex-grow: 1; /* Ocupa todo el espacio disponible para centrarlo */
+    text-align: center; /* Asegura que esté centrado */
+}
+
+/* Botón de cerrar en la esquina superior derecha */
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 1.8rem;
+    margin-right: -1.25rem;
+    cursor: pointer;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+    color: #ff4d4d;
+}
+
+/* Contenedor del correo */
+.email-container {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    gap: 0.5rem; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Permitir ajuste si no cabe */
+}
+
+/* Botones siempre en la misma fila */
+.button-group {
+    display: flex; /* Mantener en fila */
+    gap: 0.5rem; /* Espacio entre botones */
+}
+
+/* Input del correo */
+input[type="email"] {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #e9e9e9;
+    color: #000000;
+    font-size: 1rem;
+    flex-grow: 1; /* Permite que el input use el espacio restante */
+    min-width: 0; /* Evitar que el input desborde */
+}
+
+/* Botones de ícono */
+.btn-icon {
+    background: #028802;
+    padding: 0.55rem 1.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Iconos dentro de los botones */
+.btn-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain; /* Ajuste de imagen */
+}
+
+/* Hover para los botones */
+.btn-icon:hover {
+    background: #45c245;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Adaptar popup en dispositivos pequeños */
+@media (max-width: 480px) {
+    .popup-content {
+        padding: 1rem;
+        width: 95%;
+    }
+
+    .contact-popup-title h1 {
+        font-size: 1.2rem;
+    }
+
+    .close-btn {
+        font-size: 1.5rem;
+    }
+
+    input[type="email"] {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .btn-icon {
+        padding: 0.4rem 1rem;
+    }
+
+    .btn-icon img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+/* 🌙 MODO OSCURO PARA EL POPUP DE CONTACTOS */
+[data-theme="dark"] .contact-popup-content {
+    background: #333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+    box-shadow: 0 0.625rem 1.25rem rgba(255, 255, 255, 0.1); /* Sombra más tenue */
+}
+
+/* 🌙 MODO OSCURO: Encabezado */
+[data-theme="dark"] .contact-popup-header {
+    color: #ffffff;
+}
+
+/* 🌙 MODO OSCURO: Botón de cerrar */
+[data-theme="dark"] .close-btn {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .close-btn:hover {
+    color: #ff6666;
+}
+
+/* 🌙 MODO OSCURO: Input de email */
+[data-theme="dark"] input[type="email"] {
+    background: #444; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+    border: 1px solid #666; /* Borde más visible */
+}
+
+[data-theme="dark"] input[type="email"]::placeholder {
+    color: #bbbbbb; /* Color del placeholder en modo oscuro */
+}
+
+/* 🌙 MODO OSCURO: Botón de enviar */
+[data-theme="dark"] .btn-icon {
+    background: #027702; /* Verde más oscuro */
+}
+
+[data-theme="dark"] .btn-icon:hover {
+    background: #38b738; /* Verde claro al pasar el ratón */
+}
+
+
+/* APARTADO POPUP DE CONTACTOS */

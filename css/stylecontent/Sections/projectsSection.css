@@ -1,0 +1,32 @@
+/* APARTADO DE PROYECTOS */
+
+/* Estilo general de la sección */
+.projects {
+    background: var(--section-bg, #e2e2e2); /* Usa variable con fallback */
+    padding: 2rem 1rem; /* Espaciado interno */
+    text-align: center; /* Centrar contenido */
+    transition: background 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Título de la sección */
+.projects-title {
+    font-size: 2.5rem; /* Tamaño grande */
+    color: var(--text-color, #333); /* Usa el color del tema */
+    margin-bottom: 2rem; /* Espaciado inferior */
+}
+
+/* Texto cuando no hay proyectos */
+.no-projects {
+    font-size: 1.5rem; /* Tamaño mediano */
+    color: var(--secondary-text-color, #555); /* Usa el color secundario del tema */
+    opacity: 0.8; /* Ligera transparencia */
+}
+
+/* 🌙 Modo oscuro */
+[data-theme="dark"] {
+    --section-bg: #2a2a2a; /* Fondo oscuro */
+    --text-color: #f5f5f5; /* Texto claro */
+    --secondary-text-color: #aaa; /* Texto secundario más suave */
+}
+
+/* ☀️ Modo claro (ya definido por defecto en :root) */

@@ -1,0 +1,179 @@
+/* APARTADO DE HARDWARE SKILLS */
+
+/* Contenedor principal del apartado */
+.hardware-skills {
+    background: #ffffff; /* Modo claro: Fondo blanco */
+    padding: 2rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Evitar el desbordamiento */
+    overflow-x: hidden; /* Prevenir desbordamiento horizontal */
+    max-width: 100%; /* Ajustar al ancho del dispositivo */
+    transition: background 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* 🌙 MODO OSCURO: Fondo igual que el apartado de Tech Skills */
+[data-theme="dark"] .hardware-skills {
+    background: #1f1f1f; 
+}
+
+/* Título principal */
+.hardware-skills .skills-title {
+    font-size: 2.5rem; 
+    color: #333; 
+    margin: 1.5rem 0; 
+    text-align: center; 
+}
+
+/* MODO OSCURO: Color del título */
+[data-theme="dark"] .hardware-skills .skills-title {
+    color: #f5f5f5; 
+}
+
+/* Descripción */
+.hardware-skills .skills-description {
+    font-size: 1.2rem; 
+    color: #666; 
+    max-width: 800px; 
+    margin: 0 auto 2rem; 
+    line-height: 1.8; 
+    text-align: center; 
+}
+
+/* MODO OSCURO: Color de la descripción */
+[data-theme="dark"] .hardware-skills .skills-description {
+    color: #bbb; 
+}
+
+/* Categoría de hardware */
+.hardware-skills .skill-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    box-sizing: border-box; /* Prevenir el desbordamiento */
+}
+
+/* Título de cada categoría */
+.hardware-skills .skill-category h3 {
+    font-size: 2rem;
+    color: #2E7D32; 
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4CAF50; 
+    padding-bottom: 0.3rem; 
+}
+
+/* Hover: Elevar la categoría al pasar el cursor */
+.hardware-skills .skill-category:hover {
+    transform: translateY(-5px); /* Elevar el contenedor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Mayor sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suavizar animación */
+}
+
+/* Contenedor de habilidades */
+.hardware-skills .skill-icons {
+    display: flex;
+    flex-wrap: wrap; /* Permitir varias filas si es necesario */
+    gap: 0.8rem; 
+    max-width: 100%; /* Ajustar al ancho disponible */
+}
+
+/* Estilo de cada habilidad (texto) */
+.hardware-skills .skill-icons span {
+    display: inline-flex;
+    align-items: center; 
+    padding: 0.6rem 1.2rem; 
+    background: #ecf0f1; 
+    border-radius: 0.8rem; 
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #333; 
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-sizing: border-box; /* Prevenir desbordamiento */
+}
+
+/* MODO OSCURO: Color de los spans */
+[data-theme="dark"] .hardware-skills .skill-icons span {
+    background: #333; 
+    color: #f5f5f5; 
+}
+
+/* Imágenes dentro del contenedor (ajustar tamaño y añadir espacio) */
+.hardware-skills .skill-icons img {
+    width: 40px; 
+    height: auto; 
+    margin-right: 0.8rem; 
+}
+
+/* Hover: Interacción al pasar el cursor */
+.hardware-skills .skill-icons span:hover {
+    background: #4CAF50;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    .hardware-skills .skills-title {
+        font-size: 2rem; 
+    }
+
+    .hardware-skills .skills-description {
+        font-size: 1rem; 
+    }
+
+    .hardware-skills .skill-category {
+        padding: 1.5rem; 
+    }
+
+    .hardware-skills .skill-icons span {
+        padding: 0.5rem 1rem; 
+        font-size: 1rem; 
+    }
+
+    .hardware-skills .skill-icons img {
+        width: 40px; 
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 480px) {
+    .hardware-skills {
+        padding: 3rem 1rem; 
+    }
+
+    .hardware-skills .skills-title {
+        font-size: 1.8rem; 
+    }
+
+    .hardware-skills .skills-description {
+        font-size: 0.9rem; 
+    }
+
+    .hardware-skills .skill-category {
+        padding: 1rem; 
+    }
+
+    .hardware-skills .skill-icons {
+        justify-content: left; 
+    }
+
+    .hardware-skills .skill-icons span {
+        padding: 0.4rem 0.8rem; 
+        font-size: 0.9rem; 
+    }
+
+    .hardware-skills .skill-icons img {
+        width: 32px; 
+    }
+}
+
+/* FIN DEL APARTADO DE HARDWARE SKILLS */

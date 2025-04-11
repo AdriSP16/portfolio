@@ -1,0 +1,175 @@
+/* APARTADO NAVBAR */
+
+/* Navbar fijo */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    z-index: 3000;
+}
+
+/* Contenedor Flex para alinear elementos */
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Centra el título horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: relative; /* Permite posicionar elementos hijos */
+    padding: 0.625rem 0; /* Añade relleno arriba y abajo */
+    gap: 1rem; /* 🆕 Espaciado mínimo entre elementos */
+}
+
+/* Título centrado */
+.navbar h1 {
+    color: var(--primary-color);
+    font-size: clamp(1.5rem, 20vw, 2rem); /* Ajustable entre 1.5rem y 2rem */
+    font-weight: bold;
+    margin: 0 auto; /* Centra el título */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+/* Selector de idioma a la derecha */
+.language-switcher {
+    position: absolute;
+    right: 2rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover: Cambia el color al pasar el cursor */
+.language-switcher:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* 🔥 Switch de Tema (a la izquierda) */
+.theme-toggle {
+    position: absolute;
+    left: 2rem; /* ✅ Movido a la izquierda */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Espacio entre el switch y el texto */
+}
+
+/* Estilo del switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+/* Ocultar el input del switch */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Deslizador del switch */
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: var(--primary-color);
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+
+/* Botón interior del switch */
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+/* Estado activo (modo oscuro) */
+input:checked + .slider::before {
+    transform: translateX(24px);
+}
+
+/* Estilo de la etiqueta */
+#theme-label {
+    font-size: 1rem;
+}
+
+/* 🔥 RESPONSIVE DESIGN */
+
+/* Ajustes en pantallas medianas (tablets y móviles grandes) */
+@media (max-width: 768px) {
+    .navbar-container {
+        justify-content: space-between; /* ✅ Distribuye los elementos */
+        gap: 1rem; /* 🆕 Espaciado entre elementos */
+        padding: 0.5rem 1rem; /* Ajustar relleno */
+    }
+
+    .navbar h1 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título */
+    }
+
+    .theme-toggle {
+        left: 1rem; /* Ajusta el switch más a la izquierda */
+    }
+
+    .language-switcher {
+        right: 1rem; /* Reduce el espacio derecho */
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajustes en pantallas pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+    .navbar-container {
+        gap: 0.8rem; /* 🆕 Espaciado más pequeño */
+    }
+
+    .navbar h1 {
+        font-size: 1.3rem; /* Título más pequeño */
+    }
+
+    .language-switcher {
+        right: 0.8rem; /* Más cerca del borde */
+        padding: 0.3rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .theme-toggle {
+        left: 0.8rem; /* Más cerca del borde */
+    }
+
+    #theme-label {
+        font-size: 0.85rem; /* Texto más pequeño */
+    }
+
+    .switch {
+        width: 40px; /* Reducir el tamaño del switch */
+        height: 22px;
+    }
+
+    .slider::before {
+        height: 18px;
+        width: 18px;
+    }
+
+    input:checked + .slider::before {
+        transform: translateX(18px); /* Ajustar el movimiento */
+    }
+}
+
+/* FIN APARTADO NAVBAR */
