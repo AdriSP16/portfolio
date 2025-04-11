@@ -41,7 +41,7 @@
 
         <!-- CSS y JS -->
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js" defer></script>
+        <script type="module" src="js/script.js" defer></script>
     </head>
 
     <body>
@@ -60,33 +60,39 @@
                     <span id="theme-label">🌙</span>
                 </div>
 
+
                 <!-- 🌟 Título principal (Centrado) -->
                 <h1 id="navbar-title">AdriDevSP</h1>
 
                 <!-- 🌐 Selector de idioma (a la derecha) -->
                 <select id="language-switcher" class="language-switcher" onchange="changeLanguage(this.value)">
                     <option value="ca">Catalá</option>
-                        <!-- NOT IMPLEMENTED YET <option value="zh">Chinese</option> -->
-                        <!-- NOT IMPLEMENTED YET <option value="hr">Croatian</option> -->
-                            <option value="cs">Czech</option>
-                            <option value="da">Danish</option>
-                        <!-- NOT IMPLEMENTED YET <option value="sk">Slovak</option> -->
-                            <option value="es">Spanish</option>
-                            <option value="eu">Basque</option>
-                            <option value="fr">French</option>
-                            <option value="el">Greek</option>
-                            <option value="he">Hebrew</option>
-                            <option value="en" selected>English</option>
-                            <option value="it">Italian</option>
-                            <option value="ja">Japanese</option>
-                        <!-- NOT IMPLEMENTED YET <option value="ko">Korean</option> -->
-                            <option value="pl">Polish</option>
-                            <option value="pt">Portuguese</option>
-                        <!-- NOT IMPLEMENTED YET <option value="ru">Russian</option> -->
-                        <!-- NOT IMPLEMENTED YET <option value="sv">Swedish</option> -->
-                        <!-- NOT IMPLEMENTED YET <option value="th">Thai</option> -->
-                            <option value="de">German</option>
-                            <option value="no">Norwegian</option>
+                    <!-- NOT IMPLEMENTED YET <option value="cn">Chinese</option> -->
+                    <!-- NOT IMPLEMENTED YET <option value="hr">Croatian</option> -->
+                    <option value="cs">Czech</option>
+                    <option value="da">Danish</option>
+                    <!-- NOT IMPLEMENTED YET <option value="sk">Slovak</option> -->
+                    <option value="es">Spanish</option>
+                    <option value="eu">Basque</option>
+                    <option value="fr">French</option>
+                    <option value="el">Greek</option>
+                    <option value="he">Hebrew</option>
+                    <option value="en" selected>English</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                    <!-- NOT IMPLEMENTED YET <option value="ko">Korean</option> -->
+                    <option value="pl">Polish</option>
+                    <option value="pt">Portuguese</option>
+                    <!-- NOT IMPLEMENTED YET <option value="ru">Russian</option> -->
+                    <!-- NOT IMPLEMENTED YET <option value="si">Slovenian</option> -->
+                    <!-- NOT IMPLEMENTED YET <option value="se">Sweden</option> -->
+                    <!-- NOT IMPLEMENTED YET <option value="th">Thai</option> -->
+                    <!-- NOT IMPLEMENTED YET <option value="ge">Georgian</option> -->
+                    <!-- NOT IMPLEMENTED YET <option value="tr">Turquey</option> -->
+                    <!-- NOT IMPLEMENTED YET <option value="hu">Hungary</option> -->
+                    <!-- NOT IMPLEMENTED YET <option value="ee">Estonio</option> -->
+                    <option value="de">German</option>
+                    <option value="no">Norwegian</option>
                 </select>
             </div>
         </nav>
@@ -126,8 +132,8 @@
 
                     <!-- Botones de acción -->
                     <div class="buttons">
-                        <button id="download-btn" class="btn btn-green" onclick="downloadCV()">Descargar CV</button>
-                        <button id="contact-btn" class="btn btn-outline" onclick="openContactPopup()">&lt; Contactos /&gt;</button>
+                        <button id="download-btn" class="btn btn-green">Descargar CV</button>
+                        <button id="contact-btn" class="btn btn-outline">&lt; Contactos /&gt;</button>
                     </div>
 
                     <!-- Redes sociales (No se mueve en pantallas grandes) -->
@@ -167,17 +173,17 @@
                 <!-- Título del popup -->
                 <div class="contact-popup-header">
                     <h1 id="contact-popup-title"><b>Emails</b></h1>
-                    <span class="close-btn" onclick="closeContactPopup()">✖</span>
+                    <span class="close-btn" id="close-contact-popup">✖</span>
                 </div>
 
                 <!-- Primer correo -->
                 <div class="email-container">
                     <input type="email" id="emailInput1" value="adrsabper@gmail.com" readonly>
                     <div class="button-group">
-                        <button class="btn-icon" onclick="sendEmail('emailInput1')">
+                        <button class="btn-icon" id="send-email-1">
                             <img src="resources/Other_Icons/enviar.png" alt="Enviar">
                         </button>
-                        <button class="btn-icon" onclick="copyEmail('emailInput1')">
+                        <button class="btn-icon" id="copy-email-1">
                             <img src="resources/Other_Icons/copiar.png" alt="Copiar">
                         </button>
                     </div>
@@ -187,16 +193,17 @@
                 <div class="email-container">
                     <input type="email" id="emailInput2" value="adr16persab@gmail.com" readonly>
                     <div class="button-group">
-                        <button class="btn-icon" onclick="sendEmail('emailInput2')">
+                        <button class="btn-icon" id="send-email-2">
                             <img src="resources/Other_Icons/enviar.png" alt="Enviar">
                         </button>
-                        <button class="btn-icon" onclick="copyEmail('emailInput2')">
+                        <button class="btn-icon" id="copy-email-2">
                             <img src="resources/Other_Icons/copiar.png" alt="Copiar">
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
 
@@ -980,12 +987,13 @@
 
                 <div class="button-container">
                     <!-- Botón "Ver más" -->
-                    <button id="show-more-btn" onclick="toggleView()">Ver más</button>
-                    <!-- Botón "Ver menos" que navega a la sección de lugares preferidos -->
-                    <a href="#preferred-places" id="show-less-btn" onclick="toggleView()" style="display: none;">
+                    <button id="show-more-btn">Ver más</button>
+                    <!-- Botón "Ver menos" -->
+                    <a href="#preferred-places" id="show-less-btn" style="display: none;">
                         <button>Ver menos</button>
                     </a>
                 </div>
+                
 
             </div>
         </section>
@@ -995,9 +1003,10 @@
             <div class="popup-content">
                 <h1 id="flag-popup-title">Ciudades preferidas</h1>
                 <div id="mapContainer"></div>
-                <span class="flags-close-btn" onclick="closeFlagPopup()">✖</span>
+                <span class="flags-close-btn">✖</span>  <!-- Eliminamos el onclick aquí -->
             </div>
         </div>
+
 
 
 
