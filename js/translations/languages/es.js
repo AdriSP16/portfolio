@@ -32,6 +32,7 @@ const es = {
     databases: "Bases de Datos",
     versionControl: "Control de Versiones",
     frameworks: "Frameworks",
+    ide: "IDE",
     otherTechnologies: "Otras Tecnologías",
 
     /* FIN APARTADO DE TECH SKILLS */

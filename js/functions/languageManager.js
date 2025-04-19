@@ -26,7 +26,7 @@ function changeLanguage(lang) {
     document.getElementById("contact-btn").innerHTML = translations[lang].contactBtn;
     document.getElementById("contact-popup-title").textContent = translations[lang].popupTitle;
     document.getElementById("projects-title").textContent = translations[lang].projectsTitle;
-    document.getElementById("no-projects").textContent = translations[lang].noProjects;
+    
 
 
 
@@ -51,6 +51,7 @@ function changeLanguage(lang) {
         translations[lang].databases,
         translations[lang].versionControl,
         translations[lang].frameworks,
+        translations[lang].ide,
         translations[lang].otherTechnologies
     ].forEach((text, index) => {
         techSkillTitles[index].textContent = text;

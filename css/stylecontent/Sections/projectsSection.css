@@ -1,32 +1,234 @@
 /* APARTADO DE PROYECTOS */
 
+
+
 /* Estilo general de la sección */
 .projects {
     background: var(--section-bg, #e2e2e2); /* Usa variable con fallback */
-    padding: 2rem 1rem; /* Espaciado interno */
-    text-align: center; /* Centrar contenido */
-    transition: background 0.3s ease, color 0.3s ease; /* Transición suave */
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex; /* Esto permite centrar los elementos */
+    justify-content: center; /* Centra el grid horizontalmente */
+    align-items: center; /* Centra el grid verticalmente */
+    flex-direction: column; /* Asegura que el contenido esté en columna */
 }
 
-/* Título de la sección */
+/* Grid de tarjetas */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Usa auto-fit para centrar y ajustar las columnas */
+    gap: 1.5rem; /* Espacio entre los elementos */
+    width: 100%; /* Asegura que el grid ocupe el 100% del ancho disponible */
+    max-width: 1200px; /* Máximo ancho para evitar que se estire demasiado */
+    margin-top: 2rem; /* Añadir margen superior */
+    justify-items: center; /* Centra las tarjetas horizontalmente dentro de cada celda */
+    align-items: center; /* Alinea las tarjetas al inicio en el eje vertical */
+}
+
 .projects-title {
-    font-size: 2.5rem; /* Tamaño grande */
-    color: var(--text-color, #333); /* Usa el color del tema */
-    margin-bottom: 2rem; /* Espaciado inferior */
+    font-size: 2.5rem;
+    color: var(--text-color, #333);
+    margin-bottom: 4rem;
 }
 
-/* Texto cuando no hay proyectos */
-.no-projects {
-    font-size: 1.5rem; /* Tamaño mediano */
-    color: var(--secondary-text-color, #555); /* Usa el color secundario del tema */
-    opacity: 0.8; /* Ligera transparencia */
+.icon-github {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
-/* 🌙 Modo oscuro */
+
+/* Grid de tarjetas */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Crea columnas dinámicas */
+    gap: 1.5rem; /* Espacio entre los elementos */
+    margin: 2rem auto 0 auto; /* Centrado horizontal + margen superior */
+    padding: 0 1rem; /* Relleno lateral para pantallas pequeñas */
+    max-width: 100%; /* Asegura que el grid ocupe todo el ancho disponible */
+    justify-items: center; /* Centra las tarjetas horizontalmente dentro de cada celda */
+    align-items: center; /* Centra las tarjetas verticalmente dentro de cada celda */
+}
+ 
+
+.project-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    text-align: left; /* Alineación a la izquierda */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+    width: 100%;
+    max-height: 240px; /* ⬆️ más altura visible */
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+
+.project-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.project-techs {
+    justify-content: center;
+    flex-wrap: nowrap;
+    row-gap: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.project-techs img {
+    width: 28px;
+    height: 28px;
+    text-align: left;
+    margin-right: 0.25rem; /* Ajusta el valor según el espacio que desees */
+}
+
+
+.project-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    width: 100%; /* Esto los adapta al grid */
+}
+  
+
+.project-btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+
+.project-btn.green {
+    background: #4CAF50;
+    color: white;
+}
+.project-btn.green:hover {
+    background: #4CAF50;
+    transform: translateY(-2px);
+}
+
+.project-btn.dark {
+    background: #000000;
+    color: white;
+}
+.project-btn.dark:hover {
+    background: #000;
+    transform: translateY(-2px);
+}
+
+/* Modo oscuro */
 [data-theme="dark"] {
-    --section-bg: #2a2a2a; /* Fondo oscuro */
-    --text-color: #f5f5f5; /* Texto claro */
-    --secondary-text-color: #aaa; /* Texto secundario más suave */
+    --section-bg: #2a2a2a;
+    --text-color: #f5f5f5;
+    --secondary-text-color: #aaa;
 }
 
-/* ☀️ Modo claro (ya definido por defecto en :root) */
+[data-theme="dark"] .projects-title {
+    color: var(--text-color, #f5f5f5);
+}
+
+[data-theme="dark"] .project-card {
+    background: #444;
+    color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .project-desc {
+    color: #aaa;
+}
+
+[data-theme="dark"] .project-btn.green {
+    background: #4CAF50;
+    color: white;
+}
+
+[data-theme="dark"] .project-btn.green:hover {
+    background: #4CAF50;
+}
+
+[data-theme="dark"] .project-btn.dark {
+    background: #333;
+    color: white;
+}
+
+[data-theme="dark"] .project-btn.dark:hover {
+    background: #111;
+}
+
+/* Media Queries para responsividad */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .projects-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .project-img {
+        max-height: 200px;
+    }
+
+    .project-btn {
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .projects-title {
+        font-size: 2.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .project-card {
+        padding: 1.5rem;
+    }
+}

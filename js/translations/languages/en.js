@@ -21,6 +21,7 @@ const en = {
     databases: "Databases",
     versionControl: "Version Control",
     frameworks: "Frameworks",
+    ide: "IDE",
     otherTechnologies: "Other Technologies",
     experienceTitle: "Work Experience",
     noExperience: "I do not yet have professional experience, but in the meantime, I continue developing personal projects :D",
