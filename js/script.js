@@ -1,7 +1,7 @@
 // © 2025 Adrián Sabino Pérez. Todos los derechos reservados. Prohibida la reproducción o imitación total o parcial del código sin autorización.
 
 import { changeLanguage } from './functions/languageManager.js';
-import { downloadCV } from './functions/downloadCV.js';
+import { downloadFullstackCV, downloadCyberCV, openCVPopup, closeCVPopup } from './functions/downloadCVManager.js';
 import { openContactPopup, closeContactPopup, sendEmail, copyEmail } from './functions/contactPopupManager.js';
 import { toggleTheme } from './functions/darkTheme.js';
 import { toggleView } from './functions/toggleView.js';  // Importa la función toggleView
@@ -32,8 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const downloadBtn = document.getElementById("download-btn");
     if (downloadBtn) {
-        downloadBtn.addEventListener("click", downloadCV);
+        downloadBtn.addEventListener("click", openCVPopup)
     }
+
+    // Cerrar popup
+    document.getElementById("close-cv-popup").addEventListener("click", closeCVPopup);
+
+    document.getElementById("cv-fullstack-btn").addEventListener("click", downloadFullstackCV);
+    document.getElementById("cv-cyber-btn").addEventListener("click", downloadCyberCV);
+
+    document.getElementById("close-cv-popup").addEventListener("click", () => {
+        document.getElementById("cv-popup").classList.add("hidden");
+      });      
+
+
 
     // Fin downloadCV.js
 

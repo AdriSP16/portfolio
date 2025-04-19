@@ -8,6 +8,8 @@
 
 @import url('stylecontent/Sections/introducctionSection.css');
 
+@import url('stylecontent/popups/cvPopup.css');
+
 @import url('stylecontent/popups/conctactPopup.css');
 
 @import url('stylecontent/Sections/projectsSection.css');
@@ -29,5 +31,7 @@
 @import url('stylecontent/Sections/softSkillsSection.css');
 
 @import url('stylecontent/Sections/educationSection.css');
+
+
 
 /* © 2025 Adrián Sabino Pérez. Todos los derechos reservados. Prohibida la reproducción o imitación total o parcial del código sin autorización. */

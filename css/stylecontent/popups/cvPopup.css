@@ -1,0 +1,154 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 1rem; /* Ayuda en pantallas pequeñas */
+}
+
+/* Encabezado del popup */
+.cv-popup-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75vw;
+    font-weight: bolder;
+    padding-bottom: 2rem;
+    position: relative;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* Contenedor del contenido del popup */
+.cv-popup-content {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Botón cerrar */
+.close-cv-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-cv-btn:hover {
+    transform: scale(1.2);
+    color: #ff4d4d;
+}
+
+/* Botones de opciones */
+.cv-fullstack-btn,
+.cv-cyber-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.cv-fullstack-btn {
+    margin-right: 0.75vw;
+    margin-left: 1vw;
+}
+
+.cv-fullstack-btn:hover,
+.cv-cyber-btn:hover {
+    background-color: #3c913f;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 768px) {
+    .cv-popup-header {
+        font-size: 1.75rem;
+    }
+
+    .cv-fullstack-btn,
+    .cv-cyber-btn {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        margin: 0.25rem;
+    }
+
+    .cv-popup-content {
+        padding: 1.5rem;
+    }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 480px) {
+    .cv-popup-header {
+        font-size: 4.5vw;
+        padding-bottom: 1rem;
+    }
+
+    .cv-popup-content {
+        padding: 1.2rem;
+    }
+
+    .close-cv-btn {
+        font-size: 1.5rem;
+        top: 0.75rem;
+        right: 0.75rem;
+    }
+
+    .cv-fullstack-btn,
+    .cv-cyber-btn {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+        width: 100%; /* Ocupa todo el ancho en móviles */
+    }
+}
+
+/* 🌙 MODO OSCURO */
+[data-theme="dark"] .cv-popup-content {
+    background-color: #333;
+    color: #fff;
+}
+
+[data-theme="dark"] .cv-popup-header {
+    color: #fff;
+}
+
+[data-theme="dark"] .close-cv-btn {
+    color: #fff;
+}
+
+[data-theme="dark"] .close-cv-btn:hover {
+    color: #ff6666;
+}
+
+[data-theme="dark"] .cv-fullstack-btn,
+[data-theme="dark"] .cv-cyber-btn {
+    background-color: #028802;
+}
+
+[data-theme="dark"] .cv-fullstack-btn:hover,
+[data-theme="dark"] .cv-cyber-btn:hover {
+    background-color: #45c245;
+}
