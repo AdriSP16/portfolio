@@ -3,18 +3,36 @@
 
 const eu = {
     
+    /* NABIGAZIO-BARRA ATALA */
+
     navbarTitle: "AdriDevSP",
+
+    /* NABIGAZIO-BARRA ATALAREN AMAIERA */
+
+
+
+    /* AURKEZPEN ATALA */
+
     introText: "Kaixo Mundua!, nire izena da",
-    jobTitle: "Ni <span class='highlight'>Fullstack Garatzailea</span> naiz!",
-    motto: "Fullstack eta mugikorretarako garatzailea egunez, zibersegurtasun analista gauez.",
-    downloadBtn: "Deskargatu CV",
-    contactBtn: "&lt; Harremanak /&gt;",
+    jobTitle: "<span class='highlight'>Fullstack Garatzailea!</span> naiz",
+    motto: "Fullstack eta mugikorreko garatzailea egunez, zibersegurtasuneko analista gauez.",
+
+    /* AURKEZPEN ATALAREN AMAIERA */
+
+
+
+    /* KONTAKTU POPUP ATALA */
+
+    contactBtn: "&lt; Kontaktuak /&gt;",
     popupTitle: "Emailak",
     
+    /* KONTAKTU POPUP ATALAREN AMAIERA */
+
 
 
     /* CV-A DESKARGATZEKO ATALA */
 
+    downloadBtn: "Deskargatu CVa",
     cvpopupheader: "Aukeratu CV mota",
     cvfullstackbtn: "CV Fullstack / Mugikorra",
     cvcyberbtn: "CV Zibersegurtasuna",

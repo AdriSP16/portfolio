@@ -4,35 +4,50 @@
 
 const no = {
     
+    /* NAVIGASJONSBAR SEKJON */
+
     navbarTitle: "AdriDevSP",
+
+    /* SLUTT PÅ NAVIGASJONSBAR SEKJON */
+
+
+
+    /* INTRODUKSJONSEKJON */
+
     introText: "Hei Verden!, jeg heter",
-    jobTitle: "Jeg er en <span class='highlight'>Fullstack-utvikler!</span>",
-    motto: "Fullstack- og mobilutvikler på dagtid, cybersikkerhetsanalytiker på kveldstid.",
-    downloadBtn: "Last ned CV",
-    contactBtn: "&lt; Kontakt /&gt;",
+    jobTitle: "Jeg er en <span class='highlight'>Fullstack Utvikler!</span>",
+    motto: "Fullstack og mobilutvikler på dagen, cybersikkerhetsanalytiker om natten.",
+
+    /* SLUTT PÅ INTRODUKSJONSEKJON */
+
+
+
+    /* KONTAKT POPUP SEKJON */
+
+    contactBtn: "&lt; Kontakter /&gt;",
     popupTitle: "E-poster",
 
-
-
-
-
-
+    /* SLUTT PÅ KONTAKT POPUP SEKJON */
 
 
 
     /* LAST NED CV-SEKSJON */
 
+    downloadBtn: "Last ned CV",
     cvpopupheader: "Velg CV-type",
     cvfullstackbtn: "CV Fullstack / Mobil",
     cvcyberbtn: "CV Cybersikkerhet",
 
     /* SLUTT PÅ LAST NED CV-SEKSJON */
 
-
-
+    
 
 
     projectsTitle: "Prosjekter",
+
+
+
+
 
     /* TEKNOLOGISKE FERDIGHETER-SEKSJON */
 

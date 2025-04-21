@@ -4,20 +4,36 @@
 
 const de = {
     
+    /* NAVIGATIONSLEISTEN-ABSCHNITT */
+
     navbarTitle: "AdriDevSP",
-    introText: "Hallo Welt!, mein Name ist",
+
+    /* ENDE DES NAVIGATIONSLEISTEN-ABSCHNITTS */
+
+
+
+    /* EINLEITUNGSABSCHNITT */
+
+    introText: "Hallo Welt!, ich heiße",
     jobTitle: "Ich bin ein <span class='highlight'>Fullstack-Entwickler!</span>",
-    motto: "Fullstack- & Mobile-Entwickler am Tag, Cybersecurity-Analyst bei Nacht.",
-    downloadBtn: "Lebenslauf herunterladen",
+    motto: "Fullstack- & Mobile-Entwickler bei Tag, Cybersicherheitsanalyst bei Nacht.",
+
+    /* ENDE DES EINLEITUNGSABSCHNITTS */
+
+
+
+    /* KONTAKT-POPUP-ABSCHNITT */
+
     contactBtn: "&lt; Kontakte /&gt;",
     popupTitle: "E-Mails",
-    
-    
 
+    /* ENDE DES KONTAKT-POPUP-ABSCHNITTS */
 
+    
 
     /* ABSCHNITT LEBENSLAUF HERUNTERLADEN */
 
+    downloadBtn: "CV herunterladen",
     cvpopupheader: "Wähle den Lebenslauf-Typ",
     cvfullstackbtn: "Lebenslauf Fullstack / Mobile",
     cvcyberbtn: "Lebenslauf Cybersicherheit",

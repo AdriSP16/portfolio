@@ -4,25 +4,36 @@
 
 const pl = {
 
+    /* SEKCJA PASKA NAWIGACYJNEGO */
+
     navbarTitle: "AdriDevSP",
-    introText: "Cześć Świecie!, nazywam się",
-    jobTitle: "Jestem <span class='highlight'>Fullstack Developerem!</span>",
-    motto: "Fullstack i mobilny deweloper za dnia, analityk cyberbezpieczeństwa w nocy.",
-    downloadBtn: "Pobierz CV",
-    contactBtn: "&lt; Kontakt /&gt;",
+
+    /* KONIEC SEKCJI PASKA NAWIGACYJNEGO */
+
+
+
+    /* SEKCJA WPROWADZENIA */
+
+    introText: "Witaj Świecie!, mam na imię",
+    jobTitle: "Jestem <span class='highlight'>Programistą Fullstack!</span>",
+    motto: "Programista Fullstack i mobilny w ciągu dnia, analityk bezpieczeństwa cybernetycznego w nocy.",
+
+    /* KONIEC SEKCJI WPROWADZENIA */
+
+
+
+    /* SEKCJA POPUP KONTAKTU */
+
+    contactBtn: "&lt; Kontakty /&gt;",
     popupTitle: "E-maile",
 
+    /* KONIEC SEKCJI POPUP KONTAKTU */
 
-
-
-
-
-
-
-
+    
 
     /* SEKCJA POBIERANIA CV */
 
+    downloadBtn: "Pobierz CV",
     cvpopupheader: "Wybierz typ CV",
     cvfullstackbtn: "CV Fullstack / Mobilne",
     cvcyberbtn: "CV Cyberbezpieczeństwo",

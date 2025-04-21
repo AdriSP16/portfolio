@@ -4,22 +4,36 @@
 
 const he = {
     
+    /* סקשן של סרגל ניווט */
+
     navbarTitle: "AdriDevSP",
-    introText: "!שלום עולם, קוראים לי",
-    jobTitle: "אני <span class='highlight'>מפתח פולסטאק!</span>",
-    motto: "מפתח פולסטאק ומובייל ביום, אנליסט סייבר בלילה.",
-    downloadBtn: "הורד קורות חיים",
+
+    /* סיום סקשן סרגל ניווט */
+
+
+
+    /* סקשן הצגת מבוא */
+
+    introText: "שלום עולם!, קוראים לי",
+    jobTitle: "אני <span class='highlight'>מפתח Fullstack!</span>",
+    motto: "מפתח Fullstack ומובייל ביום, אנליסט אבטחת סייבר בלילה.",
+
+    /* סיום סקשן הצגת מבוא */
+
+
+
+    /* סקשן של פופאפ יצירת קשר */
+
     contactBtn: "&lt; יצירת קשר /&gt;",
-    popupTitle: "אימיילים",
+    popupTitle: "מיילים",
 
-
-
-
+    /* סיום סקשן של פופאפ יצירת קשר */
 
 
 
     /* קטע הורדת קורות חיים */
 
+    downloadBtn: "הורד קורות חיים",
     cvpopupheader: "בחר סוג קורות חיים",
     cvfullstackbtn: "קורות חיים לפיתוח מלא / מובייל",
     cvcyberbtn: "קורות חיים באבטחת סייבר",
@@ -30,6 +44,7 @@ const he = {
 
 
     projectsTitle: "פרויקטים",
+
 
 
 

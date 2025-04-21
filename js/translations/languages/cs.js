@@ -3,20 +3,36 @@
 
 const cs = {
     
+    /* SEKCE NAVIGAČNÍ LIŠTY */
+
     navbarTitle: "AdriDevSP",
+
+    /* KONEC SEKCE NAVIGAČNÍ LIŠTY */
+
+
+
+    /* ÚVODNÍ SEKCE */
+
     introText: "Ahoj světe!, jmenuji se",
-    jobTitle: "Jsem <span class='highlight'>Fullstack vývojář!</span>",
+    jobTitle: "Jsem <span class='highlight'>Fullstack Vývojář!</span>",
     motto: "Fullstack a mobilní vývojář ve dne, analytik kybernetické bezpečnosti v noci.",
-    downloadBtn: "Stáhnout CV",
+
+    /* KONEC ÚVODNÍ SEKCE */
+
+
+
+    /* SEKCE KONTAKTNÍHO POPUPU */
+
     contactBtn: "&lt; Kontakty /&gt;",
     popupTitle: "E-maily",
 
-
+    /* KONEC SEKCE KONTAKTNÍHO POPUPU */
 
 
 
     /* SEKCE STAŽENÍ ŽIVOTOPISU */
 
+    downloadBtn: "Stáhnout CV",
     cvpopupheader: "Vyberte typ životopisu",
     cvfullstackbtn: "Životopis Fullstack / Mobilní",
     cvcyberbtn: "Životopis Kybernetická bezpečnost",

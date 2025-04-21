@@ -4,20 +4,36 @@
 
 const ja = {
 
+    /* ナビゲーションバーセクション */
+
     navbarTitle: "AdriDevSP",
-    introText: "こんにちは、世界！私は",
-    jobTitle: "私は<span class='highlight'>フルスタック開発者</span>です！",
+
+    /* ナビゲーションバーセクション終了 */
+
+
+
+    /* イントロダクションセクション */
+
+    introText: "こんにちは世界！私は",
+    jobTitle: "<span class='highlight'>フルスタック開発者</span>です！",
     motto: "昼はフルスタック＆モバイル開発者、夜はサイバーセキュリティアナリスト。",
-    downloadBtn: "履歴書をダウンロード",
+
+    /* イントロダクションセクション終了 */
+
+
+
+    /* お問い合わせポップアップセクション */
+
     contactBtn: "&lt; 連絡先 /&gt;",
     popupTitle: "メール",
 
-
+    /* お問い合わせポップアップセクション終了 */
 
 
 
     /* 履歴書ダウンロードセクション */
 
+    downloadBtn: "CVをダウンロード",
     cvpopupheader: "履歴書の種類を選択してください",
     cvfullstackbtn: "フルスタック / モバイルの履歴書",
     cvcyberbtn: "サイバーセキュリティの履歴書",
@@ -27,12 +43,10 @@ const ja = {
 
 
 
-
-
-
-
-
     projectsTitle: "プロジェクト",
+
+    
+
 
     /* テクノロジースキルセクション */
 

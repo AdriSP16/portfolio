@@ -2,18 +2,36 @@
 
 const ca = {
     
+    /* SECCIÓ DE LA BARRA DE NAVEGACIÓ */
+
     navbarTitle: "AdriDevSP",
-    introText: "Hola món!, em dic",
-    jobTitle: "Soc un <span class='highlight'>Desenvolupador Fullstack!</span>",
-    motto: "Desenvolupador fullstack & mòbil de dia, analista de ciberseguretat de nit.",
-    downloadBtn: "Descarregar CV",
+
+    /* FI DE LA SECCIÓ DE LA BARRA DE NAVEGACIÓ */
+
+
+
+    /* SECCIÓ D'INTRODUCCIÓ */
+
+    introText: "Hola Món!, em dic",
+    jobTitle: "Sóc un <span class='highlight'>Desenvolupador Fullstack!</span>",
+    motto: "Desenvolupador fullstack i mòbil de dia, analista de ciberseguretat de nit.",
+
+    /* FI DE LA SECCIÓ D'INTRODUCCIÓ */
+
+
+
+    /* SECCIÓ DEL POPUP DE CONTACTE */
+    
     contactBtn: "&lt; Contactes /&gt;",
-    popupTitle: "Correus",
- 
+    popupTitle: "Correus electrònics",
+
+    /* FI DE LA SECCIÓ DEL POPUP DE CONTACTE */
+
 
 
     /* SECCIÓ DESCARREGAR CV */
 
+    downloadBtn: "Descarregar CV",
     cvpopupheader: "Selecciona el tipus de CV",
     cvfullstackbtn: "CV Fullstack / Mobile",
     cvcyberbtn: "CV Ciberseguretat",

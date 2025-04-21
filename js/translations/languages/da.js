@@ -4,19 +4,36 @@
 
 const da = {
     
-    navbarTitle: "AdriDevSP",
-    introText: "Hej Verden!, mit navn er",
-    jobTitle: "Jeg er en <span class='highlight'>Fullstack-udvikler!</span>",
-    motto: "Fullstack- og mobiludvikler om dagen, cybersikkerhedsanalytiker om natten.",
-    downloadBtn: "Download CV",
-    contactBtn: "&lt; Kontakt /&gt;",
-    popupTitle: "Emails",
+    /* NAVIGATIONSBJÆLKE SEKTION */
 
+    navbarTitle: "AdriDevSP",
+
+    /* SLUTNING AF NAVIGATIONSBJÆLKE SEKTION */
+
+
+
+    /* INTRODUKTIONSSEKTION */
+
+    introText: "Hej Verden!, mit navn er",
+    jobTitle: "Jeg er en <span class='highlight'>Fullstack Udvikler!</span>",
+    motto: "Fullstack- og mobiludvikler om dagen, cybersikkerhedsanalytiker om natten.",
+
+    /* SLUTNING AF INTRODUKTIONSSEKTION */
+
+
+
+    /* KONTAKT POPUP SEKTION */
+
+    contactBtn: "&lt; Kontakter /&gt;",
+    popupTitle: "E-mails",
+
+    /* SLUTNING AF KONTAKT POPUP SEKTION */
 
 
 
     /* CV-DOWNLOAD SEKTION */
 
+    downloadBtn: "Download CV",
     cvpopupheader: "Vælg CV-type",
     cvfullstackbtn: "CV Fullstack / Mobil",
     cvcyberbtn: "CV Cybersikkerhed",
