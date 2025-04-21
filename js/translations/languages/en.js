@@ -42,10 +42,22 @@ const en = {
 
 
 
+    /* PROJECT SECTION */
 
-    projectsTitle: "Projets",
+    projectsTitle: "Projects",
+    projectbtngreen: "View project",
+    projectbtndark: "View code",
+
+    // Project: My Portfolio
+
+    miportfolioname: "My portfolio",
+    miportfoliodesc: "Responsive personal portfolio created with HTML, CSS, and JavaScript. Includes smooth animations, project section, and deployment via GitHub.",
+
+    /* END OF PROJECT SECTION */
 
 
+
+    /* TECH SKILLS SECTION */
 
     techSkillsTitle: "Tech Skills",
     techSkillsDescription: "Throughout my training as a Fullstack Software Developer, I have acquired various software development skills and experience with key tools, enabling me to create scalable, flexible, solid, and fully functional cross-platform applications. Below, you can see the technical skills that have brought me to where I am today:",
@@ -59,6 +71,7 @@ const en = {
     otherTechnologies: "Other Technologies",
     experienceTitle: "Work Experience",
 
+    /* END OF TECH SKILLS SECTION */
 
 
 

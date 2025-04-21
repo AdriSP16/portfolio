@@ -40,7 +40,19 @@ const eu = {
     /* CV-A DESKARGATZEKO ATALAREN AMAIERA */
 
 
+    /* PROIEKTUEN ATALA */
+
     projectsTitle: "Proiektuak",
+    projectbtngreen: "Ikusi proiektua",
+    projectbtndark: "Ikusi kodea",
+
+    // Proiektua: Nire Portfolioa
+
+    miportfolioname: "Nire portfolioa",
+    miportfoliodesc: "HTML, CSS eta JavaScript erabiliz sortutako portfolio pertsonal erantzunkorra. Animazio leunak, proiektu atala eta GitHub bidezko argitarapena barne.",
+
+    /* PROIEKTUEN ATALAREN AMAIERA */
+
 
 
     /* TEKNOLOGIA GAITASUNAK ATALA */

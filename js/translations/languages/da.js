@@ -42,10 +42,18 @@ const da = {
 
 
 
-
+    /* PROJEKTSEKTION */
 
     projectsTitle: "Projekter",
+    projectbtngreen: "Se projekt",
+    projectbtndark: "Se kode",
 
+    // Projekt: Min portefølje
+
+    miportfolioname: "Min portefølje",
+    miportfoliodesc: "Responsiv personlig portefølje lavet med HTML, CSS og JavaScript. Indeholder bløde animationer, projektsektion og deployment via GitHub.",
+
+    /* SLUT PÅ PROJEKTSEKTION */
 
 
 

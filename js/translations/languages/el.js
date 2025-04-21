@@ -41,7 +41,20 @@ const el = {
     /* ΤΕΛΟΣ ΤΜΗΜΑΤΟΣ ΛΗΨΗΣ ΒΙΟΓΡΑΦΙΚΟΥ */
 
 
+
+    /* ΤΜΗΜΑ ΕΡΓΩΝ */
+
     projectsTitle: "Έργα",
+    projectbtngreen: "Δες το έργο",
+    projectbtndark: "Δες τον κώδικα",
+
+    // Έργο: Το Portfolio μου
+
+    miportfolioname: "Το portfolio μου",
+    miportfoliodesc: "Προσωπικό responsive portfolio δημιουργημένο με HTML, CSS και JavaScript. Περιλαμβάνει ομαλές μεταβάσεις, ενότητα έργων και ανάπτυξη μέσω GitHub.",
+
+    /* ΤΕΛΟΣ ΤΜΗΜΑΤΟΣ ΕΡΓΩΝ */
+
 
 
     /* ΕΝΟΤΗΤΑ ΤΕΧΝΟΛΟΓΙΚΩΝ ΔΕΞΙΟΤΗΤΩΝ */

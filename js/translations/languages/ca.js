@@ -39,7 +39,19 @@ const ca = {
     /* FI DE LA SECCIÓ DESCARREGAR CV */
 
 
+
+    /* APARTAT DE PROJECTES */
+
     projectsTitle: "Projectes",
+    projectbtngreen: "Veure projecte",
+    projectbtndark: "Veure codi",
+
+    // Projecte: El meu portafoli
+
+    miportfolioname: "El meu portafoli",
+    miportfoliodesc: "Portafoli personal responsive creat amb HTML, CSS i JavaScript. Inclou animacions suaus, secció de projectes i desplegament a través de GitHub.",
+
+    /* FI DE L'APARTAT DE PROJECTES */
 
     
 

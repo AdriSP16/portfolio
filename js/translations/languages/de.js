@@ -42,7 +42,19 @@ const de = {
 
 
 
+    /* PROJEKTABSCHNITT */
+
     projectsTitle: "Projekte",
+    projectbtngreen: "Projekt ansehen",
+    projectbtndark: "Code ansehen",
+
+    // Projekt: Mein Portfolio
+    
+    miportfolioname: "Mein Portfolio",
+    miportfoliodesc: "Responsives persönliches Portfolio, erstellt mit HTML, CSS und JavaScript. Enthält sanfte Animationen, eine Projektsektion und Bereitstellung über GitHub.",
+
+    /* ENDE DES PROJEKTABSCHNITTS */
+
 
 
 

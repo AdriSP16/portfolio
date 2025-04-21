@@ -40,11 +40,21 @@ const es = {
     /* FIN DE APARTADO DOWNLOAD CV POPUP */
 
 
+    
     /* APARTADO DE PROYECTOS */
 
     projectsTitle: "Proyectos",
+    projectbtngreen:"Ver proyecto",
+    projectbtndark:"Ver código",
+
+
+    //Proyecto: Mi Portfolio
+
+    miportfolioname:"Mi portfolio",
+    miportfoliodesc:"Portfolio personal responsive creado con HTML, CSS y JavaScript. Incluye animaciones suaves, sección de proyectos y despliegue mediante GitHub.",
     
     /* FIN APARTADO DEL APARTADO DE PROYECTOS */
+
 
 
     /* APARTADO DE HABILIDADES TECNOLÓGICAS */

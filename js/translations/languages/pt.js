@@ -40,7 +40,21 @@ const pt = {
 
     /* FIM DA SECÇÃO DOWNLOAD CV */
 
+
+
+    /* SEÇÃO DE PROJETOS */
+
     projectsTitle: "Projetos",
+    projectbtngreen: "Ver projeto",
+    projectbtndark: "Ver código",
+
+    // Projeto: Meu Portfolio
+
+    miportfolioname: "Meu portfolio",
+    miportfoliodesc: "Portfolio pessoal responsivo criado com HTML, CSS e JavaScript. Inclui animações suaves, seção de projetos e implantação via GitHub.",
+    
+    /* FIM DA SEÇÃO DE PROJETOS */
+
 
 
     /* SEÇÃO DE HABILIDADES TECNOLÓGICAS */

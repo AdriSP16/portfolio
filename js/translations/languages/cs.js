@@ -41,9 +41,20 @@ const cs = {
 
 
 
-
+    /* SEKCE PROJEKTŮ */
 
     projectsTitle: "Projekty",
+    projectbtngreen: "Zobrazit projekt",
+    projectbtndark: "Zobrazit kód",
+
+    // Projekt: Můj Portfolio
+
+    miportfolioname: "Můj portfolio",
+    miportfoliodesc: "Responzivní osobní portfolio vytvořené pomocí HTML, CSS a JavaScriptu. Zahrnuje plynulé animace, sekci projektů a nasazení přes GitHub.",
+
+    /* KONEC SEKCE PROJEKTŮ */
+
+
 
     /* TECHNOLOGICKÉ DOVEDNOSTI */
 

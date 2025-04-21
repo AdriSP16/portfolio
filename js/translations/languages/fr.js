@@ -42,7 +42,19 @@ const fr = {
 
 
 
+    /* SECTION PROJETS */
+
     projectsTitle: "Projets",
+    projectbtngreen: "Voir le projet",
+    projectbtndark: "Voir le code",
+
+    // Projet : Mon Portfolio
+    
+    miportfolioname: "Mon portfolio",
+    miportfoliodesc: "Portfolio personnel responsive créé avec HTML, CSS et JavaScript. Inclut des animations douces, une section de projets et un déploiement via GitHub.",
+
+    /* FIN DE LA SECTION PROJETS */
+
 
 
 

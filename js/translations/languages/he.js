@@ -43,7 +43,18 @@ const he = {
 
 
 
+    /* סעיף פרויקטים */
+
     projectsTitle: "פרויקטים",
+    projectbtngreen: "צפה בפרויקט",
+    projectbtndark: "צפה בקוד",
+
+    // פרויקט: הפורטפוליו שלי
+
+    miportfolioname: "הפורטפוליו שלי",
+    miportfoliodesc: "פורטפוליו אישי רספונסיבי שנבנה עם HTML, CSS ו-JavaScript. כולל אנימציות חלקות, סעיף פרויקטים ופריסה באמצעות GitHub.",
+
+    /* סוף סעיף פרויקטים */
 
 
 

@@ -47,14 +47,15 @@ function changeLanguage(lang) {
 
 
 
-    // Projects
+    // Projects: General
     document.getElementById("projects-title").textContent = translations[lang].projectsTitle;
+    document.getElementById("project-btn-green").textContent = translations[lang].projectbtngreen;
+    document.getElementById("project-btn-dark").querySelector("span").textContent = translations[lang].projectbtndark;
 
 
-
-
-
-
+    //Projects: Mi portfolio
+    document.getElementById("miportfolio-name").textContent = translations[lang].miportfolioname;
+    document.getElementById("miportfolio-desc").textContent = translations[lang].miportfoliodesc;
 
 
 
@@ -286,6 +287,10 @@ function changeLanguage(lang) {
     document.getElementById("dam-description").innerHTML = translations[lang].damDescription;
     document.getElementById("dam-skills-title").innerHTML = `<b>${translations[lang].skillsAcquiredText}</b>`;
 
+
+
+
+
     // Certificaciones
 
     document.getElementById("certifications").textContent = translations[lang].certifications;
@@ -320,6 +325,10 @@ function changeLanguage(lang) {
         }
     });
 
+
+
+
+
     // Reconocimientos, Contribuciones, Eventos
     document.getElementById("awards").textContent = translations[lang].awards;
     document.getElementById("no-awards").textContent = translations[lang].noAwards;
@@ -327,6 +336,10 @@ function changeLanguage(lang) {
     document.getElementById("no-contributions").textContent = translations[lang].noContributions;
     document.getElementById("events").textContent = translations[lang].events;
     document.getElementById("no-participation").textContent = translations[lang].noEvents;
+
+
+
+
 
     // Guardar idioma en localStorage
     localStorage.setItem("lang", lang);

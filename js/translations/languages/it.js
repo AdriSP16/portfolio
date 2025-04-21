@@ -40,7 +40,21 @@ const it = {
 
     /* FINE SEZIONE SCARICA CV */
 
+
+    
+    /* SEZIONE PROGETTI */
+
     projectsTitle: "Progetti",
+    projectbtngreen: "Vedi progetto",
+    projectbtndark: "Vedi codice",
+
+    // Progetto: Il mio Portfolio
+
+    miportfolioname: "Il mio portfolio",
+    miportfoliodesc: "Portfolio personale responsive creato con HTML, CSS e JavaScript. Include animazioni fluide, sezione progetti e distribuzione tramite GitHub.",
+
+    /* FINE SEZIONE PROGETTI */
+
 
 
 

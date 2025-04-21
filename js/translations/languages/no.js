@@ -43,7 +43,18 @@ const no = {
     
 
 
+    /* PROSJEKTSEKSJON */
+
     projectsTitle: "Prosjekter",
+    projectbtngreen: "Se prosjekt",
+    projectbtndark: "Se kode",
+
+    // Prosjekt: Min Portefølje
+
+    miportfolioname: "Min portefølje",
+    miportfoliodesc: "Responsivt personlig portefølje laget med HTML, CSS og JavaScript. Inkluderer myke animasjoner, prosjektseksjon og distribusjon via GitHub.",
+
+    /* SLUTT PÅ PROSJEKTSEKSJON */
 
 
 

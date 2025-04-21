@@ -43,7 +43,19 @@ const ja = {
 
 
 
+    /* プロジェクトセクション */
+
     projectsTitle: "プロジェクト",
+    projectbtngreen: "プロジェクトを見る",
+    projectbtndark: "コードを見る",
+
+    // プロジェクト：私のポートフォリオ
+
+    miportfolioname: "私のポートフォリオ",
+    miportfoliodesc: "HTML、CSS、JavaScriptで作成されたレスポンシブな個人ポートフォリオ。滑らかなアニメーション、プロジェクトセクション、GitHubを介したデプロイを含みます。",
+    
+    /* プロジェクトセクションの終了 */
+
 
     
 
