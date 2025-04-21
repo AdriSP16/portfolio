@@ -42,8 +42,6 @@ const pl = {
 
 
 
-
-
     /* SEKCJA PROJEKTÓW */
 
     projectsTitle: "Projekty",
@@ -59,10 +57,6 @@ const pl = {
 
 
 
-
-
-    
-
     /* SEKCJA UMIEJĘTNOŚCI TECHNOLOGICZNYCH */
 
     techSkillsTitle: "Umiejętności Technologiczne",
@@ -73,9 +67,11 @@ const pl = {
     databases: "Bazy Danych",
     versionControl: "Kontrola Wersji",
     frameworks: "Frameworki",
+    ide: "IDE",
     otherTechnologies: "Inne Technologie",
 
     /* KONIEC SEKCJI UMIEJĘTNOŚCI TECHNOLOGICZNYCH */
+
 
 
     /* SEKCJA DOŚWIADCZENIA ZAWODOWEGO */
@@ -84,6 +80,7 @@ const pl = {
     noExperience: "Nie mam jeszcze doświadczenia zawodowego, ale w międzyczasie rozwijam własne projekty :D",
 
     /* KONIEC SEKCJI DOŚWIADCZENIA ZAWODOWEGO */
+
 
 
     /* SEKCJA UMIEJĘTNOŚCI SPRZĘTOWYCH */

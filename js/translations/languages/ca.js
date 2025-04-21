@@ -65,6 +65,7 @@ const ca = {
     databases: "Bases de Dades",
     versionControl: "Control de Versions",
     frameworks: "Frameworks",
+    ide: "IDE",
     otherTechnologies: "Altres Tecnologies",
 
     /* FI APARTAT D'HABILITATS TECNOLÒGIQUES */

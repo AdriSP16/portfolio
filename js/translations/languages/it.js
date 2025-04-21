@@ -68,6 +68,7 @@ const it = {
     databases: "Database",
     versionControl: "Controllo di Versione",
     frameworks: "Framework",
+    ide: "IDE",
     otherTechnologies: "Altre Tecnologie",
 
     /* FINE SEZIONE COMPETENZE TECNOLOGICHE */

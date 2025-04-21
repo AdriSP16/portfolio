@@ -67,6 +67,7 @@ const pt = {
     databases: "Bancos de Dados",
     versionControl: "Controle de Versão",
     frameworks: "Frameworks",
+    ide: "IDE",
     otherTechnologies: "Outras Tecnologias",
 
     /* FIM SEÇÃO DE HABILIDADES TECNOLÓGICAS */

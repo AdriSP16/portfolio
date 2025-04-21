@@ -67,6 +67,7 @@ const da = {
     databases: "Databaser",
     versionControl: "Versionskontrol",
     frameworks: "Frameworks",
+    ide: "IDE",
     otherTechnologies: "Andre teknologier",
 
     /* SLUT PÅ TEKNOLOGISKE FÆRDIGHEDER */

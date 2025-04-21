@@ -70,6 +70,7 @@ const ja = {
     databases: "データベース",
     versionControl: "バージョン管理",
     frameworks: "フレームワーク",
+    ide: "統合開発環境（IDE）",
     otherTechnologies: "その他の技術",
 
     /* テクノロジースキルセクション終了 */

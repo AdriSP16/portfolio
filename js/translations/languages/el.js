@@ -67,6 +67,7 @@ const el = {
     databases: "Βάσεις Δεδομένων",
     versionControl: "Έλεγχος Έκδοσης",
     frameworks: "Frameworks",
+    ide: "IDE",
     otherTechnologies: "Άλλες Τεχνολογίες",
 
     /* ΤΕΛΟΣ ΕΝΟΤΗΤΑΣ ΤΕΧΝΟΛΟΓΙΚΩΝ ΔΕΞΙΟΤΗΤΩΝ */

@@ -70,6 +70,7 @@ const no = {
     databases: "Databaser",
     versionControl: "Versjonskontroll",
     frameworks: "Rammeverk",
+    ide: "IDE",
     otherTechnologies: "Andre Teknologier",
 
     /* SLUTT PÅ TEKNOLOGISKE FERDIGHETER-SEKSJON */

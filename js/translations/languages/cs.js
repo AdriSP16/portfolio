@@ -66,6 +66,7 @@ const cs = {
     databases: "Databáze",
     versionControl: "Správa verzí",
     frameworks: "Frameworky",
+    ide: "IDE",
     otherTechnologies: "Další technologie",
 
     /* KONEC TECHNOLOGICKÝCH DOVEDNOSTÍ */

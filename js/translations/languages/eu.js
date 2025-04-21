@@ -65,6 +65,7 @@ const eu = {
     databases: "Datu-baseak",
     versionControl: "Bertsioen Kontrola",
     frameworks: "Framework-ak",
+    ide: "IDE",
     otherTechnologies: "Beste Teknologia batzuk",
 
     /* TEKNOLOGIA GAITASUNAK ATALAREN AMAIERA */

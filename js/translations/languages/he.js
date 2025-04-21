@@ -69,6 +69,7 @@ const he = {
     databases: "מסדי נתונים",
     versionControl: "ניהול גרסאות",
     frameworks: "פריימוורקים",
+    ide: "סביבת פיתוח משולבת (IDE)",
     otherTechnologies: "טכנולוגיות נוספות",
 
     /* סוף קטע כישורים טכנולוגיים */

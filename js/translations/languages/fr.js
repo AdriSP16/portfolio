@@ -67,8 +67,16 @@ const fr = {
     databases: "Bases de Données",
     versionControl: "Contrôle de Version",
     frameworks: "Frameworks",
+    ide: "IDE",
     otherTechnologies: "Autres Technologies",
+
+
+
+
+    
     experienceTitle: "Expérience Professionnelle",
+    noExperience: "Je n’ai pas encore d’expérience, mais en attendant, je continue à développer des projets personnels :D",
+
 
 
 

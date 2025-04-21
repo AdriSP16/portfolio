@@ -69,9 +69,13 @@ const en = {
     frameworks: "Frameworks",
     ide: "IDE",
     otherTechnologies: "Other Technologies",
-    experienceTitle: "Work Experience",
 
     /* END OF TECH SKILLS SECTION */
+
+
+
+    experienceTitle: "Work Experience",
+    noExperience: "I don't have experience yet, but in the meantime, I'm continuing to work on personal projects :D",
 
 
 
