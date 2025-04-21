@@ -10,8 +10,24 @@ const cs = {
     downloadBtn: "Stáhnout CV",
     contactBtn: "&lt; Kontakty /&gt;",
     popupTitle: "E-maily",
+
+
+
+
+
+    /* SEKCE STAŽENÍ ŽIVOTOPISU */
+
+    cvpopupheader: "Vyberte typ životopisu",
+    cvfullstackbtn: "Životopis Fullstack / Mobilní",
+    cvcyberbtn: "Životopis Kybernetická bezpečnost",
+
+    /* KONEC SEKCE STAŽENÍ ŽIVOTOPISU */
+
+
+
+
+
     projectsTitle: "Projekty",
-    noProjects: "Zatím žádné významné projekty 😔",
 
     /* TECHNOLOGICKÉ DOVEDNOSTI */
 

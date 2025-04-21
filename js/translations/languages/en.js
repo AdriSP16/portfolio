@@ -4,15 +4,49 @@
 
 const en = {
 
+    /* NAVBAR SECTION */
+
     navbarTitle: "AdriDevSP",
+
+    /* END OF NAVBAR SECTION */
+
+
+
+    /* INTRO SECTION */
+
     introText: "Hello World!, my name is",
     jobTitle: "I'm a <span class='highlight'>Fullstack Developer!</span>",
     motto: "Fullstack & mobile developer by day, cybersecurity analyst by night.",
-    downloadBtn: "Download CV",
+
+    /* END OF INTRO SECTION */
+
+
+
+    /* CONTACT POPUP SECTION */
+
     contactBtn: "&lt; Contacts /&gt;",
     popupTitle: "Emails",
-    projectsTitle: "Projects",
-    noProjects: "There are no outstanding projects yet 😔",
+
+    /* END OF CONTACT POPUP SECTION */
+    
+
+
+    /* DOWNLOAD CV POPUP SECTION */
+
+    downloadBtn: "Download CV",
+    cvpopupheader: "Select the type of CV",
+    cvfullstackbtn: "Fullstack / Mobile CV",
+    cvcyberbtn: "Cybersecurity CV",
+
+    /* END OF DOWNLOAD CV POPUP SECTION */
+
+
+
+
+    projectsTitle: "Projets",
+
+
+
     techSkillsTitle: "Tech Skills",
     techSkillsDescription: "Throughout my training as a Fullstack Software Developer, I have acquired various software development skills and experience with key tools, enabling me to create scalable, flexible, solid, and fully functional cross-platform applications. Below, you can see the technical skills that have brought me to where I am today:",
     frontend: "Frontend",
@@ -24,7 +58,6 @@ const en = {
     ide: "IDE",
     otherTechnologies: "Other Technologies",
     experienceTitle: "Work Experience",
-    noExperience: "I do not yet have professional experience, but in the meantime, I continue developing personal projects :D",
 
 
 

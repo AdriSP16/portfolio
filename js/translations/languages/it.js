@@ -11,8 +11,19 @@ const it = {
     downloadBtn: "Scarica CV",
     contactBtn: "&lt; Contatti /&gt;",
     popupTitle: "Email",
+    
+
+    /* SEZIONE SCARICA CV */
+
+    cvpopupheader: "Seleziona il tipo di CV",
+    cvfullstackbtn: "CV Fullstack / Mobile",
+    cvcyberbtn: "CV Sicurezza Informatica",
+
+    /* FINE SEZIONE SCARICA CV */
+
     projectsTitle: "Progetti",
-    noProjects: "Non ci sono ancora progetti degni di nota 😔",
+
+
 
     /* SEZIONE COMPETENZE TECNOLOGICHE */
 

@@ -11,8 +11,25 @@ const fr = {
     downloadBtn: "Télécharger CV",
     contactBtn: "&lt; Contacts /&gt;",
     popupTitle: "Emails",
+    
+    
+
+    
+    /* SECTION TÉLÉCHARGER CV */
+
+    cvpopupheader: "Sélectionnez le type de CV",
+    cvfullstackbtn: "CV Fullstack / Mobile",
+    cvcyberbtn: "CV Cybersécurité",
+
+    /* FIN DE LA SECTION TÉLÉCHARGER CV */
+
+
+
     projectsTitle: "Projets",
-    noProjects: "Il n'y a pas encore de projets remarquables 😔",
+
+
+
+
     techSkillsTitle: "Compétences Techniques",
     techSkillsDescription: "Tout au long de ma formation en tant que Développeur de Logiciels Fullstack, j'ai acquis diverses compétences en développement logiciel et une expérience avec des outils clés, me permettant de créer des applications multiplateformes évolutives, flexibles, solides et entièrement fonctionnelles. Vous trouverez ci-dessous les compétences techniques qui m'ont permis d'en arriver là où je suis aujourd'hui :",
     frontend: "Frontend",
@@ -23,7 +40,8 @@ const fr = {
     frameworks: "Frameworks",
     otherTechnologies: "Autres Technologies",
     experienceTitle: "Expérience Professionnelle",
-    noExperience: "Je n'ai pas encore d'expérience professionnelle, mais en attendant, je continue à développer des projets personnels :D",
+
+
 
 
     /* SECTION COMPÉTENCES MATÉRIELLES */

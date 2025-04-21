@@ -11,8 +11,26 @@ const da = {
     downloadBtn: "Download CV",
     contactBtn: "&lt; Kontakt /&gt;",
     popupTitle: "Emails",
+
+
+
+
+    /* CV-DOWNLOAD SEKTION */
+
+    cvpopupheader: "Vælg CV-type",
+    cvfullstackbtn: "CV Fullstack / Mobil",
+    cvcyberbtn: "CV Cybersikkerhed",
+
+    /* SLUT PÅ CV-DOWNLOAD SEKTION */
+
+
+
+
+
     projectsTitle: "Projekter",
-    noProjects: "Der er endnu ingen bemærkelsesværdige projekter 😔",
+
+
+
 
     /* TEKNOLOGISKE FÆRDIGHEDER */
 

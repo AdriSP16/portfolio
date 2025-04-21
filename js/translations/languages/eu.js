@@ -10,8 +10,20 @@ const eu = {
     downloadBtn: "Deskargatu CV",
     contactBtn: "&lt; Harremanak /&gt;",
     popupTitle: "Emailak",
+    
+
+
+    /* CV-A DESKARGATZEKO ATALA */
+
+    cvpopupheader: "Aukeratu CV mota",
+    cvfullstackbtn: "CV Fullstack / Mugikorra",
+    cvcyberbtn: "CV Zibersegurtasuna",
+
+    /* CV-A DESKARGATZEKO ATALAREN AMAIERA */
+
+
     projectsTitle: "Proiektuak",
-    noProjects: "Oraindik ez dago nabarmendutako proiekturik 😔",
+
 
     /* TEKNOLOGIA GAITASUNAK ATALA */
 

@@ -3,24 +3,49 @@
 
 const es = {
 
+    /* APARTADO NAVBAR */
+
     navbarTitle: "AdriDevSP",
+
+    /* FIN DEL APARTADO NAVBAR */
+
+
+
+    /* APARTADO INTRO */
+
     introText: "¡Hola Mundo!, me llamo",
     jobTitle: "Soy un <span class='highlight'>Desarrollador Fullstack!</span>",
     motto: "Desarrollador fullstack & móvil de día, analista de ciberseguridad de noche.",
-    downloadBtn: "Descargar CV",
-    contactBtn: "&lt; Contactos /&gt;",
-    contactpopuptitle: "Emails",
-    projectsTitle: "Proyectos",
-    noProjects: "Aún no hay proyectos destacables 😔",
-    navbarTitle: "AdriDevSP",
-    introText: "¡Hola Mundo!, me llamo",
-    jobTitle: "Soy un <span class='highlight'>Desarrollador Fullstack!</span>",
-    motto: "Desarrollador fullstack & móvil de día, analista de ciberseguridad de noche.",
-    downloadBtn: "Descargar CV",
+    
+    /* FIN DEL APARTADO INTRO */
+
+
+
+    /* APARTADO CONTACT POPUP */
+
     contactBtn: "&lt; Contactos /&gt;",
     popupTitle: "Emails",
+
+    /* FIN DEL APARTADO CONTACT POPUP */
+
+
+
+    /* APARTADO DOWNLOAD CV POPUP */
+
+    downloadBtn: "Descargar CV",
+    cvpopupheader:"Selecciona el tipo de CV",
+    cvfullstackbtn:"CV Fullstack / Mobile",
+    cvcyberbtn:"CV Ciberseguridad",
+
+    /* FIN DE APARTADO DOWNLOAD CV POPUP */
+
+
+    /* APARTADO DE PROYECTOS */
+
     projectsTitle: "Proyectos",
-    noProjects: "Aún no hay proyectos destacables 😔",
+    
+    /* FIN APARTADO DEL APARTADO DE PROYECTOS */
+
 
     /* APARTADO DE HABILIDADES TECNOLÓGICAS */
 

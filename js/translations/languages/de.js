@@ -11,8 +11,29 @@ const de = {
     downloadBtn: "Lebenslauf herunterladen",
     contactBtn: "&lt; Kontakte /&gt;",
     popupTitle: "E-Mails",
+    
+    
+
+
+
+    /* ABSCHNITT LEBENSLAUF HERUNTERLADEN */
+
+    cvpopupheader: "Wähle den Lebenslauf-Typ",
+    cvfullstackbtn: "Lebenslauf Fullstack / Mobile",
+    cvcyberbtn: "Lebenslauf Cybersicherheit",
+
+    /* ENDE ABSCHNITT LEBENSLAUF HERUNTERLADEN */
+
+
+
     projectsTitle: "Projekte",
-    noProjects: "Es gibt noch keine herausragenden Projekte 😔",
+
+
+
+
+
+
+
     techSkillsTitle: "Technische Fähigkeiten",
     techSkillsDescription: "Während meiner Ausbildung zum Fullstack-Softwareentwickler habe ich verschiedene Fähigkeiten in der Softwareentwicklung erworben und Erfahrung mit wichtigen Tools gesammelt, die es mir ermöglichen, skalierbare, flexible, stabile und voll funktionsfähige plattformübergreifende Anwendungen zu erstellen. Nachfolgend sehen Sie die technischen Fähigkeiten, die mich dorthin gebracht haben, wo ich heute bin:",
     frontend: "Frontend",
@@ -23,7 +44,17 @@ const de = {
     frameworks: "Frameworks",
     otherTechnologies: "Andere Technologien",
     experienceTitle: "Berufserfahrung",
-    noExperience: "Ich habe noch keine Berufserfahrung, aber in der Zwischenzeit entwickle ich weiterhin persönliche Projekte :D",
+
+
+
+    /* ABSCHNITT LEBENSLAUF HERUNTERLADEN */
+
+    cvpopupheader: "Wähle den Lebenslauf-Typ",
+    cvfullstackbtn: "Lebenslauf Fullstack / Mobile",
+    cvcyberbtn: "Lebenslauf Cybersicherheit",
+
+    /* ENDE ABSCHNITT LEBENSLAUF HERUNTERLADEN */
+
 
     /* HARDWARE-FÄHIGKEITEN-BEREICH */
 

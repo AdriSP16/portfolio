@@ -11,8 +11,19 @@ const pt = {
     downloadBtn: "Baixar CV",
     contactBtn: "&lt; Contatos /&gt;",
     popupTitle: "E-mails",
+    
+
+
+    /* SECÇÃO DOWNLOAD CV */
+
+    cvpopupheader: "Selecione o tipo de CV",
+    cvfullstackbtn: "CV Fullstack / Mobile",
+    cvcyberbtn: "CV Cibersegurança",
+
+    /* FIM DA SECÇÃO DOWNLOAD CV */
+
     projectsTitle: "Projetos",
-    noProjects: "Ainda não há projetos relevantes 😔",
+
 
     /* SEÇÃO DE HABILIDADES TECNOLÓGICAS */
 

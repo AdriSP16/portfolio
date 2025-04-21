@@ -10,24 +10,45 @@ function changeLanguage(lang) {
     }
     
 
-
-
-
-
-
     
-
-    // Actualizar contenido de la página
+    // Navbar
     document.getElementById("navbar-title").textContent = translations[lang].navbarTitle;
+
+
+
+
+
+    //Intro
     document.getElementById("intro-text").textContent = translations[lang].introText;
     document.getElementById("job-title").innerHTML = translations[lang].jobTitle;
     document.getElementById("motto").textContent = translations[lang].motto;
-    document.getElementById("download-btn").textContent = translations[lang].downloadBtn;
-    document.getElementById("contact-btn").innerHTML = translations[lang].contactBtn;
-    document.getElementById("contact-popup-title").textContent = translations[lang].popupTitle;
-    document.getElementById("projects-title").textContent = translations[lang].projectsTitle;
+    
+    
     
 
+
+    // Popup Contacts
+    document.getElementById("contact-btn").innerHTML = translations[lang].contactBtn;
+    document.getElementById("contact-popup-title").textContent = translations[lang].popupTitle;
+
+
+
+
+    
+    // Popup Download CV
+    document.getElementById("download-btn").textContent = translations[lang].downloadBtn;
+    document.getElementById("cv-popup-header").textContent = translations[lang].cvpopupheader;
+    document.getElementById("cv-fullstack-btn").textContent = translations[lang].cvfullstackbtn;
+    document.getElementById("cv-cyber-btn").textContent = translations[lang].cvcyberbtn;
+
+
+
+
+
+
+
+    // Projects
+    document.getElementById("projects-title").textContent = translations[lang].projectsTitle;
 
 
 

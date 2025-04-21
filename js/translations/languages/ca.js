@@ -9,8 +9,21 @@ const ca = {
     downloadBtn: "Descarregar CV",
     contactBtn: "&lt; Contactes /&gt;",
     popupTitle: "Correus",
+ 
+
+
+    /* SECCIÓ DESCARREGAR CV */
+
+    cvpopupheader: "Selecciona el tipus de CV",
+    cvfullstackbtn: "CV Fullstack / Mobile",
+    cvcyberbtn: "CV Ciberseguretat",
+
+    /* FI DE LA SECCIÓ DESCARREGAR CV */
+
+
     projectsTitle: "Projectes",
-    noProjects: "Encara no hi ha projectes destacables 😔",
+
+    
 
     /* APARTAT D'HABILITATS TECNOLÒGIQUES */
 

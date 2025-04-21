@@ -11,8 +11,27 @@ const he = {
     downloadBtn: "הורד קורות חיים",
     contactBtn: "&lt; יצירת קשר /&gt;",
     popupTitle: "אימיילים",
+
+
+
+
+
+
+
+    /* קטע הורדת קורות חיים */
+
+    cvpopupheader: "בחר סוג קורות חיים",
+    cvfullstackbtn: "קורות חיים לפיתוח מלא / מובייל",
+    cvcyberbtn: "קורות חיים באבטחת סייבר",
+
+    /* סוף קטע הורדת קורות חיים */
+
+
+
+
     projectsTitle: "פרויקטים",
-    noProjects: "עדיין אין פרויקטים בולטים 😔",
+
+
 
     /* קטע כישורים טכנולוגיים */
 

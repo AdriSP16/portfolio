@@ -11,8 +11,28 @@ const no = {
     downloadBtn: "Last ned CV",
     contactBtn: "&lt; Kontakt /&gt;",
     popupTitle: "E-poster",
+
+
+
+
+
+
+
+
+
+    /* LAST NED CV-SEKSJON */
+
+    cvpopupheader: "Velg CV-type",
+    cvfullstackbtn: "CV Fullstack / Mobil",
+    cvcyberbtn: "CV Cybersikkerhet",
+
+    /* SLUTT PÅ LAST NED CV-SEKSJON */
+
+
+
+
+
     projectsTitle: "Prosjekter",
-    noProjects: "Ingen bemerkelsesverdige prosjekter ennå 😔",
 
     /* TEKNOLOGISKE FERDIGHETER-SEKSJON */
 
