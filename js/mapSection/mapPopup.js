@@ -35,7 +35,7 @@ export function initMapPopup (){
                 popup.style.display = "flex";
     
                 // Establecer el título del popup con el botón de cierre
-                popupTitle.innerHTML = `Ciudades y regiones preferidas en ${countryName}`;
+                //popupTitle.innerHTML = `Ciudades y regiones preferidas en ${countryName}`;
     
                 // Cerrar popup al hacer clic fuera de él
                 popup.addEventListener("click", (event) => {
@@ -125,4 +125,3 @@ export function initMapPopup (){
         setTimeout(() => popup.style.display = 'none', 300); 
     }
 }
-

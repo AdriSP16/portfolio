@@ -13,6 +13,8 @@ import pt from './languages/pt.js';
 import he from './languages/he.js';
 import da from './languages/da.js';
 import cs from './languages/cs.js';
+import zh from './languages/zh.js';
+import ru from './languages/ru.js';
 
 const translations = {
   es,
@@ -30,6 +32,8 @@ const translations = {
   he,
   da,
   cs,
+  zh,
+  ru,
 };
 
 export default translations;
