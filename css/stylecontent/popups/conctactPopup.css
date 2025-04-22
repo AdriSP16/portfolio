@@ -129,7 +129,7 @@ input[type="email"] {
     .contact-popup-content {
         padding: 1rem;
         width: 95%; /* Ajusta el ancho para pantallas más pequeñas */
-        margin-right: 3.5rem;
+        margin-right: 2rem;
     }
 
     .contact-popup-header {
