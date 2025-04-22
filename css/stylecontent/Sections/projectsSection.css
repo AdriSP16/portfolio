@@ -213,6 +213,8 @@
 
     .project-grid {
         grid-template-columns: 1fr; /* Cambiar a 1 columna en pantallas pequeñas */
+        align-items: center; 
+
     }
 
     .project-card {
@@ -234,5 +236,6 @@
 
     .project-grid {
         grid-template-columns: repeat(1fr); /* 2 columnas para pantallas medianas */
+        align-items: center;
     }
 }
