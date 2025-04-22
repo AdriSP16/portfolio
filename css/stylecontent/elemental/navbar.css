@@ -127,9 +127,10 @@ input:checked + .slider::before {
     }
 
     .language-switcher {
-        right: 1rem; /* Reduce el espacio derecho */
+        right: 1rem;
         padding: 0.3rem 0.8rem;
         font-size: 0.9rem;
+        max-height: 12rem; /* Menos espacio visible */
     }
 }
 

@@ -15,6 +15,16 @@ import da from './languages/da.js';
 import cs from './languages/cs.js';
 import zh from './languages/zh.js';
 import ru from './languages/ru.js';
+import hr from './languages/hr.js';
+import sk from './languages/sk.js';
+import ko from './languages/ko.js';
+import ka from './languages/ka.js';
+import et from './languages/et.js';
+import se from './languages/se.js';
+import sl from './languages/sl.js';
+import th from './languages/th.js';
+import tr from './languages/tr.js';
+import hu from './languages/hu.js';
 
 const translations = {
   es,
@@ -34,6 +44,16 @@ const translations = {
   cs,
   zh,
   ru,
+  hr,
+  sk,
+  ko,
+  ka,
+  et,
+  se,
+  sl,
+  th,
+  tr,
+  hu,
 };
 
 export default translations;
