@@ -213,7 +213,6 @@
 
     .project-grid {
         grid-template-columns: 1fr; /* Cambiar a 1 columna en pantallas pequeñas */
-        gap: 1rem; /* Ajusta el espacio entre tarjetas */
     }
 
     .project-card {
@@ -234,6 +233,6 @@
     }
 
     .project-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas medianas */
+        grid-template-columns: repeat(1fr); /* 2 columnas para pantallas medianas */
     }
 }
