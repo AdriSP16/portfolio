@@ -1,7 +1,5 @@
 /* APARTADO DE PROYECTOS */
 
-
-
 /* Estilo general de la sección */
 .projects {
     background: var(--section-bg, #e2e2e2); /* Usa variable con fallback */
@@ -12,18 +10,6 @@
     justify-content: center; /* Centra el grid horizontalmente */
     align-items: center; /* Centra el grid verticalmente */
     flex-direction: column; /* Asegura que el contenido esté en columna */
-}
-
-/* Grid de tarjetas */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Usa auto-fit para centrar y ajustar las columnas */
-    gap: 1.5rem; /* Espacio entre los elementos */
-    width: 100%; /* Asegura que el grid ocupe el 100% del ancho disponible */
-    max-width: 1200px; /* Máximo ancho para evitar que se estire demasiado */
-    margin-top: 2rem; /* Añadir margen superior */
-    justify-items: center; /* Centra las tarjetas horizontalmente dentro de cada celda */
-    align-items: center; /* Alinea las tarjetas al inicio en el eje vertical */
 }
 
 .projects-title {
@@ -38,50 +24,50 @@
     vertical-align: middle;
 }
 
-
-/* Grid de tarjetas */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Crea columnas dinámicas */
-    gap: 1.5rem; /* Espacio entre los elementos */
-    margin: 2rem auto 0 auto; /* Centrado horizontal + margen superior */
-    padding: 0 1rem; /* Relleno lateral para pantallas pequeñas */
-    max-width: 100%; /* Asegura que el grid ocupe todo el ancho disponible */
-    justify-items: center; /* Centra las tarjetas horizontalmente dentro de cada celda */
-    align-items: center; /* Centra las tarjetas verticalmente dentro de cada celda */
-}
- 
-
 .project-card {
     background: #fff;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-    text-align: left; /* Alineación a la izquierda */
+    text-align: left; /* Alineación del texto siempre a la izquierda */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  
+    align-items: stretch; /* Asegura que las tarjetas no se estiren */
+    width: 100%; /* Asegura que las tarjetas ocupen el 100% del espacio disponible */
+    max-width: 350px; /* Establece un ancho máximo para evitar que las tarjetas se estiren demasiado */
+    height: 520px; /* Altura fija para evitar que cambie con el idioma */
+    position: relative;
+    overflow: hidden; /* Evita que el contenido se desborde fuera de la tarjeta */
+}
 
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 2rem; /* Espaciado entre tarjetas */
+    margin: 2rem auto 0 auto;
+    padding: 0 1rem;
+    max-width: 100%;
+    justify-items: center; /* Centra las tarjetas horizontalmente */
+    align-items: start; /* Alinea las tarjetas al inicio para que no se muevan verticalmente */
+}
+
+/* Hover sobre las tarjetas */
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Imágenes de los proyectos */
 .project-img {
     width: 100%;
-    max-height: 240px; /* ⬆️ más altura visible */
-    height: auto;
+    max-height: 200px; /* Limita la altura de la imagen para que no se estire demasiado */
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
     margin-bottom: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  
+}
 
 .project-name {
     font-size: 1.5rem;
@@ -89,6 +75,7 @@
     margin-bottom: 0.5rem;
     width: 100%;
     text-align: left;
+    flex-grow: 0; /* No crece */
 }
 
 .project-desc {
@@ -97,6 +84,9 @@
     margin-bottom: 1.5rem;
     width: 100%;
     text-align: left;
+    flex-grow: 1; /* Permite que la descripción crezca para llenar el espacio disponible */
+    overflow-y: auto; /* Añade barra de desplazamiento solo si es necesario */
+    max-height: 100px; /* Limita la altura máxima de la descripción */
 }
 
 .project-techs {
@@ -106,6 +96,7 @@
     margin-bottom: 1rem;
     width: 100%;
     text-align: left;
+    flex-grow: 0; /* No crece */
 }
 
 .project-techs img {
@@ -115,7 +106,6 @@
     margin-right: 0.25rem; /* Ajusta el valor según el espacio que desees */
 }
 
-
 .project-buttons {
     display: flex;
     flex-direction: column;
@@ -123,8 +113,8 @@
     gap: 0.75rem;
     margin-top: 1rem;
     width: 100%; /* Esto los adapta al grid */
+    flex-shrink: 0; /* Evita que los botones se encojan */
 }
-  
 
 .project-btn {
     width: 100%;
@@ -139,8 +129,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-  }
-  
+}
 
 .project-btn.green {
     background: #4CAF50;
@@ -210,14 +199,25 @@
 
     .project-card {
         padding: 1.25rem;
+        height: auto; /* Ajusta la altura de la tarjeta según el contenido */
+        max-height: none; /* Permite que la tarjeta se ajuste a la altura del contenido */
     }
 
     .project-img {
-        max-height: 200px;
+        max-height: 200px; /* Mantiene la altura máxima de la imagen */
     }
 
     .project-btn {
         padding: 0.5rem 0.75rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Cambiar a 1 columna en pantallas pequeñas */
+        gap: 1rem; /* Ajusta el espacio entre tarjetas */
+    }
+
+    .project-card {
+        margin-bottom: 2rem; /* Espacio entre las tarjetas */
     }
 }
 
@@ -230,5 +230,10 @@
 
     .project-card {
         padding: 1.5rem;
+        height: auto; /* Deja que la altura se ajuste al contenido */
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas medianas */
     }
 }
