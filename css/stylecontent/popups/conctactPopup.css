@@ -1,5 +1,3 @@
-/* APARTADO POPUP DE CONTACTOS */
-
 /* Estilo del popup */
 .popup {
     display: none;
@@ -33,6 +31,7 @@
     gap: 1rem; /* Espaciado entre elementos */
     width: 90%;
     max-width: 500px; /* Ancho máximo */
+    margin: auto; /* Centra el popup en pantallas pequeñas */
 }
 
 /* Encabezado del popup con título centrado */
@@ -125,19 +124,52 @@ input[type="email"] {
 
 /* RESPONSIVE DESIGN */
 
-/* Adaptar popup en dispositivos pequeños */
-@media (max-width: 480px) {
-    .popup-content {
+/* Responsive para pantallas medianas */
+@media (max-width: 768px) {
+    .contact-popup-content {
         padding: 1rem;
-        width: 95%;
+        width: 95%; /* Ajusta el ancho para pantallas más pequeñas */
+        margin-right: 3.5rem;
     }
 
-    .contact-popup-title h1 {
-        font-size: 1.2rem;
+    .contact-popup-header {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .email-container {
+        align-items: stretch; /* Asegura que el contenido ocupe todo el ancho */
+    }
+
+    .btn-icon {
+        padding: 0.5rem 1.2rem;
+    }
+
+    .btn-icon img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .close-btn {
+        margin-top: 0.5rem;
+        margin-right: -0.5rem;
+    }
+}
+
+/* Adaptar popup en dispositivos pequeños */
+@media (max-width: 480px) {
+    .contact-popup-header {
+        font-size: 1.2rem; /* Tamaño de texto más pequeño */
+    }
+
+    .contact-popup-content {
+        padding: 1rem;
+        width: 95%; /* Asegura que el popup ocupe el 95% del ancho disponible */
+        max-width: 95%; /* Ajuste para evitar que se desborde */
     }
 
     .close-btn {
         font-size: 1.5rem;
+        padding: 8px; /* Ajuste del tamaño */
     }
 
     input[type="email"] {
@@ -195,6 +227,3 @@ input[type="email"] {
 [data-theme="dark"] .btn-icon:hover {
     background: #38b738; /* Verde claro al pasar el ratón */
 }
-
-
-/* APARTADO POPUP DE CONTACTOS */
