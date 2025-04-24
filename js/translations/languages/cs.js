@@ -52,6 +52,11 @@ const cs = {
     miportfolioname: "Můj portfolio",
     miportfoliodesc: "Responzivní osobní portfolio vytvořené pomocí HTML, CSS a JavaScriptu. Zahrnuje plynulé animace, sekci projektů a nasazení přes GitHub.",
 
+    //Projekt: NetCalc
+    netcalcname: "NetCalc",
+    netcalcprojectbtngreen: "Číst více",
+    netcalcdesc: "Webová a příkazová aplikace pro výpočet parametrů IP sítí (síťová adresa, broadcast, dostupní hostitelé atd.). Umožňuje export výsledků do JSON a je určena pro studenty a profesionály v oblasti sítí.",
+
     /* KONEC SEKCE PROJEKTŮ */
 
 

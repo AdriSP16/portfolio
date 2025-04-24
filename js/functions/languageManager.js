@@ -49,15 +49,29 @@ function changeLanguage(lang) {
 
     // Projects: General
     document.getElementById("projects-title").textContent = translations[lang].projectsTitle;
-    document.getElementById("project-btn-green").textContent = translations[lang].projectbtngreen;
-    document.getElementById("project-btn-dark").querySelector("span").textContent = translations[lang].projectbtndark;
+
+    // Traduce todos los botones "Ver proyecto"
+    document.querySelectorAll(".project-btn-green").forEach(btn => {
+        btn.textContent = translations[lang].projectbtngreen;
+    });
+
+    // Traduce todos los botones "Ver código"
+    document.querySelectorAll(".project-btn-dark").forEach(btn => {
+        const span = btn.querySelector("span");
+        if (span) {
+            span.textContent = translations[lang].projectbtndark;
+        }
+    });
+
+    document.getElementById("netcalc-project-btn-green").textContent = translations[lang].netcalcprojectbtngreen;
+
 
 
     //Projects: Mi portfolio
     document.getElementById("miportfolio-name").textContent = translations[lang].miportfolioname;
     document.getElementById("miportfolio-desc").textContent = translations[lang].miportfoliodesc;
 
-    //Projects: Mi portfolio
+    //Projects: NetCalc
     document.getElementById("netcalc-name").textContent = translations[lang].netcalcname;
     document.getElementById("netcalc-desc").textContent = translations[lang].netcalcdesc;
 

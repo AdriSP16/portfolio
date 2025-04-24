@@ -50,6 +50,12 @@ const sl = {
     miportfolioname: "Moj portfelj",
     miportfoliodesc: "Osebni odzivni portfelj ustvarjen z HTML, CSS in JavaScript. Vključuje gladke animacije, razdelek za projekte in gostovanje prek GitHuba.",
 
+    //Projekt: NetCalc
+    netcalcname: "NetCalc",
+    netcalcprojectbtngreen: "Preberi več",
+    netcalcdesc: "Spletna in ukazna aplikacija za izračun parametrov IP omrežij (omrežni naslov, oddajanje, razpoložljivi gostitelji itd.). Omogoča izvoz rezultatov v JSON in je namenjena študentom ter strokovnjakom za omrežja.",
+
+
     /* KONEC RAZDELKA PROJEKTI */
 
 

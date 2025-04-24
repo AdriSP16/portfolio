@@ -55,8 +55,9 @@ const pt = {
 
     // Projeto: NetCalc
 
-    netcalcname_pt: "NetCalc", 
-    netcalcdesc_pt: "Aplicativo web e de linha de comando para calcular parâmetros de redes IP (endereço de rede, broadcast, hosts disponíveis, etc.). Permite exportar resultados em JSON e é projetado para estudantes e profissionais de redes.",
+    netcalcname: "NetCalc", 
+    netcalcprojectbtngreen: "Saiba mais",
+    netcalcdesc: "Aplicativo web e de linha de comando para calcular parâmetros de redes IP (endereço de rede, broadcast, hosts disponíveis, etc.). Permite exportar resultados em JSON e é projetado para estudantes e profissionais de redes.",
 
     
     /* FIM DA SEÇÃO DE PROJETOS */

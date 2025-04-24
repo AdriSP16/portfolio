@@ -43,6 +43,12 @@ const tr = {
     miportfolioname:"Portfolyom",
     miportfoliodesc:"HTML, CSS ve JavaScript ile oluşturulmuş duyarlı kişisel portfolyo. Yumuşak animasyonlar, proje bölümü ve GitHub ile dağıtım içerir.",
 
+    //Proje: NetCalc
+    netcalcname: "NetCalc",
+    netcalcprojectbtngreen: "Daha fazla oku",
+    netcalcdesc: "IP ağ parametrelerini (ağ adresi, yayın, kullanılabilir ana makineler vb.) hesaplamak için web ve komut satırı uygulaması. Sonuçları JSON olarak dışa aktarabilir ve ağ öğrencileri ile profesyonelleri için tasarlanmıştır.",
+
+
     /* PROJELER BÖLÜMÜ SONU */
 
     /* TEKNOLOJİK BECERİLER */

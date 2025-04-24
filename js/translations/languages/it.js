@@ -55,8 +55,9 @@ const it = {
 
     // Progetto: NetCalc
 
-    netcalcname_it: "NetCalc", 
-    netcalcdesc_it: "Applicazione web e da linea di comando per calcolare parametri di rete IP (indirizzo di rete, broadcast, host disponibili, ecc.). Permette di esportare i risultati in formato JSON ed è pensata per studenti e professionisti di rete.",
+    netcalcname: "NetCalc", 
+    netcalcprojectbtngreen: "Scopri di più",
+    netcalcdesc: "Applicazione web e da linea di comando per calcolare parametri di rete IP (indirizzo di rete, broadcast, host disponibili, ecc.). Permette di esportare i risultati in formato JSON ed è pensata per studenti e professionisti di rete.",
 
 
     /* FINE SEZIONE PROGETTI */

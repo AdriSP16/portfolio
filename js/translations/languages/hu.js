@@ -29,6 +29,12 @@ const hu = {
     miportfolioname:"Saját portfólióm",
     miportfoliodesc:"Reszponzív személyes portfólió HTML, CSS és JavaScript használatával. Tartalmaz sima animációkat, projekt szekciót és GitHub-on keresztüli közzétételt.",
 
+    //Projekt: NetCalc
+    netcalcname: "NetCalc",
+    netcalcprojectbtngreen: "Tovább olvasom",
+    netcalcdesc: "Web- és parancssori alkalmazás IP-hálózati paraméterek (hálózati cím, broadcast, elérhető hosztok stb.) kiszámítására. Lehetőséget nyújt az eredmények JSON formátumban való exportálására, hálózati hallgatók és szakemberek számára készült.",
+
+
     /* TECH SKILLS SECTION */
     techSkillsTitle: "Technikai készségek",
     techSkillsDescription: "Fullstack szoftverfejlesztői képzésem során különböző szoftverfejlesztési készségeket sajátítottam el, és tapasztalatot szereztem a főbb eszközök használatában, lehetővé téve skálázható, rugalmas, megbízható és teljesen működőképes mobil és multiplatform alkalmazások készítését.",

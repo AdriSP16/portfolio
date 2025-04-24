@@ -51,7 +51,12 @@ const et = {
 
     miportfolioname: "Minu portfoolio",
     miportfoliodesc: "Isiklik tundlik portfoolio, mis on loodud HTML, CSS ja JavaScripti abil. Sisaldab sujuvaid animatsioone, projektiosa ja GitHubi kaudu üleslaadimist.",
-    
+
+    //Projekt: NetCalc
+    netcalcname: "NetCalc",
+    netcalcprojectbtngreen: "Loe edasi",
+    netcalcdesc: "Veebi- ja käsurearakendus IP-võrgu parameetrite (võrgu aadress, ringhääling, saadaval hostid jne) arvutamiseks. Võimaldab tulemusi eksportida JSON-i ja on mõeldud võrgu tudengitele ja professionaalidele.",
+
     /* PROJEKTIDE OSA LÕPP */
 
 

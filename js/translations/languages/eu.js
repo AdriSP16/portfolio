@@ -53,8 +53,9 @@ const eu = {
 
     // Proiektua: NetCalc
     
-    netcalcname_eu: "NetCalc", 
-    netcalcdesc_eu: "Web eta komando-lerro aplikazioa IP sareen parametroak kalkulatzeko (sare helbidea, broadcast, erabilgarri dauden host-ak, etab.). JSON formatuan emaitzak esportatzeko aukera ematen du eta sareetako ikasle eta profesionalentzat pentsatua.",
+    netcalcname: "NetCalc", 
+    netcalcprojectbtngreen: "Irakurri gehiago",
+    netcalcdesc: "Web eta komando-lerro aplikazioa IP sareen parametroak kalkulatzeko (sare helbidea, broadcast, erabilgarri dauden host-ak, etab.). JSON formatuan emaitzak esportatzeko aukera ematen du eta sareetako ikasle eta profesionalentzat pentsatua.",
 
 
     /* PROIEKTUEN ATALAREN AMAIERA */

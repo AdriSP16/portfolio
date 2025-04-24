@@ -54,6 +54,11 @@ const no = {
     miportfolioname: "Min portefølje",
     miportfoliodesc: "Responsivt personlig portefølje laget med HTML, CSS og JavaScript. Inkluderer myke animasjoner, prosjektseksjon og distribusjon via GitHub.",
 
+    //Prosjekt: NetCalc
+    netcalcname: "NetCalc",
+    netcalcprojectbtngreen: "Les mer",
+    netcalcdesc: "Web- og kommandolinjeapplikasjon for å beregne IP-nettverksparametere (nettverksadresse, kringkasting, tilgjengelige verter osv.). Muliggjør eksport av resultater i JSON og er ment for nettverksstudenter og fagfolk.",
+
     /* SLUTT PÅ PROSJEKTSEKSJON */
 
 

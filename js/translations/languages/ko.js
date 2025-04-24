@@ -51,6 +51,12 @@ const ko = {
     miportfolioname: "내 포트폴리오",
     miportfoliodesc: "HTML, CSS, JavaScript로 제작된 반응형 개인 포트폴리오. 부드러운 애니메이션, 프로젝트 섹션 및 GitHub를 통한 배포 포함.",
 
+    //프로젝트: NetCalc
+    netcalcname: "NetCalc",
+    netcalcprojectbtngreen: "더 읽기",
+    netcalcdesc: "IP 네트워크 매개변수(네트워크 주소, 브로드캐스트, 사용 가능한 호스트 등)를 계산하기 위한 웹 및 명령줄 애플리케이션. 결과를 JSON으로 내보낼 수 있으며 네트워크 학생 및 전문가를 위한 것입니다.",
+
+
     /* 프로젝트 섹션 끝 */
 
 

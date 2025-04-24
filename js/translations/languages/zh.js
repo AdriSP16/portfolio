@@ -46,6 +46,12 @@ const zh = {
     miportfolioname:"我的作品集",
     miportfoliodesc:"使用 HTML、CSS 和 JavaScript 创建的响应式个人作品集。包含流畅的动画、项目部分，并通过 GitHub 部署。",
 
+    //项目：NetCalc
+    netcalcname: "NetCalc",
+    netcalcprojectbtngreen: "阅读更多",
+    netcalcdesc: "用于计算 IP 网络参数（网络地址、广播、可用主机等）的网页和命令行应用程序。支持将结果导出为 JSON，适用于网络相关的学生和专业人员。",
+
+
     /* 项目部分结束 */
 
 

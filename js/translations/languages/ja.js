@@ -53,6 +53,12 @@ const ja = {
 
     miportfolioname: "私のポートフォリオ",
     miportfoliodesc: "HTML、CSS、JavaScriptで作成されたレスポンシブな個人ポートフォリオ。滑らかなアニメーション、プロジェクトセクション、GitHubを介したデプロイを含みます。",
+
+    //プロジェクト：NetCalc
+    netcalcname: "NetCalc",
+    netcalcprojectbtngreen: "続きを読む",
+    netcalcdesc: "IPネットワークのパラメータ（ネットワークアドレス、ブロードキャスト、使用可能なホストなど）を計算するためのWebおよびコマンドラインアプリケーション。結果をJSON形式でエクスポートでき、ネットワークの学生や専門家向けに設計されています。",
+
     
     /* プロジェクトセクションの終了 */
 

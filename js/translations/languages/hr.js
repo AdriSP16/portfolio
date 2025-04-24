@@ -52,6 +52,12 @@ const hr = {
 
     miportfolioname:"Moj portfolio",
     miportfoliodesc:"Osobni responsive portfolio izrađen pomoću HTML-a, CSS-a i JavaScripta. Uključuje glatke animacije, sekciju s projektima i deploy preko GitHub-a.",
+
+    //Projekt: NetCalc
+    netcalcname: "NetCalc",
+    netcalcprojectbtngreen: "Pročitaj više",
+    netcalcdesc: "Web i CLI aplikacija za izračun IP mrežnih parametara (mrežna adresa, broadcast, dostupni hostovi itd.). Omogućuje izvoz rezultata u JSON formatu i namijenjena je studentima i mrežnim profesionalcima.",
+
     
     /* KRAJ ODJELJKA PROJEKTI */
 
