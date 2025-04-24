@@ -1,0 +1,14 @@
+© Adrián Sabino, 2025. Todos los derechos reservados.
+
+Este software y todos sus componentes visuales y funcionales son propiedad exclusiva de AdriSP16.
+
+Queda estrictamente prohibido:
+- Copiar, reproducir o redistribuir total o parcialmente el código fuente.
+- Modificar, adaptar o crear trabajos derivados a partir de este código.
+- Usar este proyecto con fines comerciales o personales sin una autorización expresa por escrito del autor.
+
+El acceso al repositorio y/o su contenido no otorga ninguna licencia o derecho de uso. Cualquier uso no autorizado constituirá una violación de los derechos de autor.
+
+Para consultas o solicitudes de uso, contactar al autor a través de GitHub.
+
+Este proyecto está disponible únicamente como demostración de portafolio personal.
