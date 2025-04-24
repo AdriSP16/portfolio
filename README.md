@@ -13,7 +13,6 @@ Este es el portfolio personal de **AdriSP16**, una muestra de mis proyectos, hab
 - ✨ Animaciones suaves y navegación fluida.
 - 🎨 Estética moderna con colores equilibrados y secciones bien definidas.
 - 🖼️ Galería de proyectos con capturas, descripciones y enlaces.
-- 🗑️ Estructura clara: Inicio, Sobre mí, Proyectos y Contacto.
 
 ---
 
