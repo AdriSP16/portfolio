@@ -57,6 +57,10 @@ function changeLanguage(lang) {
     document.getElementById("miportfolio-name").textContent = translations[lang].miportfolioname;
     document.getElementById("miportfolio-desc").textContent = translations[lang].miportfoliodesc;
 
+    //Projects: Mi portfolio
+    document.getElementById("netcalc-name").textContent = translations[lang].netcalcname;
+    document.getElementById("netcalc-desc").textContent = translations[lang].netcalcdesc;
+
 
 
 

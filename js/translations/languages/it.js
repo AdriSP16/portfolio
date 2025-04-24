@@ -53,6 +53,12 @@ const it = {
     miportfolioname: "Il mio portfolio",
     miportfoliodesc: "Portfolio personale responsive creato con HTML, CSS e JavaScript. Include animazioni fluide, sezione progetti e distribuzione tramite GitHub.",
 
+    // Progetto: NetCalc
+
+    netcalcname_it: "NetCalc", 
+    netcalcdesc_it: "Applicazione web e da linea di comando per calcolare parametri di rete IP (indirizzo di rete, broadcast, host disponibili, ecc.). Permette di esportare i risultati in formato JSON ed è pensata per studenti e professionisti di rete.",
+
+
     /* FINE SEZIONE PROGETTI */
 
 
